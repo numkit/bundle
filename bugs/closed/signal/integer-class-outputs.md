@@ -1,8 +1,8 @@
 # signal: integer-class inputs need integer-class outputs the Value layer cannot allocate
 
 **Kind:** stub
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_ConvmtxIntResultClass, DISABLED_DownsampleIntResultClass (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (2026-10-17)
+**Guard:** ConvmtxIntResultClass, DownsampleIntResultClass (modules/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

@@ -1,6 +1,6 @@
 # image.arity-min-forms — reference short/0-arg forms rejected by the applied bounds
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (documented reference forms currently rejected with
   `nk:<fn>:nargin` / `nk:<fn>:maxnargin`)
 - **Kind:** stub
@@ -44,9 +44,9 @@ same commit; each function then gets its branch test per full_fidelity.md.
 
 ## References
 
-- **Guard:** deferred (these are unimplemented branches, not wrong
-  results — see the full_fidelity gap rule).
+- **Guard:** `ImageShortForms` (modules/image/tests/known_bugs_test.cpp)
 - Applied bounds: `tools/arity_reference.json` ("image"), reg comments in
-  `src/bundle/src/register/image/**`.
+  `modules/image/src/register/**`.
 - Probe evidence: 0-arg pass `image_arity_k0.tsv`, interactive probes
   `image_arity_interactive.tsv` (R2025b, 2026-09-17).
+

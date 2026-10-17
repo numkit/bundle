@@ -1,8 +1,8 @@
 # signal: N-D and multi-channel branches not implemented
 
 **Kind:** stub
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_ConvnRank4, DISABLED_StftMatrixChannels (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (2026-10-17)
+**Guard:** ConvnRank4, StftMatrixChannels (modules/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

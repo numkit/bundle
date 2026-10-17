@@ -1,6 +1,6 @@
 # stats — reference-legal 0-argument forms rejected (fitdist / haltonset / randg)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P4 (rarely used default-argument forms)
 - **Kind:** stub
 - **Found:** 2026-09-17 during the stats max-arity migration — the
@@ -43,5 +43,6 @@ draw. Then lower the reg bounds to min 0.
 
 ## References
 
-- **Guard:** `DISABLED_ZeroArgForms`
-  (src/toolboxes/stats/tests/known_bugs_test.cpp)
+- **Guard:** `ZeroArgForms`
+  (modules/stats/tests/known_bugs_test.cpp)
+

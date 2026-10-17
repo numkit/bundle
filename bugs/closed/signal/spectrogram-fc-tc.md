@@ -1,6 +1,6 @@
 # signal.spectrogram — 5th/6th outputs (fc, tc) missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P2 (missing outputs)
 - **Kind:** missing-output
 - **Found:** 2026-06-04 via DEEP-PROBE (multi-output sweep)
@@ -45,7 +45,8 @@ windows + exact MATLAB reassignment normalization, not the one-liner first
 assumed.
 
 ## References
-- **Guard:** `DISABLED_SpectrogramFcTc`
-- `src/toolboxes/signal/src/time_frequency/spectrogram.cpp` (spectrogram_reg)
+- **Guard:** `SpectrogramFcTc` (modules/signal/tests/known_bugs_test.cpp)
+- `modules/signal/src/time_frequency/spectrogram.cpp`
 - bugs/signal/spectrogram-ps.md (the ps 4th-output fix)
 - MATLAB `doc spectrogram` (fc, tc)
+

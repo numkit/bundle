@@ -1,5 +1,6 @@
 # corrcoef deferred branches: complex R, pairwise p-values, 1-obs p-values
 
+- **Status:** ✅ FIXED (2026-10-17)
 - **Kind:** stub
 - **Component:** stats (corrcoef)
 - **Found:** 2026-09-18, stats descriptive argcheck portion (probe68).
@@ -22,4 +23,5 @@
 stubs); 2 is a per-pair-n Fisher transform in corrcoefPValues; 3 is an
 n ≥ 2 guard on the p-value path.
 
-**Guard:** deferred (stubs, not wrong values on computed paths).
+**Guard:** `CorrcoefDeferredBranches` (modules/stats/tests/known_bugs_test.cpp)
+

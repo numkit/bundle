@@ -1,6 +1,6 @@
 # control — reference-legal short forms rejected (constructors, demo plots, model forms)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P4 (default-argument and convenience forms)
 - **Kind:** stub
 - **Found:** 2026-09-17 during the control arity migration — the k=0
@@ -74,5 +74,6 @@ rejected deliberately.
 
 ## References
 
-- **Guard:** `DISABLED_ControlShortForms`
-  (src/toolboxes/control/tests/known_bugs_test.cpp)
+- **Guard:** `ControlShortForms`
+  (modules/control/tests/known_bugs_test.cpp)
+

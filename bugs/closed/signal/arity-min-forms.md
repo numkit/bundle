@@ -1,6 +1,6 @@
 # signal.arity — reference accepts fewer args than nk requires (missing short forms)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P2 (documented short forms rejected: "not enough input
   arguments" where the reference computes)
 - **Kind:** stub (documented argument forms not supported)
@@ -63,5 +63,6 @@ h = freqz([1 1 1]);
 y = chirp(0:0.01:1);
 ```
 
-**Guard:** `SignalKnownBug.DISABLED_FewerArgForms` in
-`src/toolboxes/signal/tests/known_bugs_test.cpp`.
+**Guard:** `FewerArgForms` in
+`modules/signal/tests/known_bugs_test.cpp`.
+

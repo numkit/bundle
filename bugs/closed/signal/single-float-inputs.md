@@ -1,8 +1,8 @@
 # signal: single-precision inputs are a capability gap across the toolbox
 
 **Kind:** stub
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_ConvSingleResultClass (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (2026-10-17) — single-precision inputs accepted across the signal toolbox, returning single-class outputs matching MATLAB R2025b.
+**Guard:** ConvSingleResultClass (modules/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

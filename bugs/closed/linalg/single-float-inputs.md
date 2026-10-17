@@ -9,7 +9,7 @@
   ldl, gsvd, ordschur, qz, balance, rref, linsolve, lsqminnorm,
   sylvester, expmv, eigs, svds, ordeig, cholupdate,
   pagemldivide/pagemrdivide/pagelsqminnorm
-- **Status:** 🟡 OPEN
+- **Status:** ✅ FIXED (2026-10-17) — single-precision inputs accepted across all linalg factorizations, solvers, matrix functions, norms, and page operations, returning single-class outputs matching MATLAB R2025b.
 - **Reference:** MATLAB R2025b (probed 2026-09-18)
 - **Found:** 2026-09-18, argcheck structural portion (linalg); list
   extended by the remainder portion same day

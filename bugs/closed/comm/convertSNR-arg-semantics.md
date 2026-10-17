@@ -1,6 +1,6 @@
 # comm — convertSNR: argument semantics diverge (positional modes vs keyword names)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (silent wrong result on the reference-documented form)
 - **Kind:** bug
 - **Found:** 2026-09-17 during the comm arity migration — R2025b probes
@@ -52,5 +52,5 @@ channel_smoke.m name-form demo at the same time.
 
 ## References
 
-- **Guard:** `DISABLED_ConvertSNRPositionalModes`
+- **Guard:** `ConvertSNRPositionalModes`
   (src/toolboxes/comm/tests/known_bugs_test.cpp)

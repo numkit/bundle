@@ -1,6 +1,6 @@
 # signal.xcorr — negative maxlag returns the full-length correlation instead of the |maxlag| window
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3
 - **Kind:** bug
 - **Found:** 2026-09-17 while writing the argcheck signal-sweep happy-path
@@ -37,7 +37,7 @@ by |maxlag| symmetrically on both sides.
 
 ## References
 
-- **Guard:** `DISABLED_XcorrNegativeMaxlagWindow`
+- **Guard:** `XcorrNegativeMaxlagWindow`
   (src/toolboxes/signal/tests/known_bugs_test.cpp)
 - The integer validation for maxlag (nk:<fn>:maxlagNotInteger) landed
   2026-09-17 — see argcheck_signal_test.cpp SignalSweepBranchMatrix.

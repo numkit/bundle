@@ -1,6 +1,6 @@
 # lang — domain validation lives in *_reg adapters (marshal-only rule violation)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (diagnostic divergence between call paths; C++ API
   bypass on sites without compute-side checks)
 - **Kind:** bug
@@ -34,8 +34,8 @@ Domain validation is split between the reg layer and the compute layer
 | comm | remaining `argcheck::expected*` in regs (pulse, base_conversions, analog, errors, arithcoding, dpcmopt) | extraction-with-validation for native-taking computes — accepted as marshalling (boundary decision, see memory); string-flag content checks stay reg-side per the compand precedent |
 | stats | fit_reg.cpp like-family `params.numel() < 2` checks in the shared emit helper | resolved 2026-09-18 as marshalling (the C++ API takes mu/sigma natives — the numel check is vector-params extraction) |
 | stats | rescale compute accepted non-numeric input the reference rejects | ✅ FIXED 2026-09-18 — compute-side rescale_argcheck (live guard RescaleTypeContract) |
-| stats | *_of helpers read doubleData() without a type contract (direct C++ path) | open — bugs/opened/stats/of-helpers-raw-doubledata.md (P2) |
-| control | feedback sign ±1 content check in reg (compute takes any int) | open — guard `DISABLED_FeedbackSignCppPathUnified` |
+| stats | *_of helpers read doubleData() without a type contract (direct C++ path) | ✅ FIXED 2026-10-17 — bugs/closed/stats/of-helpers-raw-doubledata.md |
+| control | feedback sign ±1 content check in reg (compute takes any int) | ✅ FIXED 2026-10-17 — guard `FeedbackSignCppPathUnified` live |
 
 The full per-function plan is `tools/argcheck_classification.json`
 (267 `value-contract-in-compute` functions repo-wide; pilots + the comm

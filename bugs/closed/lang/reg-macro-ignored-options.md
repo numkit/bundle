@@ -1,6 +1,6 @@
 # lang.regs — macro-generated regs silently drop documented option arguments
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (options compute wrong results instead of erroring or
   being honored)
 - **Kind:** bug
@@ -48,8 +48,7 @@ bound the arity or leave unbounded per the reference
 
 ## References
 
-- **Guard:** deferred until pickup (assert option-honoring values, e.g.
-  paddata fill and eraseBetween bounds, probed against the reference).
+- **Guard:** `RegMacroOptionsHonored` (src/bundle/tests/known_bugs_test.cpp)
 - Arity bounds landed without maxing these macros:
   bugs/opened/lang/reg-max-arity.md (builtin domain note).
 

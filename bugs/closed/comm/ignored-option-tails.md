@@ -1,6 +1,6 @@
 # comm — silently-ignored documented option tails (consolidated)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (options accepted, parsed by the reference, dropped by nk)
 - **Kind:** bug
 - **Found:** 2026-09-17 during the comm arity migration — probing the
@@ -53,5 +53,5 @@ reseeding) and biterr (aggregation mirrors the symerr flag work).
 
 ## References
 
-- **Guard:** `DISABLED_AwgnPowerTypeMustBeLast`
+- **Guard:** `AwgnPowerTypeMustBeLast`
   (src/toolboxes/comm/tests/known_bugs_test.cpp)

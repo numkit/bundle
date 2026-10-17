@@ -1,6 +1,6 @@
 # stats.reductions — residual scalar-only dim slots (zscore/range/mad/geomean/harmmean/nan* family)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (family follow-up; the parser + collapse machinery now exists)
 - **Kind:** bug
 - **Found:** 2026-09-17 while fixing the vecdim rank model — the sweep
@@ -41,8 +41,7 @@ the same three-line pattern the descriptive regs now use.
 
 ## References
 
-- **Guard:** deferred until pickup (each function gets its own guard
-  with probed reference values; the family is enumerated, not
-  per-function filed, to keep the catalog compact).
+- **Guard:** `VecdimResidual`
+  (src/toolboxes/stats/tests/known_bugs_test.cpp)
 - Fixed in the same campaign: vecdim-rank-model.md, vecdim-partial.md,
   trimmean-vecdim.md, lang/datafun-vecdim.md (all closed 2026-09-17).

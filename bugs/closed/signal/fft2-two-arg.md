@@ -1,6 +1,6 @@
 # signal.fft2 — 2-argument call computed, reference rejects it (arity hole)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (rejected-by-reference input accepted with a plausible
   result)
 - **Kind:** bug
@@ -35,5 +35,5 @@ an explicit rejection in `fft2_reg`/`ifft2_reg` for `args.size() == 2`
 with an nk-voiced error (`nk:fft2:nargin`, message noting the 1-or-3
 shape, richer than the reference's).
 
-**Guard:** `SignalKnownBug.DISABLED_Fft2TwoArgRejected` in
+**Guard:** `SignalKnownBug.Fft2TwoArgRejected` in
 `src/toolboxes/signal/tests/known_bugs_test.cpp`.

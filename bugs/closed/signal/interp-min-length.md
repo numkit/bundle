@@ -1,6 +1,6 @@
 # signal.interp — no minimum data-length check (reference rejects short inputs)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3
 - **Kind:** bug
 - **Found:** 2026-09-17 during the argcheck signal sweep probes.
@@ -34,5 +34,5 @@ shortening the filter via the n argument).
 
 ## References
 
-- **Guard:** `DISABLED_InterpMinLength`
+- **Guard:** `InterpMinLength`
   (src/toolboxes/signal/tests/known_bugs_test.cpp)

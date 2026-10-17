@@ -1,6 +1,6 @@
 # stats.*rnd — size tails are 2-D only: [m n p …] flattens, 3+ scalar sizes reject
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (rarely used forms; [m n] and m/n forms are correct)
 - **Kind:** bug
 - **Found:** 2026-09-17 while migrating the *rnd size extraction to
@@ -54,6 +54,6 @@ reg-side bound needs relaxing.
 
 ## References
 
-- **Guard:** `DISABLED_RndSizeVectorND`, `DISABLED_RndNdSizeTails`
+- **Guard:** `RndSizeVectorND`, `RndNdSizeTails`
   (src/toolboxes/stats/tests/known_bugs_test.cpp)
 - Correct forms pinned live in the same file (`RndSizeContract*`).

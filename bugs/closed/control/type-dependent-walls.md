@@ -1,6 +1,6 @@
 # control — type-dependent walls: sys-arg paths are stricter than the catalog walls
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (0a50c4d) 
 - **Severity:** P4 (extra-arg acceptance only; no wrong numerics)
 - **Kind:** bug
 - **Found:** 2026-09-17 during the control arity migration — walls probed
@@ -50,5 +50,5 @@ looseness per function.
 
 ## References
 
-- **Guard:** `DISABLED_CovarModelPathStrict`
+- **Guard:** `CovarModelPathStrict`
   (src/toolboxes/control/tests/known_bugs_test.cpp)

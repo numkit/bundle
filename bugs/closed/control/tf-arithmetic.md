@@ -1,6 +1,6 @@
 # control.tf — tf arithmetic operators (*, +, scalar*) error instead of composing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (0a50c4d) 
 - **Severity:** P2 (documented MATLAB operator errors out; composition workflows break)
 - **Kind:** bug
 - **Found:** 2026-09-12 via Play gallery generation (the PID script had to
@@ -63,7 +63,7 @@ object-model kind-dispatch design (dev-docs/handbook/object_model.md).
 
 ## References
 
-- **Guard:** `DISABLED_TfArithmeticOperators`
+- **Guard:** `TfArithmeticOperators`
   (`src/toolboxes/control/tests/known_bugs_test.cpp`)
 - `src/toolboxes/control/src/connect/connect.cpp` (series/parallel)
 - `bugs/missing.md` control section (minreal et al. — closed since)

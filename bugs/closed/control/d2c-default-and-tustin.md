@@ -1,6 +1,6 @@
 # control — d2c: default must be 'zoh'; tustin breaks on a plain stable pole
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (0a50c4d) 
 - **Severity:** P2 (default path errors on a textbook system)
 - **Kind:** bug
 - **Found:** 2026-09-17 during the control arity migration — the REPL
@@ -52,5 +52,5 @@ default; fix or guard the tustin inversion on singular realizations
 
 ## References
 
-- **Guard:** `DISABLED_D2cDefaultZoh`
+- **Guard:** `D2cDefaultZoh`
   (src/toolboxes/control/tests/known_bugs_test.cpp)

@@ -1,6 +1,6 @@
 # stats.splines — pp-struct coefs layout diverges from the reference (pieces-major rows vs dim-major rows)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (a41a306) 
 - **Severity:** P2 (cross-engine data-model divergence for every pp consumer)
 - **Kind:** bug
 - **Found:** 2026-09-19, stats argcheck campaign splines portion
@@ -46,5 +46,5 @@ the layout (break monotonicity, piece-count classes) and filed:
 
 See the block above (copy-paste runnable in both engines).
 
-**Guard:** `DISABLED_SplinePpLayout` (known_bugs_test.cpp) asserts
+**Guard:** `SplinePpLayout` (known_bugs_test.cpp) asserts
 the reference reading of the S01 case.

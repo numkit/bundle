@@ -1,8 +1,8 @@
 # signal: bandpower(x, fs, freqrange) integrates the PSD wrong (~163× off)
 
 **Kind:** bug
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_BandpowerFsIntegration (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (1267adf) 
+**Guard:** BandpowerFsIntegration (src/toolboxes/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

@@ -1,8 +1,8 @@
 # signal: decimate default filter is FIR, the reference uses an order-8 Chebyshev I
 
 **Kind:** bug
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_DecimateChebyDefault (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (1267adf) 
+**Guard:** DecimateChebyDefault (src/toolboxes/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

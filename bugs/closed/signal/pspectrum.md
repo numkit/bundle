@@ -1,6 +1,6 @@
 # signal.pspectrum — function missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (signal `03cc605`)
 - **Severity:** P2 (missing function)
 - **Kind:** missing-fn
 - **Found:** 2026-09-12 via the Play gallery capability sweep (DSP
@@ -38,7 +38,7 @@ conversion against MATLAB on `randn` + chirp fixtures.
 
 ## References
 
-- **Guard:** deferred — missing-fn entry (feature gap, not a defect)
+- **Guard:** `InstfreqTfmomentDefault`
 - tracked in `bugs/missing.md` (Transforms / Nonparametric Spectral
   Estimation / Time-Frequency Analysis sections)
 - shipped neighbours: `spectrogram`, `pwelch`, `fft`

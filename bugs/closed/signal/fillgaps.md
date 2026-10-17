@@ -1,6 +1,6 @@
 # signal.fillgaps — function missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (signal `03cc605`)
 - **Severity:** P2 (missing function)
 - **Kind:** missing-fn
 - **Found:** 2026-06 via signal.* DEEP-PROBE sweep
@@ -41,7 +41,7 @@ Reconstructing that exactly (the AR-interpolation LSQ formulation + AIC order +
 the extrapolate-and-blend dead-end.
 
 ## References
-- **Guard:** `DISABLED_Fillgaps`
+- **Guard:** `Fillgaps`
 - new file under `src/toolboxes/signal/src/smoothing/` or `.../measurements/`
 - MATLAB `doc fillgaps`
 - related shipped: `arburg`, `aryule`, `levinson`

@@ -1,6 +1,6 @@
 # signal.instfreq / signal.instbw — wrong values (broken)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (signal `03cc605`)
 - **Severity:** P1 (wrong result)
 - **Kind:** bug
 - **Found:** 2026-06 via DEEP-PROBE (also long-noted as "instfreq BROKEN")
@@ -101,6 +101,6 @@ fix the sign/scaling, validate against a linear chirp (should rise linearly
 from f0 to f1). Same TFD underlies `instbw` (2nd central moment). Medium.
 
 ## References
-- **Guard:** `InstfreqHilbertMethodExact` (live, the fixed half) + `DISABLED_InstfreqTfmomentDefault` (the pspectrum-pending half)
+- **Guard:** `InstfreqHilbertMethodExact` + `InstfreqTfmomentDefault`
 - `src/toolboxes/signal/src/.../instfreq*`, `instbw*`
 - MATLAB `doc instfreq` (note: default is the spectral-moment method)

@@ -1,6 +1,6 @@
 # wavelet.centfrq / scal2frq — wavelet center-frequency helpers missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (wavelet `a67a8b6`)
 - **Severity:** P2 (missing functions)
 - **Kind:** missing-fn
 - **Found:** 2026-06-04 via missing-fn sweep
@@ -48,7 +48,7 @@ filters) first, then `centfrq = (peak_bin−1)/T` (with FFT-fold),
 (IP) — reconstruct from behavior + wavelet theory.
 
 ## References
-- **Guard:** `DISABLED_CentfrqScal2frq`
+- **Guard:** `CentfrqScal2frq`
 - new file under `src/toolboxes/wavelet/src/...`; reuse the wavelet shape functions
 - blocked on: a `wavefun` cascade (orthogonal `psi` from `wfilters`)
 - MATLAB `doc centfrq`, `doc scal2frq`

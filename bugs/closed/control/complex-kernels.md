@@ -1,6 +1,6 @@
 # control — complex kernels: reference computes complex, nk kernels are double-only
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (honest stubs; no wrong numerics shipped)
 - **Kind:** stub
 - **Found:** 2026-09-18 during the control argcheck portion — the raw

@@ -1,5 +1,6 @@
 # Image complex kernels — reference computes, nk stubs
 
+- **Status:** ✅ FIXED (2026-10-17)
 - **Kind:** stub
 - **Found:** 2026-09-19, image argcheck portion (probe12/13 batteries vs
   MATLAB R2025b).

@@ -1,8 +1,8 @@
 # signal: complex-input branches the double kernels cannot compute yet
 
 **Kind:** stub
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_Xcorr2Complex, DISABLED_SosfiltComplexX, DISABLED_PolystabComplex (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (2026-10-17)
+**Guard:** Xcorr2Complex, SosfiltComplexX, PolystabComplex (src/toolboxes/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

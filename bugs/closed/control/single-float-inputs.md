@@ -1,6 +1,6 @@
 # control — single-float inputs: acker returns single in the reference
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P4 (stubbed honestly; single is rare in control scripts)
 - **Kind:** stub
 - **Found:** 2026-09-18 during the control argcheck portion (probe10).

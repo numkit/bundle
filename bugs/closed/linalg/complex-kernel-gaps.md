@@ -1,6 +1,6 @@
 # linalg — complex inputs rejected by real-only kernels
 
-- **Status:** 🟡 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Kind:** stub
 - **Namespace:** linalg
 - **Found:** 2026-09-18, argcheck remainder portion (probe batteries vs

@@ -1,0 +1,13 @@
+{
+  "name": "bwlabel",
+  "namespace": "image",
+  "setup": "",
+  "expr": "[L, n] = bwlabel(eye(3)); r1 = double(n); r2 = L(1,1);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = bwlabel(...). Spec-extension batch 2026-05-09."
+}

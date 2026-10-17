@@ -1,0 +1,12 @@
+{
+  "name": "sphere",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[X, Y, Z] = sphere(5); r1 = double(numel(X));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = sphere(...). Spec-extension batch 2026-05-09."
+}

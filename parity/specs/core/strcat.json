@@ -1,0 +1,14 @@
+{
+  "name": "strcat",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(strcmp(strcat(\"ab\", \"cd\"), \"abcd\")); r2 = double(strcmp(strcat(\"a\", \"b\", \"c\"), \"abc\")); r3 = double(strlength(strcat(\"xy\", \"z\")));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = strcat(...). String op. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity. FP uses double(strcmp(...)) booleans because the harness compares numerics."
+}

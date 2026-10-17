@@ -1,0 +1,12 @@
+{
+  "name": "bwarea",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = double(bwarea(eye(4)) > 0);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = bwarea(BW). Pratt area estimate. KNOWN GAP: nk returns integer pixel count (4) vs MATLAB's pattern-weighted estimate (4.75). Documented as separate ТЗ; only positive-result structural check pinned."
+}

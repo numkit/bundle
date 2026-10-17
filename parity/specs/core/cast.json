@@ -1,0 +1,14 @@
+{
+  "name": "cast",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(cast(3.7, \"int32\")); r2 = double(cast(255, \"uint8\")); r3 = double(cast(-100, \"int8\"));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = cast(...). Spec-extension batch 2026-05-09."
+}

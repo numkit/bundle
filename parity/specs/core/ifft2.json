@@ -1,0 +1,13 @@
+{
+  "name": "ifft2",
+  "namespace": "core",
+  "setup": "",
+  "expr": "F = fft2([1 2; 3 4]); A = ifft2(F); r1 = real(A(1,1)); r2 = real(A(2,2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = ifft2(...). Spec-extension batch 2026-05-09."
+}

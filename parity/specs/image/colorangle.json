@@ -1,0 +1,12 @@
+{
+  "name": "colorangle",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = colorangle([1 0 0], [0 1 0]);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = colorangle(...). Spec-extension batch 2026-05-09."
+}

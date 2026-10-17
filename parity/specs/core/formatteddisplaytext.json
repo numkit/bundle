@@ -1,0 +1,12 @@
+{
+  "name": "formatteddisplaytext",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = 1;",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: s = formattedDisplayText(x). KNOWN GAP: nk does NOT implement formattedDisplayText (undefined function). Documented as separate ТЗ."
+}

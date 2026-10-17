@@ -1,0 +1,14 @@
+{
+  "name": "swapbytes",
+  "namespace": "core",
+  "setup": "x = uint32(1:1000000);",
+  "expr": "y = swapbytes(x);",
+  "iters": 100,
+  "tol": 1e-09,
+  "comment": "Sig: Y = swapbytes(X). 1M uint32 endian-swap. 50 iters. (uint out — fp via double cast).",
+  "fingerprint": [
+    "double(numel(y))",
+    "double(y(1))",
+    "double(y(end))"
+  ]
+}

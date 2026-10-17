@@ -1,0 +1,22 @@
+{
+  "name": "detcoef2",
+  "namespace": "wavelet",
+  "setup": "[C, S] = wavedec2(magic(8)/10, 2, 'haar');",
+  "expr": "h1 = detcoef2('h', C, S, 1); v1 = detcoef2('v', C, S, 1); d1 = detcoef2('d', C, S, 1); h2 = detcoef2('h', C, S, 2); hs = detcoef2('h', single(C), S, 1); hu = detcoef2('h', uint16(abs(C)), S, 1); hl = detcoef2('h', logical(C~=0), S, 1); hx = detcoef2('h', complex(C,1), S, 1);",
+  "iters": 3,
+  "tol": 1e-12,
+  "fingerprint": [
+    "h1(1,1)",
+    "h1(4,4)",
+    "v1(2,3)",
+    "d1(1,2)",
+    "h2(1,1)",
+    "h2(2,2)",
+    "double(hs(1,1))",
+    "double(hu(1,1))",
+    "double(hl(1,1))",
+    "real(hx(1,1))",
+    "imag(hx(1,1))"
+  ],
+  "comment": "Sig: D = detcoef2(type, C, S, level) / [H,V,D] = detcoef2('all', C, S, level). Argcheck portion 2026-09-19: C is a FREE GATHER - every numeric class plus complex passes with the class preserved in the result (single = single, uint16 = uint16, logical = logical, complex = complex); S must be real numeric (char/complex reject, probed R2025b). Branches: h/v/d at levels 1-2, class preservation x4."
+}

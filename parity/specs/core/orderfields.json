@@ -1,0 +1,12 @@
+{
+  "name": "orderfields",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s.b=2; s.a=1; t = orderfields(s); f = fieldnames(t); r1 = double(strcmp(f{1}, \"a\"));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = orderfields(...). Spec-extension batch 2026-05-09."
+}

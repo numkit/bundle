@@ -1,0 +1,13 @@
+{
+  "name": "checkerboard",
+  "namespace": "image",
+  "setup": "",
+  "expr": "I = checkerboard(2, 1); r1 = double(size(I,1)); r2 = double(size(I,2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = checkerboard(...). Spec-extension batch 2026-05-09."
+}

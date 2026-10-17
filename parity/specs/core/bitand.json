@@ -1,0 +1,14 @@
+{
+  "name": "bitand",
+  "namespace": "core",
+  "setup": "a = uint32([0xF0, 0xFF, 0x55]); b = uint32([0x0F, 0x33, 0xAA]);",
+  "expr": "r = bitand(a, b);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "double(r(1))",
+    "double(r(2))",
+    "double(r(3))"
+  ],
+  "comment": "Sig: r = bitand(...). Bitwise integer op. Spec-extension batch 2026-05-09 — verified bit-identical MATLAB R2025b."
+}

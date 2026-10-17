@@ -1,0 +1,13 @@
+{
+  "name": "mag2db",
+  "namespace": "control",
+  "setup": "",
+  "expr": "r1 = mag2db(1); r2 = mag2db(10);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = mag2db(...). Spec-extension batch 2026-05-09."
+}

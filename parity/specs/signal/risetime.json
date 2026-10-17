@@ -1,0 +1,16 @@
+{
+  "name": "risetime",
+  "namespace": "signal",
+  "setup": "x = [0 0 0 1 1 1 1];",
+  "expr": "[R,LT,UT,LL,UL] = risetime(x,4); r1=double(R); r2=double(LT); r3=double(UT); r4=double(LL); r5=double(UL);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+  ],
+  "comment": "Sig: [R,LT,UT,LL,UL]=risetime(x,fs). Sharp single-sample edge: R=0.198 (the 10% and 90% levels both cross in one interval — was 0.224 before the findTransitions fix). LT/UT = lower/upper crossing times; LL/UL = reference levels. Fixes bugs/signal/risetime-falltime-outputs.md (value + outputs). vs MATLAB R2025b."
+}

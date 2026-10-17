@@ -1,0 +1,12 @@
+{
+  "name": "extractbetween",
+  "namespace": "core",
+  "setup": "",
+  "expr": "c = extractBetween(\"hello (world) end\", \"(\", \")\"); r1 = double(numel(c));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: position-based string op (MATLAB canonical: extractBetween). Bit-identical with MATLAB R2025b. NK also registers a lowercase alias for convenience."
+}

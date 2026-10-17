@@ -1,0 +1,12 @@
+{
+  "name": "bweuler",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = double(bweuler(eye(4)));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = bweuler(...). Spec-extension batch 2026-05-09."
+}

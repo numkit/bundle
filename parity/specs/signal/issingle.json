@@ -1,0 +1,12 @@
+{
+  "name": "issingle",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "r1 = 1;",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "N/A (definite): MATLAB R2025b has no top-level issingle() function -- canonical spelling is isa(x, 'single'). NK ships issingle as a convenience predicate (verified: issingle(single(1))=1, issingle(1.0)=0). Definite N/A."
+}

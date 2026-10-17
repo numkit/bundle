@@ -1,0 +1,12 @@
+{
+  "name": "textscan",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = tempname; fid = fopen(fname, 'w'); fprintf(fid, '1 2 3'); fclose(fid); fid = fopen(fname, 'r'); c = textscan(fid, '%d'); fclose(fid); delete(fname); r1 = double(numel(c{1}));",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip in single snippet via tempname). textscan returns cell of parsed columns -- 3 elements."
+}

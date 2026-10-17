@@ -1,0 +1,14 @@
+{
+  "name": "startsWith",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = startsWith(\"hello\", \"he\"); r2 = startsWith(\"hello\", \"ell\"); r3 = startsWith(\"abc\", \"\");",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = startsWith(...). String op. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

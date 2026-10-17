@@ -1,0 +1,13 @@
+{
+  "name": "ind2sub",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[i, j] = ind2sub([3 4], 5); r1 = double(i); r2 = double(j);",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = ind2sub(...). Spec-extension batch 2026-05-09."
+}

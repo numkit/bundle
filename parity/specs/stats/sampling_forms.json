@@ -1,0 +1,30 @@
+{
+  "name": "sampling_forms",
+  "namespace": "stats",
+  "setup": "",
+  "expr": "v1 = numel(randsample(10, 0)); v2 = numel(randsample(0, 0, true)); v3 = numel(randsample(10, 3, true)); rng(1); y1 = randsample([10 20 30 40 50], 5); v4 = sum(y1); v5 = size(y1, 2); rng(2); c1 = randsample(10, 3, true); v6 = size(c1, 1); rng(3); r1 = randsample(1:5, 3, false); v7 = size(r1, 2); v8 = numel(sort(r1)); rng(5); y2 = randsample(10, 8, true, ones(1, 10)); v9 = all(y2 >= 1 & y2 <= 10); v10 = numel(datasample(1:10, 11)); rng(1); y3 = datasample(1:10, 10, 'Replace', false); v11 = sum(y3); y4 = datasample(ones(3,1), 2); v12 = size(y4, 1); y5 = datasample([1 2 3], 2); v13 = size(y5, 2); y6 = datasample([1 2 3; 4 5 6], 1, 2); v14 = size(y6, 1); rng(4); yw = datasample(1:10, 200, 'Replace', true, 'Weights', [0 1 0 0 0 0 0 0 0 0]); v15 = all(yw == 2); rng(1); L = lhsnorm([0 0], [1 .5; .5 1], 200); v16 = size(L, 1); v17 = size(L, 2); rng(2); L2 = lhsnorm([0 0], eye(2), 3, 'off'); v18 = size(L2, 1); rng(3); L3 = lhsnorm([0 0], eye(2), 3, 7); v19 = size(L3, 2);",
+  "iters": 5,
+  "tol": 1e-09,
+  "comment": "Sampling-family argcheck-drain spec 2026-09-19 (probe75 S/D/L): randsample count/population forms (column vs row orientation), k=0 and empty-population shapes, full-permutation sum invariants (deterministic under any RNG), weighted draws confined to positive-weight slots; datasample default-dim by shape, explicit positional dim, Replace-logical contract exercised via errors in the gtest; lhsnorm sizes incl. the non-'on' dosmooth off-branch (probe75 L01: a numeric dosmooth takes the off branch, no error). Draw VALUES are RNG-bound (randi/randperm cascades pending - filed) so only RNG-invariant quantities are fingerprinted.",
+  "fingerprint": [
+    "v1",
+    "v2",
+    "v3",
+    "v4",
+    "v5",
+    "v6",
+    "v7",
+    "v8",
+    "v9",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19"
+  ]
+}

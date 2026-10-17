@@ -1,0 +1,12 @@
+{
+  "name": "getfield",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s.x = 42; r1 = getfield(s, \"x\");",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = getfield(...). Spec-extension batch 2026-05-09."
+}

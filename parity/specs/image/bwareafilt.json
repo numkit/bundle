@@ -1,0 +1,12 @@
+{
+  "name": "bwareafilt",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW = bwareafilt(logical(eye(4)), 1); r1 = double(numel(BW));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = bwareafilt(...). Spec-extension batch 2026-05-09. [2026-09-19: double BW rejected by the reference (logical-only, probed); spec input made logical.]"
+}

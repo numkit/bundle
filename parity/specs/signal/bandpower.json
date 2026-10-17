@@ -1,0 +1,13 @@
+{
+  "name": "bandpower",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "x = sin(2*pi*100*(0:999)/1000); r1 = bandpower(x); r3 = bandpower((1:8)+1i);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r3"
+  ],
+  "comment": "Sig: r = bandpower(...). Structural portion 2026-09-18: the (x, fs) form WITHOUT freqrange is not a legal reference call (probed FreqRangeMissing) — nk rejects it with nk:bandpower:freqRangeRequired; freqrange must be exactly 2 elements; complex 1-arg power = mean(|x|^2) (probed 26.5 for (1:8)+1i). The fs+freqrange VALUES diverge (nk 81.47 vs reference 0.5 — PSD normalization, bugs/opened/signal/bandpower-fs-integration.md) so that form is NOT fingerprinted until the fix lands. The 'psd' spectrum forms are a filed stub (bugs/opened/signal/bandpower-psd-forms.md)."
+}

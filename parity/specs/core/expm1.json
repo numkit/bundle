@@ -1,0 +1,18 @@
+{
+  "name": "expm1",
+  "namespace": "core",
+  "setup": "x = [-1e-10, 0, 1e-10, 1, 2];",
+  "expr": "r = expm1(x);",
+  "iters": 15,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r(1)",
+    "r(2)",
+    "r(3)",
+    "r(4)",
+    "r(5)"
+  ],
+  "comment": "Sig: r = expm1(...). Element-wise libm-backed primitive. Spec-extension batch 2026-05-09 verified bit-identical MATLAB R2025b.",
+  "bench_setup": "xb = mod((1:N)*7919,1000)*0.001;",
+  "bench_expr": "rb=expm1(xb);"
+}

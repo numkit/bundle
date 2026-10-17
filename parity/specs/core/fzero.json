@@ -1,0 +1,15 @@
+{
+  "name": "fzero",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = fzero(@(x) x^2 - 4, 1); [x, fval, ef] = fzero(@(x) x^2 - 4, [0 10]);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "x",
+    "fval",
+    "ef"
+  ],
+  "comment": "Sig: r = fzero(fn, x0|[a,b]); [x, fval, exitflag] = fzero(...). fval = fn(x) at the root; exitflag = 1 on success (nk throws on failure, so the success path always returns 1). The 4th 'output' struct is deferred (errors loudly). Queue-clearing 2026-05-29: fval/exitflag outputs added."
+}

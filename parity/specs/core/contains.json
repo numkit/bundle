@@ -1,0 +1,14 @@
+{
+  "name": "contains",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = contains(\"hello\", \"ell\"); r2 = contains(\"hello\", \"xyz\"); r3 = contains(\"abc\", \"\");",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = contains(...). String op. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

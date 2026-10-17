@@ -1,0 +1,4979 @@
+{
+ "comment": "Applied arity bounds, builtin + signal + image + stats + comm + control domains (2026-09-17). max=null: reference is vararg/unbounded - min-only check. Sources: R2025b nargin probe + behavioral tooManyInputs probe + junk-tail/valid-prefix verification; see bugs/opened/lang/reg-max-arity.md.",
+ "builtin": {
+  "accumarray": {
+   "min": 1,
+   "max": 6
+  },
+  "airy": {
+   "min": 1,
+   "max": 3
+  },
+  "all": {
+   "min": 1,
+   "max": 2
+  },
+  "allfinite": {
+   "min": 1,
+   "max": 1
+  },
+  "allunique": {
+   "min": 1,
+   "max": 2
+  },
+  "and": {
+   "min": 1,
+   "max": 2
+  },
+  "angle": {
+   "min": 1,
+   "max": 1
+  },
+  "any": {
+   "min": 1,
+   "max": 2
+  },
+  "anymissing": {
+   "min": 1,
+   "max": 1
+  },
+  "anynan": {
+   "min": 1,
+   "max": 1
+  },
+  "atan2": {
+   "min": 1,
+   "max": 2
+  },
+  "atan2d": {
+   "min": 1,
+   "max": 2
+  },
+  "base2dec": {
+   "min": 1,
+   "max": 2
+  },
+  "besselh": {
+   "min": 1,
+   "max": 4
+  },
+  "beta": {
+   "min": 1,
+   "max": 2
+  },
+  "betainc": {
+   "min": 1,
+   "max": 4
+  },
+  "betaincinv": {
+   "min": 1,
+   "max": 4
+  },
+  "betaln": {
+   "min": 1,
+   "max": 2
+  },
+  "bin2dec": {
+   "min": 1,
+   "max": 1
+  },
+  "bitand": {
+   "min": 2,
+   "max": 3
+  },
+  "bitcmp": {
+   "min": 1,
+   "max": 2
+  },
+  "bitget": {
+   "min": 1,
+   "max": 3
+  },
+  "bitor": {
+   "min": 2,
+   "max": 3
+  },
+  "bitset": {
+   "min": 1,
+   "max": 4
+  },
+  "bitshift": {
+   "min": 2,
+   "max": 3
+  },
+  "bitxor": {
+   "min": 2,
+   "max": 3
+  },
+  "blanks": {
+   "min": 1,
+   "max": 1
+  },
+  "boundary": {
+   "min": 1,
+   "max": 4
+  },
+  "cart2pol": {
+   "min": 1,
+   "max": 3
+  },
+  "cart2sph": {
+   "min": 1,
+   "max": 3
+  },
+  "cast": {
+   "min": 2,
+   "max": 3
+  },
+  "cat": {
+   "min": 2,
+   "max": null
+  },
+  "char": {
+   "min": 1,
+   "max": null
+  },
+  "circshift": {
+   "min": 1,
+   "max": 3
+  },
+  "colon": {
+   "min": 1,
+   "max": 3
+  },
+  "colperm": {
+   "min": 1,
+   "max": 1
+  },
+  "compan": {
+   "min": 1,
+   "max": 1
+  },
+  "complex": {
+   "min": 1,
+   "max": 2
+  },
+  "compose": {
+   "min": 2,
+   "max": null
+  },
+  "conj": {
+   "min": 1,
+   "max": 1
+  },
+  "contains": {
+   "min": 2,
+   "max": null
+  },
+  "convertCharsToStrings": {
+   "min": 1,
+   "max": null
+  },
+  "convertStringsToChars": {
+   "min": 1,
+   "max": null
+  },
+  "convhull": {
+   "min": 2,
+   "max": null
+  },
+  "count": {
+   "min": 2,
+   "max": null
+  },
+  "ctranspose": {
+   "min": 1,
+   "max": 1
+  },
+  "cummax": {
+   "min": 1,
+   "max": 4
+  },
+  "cummin": {
+   "min": 1,
+   "max": 4
+  },
+  "cumprod": {
+   "min": 1,
+   "max": 4
+  },
+  "cumsum": {
+   "min": 1,
+   "max": 4
+  },
+  "cumtrapz": {
+   "min": 1,
+   "max": 3
+  },
+  "deblank": {
+   "min": 1,
+   "max": 1
+  },
+  "dec2base": {
+   "min": 1,
+   "max": 3
+  },
+  "dec2bin": {
+   "min": 1,
+   "max": 2
+  },
+  "dec2hex": {
+   "min": 1,
+   "max": 2
+  },
+  "del2": {
+   "min": 1,
+   "max": null
+  },
+  "delaunay": {
+   "min": 2,
+   "max": null
+  },
+  "diag": {
+   "min": 1,
+   "max": 2
+  },
+  "diff": {
+   "min": 1,
+   "max": 3
+  },
+  "disp": {
+   "min": 1,
+   "max": 1
+  },
+  "ellipj": {
+   "min": 1,
+   "max": 3
+  },
+  "ellipke": {
+   "min": 1,
+   "max": 2
+  },
+  "ellipsoid": {
+   "min": 6,
+   "max": null
+  },
+  "endsWith": {
+   "min": 2,
+   "max": null
+  },
+  "eq": {
+   "min": 2,
+   "max": 2
+  },
+  "erase": {
+   "min": 1,
+   "max": 2
+  },
+  "extract": {
+   "min": 1,
+   "max": 2
+  },
+  "extractAfter": {
+   "min": 2,
+   "max": 2
+  },
+  "extractBefore": {
+   "min": 2,
+   "max": 2
+  },
+  "extractBetween": {
+   "min": 3,
+   "max": null
+  },
+  "eye": {
+   "min": 1,
+   "max": 4
+  },
+  "factor": {
+   "min": 1,
+   "max": 1
+  },
+  "factorial": {
+   "min": 1,
+   "max": 1
+  },
+  "find": {
+   "min": 1,
+   "max": 3
+  },
+  "findgroups": {
+   "min": 1,
+   "max": null
+  },
+  "flintmax": {
+   "min": 0,
+   "max": 2
+  },
+  "flip": {
+   "min": 1,
+   "max": 2
+  },
+  "fliplr": {
+   "min": 1,
+   "max": 1
+  },
+  "flipud": {
+   "min": 1,
+   "max": 1
+  },
+  "fprintf": {
+   "min": 1,
+   "max": null
+  },
+  "fscanf": {
+   "min": 1,
+   "max": 3
+  },
+  "gammainc": {
+   "min": 1,
+   "max": 3
+  },
+  "gammaincinv": {
+   "min": 1,
+   "max": 3
+  },
+  "gcd": {
+   "min": 1,
+   "max": 2
+  },
+  "ge": {
+   "min": 2,
+   "max": 2
+  },
+  "gradient": {
+   "min": 1,
+   "max": null
+  },
+  "griddata": {
+   "min": 5,
+   "max": null
+  },
+  "griddatan": {
+   "min": 1,
+   "max": 5
+  },
+  "groupcounts": {
+   "min": 1,
+   "max": null
+  },
+  "groupfilter": {
+   "min": 3,
+   "max": null
+  },
+  "groupsummary": {
+   "min": 3,
+   "max": null
+  },
+  "grouptransform": {
+   "min": 3,
+   "max": null
+  },
+  "gt": {
+   "min": 2,
+   "max": 2
+  },
+  "hadamard": {
+   "min": 1,
+   "max": 2
+  },
+  "hankel": {
+   "min": 1,
+   "max": 2
+  },
+  "hex2dec": {
+   "min": 1,
+   "max": 1
+  },
+  "hex2num": {
+   "min": 1,
+   "max": 1
+  },
+  "hilb": {
+   "min": 1,
+   "max": 2
+  },
+  "histc": {
+   "min": 1,
+   "max": 3
+  },
+  "histcounts": {
+   "min": 1,
+   "max": null
+  },
+  "histcounts2": {
+   "min": 2,
+   "max": null
+  },
+  "hypot": {
+   "min": 1,
+   "max": 2
+  },
+  "imag": {
+   "min": 1,
+   "max": 1
+  },
+  "ind2sub": {
+   "min": 1,
+   "max": 2
+  },
+  "inpolygon": {
+   "min": 1,
+   "max": 4
+  },
+  "int2str": {
+   "min": 1,
+   "max": 1
+  },
+  "integral2": {
+   "min": 5,
+   "max": null
+  },
+  "integral3": {
+   "min": 1,
+   "max": 7
+  },
+  "interp1": {
+   "min": 1,
+   "max": 5
+  },
+  "interp2": {
+   "min": 1,
+   "max": 7
+  },
+  "interp3": {
+   "min": 4,
+   "max": null
+  },
+  "interpn": {
+   "min": 1,
+   "max": null
+  },
+  "intersect": {
+   "min": 1,
+   "max": 4
+  },
+  "intmax": {
+   "min": 0,
+   "max": 2
+  },
+  "intmin": {
+   "min": 0,
+   "max": 2
+  },
+  "invhilb": {
+   "min": 1,
+   "max": 2
+  },
+  "ipermute": {
+   "min": 1,
+   "max": 2
+  },
+  "iscell": {
+   "min": 1,
+   "max": 1
+  },
+  "ischar": {
+   "min": 1,
+   "max": 1
+  },
+  "iscolumn": {
+   "min": 1,
+   "max": 1
+  },
+  "isempty": {
+   "min": 1,
+   "max": 1
+  },
+  "isequal": {
+   "min": 2,
+   "max": null
+  },
+  "isequaln": {
+   "min": 2,
+   "max": null
+  },
+  "isfinite": {
+   "min": 1,
+   "max": 1
+  },
+  "isfloat": {
+   "min": 1,
+   "max": 1
+  },
+  "isinf": {
+   "min": 1,
+   "max": 1
+  },
+  "isinteger": {
+   "min": 1,
+   "max": 1
+  },
+  "isletter": {
+   "min": 1,
+   "max": 1
+  },
+  "islogical": {
+   "min": 1,
+   "max": 1
+  },
+  "ismatrix": {
+   "min": 1,
+   "max": 1
+  },
+  "ismember": {
+   "min": 1,
+   "max": 4
+  },
+  "ismembertol": {
+   "min": 2,
+   "max": null
+  },
+  "ismissing": {
+   "min": 1,
+   "max": null
+  },
+  "isnan": {
+   "min": 1,
+   "max": 1
+  },
+  "isnumeric": {
+   "min": 1,
+   "max": 1
+  },
+  "isprime": {
+   "min": 1,
+   "max": 1
+  },
+  "isrow": {
+   "min": 1,
+   "max": 1
+  },
+  "issingle": {
+   "min": 1,
+   "max": 1
+  },
+  "issorted": {
+   "min": 1,
+   "max": null
+  },
+  "isspace": {
+   "min": 1,
+   "max": 1
+  },
+  "issparse": {
+   "min": 1,
+   "max": 1
+  },
+  "isstring": {
+   "min": 1,
+   "max": 1
+  },
+  "isstringscalar": {
+   "min": 1,
+   "max": 1
+  },
+  "isstrprop": {
+   "min": 1,
+   "max": 2
+  },
+  "isstruct": {
+   "min": 1,
+   "max": 1
+  },
+  "isuniform": {
+   "min": 1,
+   "max": 1
+  },
+  "isvector": {
+   "min": 1,
+   "max": 1
+  },
+  "join": {
+   "min": 1,
+   "max": 3
+  },
+  "lcm": {
+   "min": 2,
+   "max": 2
+  },
+  "ldivide": {
+   "min": 1,
+   "max": 2
+  },
+  "le": {
+   "min": 2,
+   "max": 2
+  },
+  "legendre": {
+   "min": 1,
+   "max": 3
+  },
+  "length": {
+   "min": 1,
+   "max": 1
+  },
+  "linspace": {
+   "min": 1,
+   "max": 3
+  },
+  "logical": {
+   "min": 1,
+   "max": 1
+  },
+  "logspace": {
+   "min": 1,
+   "max": 3
+  },
+  "lower": {
+   "min": 1,
+   "max": 1
+  },
+  "lt": {
+   "min": 2,
+   "max": 2
+  },
+  "magic": {
+   "min": 1,
+   "max": 1
+  },
+  "makima": {
+   "min": 1,
+   "max": 3
+  },
+  "mat2str": {
+   "min": 1,
+   "max": 3
+  },
+  "matches": {
+   "min": 2,
+   "max": null
+  },
+  "matchpairs": {
+   "min": 1,
+   "max": 3
+  },
+  "max": {
+   "min": 1,
+   "max": 4
+  },
+  "meshgrid": {
+   "min": 1,
+   "max": 3
+  },
+  "min": {
+   "min": 1,
+   "max": 4
+  },
+  "minus": {
+   "min": 2,
+   "max": 2
+  },
+  "mkpp": {
+   "min": 1,
+   "max": 3
+  },
+  "mldivide": {
+   "min": 2,
+   "max": 2
+  },
+  "mod": {
+   "min": 1,
+   "max": 2
+  },
+  "mpower": {
+   "min": 2,
+   "max": 2
+  },
+  "mrdivide": {
+   "min": 2,
+   "max": 2
+  },
+  "mtimes": {
+   "min": 2,
+   "max": 2
+  },
+  "nchoosek": {
+   "min": 1,
+   "max": 2
+  },
+  "ndgrid": {
+   "min": 2,
+   "max": null
+  },
+  "ndims": {
+   "min": 1,
+   "max": 1
+  },
+  "ne": {
+   "min": 2,
+   "max": 2
+  },
+  "nnz": {
+   "min": 1,
+   "max": 1
+  },
+  "nonzeros": {
+   "min": 1,
+   "max": 1
+  },
+  "not": {
+   "min": 1,
+   "max": 1
+  },
+  "nthroot": {
+   "min": 1,
+   "max": 2
+  },
+  "num2hex": {
+   "min": 1,
+   "max": 1
+  },
+  "num2str": {
+   "min": 1,
+   "max": 2
+  },
+  "numel": {
+   "min": 1,
+   "max": null
+  },
+  "numunique": {
+   "min": 1,
+   "max": 2
+  },
+  "or": {
+   "min": 1,
+   "max": 2
+  },
+  "pad": {
+   "min": 1,
+   "max": 4
+  },
+  "padecoef": {
+   "min": 1,
+   "max": 2
+  },
+  "pagectranspose": {
+   "min": 1,
+   "max": 1
+  },
+  "pagemtimes": {
+   "min": 1,
+   "max": 4
+  },
+  "pagetranspose": {
+   "min": 1,
+   "max": 1
+  },
+  "pascal": {
+   "min": 1,
+   "max": 3
+  },
+  "pchip": {
+   "min": 1,
+   "max": 3
+  },
+  "peaks": {
+   "min": 1,
+   "max": 2
+  },
+  "perms": {
+   "min": 1,
+   "max": 1
+  },
+  "permute": {
+   "min": 1,
+   "max": 2
+  },
+  "plus": {
+   "min": 2,
+   "max": 2
+  },
+  "pol2cart": {
+   "min": 1,
+   "max": 3
+  },
+  "poly": {
+   "min": 1,
+   "max": 1
+  },
+  "polyarea": {
+   "min": 1,
+   "max": 3
+  },
+  "polyder": {
+   "min": 1,
+   "max": 2
+  },
+  "polydiv": {
+   "min": 1,
+   "max": 2
+  },
+  "polyfit": {
+   "min": 1,
+   "max": 3
+  },
+  "polyint": {
+   "min": 1,
+   "max": 2
+  },
+  "polyval": {
+   "min": 1,
+   "max": 4
+  },
+  "polyvalm": {
+   "min": 1,
+   "max": 2
+  },
+  "pow2": {
+   "min": 1,
+   "max": 2
+  },
+  "power": {
+   "min": 2,
+   "max": 2
+  },
+  "ppval": {
+   "min": 1,
+   "max": 2
+  },
+  "primes": {
+   "min": 1,
+   "max": 1
+  },
+  "quad2d": {
+   "min": 5,
+   "max": null
+  },
+  "quadgk": {
+   "min": 3,
+   "max": null
+  },
+  "randi": {
+   "min": 1,
+   "max": null
+  },
+  "randperm": {
+   "min": 1,
+   "max": 2
+  },
+  "rat": {
+   "min": 1,
+   "max": 2
+  },
+  "rats": {
+   "min": 1,
+   "max": 2
+  },
+  "rdivide": {
+   "min": 2,
+   "max": 2
+  },
+  "real": {
+   "min": 1,
+   "max": 1
+  },
+  "realmax": {
+   "min": 0,
+   "max": 2
+  },
+  "realmin": {
+   "min": 0,
+   "max": 2
+  },
+  "realpow": {
+   "min": 1,
+   "max": 2
+  },
+  "regexprep": {
+   "min": 3,
+   "max": null
+  },
+  "regexptranslate": {
+   "min": 1,
+   "max": 3
+  },
+  "rem": {
+   "min": 1,
+   "max": 2
+  },
+  "repelem": {
+   "min": 2,
+   "max": null
+  },
+  "replace": {
+   "min": 1,
+   "max": 3
+  },
+  "replaceBetween": {
+   "min": 4,
+   "max": null
+  },
+  "repmat": {
+   "min": 1,
+   "max": null
+  },
+  "reshape": {
+   "min": 2,
+   "max": null
+  },
+  "residue": {
+   "min": 1,
+   "max": 3
+  },
+  "residuez": {
+   "min": 1,
+   "max": 3
+  },
+  "reverse": {
+   "min": 1,
+   "max": 1
+  },
+  "rng": {
+   "min": 0,
+   "max": 2
+  },
+  "roots": {
+   "min": 1,
+   "max": 1
+  },
+  "rosser": {
+   "min": 0,
+   "max": 0
+  },
+  "rot90": {
+   "min": 1,
+   "max": 2
+  },
+  "round": {
+   "min": 1,
+   "max": 5
+  },
+  "setdiff": {
+   "min": 1,
+   "max": 4
+  },
+  "setxor": {
+   "min": 1,
+   "max": 4
+  },
+  "shiftdim": {
+   "min": 1,
+   "max": 2
+  },
+  "size": {
+   "min": 1,
+   "max": null
+  },
+  "sort": {
+   "min": 1,
+   "max": null
+  },
+  "sortrows": {
+   "min": 1,
+   "max": null
+  },
+  "sparse": {
+   "min": 1,
+   "max": 6
+  },
+  "sph2cart": {
+   "min": 1,
+   "max": 3
+  },
+  "spline": {
+   "min": 1,
+   "max": 3
+  },
+  "split": {
+   "min": 1,
+   "max": 3
+  },
+  "splitapply": {
+   "min": 3,
+   "max": null
+  },
+  "splitlines": {
+   "min": 1,
+   "max": 1
+  },
+  "squeeze": {
+   "min": 1,
+   "max": 1
+  },
+  "sscanf": {
+   "min": 1,
+   "max": 3
+  },
+  "standardizeMissing": {
+   "min": 2,
+   "max": null
+  },
+  "startsWith": {
+   "min": 2,
+   "max": null
+  },
+  "str2double": {
+   "min": 1,
+   "max": 1
+  },
+  "str2num": {
+   "min": 1,
+   "max": null
+  },
+  "strcmp": {
+   "min": 1,
+   "max": 2
+  },
+  "strcmpi": {
+   "min": 1,
+   "max": 2
+  },
+  "strfind": {
+   "min": 1,
+   "max": 2
+  },
+  "strip": {
+   "min": 1,
+   "max": 3
+  },
+  "strjoin": {
+   "min": 1,
+   "max": 2
+  },
+  "strjust": {
+   "min": 1,
+   "max": 2
+  },
+  "strlength": {
+   "min": 1,
+   "max": 1
+  },
+  "strncmp": {
+   "min": 1,
+   "max": 3
+  },
+  "strncmpi": {
+   "min": 1,
+   "max": 3
+  },
+  "strrep": {
+   "min": 1,
+   "max": 3
+  },
+  "strsplit": {
+   "min": 1,
+   "max": null
+  },
+  "strtok": {
+   "min": 1,
+   "max": 2
+  },
+  "strtrim": {
+   "min": 1,
+   "max": 1
+  },
+  "sub2ind": {
+   "min": 2,
+   "max": null
+  },
+  "swapbytes": {
+   "min": 1,
+   "max": 1
+  },
+  "symrcm": {
+   "min": 1,
+   "max": 1
+  },
+  "tf2zp": {
+   "min": 1,
+   "max": 2
+  },
+  "times": {
+   "min": 2,
+   "max": 2
+  },
+  "toeplitz": {
+   "min": 1,
+   "max": 2
+  },
+  "topkrows": {
+   "min": 2,
+   "max": null
+  },
+  "transpose": {
+   "min": 1,
+   "max": 1
+  },
+  "trapz": {
+   "min": 1,
+   "max": 3
+  },
+  "tril": {
+   "min": 1,
+   "max": 2
+  },
+  "triu": {
+   "min": 1,
+   "max": 2
+  },
+  "typecast": {
+   "min": 1,
+   "max": 2
+  },
+  "uminus": {
+   "min": 1,
+   "max": 1
+  },
+  "union": {
+   "min": 1,
+   "max": 4
+  },
+  "unique": {
+   "min": 1,
+   "max": 4
+  },
+  "uniquetol": {
+   "min": 1,
+   "max": null
+  },
+  "unmkpp": {
+   "min": 1,
+   "max": 1
+  },
+  "uplus": {
+   "min": 1,
+   "max": 1
+  },
+  "upper": {
+   "min": 1,
+   "max": 1
+  },
+  "validatestring": {
+   "min": 1,
+   "max": 5
+  },
+  "vander": {
+   "min": 1,
+   "max": 1
+  },
+  "wilkinson": {
+   "min": 1,
+   "max": 2
+  },
+  "xor": {
+   "min": 1,
+   "max": 2
+  },
+  "zp2tf": {
+   "min": 1,
+   "max": 3
+  }
+ },
+ "signal": {
+  "ac2poly": {
+   "min": 1,
+   "max": 1
+  },
+  "ac2rc": {
+   "min": 1,
+   "max": 1
+  },
+  "alignsignals": {
+   "min": 2,
+   "max": null
+  },
+  "arburg": {
+   "min": 2,
+   "max": 2
+  },
+  "arcov": {
+   "min": 2,
+   "max": 2
+  },
+  "armcov": {
+   "min": 2,
+   "max": 2
+  },
+  "aryule": {
+   "min": 2,
+   "max": 2
+  },
+  "bandpass": {
+   "min": 2,
+   "max": 9
+  },
+  "bandpower": {
+   "min": 1,
+   "max": 4
+  },
+  "bandstop": {
+   "min": 2,
+   "max": 9
+  },
+  "barthannwin": {
+   "min": 1,
+   "max": 2
+  },
+  "bartlett": {
+   "min": 1,
+   "max": 2
+  },
+  "besselap": {
+   "min": 1,
+   "max": 1
+  },
+  "besself": {
+   "min": 2,
+   "max": 5
+  },
+  "bilinear": {
+   "min": 3,
+   "max": 6
+  },
+  "binmask2sigroi": {
+   "min": 1,
+   "max": 1
+  },
+  "bitrevorder": {
+   "min": 1,
+   "max": 1
+  },
+  "blackman": {
+   "min": 1,
+   "max": 3
+  },
+  "blackmanharris": {
+   "min": 1,
+   "max": 3
+  },
+  "bohmanwin": {
+   "min": 1,
+   "max": 2
+  },
+  "buffer": {
+   "min": 2,
+   "max": 4
+  },
+  "buttap": {
+   "min": 1,
+   "max": 1
+  },
+  "butter": {
+   "min": 2,
+   "max": 5
+  },
+  "buttord": {
+   "min": 4,
+   "max": 5
+  },
+  "cceps": {
+   "min": 1,
+   "max": 2
+  },
+  "cconv": {
+   "min": 2,
+   "max": 3
+  },
+  "cell2sos": {
+   "min": 1,
+   "max": 1
+  },
+  "cheb1ap": {
+   "min": 2,
+   "max": 2
+  },
+  "cheb1ord": {
+   "min": 4,
+   "max": 5
+  },
+  "cheb2ap": {
+   "min": 2,
+   "max": 2
+  },
+  "cheb2ord": {
+   "min": 4,
+   "max": 5
+  },
+  "chebwin": {
+   "min": 1,
+   "max": 3
+  },
+  "cheby1": {
+   "min": 3,
+   "max": 6
+  },
+  "cheby2": {
+   "min": 3,
+   "max": 6
+  },
+  "chirp": {
+   "min": 4,
+   "max": 8
+  },
+  "conv": {
+   "min": 2,
+   "max": 3
+  },
+  "conv2": {
+   "min": 2,
+   "max": 4
+  },
+  "convmtx": {
+   "min": 2,
+   "max": 2
+  },
+  "convn": {
+   "min": 2,
+   "max": 3
+  },
+  "corrmtx": {
+   "min": 2,
+   "max": 3
+  },
+  "cpsd": {
+   "min": 2,
+   "max": 8
+  },
+  "ctf2zp": {
+   "min": 1,
+   "max": 3
+  },
+  "cusum": {
+   "min": 1,
+   "max": 6
+  },
+  "czt": {
+   "min": 1,
+   "max": 4
+  },
+  "db": {
+   "min": 1,
+   "max": 3
+  },
+  "db2mag": {
+   "min": 1,
+   "max": 1
+  },
+  "db2pow": {
+   "min": 1,
+   "max": 1
+  },
+  "dct": {
+   "min": 1,
+   "max": null
+  },
+  "decimate": {
+   "min": 2,
+   "max": 4
+  },
+  "deconv": {
+   "min": 2,
+   "max": 3
+  },
+  "demod": {
+   "min": 4,
+   "max": 5
+  },
+  "dftmtx": {
+   "min": 1,
+   "max": 1
+  },
+  "diric": {
+   "min": 2,
+   "max": 2
+  },
+  "downsample": {
+   "min": 2,
+   "max": 3
+  },
+  "dst": {
+   "min": 1,
+   "max": 2
+  },
+  "dutycycle": {
+   "min": 1,
+   "max": null
+  },
+  "ellip": {
+   "min": 4,
+   "max": 7
+  },
+  "ellipap": {
+   "min": 3,
+   "max": 3
+  },
+  "ellipord": {
+   "min": 4,
+   "max": 5
+  },
+  "enbw": {
+   "min": 1,
+   "max": 2
+  },
+  "envelope": {
+   "min": 1,
+   "max": 3
+  },
+  "envspectrum": {
+   "min": 2,
+   "max": 8
+  },
+  "extendsigroi": {
+   "min": 3,
+   "max": 3
+  },
+  "extractsigroi": {
+   "min": 2,
+   "max": 3
+  },
+  "falltime": {
+   "min": 1,
+   "max": null
+  },
+  "fft": {
+   "min": 1,
+   "max": 3
+  },
+  "fft2": {
+   "min": 1,
+   "max": 3
+  },
+  "fftfilt": {
+   "min": 2,
+   "max": 3
+  },
+  "fftn": {
+   "min": 1,
+   "max": 2
+  },
+  "fftshift": {
+   "min": 1,
+   "max": 2
+  },
+  "filter": {
+   "min": 3,
+   "max": 5
+  },
+  "filter2": {
+   "min": 2,
+   "max": 3
+  },
+  "filternorm": {
+   "min": 2,
+   "max": 4
+  },
+  "filtfilt": {
+   "min": 3,
+   "max": 3
+  },
+  "filtord": {
+   "min": 1,
+   "max": 3
+  },
+  "finddelay": {
+   "min": 2,
+   "max": 3
+  },
+  "findpeaks": {
+   "min": 1,
+   "max": null
+  },
+  "fir1": {
+   "min": 2,
+   "max": 6
+  },
+  "fir2": {
+   "min": 3,
+   "max": 6
+  },
+  "firls": {
+   "min": 3,
+   "max": 5
+  },
+  "firpm": {
+   "min": 3,
+   "max": 6
+  },
+  "firpmord": {
+   "min": 3,
+   "max": 5
+  },
+  "firtype": {
+   "min": 1,
+   "max": 1
+  },
+  "flattopwin": {
+   "min": 1,
+   "max": 3
+  },
+  "freqs": {
+   "min": 3,
+   "max": 3
+  },
+  "freqz": {
+   "min": 2,
+   "max": 5
+  },
+  "fwht": {
+   "min": 1,
+   "max": 3
+  },
+  "gauspuls": {
+   "min": 2,
+   "max": 5
+  },
+  "gausswin": {
+   "min": 1,
+   "max": 2
+  },
+  "gmonopuls": {
+   "min": 2,
+   "max": 2
+  },
+  "goertzel": {
+   "min": 1,
+   "max": 3
+  },
+  "grpdelay": {
+   "min": 2,
+   "max": 6
+  },
+  "hamming": {
+   "min": 1,
+   "max": 2
+  },
+  "hann": {
+   "min": 1,
+   "max": 3
+  },
+  "highpass": {
+   "min": 2,
+   "max": 9
+  },
+  "hilbert": {
+   "min": 1,
+   "max": 2
+  },
+  "icceps": {
+   "min": 1,
+   "max": 2
+  },
+  "idct": {
+   "min": 1,
+   "max": null
+  },
+  "idst": {
+   "min": 1,
+   "max": 2
+  },
+  "ifft": {
+   "min": 1,
+   "max": 4
+  },
+  "ifft2": {
+   "min": 1,
+   "max": 4
+  },
+  "ifftn": {
+   "min": 1,
+   "max": 3
+  },
+  "ifftshift": {
+   "min": 1,
+   "max": 2
+  },
+  "ifwht": {
+   "min": 1,
+   "max": 3
+  },
+  "impinvar": {
+   "min": 3,
+   "max": 4
+  },
+  "impz": {
+   "min": 1,
+   "max": 5
+  },
+  "impzlength": {
+   "min": 1,
+   "max": 4
+  },
+  "instbw": {
+   "min": 1,
+   "max": 7
+  },
+  "instfreq": {
+   "min": 1,
+   "max": 7
+  },
+  "interp": {
+   "min": 2,
+   "max": 4
+  },
+  "interpft": {
+   "min": 2,
+   "max": 3
+  },
+  "intfilt": {
+   "min": 3,
+   "max": 3
+  },
+  "invfreqs": {
+   "min": 4,
+   "max": 9
+  },
+  "invfreqz": {
+   "min": 4,
+   "max": 9
+  },
+  "is2rc": {
+   "min": 1,
+   "max": 1
+  },
+  "isallpass": {
+   "min": 2,
+   "max": 3
+  },
+  "iscola": {
+   "min": 2,
+   "max": 3
+  },
+  "isfir": {
+   "min": 1,
+   "max": 2
+  },
+  "islinphase": {
+   "min": 1,
+   "max": 4
+  },
+  "ismaxphase": {
+   "min": 1,
+   "max": 4
+  },
+  "isminphase": {
+   "min": 1,
+   "max": 4
+  },
+  "isstable": {
+   "min": 1,
+   "max": 3
+  },
+  "istft": {
+   "min": 1,
+   "max": null
+  },
+  "kaiser": {
+   "min": 1,
+   "max": 2
+  },
+  "kaiserord": {
+   "min": 3,
+   "max": 5
+  },
+  "lar2rc": {
+   "min": 1,
+   "max": 1
+  },
+  "levinson": {
+   "min": 1,
+   "max": 2
+  },
+  "lowpass": {
+   "min": 2,
+   "max": 9
+  },
+  "lp2bp": {
+   "min": 4,
+   "max": 6
+  },
+  "lp2bs": {
+   "min": 4,
+   "max": 6
+  },
+  "lp2hp": {
+   "min": 3,
+   "max": 5
+  },
+  "lp2lp": {
+   "min": 3,
+   "max": 5
+  },
+  "lpc": {
+   "min": 2,
+   "max": 2
+  },
+  "lsf2poly": {
+   "min": 1,
+   "max": 1
+  },
+  "mag2db": {
+   "min": 1,
+   "max": 1
+  },
+  "meanfreq": {
+   "min": 1,
+   "max": 4
+  },
+  "medfilt1": {
+   "min": 1,
+   "max": 6
+  },
+  "medfreq": {
+   "min": 1,
+   "max": 4
+  },
+  "mergesigroi": {
+   "min": 2,
+   "max": 2
+  },
+  "midcross": {
+   "min": 1,
+   "max": null
+  },
+  "modulate": {
+   "min": 4,
+   "max": 5
+  },
+  "mscohere": {
+   "min": 2,
+   "max": 8
+  },
+  "name": {
+   "min": 1,
+   "max": 1
+  },
+  "nextpow2": {
+   "min": 1,
+   "max": 1
+  },
+  "nuttallwin": {
+   "min": 1,
+   "max": 2
+  },
+  "obw": {
+   "min": 1,
+   "max": 5
+  },
+  "overshoot": {
+   "min": 1,
+   "max": null
+  },
+  "parzenwin": {
+   "min": 1,
+   "max": 2
+  },
+  "pburg": {
+   "min": 2,
+   "max": 8
+  },
+  "peak2peak": {
+   "min": 1,
+   "max": 2
+  },
+  "peak2rms": {
+   "min": 1,
+   "max": 2
+  },
+  "peig": {
+   "min": 2,
+   "max": 9
+  },
+  "periodogram": {
+   "min": 1,
+   "max": null
+  },
+  "phasedelay": {
+   "min": 1,
+   "max": 5
+  },
+  "phasez": {
+   "min": 2,
+   "max": 6
+  },
+  "pmusic": {
+   "min": 2,
+   "max": null
+  },
+  "poly2ac": {
+   "min": 1,
+   "max": 2
+  },
+  "poly2lsf": {
+   "min": 1,
+   "max": 1
+  },
+  "poly2rc": {
+   "min": 1,
+   "max": 2
+  },
+  "polyscale": {
+   "min": 2,
+   "max": 2
+  },
+  "polystab": {
+   "min": 1,
+   "max": 1
+  },
+  "pow2db": {
+   "min": 1,
+   "max": 1
+  },
+  "powerbw": {
+   "min": 1,
+   "max": 5
+  },
+  "prony": {
+   "min": 3,
+   "max": 3
+  },
+  "pulseperiod": {
+   "min": 1,
+   "max": null
+  },
+  "pulsesep": {
+   "min": 1,
+   "max": null
+  },
+  "pulsewidth": {
+   "min": 1,
+   "max": null
+  },
+  "pulstran": {
+   "min": 3,
+   "max": null
+  },
+  "pwelch": {
+   "min": 1,
+   "max": 9
+  },
+  "pyulear": {
+   "min": 2,
+   "max": 8
+  },
+  "rainflow": {
+   "min": 1,
+   "max": 3
+  },
+  "rc2ac": {
+   "min": 2,
+   "max": 2
+  },
+  "rc2is": {
+   "min": 1,
+   "max": 1
+  },
+  "rc2lar": {
+   "min": 1,
+   "max": 1
+  },
+  "rc2poly": {
+   "min": 1,
+   "max": 2
+  },
+  "rceps": {
+   "min": 1,
+   "max": 1
+  },
+  "rectpuls": {
+   "min": 1,
+   "max": 2
+  },
+  "rectwin": {
+   "min": 1,
+   "max": 1
+  },
+  "removesigroi": {
+   "min": 2,
+   "max": 2
+  },
+  "resample": {
+   "min": 3,
+   "max": 3
+  },
+  "risetime": {
+   "min": 1,
+   "max": null
+  },
+  "rlevinson": {
+   "min": 2,
+   "max": 2
+  },
+  "rms": {
+   "min": 1,
+   "max": 3
+  },
+  "rssq": {
+   "min": 1,
+   "max": 2
+  },
+  "sawtooth": {
+   "min": 1,
+   "max": 2
+  },
+  "scaleFilterSections": {
+   "min": 2,
+   "max": 2
+  },
+  "schurrc": {
+   "min": 1,
+   "max": 1
+  },
+  "seqperiod": {
+   "min": 1,
+   "max": 2
+  },
+  "settlingtime": {
+   "min": 1,
+   "max": null
+  },
+  "sfdr": {
+   "min": 1,
+   "max": 4
+  },
+  "sgolay": {
+   "min": 2,
+   "max": 3
+  },
+  "sgolayfilt": {
+   "min": 3,
+   "max": 5
+  },
+  "shiftdata": {
+   "min": 1,
+   "max": 2
+  },
+  "shortensigroi": {
+   "min": 3,
+   "max": 3
+  },
+  "sigrangebinmask": {
+   "min": 2,
+   "max": 2
+  },
+  "sigroi2binmask": {
+   "min": 1,
+   "max": 2
+  },
+  "sinad": {
+   "min": 1,
+   "max": 4
+  },
+  "sinc": {
+   "min": 1,
+   "max": 1
+  },
+  "slewrate": {
+   "min": 1,
+   "max": null
+  },
+  "snr": {
+   "min": 1,
+   "max": 6
+  },
+  "sos2ss": {
+   "min": 1,
+   "max": 2
+  },
+  "sos2tf": {
+   "min": 1,
+   "max": 2
+  },
+  "sos2zp": {
+   "min": 1,
+   "max": 2
+  },
+  "sosfilt": {
+   "min": 2,
+   "max": 3
+  },
+  "sosfiltfilt": {
+   "min": 2,
+   "max": 2
+  },
+  "spectralcrest": {
+   "min": 1,
+   "max": null
+  },
+  "spectralentropy": {
+   "min": 1,
+   "max": null
+  },
+  "spectralflatness": {
+   "min": 1,
+   "max": null
+  },
+  "spectralkurtosis": {
+   "min": 1,
+   "max": null
+  },
+  "spectralskewness": {
+   "min": 1,
+   "max": null
+  },
+  "spectrogram": {
+   "min": 1,
+   "max": null
+  },
+  "square": {
+   "min": 1,
+   "max": 2
+  },
+  "ss2sos": {
+   "min": 4,
+   "max": 7
+  },
+  "ss2tf": {
+   "min": 4,
+   "max": 5
+  },
+  "ss2zp": {
+   "min": 4,
+   "max": 5
+  },
+  "statelevels": {
+   "min": 1,
+   "max": 4
+  },
+  "stepz": {
+   "min": 1,
+   "max": 5
+  },
+  "stft": {
+   "min": 1,
+   "max": null
+  },
+  "stmcb": {
+   "min": 3,
+   "max": 6
+  },
+  "tachorpm": {
+   "min": 2,
+   "max": 4
+  },
+  "taylorwin": {
+   "min": 1,
+   "max": 3
+  },
+  "tf2sos": {
+   "min": 2,
+   "max": 4
+  },
+  "tf2ss": {
+   "min": 2,
+   "max": 2
+  },
+  "tf2zpk": {
+   "min": 2,
+   "max": 2
+  },
+  "tfestimate": {
+   "min": 2,
+   "max": null
+  },
+  "thd": {
+   "min": 1,
+   "max": 6
+  },
+  "triang": {
+   "min": 1,
+   "max": 2
+  },
+  "tripuls": {
+   "min": 1,
+   "max": 3
+  },
+  "tsa": {
+   "min": 3,
+   "max": 5
+  },
+  "tukeywin": {
+   "min": 1,
+   "max": 2
+  },
+  "udecode": {
+   "min": 2,
+   "max": 4
+  },
+  "uencode": {
+   "min": 2,
+   "max": 4
+  },
+  "undershoot": {
+   "min": 1,
+   "max": null
+  },
+  "unshiftdata": {
+   "min": 3,
+   "max": 3
+  },
+  "unwrap": {
+   "min": 1,
+   "max": 3
+  },
+  "upfirdn": {
+   "min": 3,
+   "max": 4
+  },
+  "upsample": {
+   "min": 2,
+   "max": 3
+  },
+  "vco": {
+   "min": 1,
+   "max": 3
+  },
+  "xcorr": {
+   "min": 1,
+   "max": 4
+  },
+  "xcorr2": {
+   "min": 1,
+   "max": 2
+  },
+  "xcov": {
+   "min": 1,
+   "max": 4
+  },
+  "zerocrossrate": {
+   "min": 1,
+   "max": null
+  },
+  "zerophase": {
+   "min": 1,
+   "max": 6
+  },
+  "zp2sos": {
+   "min": 2,
+   "max": 6
+  },
+  "zp2ss": {
+   "min": 3,
+   "max": 3
+  }
+ },
+ "image": {
+  "adapthisteq": {
+   "min": 1,
+   "max": null
+  },
+  "adaptthresh": {
+   "min": 1,
+   "max": 8
+  },
+  "applylut": {
+   "min": 2,
+   "max": 2
+  },
+  "autumn": {
+   "min": 1,
+   "max": 1
+  },
+  "axes2pix": {
+   "min": 3,
+   "max": 3
+  },
+  "bestblk": {
+   "min": 1,
+   "max": 2
+  },
+  "bone": {
+   "min": 1,
+   "max": 1
+  },
+  "boundarymask": {
+   "min": 1,
+   "max": 2
+  },
+  "brighten": {
+   "min": 2,
+   "max": null
+  },
+  "bwarea": {
+   "min": 1,
+   "max": 1
+  },
+  "bwareafilt": {
+   "min": 2,
+   "max": 4
+  },
+  "bwareaopen": {
+   "min": 2,
+   "max": 3
+  },
+  "bwboundaries": {
+   "min": 1,
+   "max": 3
+  },
+  "bwconncomp": {
+   "min": 1,
+   "max": 2
+  },
+  "bwdist": {
+   "min": 1,
+   "max": 2
+  },
+  "bwdistgeodesic": {
+   "min": 2,
+   "max": 4
+  },
+  "bweuler": {
+   "min": 1,
+   "max": 2
+  },
+  "bwhitmiss": {
+   "min": 2,
+   "max": 3
+  },
+  "bwlabel": {
+   "min": 1,
+   "max": 2
+  },
+  "bwlookup": {
+   "min": 2,
+   "max": 2
+  },
+  "bwmorph": {
+   "min": 2,
+   "max": 3
+  },
+  "bwmorph3": {
+   "min": 2,
+   "max": null
+  },
+  "bwpack": {
+   "min": 1,
+   "max": 1
+  },
+  "bwperim": {
+   "min": 1,
+   "max": 2
+  },
+  "bwpropfilt": {
+   "min": 3,
+   "max": 6
+  },
+  "bwselect": {
+   "min": 3,
+   "max": 6
+  },
+  "bwtraceboundary": {
+   "min": 3,
+   "max": 6
+  },
+  "bwunpack": {
+   "min": 1,
+   "max": 2
+  },
+  "cc2bw": {
+   "min": 1,
+   "max": null
+  },
+  "checkerboard": {
+   "min": 1,
+   "max": 3
+  },
+  "chromadapt": {
+   "min": 2,
+   "max": 6
+  },
+  "cmap2gray": {
+   "min": 1,
+   "max": 1
+  },
+  "cmunique": {
+   "min": 1,
+   "max": 2
+  },
+  "col2im": {
+   "min": 3,
+   "max": null
+  },
+  "colfilt": {
+   "min": 4,
+   "max": null
+  },
+  "colorangle": {
+   "min": 2,
+   "max": null
+  },
+  "colorgradient": {
+   "min": 1,
+   "max": null
+  },
+  "contrast": {
+   "min": 1,
+   "max": null
+  },
+  "convmtx2": {
+   "min": 2,
+   "max": 3
+  },
+  "cool": {
+   "min": 1,
+   "max": 1
+  },
+  "copper": {
+   "min": 1,
+   "max": 1
+  },
+  "corner": {
+   "min": 1,
+   "max": null
+  },
+  "cornermetric": {
+   "min": 1,
+   "max": null
+  },
+  "corr2": {
+   "min": 2,
+   "max": 2
+  },
+  "dct2": {
+   "min": 1,
+   "max": 3
+  },
+  "dctmtx": {
+   "min": 1,
+   "max": 1
+  },
+  "deconvreg": {
+   "min": 2,
+   "max": 5
+  },
+  "deconvwnr": {
+   "min": 2,
+   "max": 4
+  },
+  "deltaE": {
+   "min": 2,
+   "max": 2
+  },
+  "demosaic": {
+   "min": 2,
+   "max": null
+  },
+  "dice": {
+   "min": 2,
+   "max": null
+  },
+  "edge": {
+   "min": 1,
+   "max": 5
+  },
+  "edgetaper": {
+   "min": 2,
+   "max": 2
+  },
+  "entropy": {
+   "min": 1,
+   "max": 1
+  },
+  "entropyfilt": {
+   "min": 1,
+   "max": 2
+  },
+  "fchcode": {
+   "min": 1,
+   "max": null
+  },
+  "fftconv2": {
+   "min": 2,
+   "max": null
+  },
+  "fibermetric": {
+   "min": 1,
+   "max": 6
+  },
+  "flag": {
+   "min": 1,
+   "max": 1
+  },
+  "freqz2": {
+   "min": 1,
+   "max": 4
+  },
+  "fsamp2": {
+   "min": 1,
+   "max": null
+  },
+  "fspecial": {
+   "min": 1,
+   "max": 3
+  },
+  "fspecial3": {
+   "min": 1,
+   "max": 3
+  },
+  "ftrans2": {
+   "min": 1,
+   "max": null
+  },
+  "fwind1": {
+   "min": 2,
+   "max": null
+  },
+  "fwind2": {
+   "min": 2,
+   "max": null
+  },
+  "gabor": {
+   "min": 2,
+   "max": null
+  },
+  "getrangefromclass": {
+   "min": 1,
+   "max": 1
+  },
+  "gradientweight": {
+   "min": 1,
+   "max": 6
+  },
+  "gray": {
+   "min": 1,
+   "max": 1
+  },
+  "gray2ind": {
+   "min": 1,
+   "max": 2
+  },
+  "graycomatrix": {
+   "min": 1,
+   "max": null
+  },
+  "grayconnected": {
+   "min": 3,
+   "max": null
+  },
+  "graycoprops": {
+   "min": 1,
+   "max": 4
+  },
+  "graydiffweight": {
+   "min": 2,
+   "max": 8
+  },
+  "graydist": {
+   "min": 2,
+   "max": 4
+  },
+  "grayslice": {
+   "min": 2,
+   "max": 2
+  },
+  "graythresh": {
+   "min": 1,
+   "max": 1
+  },
+  "histeq": {
+   "min": 1,
+   "max": 3
+  },
+  "hot": {
+   "min": 1,
+   "max": 1
+  },
+  "hough": {
+   "min": 1,
+   "max": 5
+  },
+  "houghlines": {
+   "min": 4,
+   "max": 8
+  },
+  "houghpeaks": {
+   "min": 1,
+   "max": 8
+  },
+  "hsv": {
+   "min": 0,
+   "max": 1
+  },
+  "hsv2rgb": {
+   "min": 1,
+   "max": 3
+  },
+  "idct2": {
+   "min": 1,
+   "max": 3
+  },
+  "illumgray": {
+   "min": 1,
+   "max": 6
+  },
+  "illumpca": {
+   "min": 1,
+   "max": 4
+  },
+  "illumwhite": {
+   "min": 1,
+   "max": 4
+  },
+  "im2bw": {
+   "min": 1,
+   "max": 3
+  },
+  "im2col": {
+   "min": 2,
+   "max": 4
+  },
+  "im2double": {
+   "min": 1,
+   "max": 2
+  },
+  "im2gray": {
+   "min": 1,
+   "max": 1
+  },
+  "im2int16": {
+   "min": 1,
+   "max": 1
+  },
+  "im2single": {
+   "min": 1,
+   "max": 2
+  },
+  "im2uint16": {
+   "min": 1,
+   "max": 2
+  },
+  "im2uint8": {
+   "min": 1,
+   "max": 2
+  },
+  "imabsdiff": {
+   "min": 2,
+   "max": 2
+  },
+  "imadd": {
+   "min": 2,
+   "max": 3
+  },
+  "imadjust": {
+   "min": 1,
+   "max": 4
+  },
+  "imadjustn": {
+   "min": 1,
+   "max": 4
+  },
+  "imapplymatrix": {
+   "min": 3,
+   "max": 4
+  },
+  "imbilatfilt": {
+   "min": 1,
+   "max": null
+  },
+  "imbinarize": {
+   "min": 1,
+   "max": 6
+  },
+  "imbothat": {
+   "min": 2,
+   "max": 2
+  },
+  "imboxfilt": {
+   "min": 1,
+   "max": null
+  },
+  "imboxfilt3": {
+   "min": 1,
+   "max": null
+  },
+  "imcast": {
+   "min": 2,
+   "max": null
+  },
+  "imclearborder": {
+   "min": 1,
+   "max": 2
+  },
+  "imclose": {
+   "min": 2,
+   "max": 2
+  },
+  "imcolordiff": {
+   "min": 2,
+   "max": null
+  },
+  "imcomplement": {
+   "min": 1,
+   "max": 1
+  },
+  "imcrop": {
+   "min": 2,
+   "max": 5
+  },
+  "imcrop3": {
+   "min": 2,
+   "max": 2
+  },
+  "imdiffusefilt": {
+   "min": 1,
+   "max": null
+  },
+  "imdilate": {
+   "min": 2,
+   "max": 5
+  },
+  "imdivide": {
+   "min": 2,
+   "max": 2
+  },
+  "imerode": {
+   "min": 2,
+   "max": 5
+  },
+  "imextendedmax": {
+   "min": 2,
+   "max": 3
+  },
+  "imextendedmin": {
+   "min": 2,
+   "max": 3
+  },
+  "imfill": {
+   "min": 2,
+   "max": 3
+  },
+  "imfilter": {
+   "min": 2,
+   "max": 5
+  },
+  "imfinfo": {
+   "min": 1,
+   "max": null
+  },
+  "imflatfield": {
+   "min": 2,
+   "max": 5
+  },
+  "imfuse": {
+   "min": 2,
+   "max": null
+  },
+  "imgaborfilt": {
+   "min": 3,
+   "max": null
+  },
+  "imgaussfilt": {
+   "min": 1,
+   "max": null
+  },
+  "imgaussfilt3": {
+   "min": 1,
+   "max": null
+  },
+  "imgradient": {
+   "min": 1,
+   "max": 2
+  },
+  "imgradient3": {
+   "min": 1,
+   "max": 3
+  },
+  "imgradientxy": {
+   "min": 1,
+   "max": 2
+  },
+  "imgradientxyz": {
+   "min": 1,
+   "max": null
+  },
+  "imguidedfilter": {
+   "min": 1,
+   "max": 6
+  },
+  "imhist": {
+   "min": 1,
+   "max": 2
+  },
+  "imhistmatch": {
+   "min": 2,
+   "max": 5
+  },
+  "imhistmatchn": {
+   "min": 2,
+   "max": 3
+  },
+  "imhmax": {
+   "min": 2,
+   "max": 3
+  },
+  "imhmin": {
+   "min": 2,
+   "max": null
+  },
+  "imimposemin": {
+   "min": 2,
+   "max": 3
+  },
+  "imkeepborder": {
+   "min": 1,
+   "max": null
+  },
+  "imlincomb": {
+   "min": 2,
+   "max": null
+  },
+  "immse": {
+   "min": 2,
+   "max": 2
+  },
+  "immultiply": {
+   "min": 2,
+   "max": 2
+  },
+  "imnlmfilt": {
+   "min": 1,
+   "max": 7
+  },
+  "imnoise": {
+   "min": 2,
+   "max": 4
+  },
+  "imopen": {
+   "min": 2,
+   "max": 2
+  },
+  "imoverlay": {
+   "min": 3,
+   "max": 3
+  },
+  "impyramid": {
+   "min": 2,
+   "max": 2
+  },
+  "imquantize": {
+   "min": 2,
+   "max": 3
+  },
+  "imread": {
+   "min": 1,
+   "max": null
+  },
+  "imreconstruct": {
+   "min": 2,
+   "max": 3
+  },
+  "imreducehaze": {
+   "min": 1,
+   "max": 10
+  },
+  "imregionalmax": {
+   "min": 1,
+   "max": 2
+  },
+  "imregionalmin": {
+   "min": 1,
+   "max": 2
+  },
+  "imresize": {
+   "min": 2,
+   "max": null
+  },
+  "imresize3": {
+   "min": 2,
+   "max": null
+  },
+  "imrotate": {
+   "min": 2,
+   "max": 4
+  },
+  "imrotate3": {
+   "min": 3,
+   "max": 7
+  },
+  "imsharpen": {
+   "min": 1,
+   "max": 7
+  },
+  "imsmooth": {
+   "min": 1,
+   "max": null
+  },
+  "imsplit": {
+   "min": 1,
+   "max": null
+  },
+  "imsubtract": {
+   "min": 2,
+   "max": 2
+  },
+  "imtophat": {
+   "min": 2,
+   "max": 2
+  },
+  "imtranslate": {
+   "min": 2,
+   "max": null
+  },
+  "imwrite": {
+   "min": 2,
+   "max": null
+  },
+  "ind2gray": {
+   "min": 2,
+   "max": 2
+  },
+  "ind2rgb": {
+   "min": 2,
+   "max": 2
+  },
+  "integralBoxFilter": {
+   "min": 1,
+   "max": null
+  },
+  "integralBoxFilter3": {
+   "min": 1,
+   "max": null
+  },
+  "integralImage": {
+   "min": 1,
+   "max": 2
+  },
+  "integralImage3": {
+   "min": 1,
+   "max": null
+  },
+  "intlut": {
+   "min": 2,
+   "max": 2
+  },
+  "iptnum2ordinal": {
+   "min": 1,
+   "max": 1
+  },
+  "isbw": {
+   "min": 1,
+   "max": null
+  },
+  "iscolormap": {
+   "min": 1,
+   "max": null
+  },
+  "isgray": {
+   "min": 1,
+   "max": null
+  },
+  "isind": {
+   "min": 1,
+   "max": null
+  },
+  "isrgb": {
+   "min": 1,
+   "max": null
+  },
+  "jaccard": {
+   "min": 2,
+   "max": null
+  },
+  "lab2double": {
+   "min": 1,
+   "max": 1
+  },
+  "lab2rgb": {
+   "min": 1,
+   "max": 7
+  },
+  "lab2single": {
+   "min": 0,
+   "max": null
+  },
+  "lab2uint16": {
+   "min": 1,
+   "max": 1
+  },
+  "lab2uint8": {
+   "min": 1,
+   "max": 1
+  },
+  "lab2xyz": {
+   "min": 1,
+   "max": null
+  },
+  "label2idx": {
+   "min": 1,
+   "max": null
+  },
+  "label2rgb": {
+   "min": 1,
+   "max": 4
+  },
+  "labelmatrix": {
+   "min": 1,
+   "max": null
+  },
+  "labeloverlay": {
+   "min": 2,
+   "max": null
+  },
+  "lin2rgb": {
+   "min": 1,
+   "max": 5
+  },
+  "lines": {
+   "min": 1,
+   "max": 1
+  },
+  "locallapfilt": {
+   "min": 3,
+   "max": 10
+  },
+  "makelut": {
+   "min": 2,
+   "max": null
+  },
+  "mat2gray": {
+   "min": 1,
+   "max": 2
+  },
+  "mean2": {
+   "min": 1,
+   "max": 1
+  },
+  "medfilt2": {
+   "min": 1,
+   "max": 3
+  },
+  "medfilt3": {
+   "min": 1,
+   "max": null
+  },
+  "mmgradm": {
+   "min": 1,
+   "max": null
+  },
+  "modefilt": {
+   "min": 1,
+   "max": 3
+  },
+  "multissim": {
+   "min": 2,
+   "max": null
+  },
+  "multissim3": {
+   "min": 2,
+   "max": null
+  },
+  "multithresh": {
+   "min": 1,
+   "max": 2
+  },
+  "nlfilter": {
+   "min": 3,
+   "max": null
+  },
+  "normxcorr2": {
+   "min": 2,
+   "max": 2
+  },
+  "ntsc2rgb": {
+   "min": 1,
+   "max": 1
+  },
+  "ordfilt2": {
+   "min": 3,
+   "max": 5
+  },
+  "otf2psf": {
+   "min": 1,
+   "max": 2
+  },
+  "otsuthresh": {
+   "min": 1,
+   "max": 1
+  },
+  "padarray": {
+   "min": 2,
+   "max": 4
+  },
+  "phantom": {
+   "min": 1,
+   "max": null
+  },
+  "pink": {
+   "min": 1,
+   "max": 1
+  },
+  "planar2raw": {
+   "min": 1,
+   "max": null
+  },
+  "poly2mask": {
+   "min": 4,
+   "max": 4
+  },
+  "prism": {
+   "min": 1,
+   "max": 1
+  },
+  "psf2otf": {
+   "min": 1,
+   "max": 2
+  },
+  "psnr": {
+   "min": 2,
+   "max": 3
+  },
+  "rangefilt": {
+   "min": 1,
+   "max": 2
+  },
+  "raw2planar": {
+   "min": 1,
+   "max": null
+  },
+  "reducepoly": {
+   "min": 1,
+   "max": 2
+  },
+  "regionfill": {
+   "min": 2,
+   "max": 3
+  },
+  "regionprops": {
+   "min": 1,
+   "max": null
+  },
+  "rgb2gray": {
+   "min": 1,
+   "max": null
+  },
+  "rgb2hsv": {
+   "min": 1,
+   "max": null
+  },
+  "rgb2ind": {
+   "min": 2,
+   "max": 3
+  },
+  "rgb2lab": {
+   "min": 1,
+   "max": 5
+  },
+  "rgb2lightness": {
+   "min": 1,
+   "max": null
+  },
+  "rgb2lin": {
+   "min": 1,
+   "max": 5
+  },
+  "rgb2ntsc": {
+   "min": 1,
+   "max": 1
+  },
+  "rgb2xyz": {
+   "min": 1,
+   "max": 5
+  },
+  "rgb2ycbcr": {
+   "min": 1,
+   "max": 1
+  },
+  "rgbwide2xyz": {
+   "min": 2,
+   "max": null
+  },
+  "rgbwide2ycbcr": {
+   "min": 2,
+   "max": null
+  },
+  "roicolor": {
+   "min": 2,
+   "max": 3
+  },
+  "roifilt2": {
+   "min": 3,
+   "max": null
+  },
+  "roipoly": {
+   "min": 1,
+   "max": 6
+  },
+  "spring": {
+   "min": 1,
+   "max": 1
+  },
+  "ssim": {
+   "min": 2,
+   "max": null
+  },
+  "std2": {
+   "min": 1,
+   "max": 1
+  },
+  "stdfilt": {
+   "min": 1,
+   "max": 2
+  },
+  "strel": {
+   "min": 1,
+   "max": 4
+  },
+  "stretchlim": {
+   "min": 1,
+   "max": 2
+  },
+  "summer": {
+   "min": 1,
+   "max": 1
+  },
+  "tonemap": {
+   "min": 1,
+   "max": null
+  },
+  "wavelength2rgb": {
+   "min": 1,
+   "max": null
+  },
+  "wcodemat": {
+   "min": 1,
+   "max": 4
+  },
+  "white": {
+   "min": 1,
+   "max": 1
+  },
+  "whitepoint": {
+   "min": 1,
+   "max": null
+  },
+  "wiener2": {
+   "min": 1,
+   "max": 4
+  },
+  "winter": {
+   "min": 1,
+   "max": 1
+  },
+  "xyz2double": {
+   "min": 1,
+   "max": null
+  },
+  "xyz2lab": {
+   "min": 1,
+   "max": null
+  },
+  "xyz2rgb": {
+   "min": 1,
+   "max": 7
+  },
+  "xyz2rgbwide": {
+   "min": 2,
+   "max": null
+  },
+  "xyz2uint16": {
+   "min": 1,
+   "max": null
+  },
+  "ycbcr2rgb": {
+   "min": 1,
+   "max": 1
+  },
+  "ycbcr2rgbwide": {
+   "min": 2,
+   "max": null
+  }
+ },
+ "stats": {
+  "adtest": {
+   "min": 1,
+   "max": null
+  },
+  "anova1": {
+   "min": 1,
+   "max": 4
+  },
+  "anova2": {
+   "min": 1,
+   "max": 3
+  },
+  "ansaribradley": {
+   "min": 2,
+   "max": null
+  },
+  "augknt": {
+   "min": 2,
+   "max": 3
+  },
+  "autocorr": {
+   "min": 1,
+   "max": null
+  },
+  "aveknt": {
+   "min": 2,
+   "max": 2
+  },
+  "betacdf": {
+   "min": 3,
+   "max": null
+  },
+  "betafit": {
+   "min": 1,
+   "max": 2
+  },
+  "betainv": {
+   "min": 3,
+   "max": 3
+  },
+  "betalike": {
+   "min": 2,
+   "max": 2
+  },
+  "betapdf": {
+   "min": 3,
+   "max": 3
+  },
+  "betarnd": {
+   "min": 2,
+   "max": null
+  },
+  "betastat": {
+   "min": 2,
+   "max": 2
+  },
+  "binocdf": {
+   "min": 3,
+   "max": 4
+  },
+  "binofit": {
+   "min": 2,
+   "max": 3
+  },
+  "binoinv": {
+   "min": 3,
+   "max": 3
+  },
+  "binopdf": {
+   "min": 3,
+   "max": 3
+  },
+  "binornd": {
+   "min": 2,
+   "max": null
+  },
+  "binostat": {
+   "min": 2,
+   "max": 2
+  },
+  "bootci": {
+   "min": 3,
+   "max": null
+  },
+  "bootstrp": {
+   "min": 3,
+   "max": null
+  },
+  "bounds": {
+   "min": 1,
+   "max": 3
+  },
+  "brk2knt": {
+   "min": 2,
+   "max": 2
+  },
+  "canoncorr": {
+   "min": 2,
+   "max": 2
+  },
+  "cdf": {
+   "min": 2,
+   "max": null
+  },
+  "chi2cdf": {
+   "min": 2,
+   "max": 3
+  },
+  "chi2gof": {
+   "min": 1,
+   "max": null
+  },
+  "chi2inv": {
+   "min": 2,
+   "max": 2
+  },
+  "chi2pdf": {
+   "min": 2,
+   "max": 2
+  },
+  "chi2rnd": {
+   "min": 1,
+   "max": null
+  },
+  "chi2stat": {
+   "min": 1,
+   "max": 1
+  },
+  "cholcov": {
+   "min": 1,
+   "max": 2
+  },
+  "classify": {
+   "min": 3,
+   "max": 5
+  },
+  "cluster": {
+   "min": 1,
+   "max": null
+  },
+  "clusterdata": {
+   "min": 1,
+   "max": null
+  },
+  "combnk": {
+   "min": 2,
+   "max": 2
+  },
+  "cophenet": {
+   "min": 2,
+   "max": 2
+  },
+  "copulacdf": {
+   "min": 3,
+   "max": null
+  },
+  "copulapdf": {
+   "min": 3,
+   "max": null
+  },
+  "corr": {
+   "min": 1,
+   "max": null
+  },
+  "corrcoef": {
+   "min": 1,
+   "max": null
+  },
+  "corrcov": {
+   "min": 1,
+   "max": 2
+  },
+  "cov": {
+   "min": 1,
+   "max": 4
+  },
+  "crosscorr": {
+   "min": 2,
+   "max": null
+  },
+  "crosstab": {
+   "min": 1,
+   "max": null
+  },
+  "crossval": {
+   "min": 3,
+   "max": null
+  },
+  "csapi": {
+   "min": 2,
+   "max": 3
+  },
+  "datasample": {
+   "min": 2,
+   "max": null
+  },
+  "datastats": {
+   "min": 1,
+   "max": 2
+  },
+  "dbscan": {
+   "min": 3,
+   "max": null
+  },
+  "detrend": {
+   "min": 1,
+   "max": null
+  },
+  "dummyvar": {
+   "min": 1,
+   "max": 1
+  },
+  "dwtest": {
+   "min": 2,
+   "max": null
+  },
+  "ecdf": {
+   "min": 1,
+   "max": null
+  },
+  "ecdfhist": {
+   "min": 2,
+   "max": null
+  },
+  "evcdf": {
+   "min": 1,
+   "max": 5
+  },
+  "evfit": {
+   "min": 1,
+   "max": 5
+  },
+  "evinv": {
+   "min": 1,
+   "max": 5
+  },
+  "evlike": {
+   "min": 2,
+   "max": 4
+  },
+  "evpdf": {
+   "min": 1,
+   "max": 3
+  },
+  "evrnd": {
+   "min": 2,
+   "max": null
+  },
+  "evstat": {
+   "min": 2,
+   "max": 2
+  },
+  "expcdf": {
+   "min": 1,
+   "max": 4
+  },
+  "expfit": {
+   "min": 1,
+   "max": 4
+  },
+  "expinv": {
+   "min": 1,
+   "max": 4
+  },
+  "explike": {
+   "min": 2,
+   "max": 4
+  },
+  "exppdf": {
+   "min": 1,
+   "max": 2
+  },
+  "exprnd": {
+   "min": 1,
+   "max": null
+  },
+  "expstat": {
+   "min": 1,
+   "max": 1
+  },
+  "fcdf": {
+   "min": 3,
+   "max": 4
+  },
+  "fillmissing": {
+   "min": 2,
+   "max": null
+  },
+  "filloutliers": {
+   "min": 2,
+   "max": null
+  },
+  "finv": {
+   "min": 3,
+   "max": 3
+  },
+  "fishertest": {
+   "min": 1,
+   "max": null
+  },
+  "fitdist": {
+   "min": 2,
+   "max": null
+  },
+  "fnbrk": {
+   "min": 2,
+   "max": null
+  },
+  "fncmb": {
+   "min": 1,
+   "max": 4
+  },
+  "fnder": {
+   "min": 1,
+   "max": 2
+  },
+  "fnint": {
+   "min": 1,
+   "max": 2
+  },
+  "fnval": {
+   "min": 2,
+   "max": null
+  },
+  "fpdf": {
+   "min": 3,
+   "max": 3
+  },
+  "friedman": {
+   "min": 1,
+   "max": 3
+  },
+  "frnd": {
+   "min": 2,
+   "max": null
+  },
+  "fstat": {
+   "min": 2,
+   "max": 2
+  },
+  "gamcdf": {
+   "min": 2,
+   "max": 5
+  },
+  "gamfit": {
+   "min": 1,
+   "max": 5
+  },
+  "gaminv": {
+   "min": 3,
+   "max": 5
+  },
+  "gamlike": {
+   "min": 2,
+   "max": 4
+  },
+  "gampdf": {
+   "min": 3,
+   "max": 3
+  },
+  "gamrnd": {
+   "min": 2,
+   "max": null
+  },
+  "gamstat": {
+   "min": 1,
+   "max": 2
+  },
+  "geocdf": {
+   "min": 2,
+   "max": 3
+  },
+  "geoinv": {
+   "min": 2,
+   "max": 2
+  },
+  "geomean": {
+   "min": 1,
+   "max": null
+  },
+  "geopdf": {
+   "min": 2,
+   "max": 2
+  },
+  "geornd": {
+   "min": 1,
+   "max": null
+  },
+  "geostat": {
+   "min": 1,
+   "max": 1
+  },
+  "gevcdf": {
+   "min": 1,
+   "max": 4
+  },
+  "gevfit": {
+   "min": 1,
+   "max": 3
+  },
+  "gevinv": {
+   "min": 4,
+   "max": 4
+  },
+  "gevlike": {
+   "min": 2,
+   "max": 2
+  },
+  "gevpdf": {
+   "min": 4,
+   "max": 4
+  },
+  "gevrnd": {
+   "min": 3,
+   "max": null
+  },
+  "gevstat": {
+   "min": 3,
+   "max": 3
+  },
+  "glmfit": {
+   "min": 3,
+   "max": null
+  },
+  "glmval": {
+   "min": 3,
+   "max": null
+  },
+  "gpcdf": {
+   "min": 1,
+   "max": 4
+  },
+  "gpfit": {
+   "min": 1,
+   "max": 3
+  },
+  "gpinv": {
+   "min": 4,
+   "max": 4
+  },
+  "gplike": {
+   "min": 2,
+   "max": 2
+  },
+  "gppdf": {
+   "min": 4,
+   "max": 4
+  },
+  "gprnd": {
+   "min": 3,
+   "max": null
+  },
+  "gpstat": {
+   "min": 2,
+   "max": 3
+  },
+  "grp2idx": {
+   "min": 1,
+   "max": 1
+  },
+  "grpstats": {
+   "min": 2,
+   "max": null
+  },
+  "haltonset": {
+   "min": 1,
+   "max": null
+  },
+  "hampel": {
+   "min": 1,
+   "max": 3
+  },
+  "harmmean": {
+   "min": 1,
+   "max": null
+  },
+  "hygecdf": {
+   "min": 4,
+   "max": 5
+  },
+  "hygeinv": {
+   "min": 4,
+   "max": 4
+  },
+  "hygepdf": {
+   "min": 4,
+   "max": 4
+  },
+  "hygernd": {
+   "min": 3,
+   "max": null
+  },
+  "hygestat": {
+   "min": 3,
+   "max": 3
+  },
+  "icdf": {
+   "min": 2,
+   "max": null
+  },
+  "inconsistent": {
+   "min": 1,
+   "max": 2
+  },
+  "iqr": {
+   "min": 1,
+   "max": 2
+  },
+  "isoutlier": {
+   "min": 1,
+   "max": null
+  },
+  "iwishrnd": {
+   "min": 2,
+   "max": 3
+  },
+  "jackknife": {
+   "min": 2,
+   "max": null
+  },
+  "jbtest": {
+   "min": 1,
+   "max": 3
+  },
+  "kde": {
+   "min": 1,
+   "max": 1
+  },
+  "kmeans": {
+   "min": 2,
+   "max": null
+  },
+  "kmedoids": {
+   "min": 2,
+   "max": null
+  },
+  "knnsearch": {
+   "min": 2,
+   "max": null
+  },
+  "knt2brk": {
+   "min": 1,
+   "max": 1
+  },
+  "kruskalwallis": {
+   "min": 1,
+   "max": 3
+  },
+  "ksdensity": {
+   "min": 1,
+   "max": null
+  },
+  "kstest": {
+   "min": 1,
+   "max": null
+  },
+  "kstest2": {
+   "min": 2,
+   "max": null
+  },
+  "kurtosis": {
+   "min": 1,
+   "max": 3
+  },
+  "lasso": {
+   "min": 3,
+   "max": null
+  },
+  "lassoglm": {
+   "min": 4,
+   "max": null
+  },
+  "lhsdesign": {
+   "min": 2,
+   "max": null
+  },
+  "lhsnorm": {
+   "min": 3,
+   "max": 4
+  },
+  "lillietest": {
+   "min": 1,
+   "max": null
+  },
+  "linkage": {
+   "min": 1,
+   "max": null
+  },
+  "logncdf": {
+   "min": 1,
+   "max": 5
+  },
+  "lognfit": {
+   "min": 1,
+   "max": 5
+  },
+  "logninv": {
+   "min": 1,
+   "max": 5
+  },
+  "lognlike": {
+   "min": 2,
+   "max": 4
+  },
+  "lognpdf": {
+   "min": 1,
+   "max": 3
+  },
+  "lognrnd": {
+   "min": 2,
+   "max": null
+  },
+  "lognstat": {
+   "min": 2,
+   "max": 2
+  },
+  "lscov": {
+   "min": 2,
+   "max": 4
+  },
+  "mad": {
+   "min": 1,
+   "max": 3
+  },
+  "mahal": {
+   "min": 2,
+   "max": 2
+  },
+  "mape": {
+   "min": 2,
+   "max": null
+  },
+  "maxk": {
+   "min": 2,
+   "max": null
+  },
+  "median": {
+   "min": 1,
+   "max": null
+  },
+  "mink": {
+   "min": 2,
+   "max": null
+  },
+  "mle": {
+   "min": 1,
+   "max": null
+  },
+  "mnpdf": {
+   "min": 2,
+   "max": 2
+  },
+  "mnrnd": {
+   "min": 2,
+   "max": 3
+  },
+  "mode": {
+   "min": 1,
+   "max": 2
+  },
+  "moment": {
+   "min": 2,
+   "max": 3
+  },
+  "movmad": {
+   "min": 2,
+   "max": null
+  },
+  "movmax": {
+   "min": 2,
+   "max": null
+  },
+  "movmean": {
+   "min": 2,
+   "max": null
+  },
+  "movmedian": {
+   "min": 2,
+   "max": null
+  },
+  "movmin": {
+   "min": 2,
+   "max": null
+  },
+  "movprod": {
+   "min": 2,
+   "max": null
+  },
+  "movstd": {
+   "min": 2,
+   "max": null
+  },
+  "movsum": {
+   "min": 2,
+   "max": null
+  },
+  "movvar": {
+   "min": 2,
+   "max": null
+  },
+  "multcompare": {
+   "min": 1,
+   "max": null
+  },
+  "mvncdf": {
+   "min": 1,
+   "max": null
+  },
+  "mvnpdf": {
+   "min": 1,
+   "max": 3
+  },
+  "mvnrnd": {
+   "min": 2,
+   "max": 4
+  },
+  "mvtcdf": {
+   "min": 1,
+   "max": null
+  },
+  "mvtpdf": {
+   "min": 3,
+   "max": 3
+  },
+  "mvtrnd": {
+   "min": 3,
+   "max": 3
+  },
+  "nakacdf": {
+   "min": 1,
+   "max": null
+  },
+  "nakainv": {
+   "min": 3,
+   "max": null
+  },
+  "nakapdf": {
+   "min": 3,
+   "max": null
+  },
+  "nakarnd": {
+   "min": 2,
+   "max": null
+  },
+  "nakastat": {
+   "min": 1,
+   "max": null
+  },
+  "nancov": {
+   "min": 1,
+   "max": 2
+  },
+  "nanmean": {
+   "min": 1,
+   "max": 2
+  },
+  "nanmedian": {
+   "min": 1,
+   "max": 2
+  },
+  "nanstd": {
+   "min": 1,
+   "max": 3
+  },
+  "nansum": {
+   "min": 1,
+   "max": 2
+  },
+  "nanvar": {
+   "min": 1,
+   "max": 3
+  },
+  "nbincdf": {
+   "min": 3,
+   "max": 4
+  },
+  "nbinfit": {
+   "min": 1,
+   "max": 3
+  },
+  "nbininv": {
+   "min": 3,
+   "max": 3
+  },
+  "nbinpdf": {
+   "min": 3,
+   "max": 3
+  },
+  "nbinrnd": {
+   "min": 2,
+   "max": null
+  },
+  "nbinstat": {
+   "min": 2,
+   "max": 2
+  },
+  "ncfcdf": {
+   "min": 4,
+   "max": 5
+  },
+  "ncfinv": {
+   "min": 4,
+   "max": 4
+  },
+  "ncfpdf": {
+   "min": 4,
+   "max": 4
+  },
+  "ncfrnd": {
+   "min": 3,
+   "max": null
+  },
+  "ncfstat": {
+   "min": 3,
+   "max": 3
+  },
+  "nctcdf": {
+   "min": 3,
+   "max": 4
+  },
+  "nctinv": {
+   "min": 3,
+   "max": 3
+  },
+  "nctpdf": {
+   "min": 3,
+   "max": 3
+  },
+  "nctrnd": {
+   "min": 2,
+   "max": null
+  },
+  "nctstat": {
+   "min": 2,
+   "max": 2
+  },
+  "ncx2cdf": {
+   "min": 3,
+   "max": 4
+  },
+  "ncx2inv": {
+   "min": 3,
+   "max": 3
+  },
+  "ncx2pdf": {
+   "min": 3,
+   "max": 3
+  },
+  "ncx2rnd": {
+   "min": 2,
+   "max": null
+  },
+  "ncx2stat": {
+   "min": 2,
+   "max": 2
+  },
+  "nearcorr": {
+   "min": 1,
+   "max": null
+  },
+  "net": {
+   "min": 2,
+   "max": null
+  },
+  "nlparci": {
+   "min": 3,
+   "max": null
+  },
+  "nlpredci": {
+   "min": 5,
+   "max": null
+  },
+  "normalize": {
+   "min": 1,
+   "max": null
+  },
+  "normcdf": {
+   "min": 1,
+   "max": 5
+  },
+  "normfit": {
+   "min": 1,
+   "max": 5
+  },
+  "norminv": {
+   "min": 1,
+   "max": 5
+  },
+  "normlike": {
+   "min": 2,
+   "max": 4
+  },
+  "normpdf": {
+   "min": 1,
+   "max": 3
+  },
+  "normrnd": {
+   "min": 2,
+   "max": null
+  },
+  "normstat": {
+   "min": 2,
+   "max": 2
+  },
+  "parcorr": {
+   "min": 1,
+   "max": null
+  },
+  "partialcorr": {
+   "min": 1,
+   "max": null
+  },
+  "partialcorri": {
+   "min": 2,
+   "max": null
+  },
+  "pca": {
+   "min": 1,
+   "max": null
+  },
+  "pcacov": {
+   "min": 1,
+   "max": 1
+  },
+  "pcares": {
+   "min": 2,
+   "max": 2
+  },
+  "pdf": {
+   "min": 2,
+   "max": null
+  },
+  "pdist": {
+   "min": 1,
+   "max": null
+  },
+  "pdist2": {
+   "min": 2,
+   "max": null
+  },
+  "poisscdf": {
+   "min": 2,
+   "max": 3
+  },
+  "poissfit": {
+   "min": 1,
+   "max": 2
+  },
+  "poissinv": {
+   "min": 2,
+   "max": 2
+  },
+  "poisspdf": {
+   "min": 2,
+   "max": 2
+  },
+  "poissrnd": {
+   "min": 1,
+   "max": null
+  },
+  "poisstat": {
+   "min": 1,
+   "max": 1
+  },
+  "ppmak": {
+   "min": 2,
+   "max": 3
+  },
+  "prctile": {
+   "min": 2,
+   "max": null
+  },
+  "prepareCurveData": {
+   "min": 2,
+   "max": 3
+  },
+  "prepareSurfaceData": {
+   "min": 3,
+   "max": 4
+  },
+  "quantile": {
+   "min": 2,
+   "max": null
+  },
+  "randg": {
+   "min": 1,
+   "max": null
+  },
+  "random": {
+   "min": 1,
+   "max": null
+  },
+  "randsample": {
+   "min": 2,
+   "max": null
+  },
+  "range": {
+   "min": 1,
+   "max": 2
+  },
+  "rangesearch": {
+   "min": 3,
+   "max": null
+  },
+  "ranksum": {
+   "min": 2,
+   "max": null
+  },
+  "raylcdf": {
+   "min": 1,
+   "max": 2
+  },
+  "raylfit": {
+   "min": 1,
+   "max": 2
+  },
+  "raylinv": {
+   "min": 2,
+   "max": 2
+  },
+  "raylpdf": {
+   "min": 2,
+   "max": 2
+  },
+  "raylrnd": {
+   "min": 1,
+   "max": null
+  },
+  "raylstat": {
+   "min": 1,
+   "max": 1
+  },
+  "regress": {
+   "min": 2,
+   "max": 3
+  },
+  "rescale": {
+   "min": 1,
+   "max": null
+  },
+  "ricecdf": {
+   "min": 1,
+   "max": null
+  },
+  "riceinv": {
+   "min": 3,
+   "max": null
+  },
+  "ricepdf": {
+   "min": 3,
+   "max": null
+  },
+  "ricernd": {
+   "min": 2,
+   "max": null
+  },
+  "ricestat": {
+   "min": 1,
+   "max": null
+  },
+  "ridge": {
+   "min": 3,
+   "max": 4
+  },
+  "rmmissing": {
+   "min": 1,
+   "max": null
+  },
+  "rmoutliers": {
+   "min": 1,
+   "max": null
+  },
+  "rmse": {
+   "min": 2,
+   "max": null
+  },
+  "robustcov": {
+   "min": 1,
+   "max": null
+  },
+  "robustfit": {
+   "min": 2,
+   "max": 7
+  },
+  "runstest": {
+   "min": 1,
+   "max": null
+  },
+  "signrank": {
+   "min": 1,
+   "max": null
+  },
+  "signtest": {
+   "min": 1,
+   "max": null
+  },
+  "silhouette": {
+   "min": 2,
+   "max": null
+  },
+  "skewness": {
+   "min": 1,
+   "max": 3
+  },
+  "smoothdata": {
+   "min": 1,
+   "max": null
+  },
+  "squareform": {
+   "min": 1,
+   "max": 2
+  },
+  "standardizeMissing": {
+   "min": 2,
+   "max": null
+  },
+  "std": {
+   "min": 1,
+   "max": 4
+  },
+  "tabulate": {
+   "min": 1,
+   "max": 1
+  },
+  "tcdf": {
+   "min": 2,
+   "max": 3
+  },
+  "tiedrank": {
+   "min": 1,
+   "max": 5
+  },
+  "tinv": {
+   "min": 2,
+   "max": 2
+  },
+  "tpdf": {
+   "min": 2,
+   "max": 2
+  },
+  "trimmean": {
+   "min": 2,
+   "max": 4
+  },
+  "trnd": {
+   "min": 1,
+   "max": null
+  },
+  "tstat": {
+   "min": 1,
+   "max": 1
+  },
+  "ttest": {
+   "min": 1,
+   "max": null
+  },
+  "ttest2": {
+   "min": 2,
+   "max": null
+  },
+  "unidcdf": {
+   "min": 2,
+   "max": 3
+  },
+  "unidinv": {
+   "min": 2,
+   "max": 2
+  },
+  "unidpdf": {
+   "min": 2,
+   "max": 2
+  },
+  "unidrnd": {
+   "min": 1,
+   "max": null
+  },
+  "unidstat": {
+   "min": 1,
+   "max": 1
+  },
+  "unifcdf": {
+   "min": 1,
+   "max": 3
+  },
+  "unifinv": {
+   "min": 1,
+   "max": 3
+  },
+  "unifit": {
+   "min": 1,
+   "max": 2
+  },
+  "unifpdf": {
+   "min": 1,
+   "max": 3
+  },
+  "unifrnd": {
+   "min": 2,
+   "max": null
+  },
+  "unifstat": {
+   "min": 2,
+   "max": 2
+  },
+  "var": {
+   "min": 1,
+   "max": 4
+  },
+  "vartest": {
+   "min": 2,
+   "max": null
+  },
+  "vartest2": {
+   "min": 2,
+   "max": null
+  },
+  "vartestn": {
+   "min": 1,
+   "max": null
+  },
+  "wblcdf": {
+   "min": 1,
+   "max": 5
+  },
+  "wblfit": {
+   "min": 1,
+   "max": 5
+  },
+  "wblinv": {
+   "min": 1,
+   "max": 5
+  },
+  "wbllike": {
+   "min": 2,
+   "max": 4
+  },
+  "wblpdf": {
+   "min": 1,
+   "max": 3
+  },
+  "wblrnd": {
+   "min": 2,
+   "max": null
+  },
+  "wblstat": {
+   "min": 2,
+   "max": 2
+  },
+  "wishrnd": {
+   "min": 2,
+   "max": 3
+  },
+  "zscore": {
+   "min": 1,
+   "max": 3
+  },
+  "ztest": {
+   "min": 3,
+   "max": null
+  }
+ },
+ "comm": {
+  "amdemod": {
+   "min": 3,
+   "max": 7
+  },
+  "ammod": {
+   "min": 3,
+   "max": 5
+  },
+  "apskdemod": {
+   "min": 3,
+   "max": null
+  },
+  "apskmod": {
+   "min": 3,
+   "max": null
+  },
+  "arithdeco": {
+   "min": 3,
+   "max": 3
+  },
+  "arithenco": {
+   "min": 2,
+   "max": 2
+  },
+  "awgn": {
+   "min": 2,
+   "max": 5
+  },
+  "berawgn": {
+   "min": 3,
+   "max": null
+  },
+  "berconfint": {
+   "min": 2,
+   "max": 3
+  },
+  "bi2de": {
+   "min": 1,
+   "max": 3
+  },
+  "bit2int": {
+   "min": 2,
+   "max": 5
+  },
+  "biterr": {
+   "min": 2,
+   "max": 4
+  },
+  "bsc": {
+   "min": 2,
+   "max": 3
+  },
+  "compand": {
+   "min": 3,
+   "max": 4
+  },
+  "convenc": {
+   "min": 2,
+   "max": 4
+  },
+  "convertSNR": {
+   "min": 2,
+   "max": null
+  },
+  "cyclgen": {
+   "min": 2,
+   "max": 3
+  },
+  "cyclpoly": {
+   "min": 2,
+   "max": 3
+  },
+  "de2bi": {
+   "min": 1,
+   "max": 4
+  },
+  "decode": {
+   "min": 3,
+   "max": 6
+  },
+  "descrambler": {
+   "min": 3,
+   "max": 3,
+   "absent": "R2025b System-object API; nk contract"
+  },
+  "dpcmdeco": {
+   "min": 3,
+   "max": 3
+  },
+  "dpcmenco": {
+   "min": 4,
+   "max": 4
+  },
+  "dpcmopt": {
+   "min": 2,
+   "max": 3
+  },
+  "dpskdemod": {
+   "min": 2,
+   "max": null
+  },
+  "dpskmod": {
+   "min": 2,
+   "max": null
+  },
+  "encode": {
+   "min": 3,
+   "max": 5
+  },
+  "fmdemod": {
+   "min": 4,
+   "max": 5
+  },
+  "fmmod": {
+   "min": 4,
+   "max": 5
+  },
+  "fskdemod": {
+   "min": 4,
+   "max": 6
+  },
+  "fskmod": {
+   "min": 4,
+   "max": 7
+  },
+  "gaussdesign": {
+   "min": 1,
+   "max": 3
+  },
+  "gen2par": {
+   "min": 1,
+   "max": 1
+  },
+  "genqamdemod": {
+   "min": 2,
+   "max": 8
+  },
+  "genqammod": {
+   "min": 2,
+   "max": 4
+  },
+  "hammgen": {
+   "min": 1,
+   "max": 2
+  },
+  "huffmandeco": {
+   "min": 2,
+   "max": 2
+  },
+  "huffmandict": {
+   "min": 2,
+   "max": 4
+  },
+  "huffmanenco": {
+   "min": 2,
+   "max": 2
+  },
+  "int2bit": {
+   "min": 2,
+   "max": 3
+  },
+  "intdump": {
+   "min": 2,
+   "max": 2
+  },
+  "istrellis": {
+   "min": 1,
+   "max": 1
+  },
+  "lloyds": {
+   "min": 2,
+   "max": 4
+  },
+  "marcumq": {
+   "min": 2,
+   "max": 3
+  },
+  "mil188qamdemod": {
+   "min": 2,
+   "max": null
+  },
+  "mil188qammod": {
+   "min": 2,
+   "max": 10
+  },
+  "modnorm": {
+   "min": 3,
+   "max": 3
+  },
+  "mskdemod": {
+   "min": 2,
+   "max": 5
+  },
+  "mskmod": {
+   "min": 2,
+   "max": 4
+  },
+  "noisebw": {
+   "min": 4,
+   "max": 4
+  },
+  "ofdmdemod": {
+   "min": 3,
+   "max": 8
+  },
+  "ofdmmod": {
+   "min": 3,
+   "max": 8
+  },
+  "pamdemod": {
+   "min": 2,
+   "max": 4
+  },
+  "pammod": {
+   "min": 2,
+   "max": 4
+  },
+  "pmdemod": {
+   "min": 4,
+   "max": 5
+  },
+  "pmmod": {
+   "min": 4,
+   "max": 5
+  },
+  "poly2trellis": {
+   "min": 2,
+   "max": 3
+  },
+  "pskdemod": {
+   "min": 2,
+   "max": null
+  },
+  "pskmod": {
+   "min": 2,
+   "max": 10
+  },
+  "qamdemod": {
+   "min": 2,
+   "max": null
+  },
+  "qammod": {
+   "min": 2,
+   "max": 11
+  },
+  "qfunc": {
+   "min": 1,
+   "max": 1
+  },
+  "qfuncinv": {
+   "min": 1,
+   "max": 1
+  },
+  "quantiz": {
+   "min": 2,
+   "max": 3
+  },
+  "randerr": {
+   "min": 1,
+   "max": 4
+  },
+  "randsrc": {
+   "min": 0,
+   "max": 4
+  },
+  "rayleighchan": {
+   "min": 1,
+   "max": 1,
+   "absent": "R2025b System-object API; nk contract"
+  },
+  "rcosdesign": {
+   "min": 3,
+   "max": 4
+  },
+  "rectpulse": {
+   "min": 2,
+   "max": 2
+  },
+  "ricianchan": {
+   "min": 2,
+   "max": 2,
+   "absent": "R2025b System-object API; nk contract"
+  },
+  "scrambler": {
+   "min": 3,
+   "max": 3,
+   "absent": "R2025b System-object API; nk contract"
+  },
+  "ssbdemod": {
+   "min": 3,
+   "max": 6
+  },
+  "ssbmod": {
+   "min": 3,
+   "max": 5
+  },
+  "symerr": {
+   "min": 2,
+   "max": 3
+  },
+  "syndtable": {
+   "min": 1,
+   "max": 1
+  },
+  "vec2mat": {
+   "min": 2,
+   "max": 3
+  },
+  "vitdec": {
+   "min": 5,
+   "max": 11
+  },
+  "wgn": {
+   "min": 3,
+   "max": 7
+  }
+ },
+ "control": {
+  "acker": {
+   "min": 3,
+   "max": 3
+  },
+  "allmargin": {
+   "min": 1,
+   "max": 6
+  },
+  "bode": {
+   "min": 1,
+   "max": 6
+  },
+  "c2d": {
+   "min": 2,
+   "max": 3
+  },
+  "care": {
+   "min": 3,
+   "max": null
+  },
+  "covar": {
+   "min": 2,
+   "max": 5
+  },
+  "ctrb": {
+   "min": 1,
+   "max": 2
+  },
+  "d2c": {
+   "min": 1,
+   "max": 3
+  },
+  "damp": {
+   "min": 1,
+   "max": 2
+  },
+  "dare": {
+   "min": 3,
+   "max": null
+  },
+  "dcgain": {
+   "min": 1,
+   "max": 4
+  },
+  "dlqr": {
+   "min": 4,
+   "max": 5
+  },
+  "dlyap": {
+   "min": 2,
+   "max": 4
+  },
+  "evalfr": {
+   "min": 2,
+   "max": 2
+  },
+  "feedback": {
+   "min": 2,
+   "max": 10
+  },
+  "filt": {
+   "min": 2,
+   "max": null
+  },
+  "frd": {
+   "min": 2,
+   "max": null
+  },
+  "frdata": {
+   "min": 1,
+   "max": null
+  },
+  "freqresp": {
+   "min": 2,
+   "max": 6
+  },
+  "gram": {
+   "min": 2,
+   "max": 2
+  },
+  "hinfnorm": {
+   "min": 1,
+   "max": 3
+  },
+  "impulse": {
+   "min": 1,
+   "max": 6
+  },
+  "initial": {
+   "min": 2,
+   "max": 6
+  },
+  "isct": {
+   "min": 1,
+   "max": 1
+  },
+  "isdt": {
+   "min": 1,
+   "max": 1
+  },
+  "isproper": {
+   "min": 1,
+   "max": null
+  },
+  "issiso": {
+   "min": 1,
+   "max": 1
+  },
+  "isstable": {
+   "min": 1,
+   "max": 3
+  },
+  "isstatic": {
+   "min": 1,
+   "max": 2
+  },
+  "lqr": {
+   "min": 4,
+   "max": 5
+  },
+  "lsim": {
+   "min": 3,
+   "max": 7
+  },
+  "lyap": {
+   "min": 2,
+   "max": 4
+  },
+  "margin": {
+   "min": 1,
+   "max": 4
+  },
+  "minreal": {
+   "min": 1,
+   "max": 5
+  },
+  "nyquist": {
+   "min": 1,
+   "max": 6
+  },
+  "obsv": {
+   "min": 1,
+   "max": 2
+  },
+  "order": {
+   "min": 1,
+   "max": 1
+  },
+  "parallel": {
+   "min": 2,
+   "max": null
+  },
+  "place": {
+   "min": 3,
+   "max": 3
+  },
+  "pole": {
+   "min": 1,
+   "max": null
+  },
+  "pzmap": {
+   "min": 1,
+   "max": 4
+  },
+  "rlocus": {
+   "min": 1,
+   "max": 5
+  },
+  "series": {
+   "min": 2,
+   "max": 10
+  },
+  "ss": {
+   "min": 4,
+   "max": null
+  },
+  "ss2ss": {
+   "min": 2,
+   "max": 5
+  },
+  "ssdata": {
+   "min": 1,
+   "max": null
+  },
+  "step": {
+   "min": 1,
+   "max": 6
+  },
+  "stepinfo": {
+   "min": 1,
+   "max": null
+  },
+  "tf": {
+   "min": 2,
+   "max": null
+  },
+  "tfdata": {
+   "min": 1,
+   "max": null
+  },
+  "tzero": {
+   "min": 1,
+   "max": 6
+  },
+  "zero": {
+   "min": 1,
+   "max": null
+  },
+  "zpk": {
+   "min": 3,
+   "max": null
+  },
+  "zpkdata": {
+   "min": 1,
+   "max": null
+  }
+ }
+}

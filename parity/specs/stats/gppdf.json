@@ -1,0 +1,13 @@
+{
+  "name": "gppdf",
+  "namespace": "stats",
+  "setup": "",
+  "expr": "r1 = gppdf(0.5, 0.5, 1, 0); r2 = gppdf(1, 0.5, 1, 0);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = gppdf(...). Spec-extension batch 2026-05-09. "
+}

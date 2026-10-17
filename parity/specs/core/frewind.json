@@ -1,0 +1,12 @@
+{
+  "name": "frewind",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = tempname; fid = fopen(fname, 'w'); fwrite(fid, [1 2 3]); fclose(fid); fid = fopen(fname, 'r'); fread(fid, 1); frewind(fid); pos = ftell(fid); fclose(fid); delete(fname); r1 = double(pos);",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip via tempname). frewind resets position to 0."
+}

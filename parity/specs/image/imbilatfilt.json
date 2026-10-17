@@ -1,0 +1,10 @@
+{
+  "name": "imbilatfilt",
+  "namespace": "image",
+  "setup": "I9 = magic(9) / 10;",
+  "expr": "B = imbilatfilt(I9); r1 = double(numel(B));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [],
+  "comment": "Sig: r = imbilatfilt(...). Spec-extension batch 2026-05-09. [2026-09-19: images smaller than the default 5x5 window are rejected by the reference (imageNotMinSize, probed); spec image enlarged to 9x9, fingerprints re-validated live.]"
+}

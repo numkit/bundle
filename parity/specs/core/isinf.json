@@ -1,0 +1,15 @@
+{
+  "name": "isinf",
+  "namespace": "core",
+  "setup": "",
+  "expr": "v = isinf([1 NaN Inf -Inf 2]); r1 = double(v(1)); r2 = double(v(3)); r3 = double(v(4)); r4 = double(v(5));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "comment": "Sig: r = isinf(...). Predicate. Spec-extension batch 2026-05-09."
+}

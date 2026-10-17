@@ -1,0 +1,14 @@
+{
+  "name": "ellipj",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[sn, cn, dn] = ellipj(0.5, 0.5); r1 = sn; r2 = cn; r3 = dn;",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = ellipj(...). Spec-extension batch 2026-05-09."
+}

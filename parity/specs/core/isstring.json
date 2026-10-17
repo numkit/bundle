@@ -1,0 +1,14 @@
+{
+  "name": "isstring",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isstring(\"hi\")); r2 = double(isstring('a')); r3 = double(isstring(5));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isstring(...). Predicate. Spec-extension batch 2026-05-09."
+}

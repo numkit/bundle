@@ -1,0 +1,12 @@
+{
+  "name": "dummyvar",
+  "namespace": "stats",
+  "setup": "",
+  "expr": "D = dummyvar([1; 2; 1]); r1 = double(numel(D));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = dummyvar(...). Spec-extension batch 2026-05-09."
+}

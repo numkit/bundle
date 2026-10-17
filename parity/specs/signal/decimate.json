@@ -1,0 +1,12 @@
+{
+  "name": "decimate",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "y = decimate(sin(2*pi*0.01*(0:99)), 4); r1 = double(numel(y));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = decimate(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

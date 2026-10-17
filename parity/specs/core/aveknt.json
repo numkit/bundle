@@ -1,0 +1,12 @@
+{
+  "name": "aveknt",
+  "namespace": "core",
+  "setup": "",
+  "expr": "k = aveknt([1 2 3 4 5], 3); r1 = double(numel(k));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = aveknt(...). Spec-extension batch 2026-05-09."
+}

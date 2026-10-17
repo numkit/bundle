@@ -1,0 +1,12 @@
+{
+  "name": "convertcharstostrings",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s = convertCharsToStrings('hello'); r1 = double(isstring(s));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = convertcharstostrings(...). Spec-extension batch 2026-05-09."
+}

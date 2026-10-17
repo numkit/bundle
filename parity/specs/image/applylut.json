@@ -1,0 +1,12 @@
+{
+  "name": "applylut",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW = applylut(eye(3), zeros(512,1)); r1 = double(numel(BW));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = applylut(...). Spec-extension batch 2026-05-09."
+}

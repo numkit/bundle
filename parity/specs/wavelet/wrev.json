@@ -1,0 +1,30 @@
+{
+  "name": "wrev",
+  "namespace": "wavelet",
+  "setup": "row = [1 2 3 4 5]; col = [1; 2; 3; 4; 5]; M = [1 2 3; 4 5 6]; z = [1+2i, 3-1i, -4+0.5i];",
+  "expr": "y_row = wrev(row); y_col = wrev(col); y_M = wrev(M); y_z = wrev(z); y_one = wrev([42]); y_sgl = wrev(single(row)); y_log = wrev(logical([1 0 1 1 0])); y_u8 = wrev(uint8([5 200 7])); y_i16 = wrev(int16([-3 400 12]));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "y_row(1)",
+    "y_row(5)",
+    "y_col(1)",
+    "y_col(5)",
+    "y_M(1,1)",
+    "y_M(1,2)",
+    "y_M(2,1)",
+    "y_M(2,3)",
+    "real(y_z(1))",
+    "imag(y_z(1))",
+    "real(y_z(3))",
+    "imag(y_z(3))",
+    "y_one",
+    "double(y_sgl(1))",
+    "double(y_log(1))",
+    "double(y_log(3))",
+    "double(y_u8(1))",
+    "double(y_u8(2))",
+    "double(y_i16(2))"
+  ],
+  "comment": "Sig: y = wrev(x). Reverse along the first non-singleton dimension; matrix = flipud per column. Argcheck portion 2026-09-19: the reference takes EVERY array class and the result keeps it - single, logical, uint8, int16, char, complex all preserve (the old kernel returned double for every real input). tol=0 (permutation-stable)."
+}

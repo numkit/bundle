@@ -1,0 +1,13 @@
+{
+  "name": "tfdata",
+  "namespace": "control",
+  "setup": "",
+  "expr": "[b, a] = tfdata(tf(1, [1 1]), \"v\"); r1 = double(numel(b)); r2 = double(numel(a));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = tfdata(...). Spec-extension batch 2026-05-09."
+}

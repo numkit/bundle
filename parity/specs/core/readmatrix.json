@@ -1,0 +1,12 @@
+{
+  "name": "readmatrix",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = [tempname '.csv']; writematrix([1 2; 3 4], fname); A = readmatrix(fname); delete(fname); r1 = double(sum(A(:)));",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip in single snippet via tempname). readmatrix reads CSV -- sum [1+2+3+4] = 10."
+}

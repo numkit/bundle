@@ -1,0 +1,18 @@
+{
+  "name": "shanwavf",
+  "namespace": "wavelet",
+  "setup": "[ps, xs] = shanwavf(-5, 5, 8, 1, 1); [pa, xa] = shanwavf(-5, 5, 16, 0.5, 2); [p33, x33] = shanwavf(-4, 4, 33, 1, 1);",
+  "expr": "rs2 = real(ps(2)); rs4 = real(ps(4)); ra1 = real(pa(1)); ra8 = real(pa(8)); rmid = real(p33(17)); imid = imag(p33(17)); amid = abs(p33(8));",
+  "iters": 5,
+  "tol": 1e-10,
+  "fingerprint": [
+    "rs2",
+    "rs4",
+    "ra1",
+    "ra8",
+    "rmid",
+    "imid",
+    "amid"
+  ],
+  "comment": "Sig: [psi, x] = shanwavf(LB, UB, N, fb, fc). Shannon wavelet ψ(t) = √fb·sinc(fb·t)·exp(2πi·fc·t). Coverage: (fb, fc) ∈ {(1,1), (0.5,2)} × N ∈ {8, 16, 33}."
+}

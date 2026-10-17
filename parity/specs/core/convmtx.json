@@ -1,0 +1,15 @@
+{
+  "name": "convmtx",
+  "namespace": "core",
+  "setup": "h = [1 -0.5 0.25];",
+  "expr": "y = convmtx(h, 100); hs = single([1 1]); as = convmtx(hs, 3); as12 = double(as(1,2)); hc = [1 1i]; ac = convmtx(hc, 3); ac11r = real(ac(1,1)); ac12i = imag(ac(1,2));",
+  "iters": 100,
+  "tol": 1e-09,
+  "fingerprint": [
+    "as12",
+    "ac11r",
+    "ac12i"
+  ],
+  "comment": "Sig: A = convmtx(H, N). 102x100 conv matrix. Structural portion 2026-09-18: single and complex h are class-preserving (probed R2025b — the matrix cells are copies of h, values exact); logical h is REJECTED by the reference (mustBeA list has no logical), integer h needs an integer-class output (filed stub: bugs/opened/signal/integer-class-outputs.md).",
+  "out_var": "y"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "immse",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = immse([1 2 3], [1 2 3]); r2 = immse([1 2], [3 4]);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = immse(...). Spec-extension batch 2026-05-09."
+}

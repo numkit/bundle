@@ -1,0 +1,13 @@
+{
+  "name": "imabsdiff",
+  "namespace": "image",
+  "setup": "",
+  "expr": "C = imabsdiff([1 5], [3 2]); r1 = C(1); r2 = C(2);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = imabsdiff(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "finddelay",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "r1 = finddelay([0 0 1 2 3], [1 2 3 0 0]);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = finddelay(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

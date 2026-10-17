@@ -1,0 +1,13 @@
+{
+  "name": "rmfield",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s.a=1; s.b=2; t = rmfield(s, \"a\"); r1 = double(isfield(t, \"a\")); r2 = double(isfield(t, \"b\"));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = rmfield(...). Spec-extension batch 2026-05-09."
+}

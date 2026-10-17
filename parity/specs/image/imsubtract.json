@@ -1,0 +1,12 @@
+{
+  "name": "imsubtract",
+  "namespace": "image",
+  "setup": "",
+  "expr": "C = imsubtract([10 20; 30 40], [1 2; 3 4]); r1 = C(1,1);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imsubtract(...). Spec-extension batch 2026-05-09."
+}

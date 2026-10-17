@@ -1,0 +1,12 @@
+{
+  "name": "erasebetween",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r = eraseBetween(\"hello (world) end\", \"(\", \")\"); r1 = double(strlength(r));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: position-based string op (MATLAB canonical: eraseBetween). Bit-identical with MATLAB R2025b. NK also registers a lowercase alias for convenience."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "pulstran",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "y = pulstran(0:0.01:0.1, 0.05, \"rectpuls\", 0.02); r1 = double(numel(y));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = pulstran(...). Spec-extension batch 2026-05-09."
+}

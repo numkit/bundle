@@ -1,0 +1,13 @@
+{
+  "name": "berconfint",
+  "namespace": "comm",
+  "setup": "",
+  "expr": "[lo, hi] = berconfint(10, 1000); r1 = lo; r2 = hi;",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = berconfint(...). Spec-extension batch 2026-05-09. "
+}

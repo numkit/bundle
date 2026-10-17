@@ -1,0 +1,13 @@
+{
+  "name": "pol2cart",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[x, y] = pol2cart(pi/4, sqrt(2)); r1 = x; r2 = y;",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = pol2cart(...). Spec-extension batch 2026-05-09."
+}

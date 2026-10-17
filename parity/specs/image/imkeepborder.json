@@ -1,0 +1,12 @@
+{
+  "name": "imkeepborder",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW = imkeepborder(eye(4)); r1 = double(numel(BW));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imkeepborder(...). Spec-extension batch 2026-05-09."
+}

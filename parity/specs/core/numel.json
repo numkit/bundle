@@ -1,0 +1,15 @@
+{
+  "name": "numel",
+  "namespace": "core",
+  "setup": "A = [1 2 3; 4 5 6];",
+  "expr": "r1 = numel(A); r2 = numel([1 2]); r3 = numel([]); r4 = numel(0);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "comment": "Sig: r = numel(...). Shape op. Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "eps",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = eps(1);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = eps([x]). Spec-extension batch 2026-05-09 — verified bit-identical MATLAB R2025b on scalar-1 input. KNOWN GAPS (separate ТЗ): eps() with no args returns empty (should return eps(1)); eps(fractional) is parser-confused as indexing; eps(vector) segfaults. Pinned only the working scalar path here."
+}

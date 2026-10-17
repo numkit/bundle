@@ -1,0 +1,14 @@
+{
+  "name": "uint64",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(uint64(100)); r2 = double(uint64(0)); r3 = double(uint64(99999));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = uint64(...). Type conversion. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "kron",
+  "namespace": "core",
+  "setup": "",
+  "expr": "K = kron([1 0; 0 1], [1 1; 1 1]); r1 = K(1,1); r2 = K(2,2); r3 = double(numel(K)); kc = kron([1i 2], [1 1]); km = kron([1+1i; 2], [1 1i]); ki = kron(int8([1 2]), 2); ki2 = kron(int8([1 2]), int8([3 4])); ks = kron(single([1 2]), [3 4]); kl = kron(logical([1 0;1 1]), [1 2]); kch = kron('a','b'); ksglok = double(abs(double(ks(1)) - 3) < 1e-6);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "imag(kc(1))",
+    "real(kc(3))",
+    "double(numel(kc))",
+    "real(km(1,1))",
+    "imag(km(1,1))",
+    "imag(km(1,2))",
+    "double(ki(1))",
+    "double(ki(2))",
+    "double(ki2(4))",
+    "ksglok",
+    "double(kl(1,1))",
+    "kch"
+  ],
+  "comment": "Sig: r = kron(...). Spec-extension batch 2026-05-09. COMPLEX: ordinary Kronecker product with complex element products (no conjugation): kron([1i 2],[1 1])=[1i 1i 2 2]; kron([1+1i;2],[1 1i])=[1+1i -1+1i; 2 2i]. nk previously rejected COMPLEX ('not supported') -- added 2026-05-29. Argcheck-drain 2026-09-18: probed class contract — integers only mix with the SAME class or a double SCALAR (mixedClasses otherwise, incl. any single), empties reject (badsubscript class), 3-D rejects (TwoDInput), cell rejects; char/logical widen to double codes; single contagion (predicate)."
+}

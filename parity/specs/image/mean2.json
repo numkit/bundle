@@ -1,0 +1,12 @@
+{
+  "name": "mean2",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = mean2([1 2; 3 4]);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = mean2(...). Spec-extension batch 2026-05-09."
+}

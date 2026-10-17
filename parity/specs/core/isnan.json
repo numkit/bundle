@@ -1,0 +1,14 @@
+{
+  "name": "isnan",
+  "namespace": "core",
+  "setup": "",
+  "expr": "v = isnan([1 NaN Inf 2]); r1 = double(v(1)); r2 = double(v(2)); r3 = double(v(3));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isnan(...). Predicate. Spec-extension batch 2026-05-09."
+}

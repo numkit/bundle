@@ -1,0 +1,13 @@
+{
+  "name": "chirp",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "y = chirp(0:0.001:0.01, 0, 1, 100); r1 = y(1); r2 = double(numel(y));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = chirp(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

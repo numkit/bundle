@@ -1,0 +1,12 @@
+{
+  "name": "freqspace",
+  "namespace": "core",
+  "setup": "",
+  "expr": "f = freqspace(8); r1 = double(numel(f));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: f = freqspace(N). KNOWN GAP: nk returns shorter vector than MATLAB for freqspace(8) — different size convention. Only structural numel pinned. Documented as separate ТЗ."
+}

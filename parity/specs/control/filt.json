@@ -1,0 +1,12 @@
+{
+  "name": "filt",
+  "namespace": "control",
+  "setup": "",
+  "expr": "sys = filt([1 0.5], [1 -0.5]); r1 = 1;",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = filt(...). Spec-extension batch 2026-05-09."
+}

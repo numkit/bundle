@@ -1,0 +1,14 @@
+{
+  "name": "ischar",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(ischar('a')); r2 = double(ischar(5)); r3 = double(ischar(\"hi\"));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = ischar(...). Predicate. Spec-extension batch 2026-05-09."
+}

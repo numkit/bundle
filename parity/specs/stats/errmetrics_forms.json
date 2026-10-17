@@ -1,0 +1,24 @@
+{
+  "name": "errmetrics_forms",
+  "namespace": "stats",
+  "setup": "F = [1 2 3]; A = [1 2 4];",
+  "expr": "e1 = rmse(F, A); e3 = rmse([1 NaN 3], A); e4 = rmse([1 NaN 3], A, 'omitnan'); e7 = rmse(complex([1 2],[1 1]), [1 2]); e9 = rmse(F, A, 'all'); e10 = rmse(F, A, 'Weights', [1 1 2]); e12 = rmse([1 2], [1 2], 'omit'); cs = rmse(single([1 2]), [1 3]); e13 = double(strcmp(class(cs), 'single')); e13v = double(cs); m14 = mape(F, A); m17 = mape([1 NaN 3], A, 'omitnan'); m18 = mape(F, A, 'Weights', [1 1 2]); m20 = mape(F, A, 'includenan', 'omitzero');",
+  "iters": 5,
+  "tol": 1e-09,
+  "comment": "rmse/mape argcheck-drain spec 2026-09-19 (probe71 E-section, parseErrorMetricsInput.m): float gate (InvalidData for int), includenan default NaN-poisoning, omitnan, complex -> real result, 'all', Weights NV (weighted mean), 'omit' prefix = omitnan with NO ambiguity error for rmse, single contagion, mape |A-F|/|A|*100 convention, mape two-flag form, omitzero no-op when no zero divisions. Deferred/stub: none in these forms.",
+  "fingerprint": [
+    "double(e1)",
+    "double(e3)",
+    "double(e4)",
+    "double(e7)",
+    "double(e9)",
+    "double(e10)",
+    "double(e12)",
+    "e13",
+    "e13v",
+    "double(m14)",
+    "double(m17)",
+    "double(m18)",
+    "double(m20)"
+  ]
+}

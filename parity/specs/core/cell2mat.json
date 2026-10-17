@@ -1,0 +1,14 @@
+{
+  "name": "cell2mat",
+  "namespace": "core",
+  "setup": "",
+  "expr": "M = cell2mat({1, 2; 3, 4}); r1 = M(1,1); r2 = M(2,2); r3 = numel(M);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = cell2mat(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "edge",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW = edge(eye(5)); r1 = double(numel(BW));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = edge(...). Spec-extension batch 2026-05-09 (image namespace)."
+}

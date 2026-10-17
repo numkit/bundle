@@ -1,0 +1,12 @@
+{
+  "name": "gauspuls",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "y = gauspuls(0:0.001:0.01, 1000); r1 = double(numel(y));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = gauspuls(...). Spec-extension batch 2026-05-09."
+}

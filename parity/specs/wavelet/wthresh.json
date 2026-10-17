@@ -1,0 +1,33 @@
+{
+  "name": "wthresh",
+  "namespace": "wavelet",
+  "setup": "v = [-3 -1.5 -0.5 0.5 1.5 3]; vs = single(v); vc = [1+2i 3-1i 2 0.5-0.5i];",
+  "expr": "ys = wthresh(v, 's', 1); yh = wthresh(v, 'h', 1); yss = wthresh(vs, 's', 1); yts = wthresh(v, 's', single(1)); yc = wthresh(vc, 's', 1); ych = wthresh(vc, 'h', 1); yt = wthresh([1 5 2], 's', [1 2 1]);",
+  "iters": 3,
+  "tol": 1e-12,
+  "fingerprint": [
+    "ys(1)",
+    "ys(2)",
+    "ys(3)",
+    "ys(5)",
+    "ys(6)",
+    "yh(1)",
+    "yh(2)",
+    "yh(3)",
+    "yh(5)",
+    "yh(6)",
+    "double(yss(1))",
+    "double(yss(6))",
+    "double(yts(1))",
+    "real(yc(1))",
+    "imag(yc(1))",
+    "real(yc(2))",
+    "imag(yc(2))",
+    "real(ych(1))",
+    "imag(ych(4))",
+    "yt(1)",
+    "yt(2)",
+    "yt(3)"
+  ],
+  "comment": "Sig y=wthresh(x,sorh,t): soft 's' shrinks toward 0 by t, hard 'h' zeroes |x|<=t. Argcheck portion 2026-09-19: X is double/single (complex computed - soft keeps the phase: z*(|z|-t)/|z|); T is real scalar or same-size elementwise; the result takes single from either X or T. Branches: dbl/sgl soft+hard, complex soft+hard, T-single contagion, elementwise T. Deferred: none (int/logical/char X reject - same rejection class as ref)."
+}

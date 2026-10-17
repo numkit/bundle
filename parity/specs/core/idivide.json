@@ -1,0 +1,13 @@
+{
+  "name": "idivide",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(idivide(int32(7), int32(2))); r2 = double(idivide(int32(-7), int32(2)));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: idivide(...). Spec-extension batch 2026-05-09."
+}

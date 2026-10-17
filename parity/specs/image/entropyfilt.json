@@ -1,0 +1,12 @@
+{
+  "name": "entropyfilt",
+  "namespace": "image",
+  "setup": "",
+  "expr": "J = entropyfilt(uint8([0 50; 100 200])); r1 = double(numel(J));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = entropyfilt(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,13 @@
+{
+  "name": "randi",
+  "namespace": "core",
+  "setup": "rng(42);",
+  "expr": "r1 = double(numel(randi(10, 1, 5))); r2 = double(all(randi(10, 1, 100) >= 1 & randi(10, 1, 100) <= 10));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = randi(...). Spec-extension batch 2026-05-09."
+}

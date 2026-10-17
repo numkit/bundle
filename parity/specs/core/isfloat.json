@@ -1,0 +1,14 @@
+{
+  "name": "isfloat",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isfloat(3.14)); r2 = double(isfloat(int8(5))); r3 = double(isfloat(true));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isfloat(...). Spec-extension batch 2026-05-09."
+}

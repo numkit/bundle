@@ -1,0 +1,13 @@
+{
+  "name": "strtok",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[t, rem] = strtok(\"hello world\"); r1 = double(strlength(t)); r2 = double(strlength(rem));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = strtok(...). String op. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

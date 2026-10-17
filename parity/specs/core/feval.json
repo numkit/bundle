@@ -1,0 +1,13 @@
+{
+  "name": "feval",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = feval(@sin, 0); r2 = feval(@cos, 0);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = feval(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "xyz2rgb",
+  "namespace": "image",
+  "setup": "I = double(reshape(0:74, [5 5 3])) / 74;",
+  "expr": "y = xyz2rgb(I);",
+  "iters": 5,
+  "tol": 1e-06,
+  "out_var": "y",
+  "comment": "Sig + small deterministic input. Sign-preserving sRGB gamma fix 2026-05-09 -- nk no longer clamps out-of-gamut linear RGB before encoding."
+}

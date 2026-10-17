@@ -1,0 +1,12 @@
+{
+  "name": "imboxfilt3",
+  "namespace": "image",
+  "setup": "",
+  "expr": "B = imboxfilt3(zeros(3,3,3)); r1 = double(numel(B));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imboxfilt3(...). Spec-extension batch 2026-05-09."
+}

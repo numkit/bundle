@@ -1,0 +1,14 @@
+{
+  "name": "iscell",
+  "namespace": "core",
+  "setup": "",
+  "expr": "c = {1, 2}; r1 = double(iscell(c)); r2 = double(iscell(5)); r3 = double(iscell([]));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = iscell(...). Predicate. Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "interp3",
+  "namespace": "core",
+  "setup": "[X, Y, Z] = meshgrid(1:5, 1:5, 1:5); V = X + Y + Z;",
+  "expr": "r1 = double(interp3(X, Y, Z, V, 2.5, 2.5, 2.5));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: V = interp3(X, Y, Z, V, Xq, Yq, Zq). N-D linear interpolation. Bit-identical with MATLAB R2025b. readGridAxis now auto-detects meshgrid vs ndgrid orientation."
+}

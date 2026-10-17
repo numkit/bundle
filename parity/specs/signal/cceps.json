@@ -1,0 +1,21 @@
+{
+  "name": "cceps",
+  "namespace": "signal",
+  "setup": "x = (1:8)'; w = [1 2 3 4 3 2 1];",
+  "expr": "y = cceps(x); [d8, nd8] = cceps(x); z = cceps(w); [dw, ndw] = cceps(w);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "y(1)",
+    "y(2)",
+    "y(4)",
+    "y(8)",
+    "nd8",
+    "z(1)",
+    "z(2)",
+    "z(4)",
+    "z(7)",
+    "ndw"
+  ],
+  "comment": "Sig: [xhat, nd] = cceps(x). Complex cepstrum real(ifft(log|fft x| + i*rcunwrap(angle(fft x)))). FORWARD fft uses dir=-1, the inverse pass dir=+1 (using +1 for both time-reverses the output). Phase: full unwrap + MATLAB rcunwrap linear-phase removal (subtract pi*nd*(0:n-1)/fix((n+1)/2)), with nd = round(unwrapped(nh+1)/pi) the (circular) delay = 2nd output. Fixes bugs/signal/cceps-nd-phase (non-power-of-two phase was garbage past DC; nd was missing). Verified vs MATLAB R2025b: power-of-two (1:8) and non-2^n [1 2 3 4 3 2 1] both bit-identical, nd8=1, ndw=-3. Octave's phase-unwrap path differs; harness prefers MATLAB."
+}

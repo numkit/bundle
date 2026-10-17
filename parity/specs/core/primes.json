@@ -1,0 +1,15 @@
+{
+  "name": "primes",
+  "namespace": "core",
+  "setup": "",
+  "expr": "p = primes(20); r1 = p(1); r2 = p(2); r3 = p(8); r4 = double(numel(p));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "comment": "Sig: r = primes(...). Spec-extension batch 2026-05-09."
+}

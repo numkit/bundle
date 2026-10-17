@@ -1,0 +1,12 @@
+{
+  "name": "datastats",
+  "namespace": "stats",
+  "setup": "x = [1; 2; 3; 4; 5];",
+  "expr": "s = datastats(x); r1 = double(s.mean);",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: s = datastats(x). MATLAB requires column vector input. NK emits same struct fields {min,max,mean,median,num,range,std} -- bit-identical on probed COLUMN input."
+}

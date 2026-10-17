@@ -1,0 +1,12 @@
+{
+  "name": "zp2ss",
+  "namespace": "signal",
+  "setup": "z = [0.5; -0.5]; p = [0.3+0.1j; 0.3-0.1j]; k = 1;",
+  "expr": "[A, B, C, D] = zp2ss(z, p, k); r1 = double(numel(A));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: [A,B,C,D] = zp2ss(Z,P,K). Re-closed after tf2ss canonical-form fix 2026-05-09."
+}

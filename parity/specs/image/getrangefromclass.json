@@ -1,0 +1,13 @@
+{
+  "name": "getrangefromclass",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r = getrangefromclass(uint8(0)); r1 = double(r(1)); r2 = double(r(2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = getrangefromclass(...). Spec-extension batch 2026-05-09."
+}

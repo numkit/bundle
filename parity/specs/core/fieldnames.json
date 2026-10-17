@@ -1,0 +1,14 @@
+{
+  "name": "fieldnames",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s.x = 1; s.y = 2; f = fieldnames(s); r1 = double(numel(f)); r2 = double(strcmp(f{1}, 'x')); r3 = double(strcmp(f{2}, 'y'));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = fieldnames(...). Spec-extension batch 2026-05-09."
+}

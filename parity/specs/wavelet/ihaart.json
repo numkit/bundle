@@ -1,0 +1,18 @@
+{
+  "name": "ihaart",
+  "namespace": "wavelet",
+  "setup": "x8 = [1 2 3 4 5 6 7 8]; xi = [10 20 30 40 50 60 70 80]; M = [1 2 3 4; 5 6 7 8; 9 10 11 12; 13 14 15 16];",
+  "expr": "[a, d]    = haart(x8, 1);    xr_l1 = ihaart(a, d); [a, d]    = haart(x8);       xr_full = ihaart(a, d); xr_p1 = ihaart(a, d, 1); xr_p2 = ihaart(a, d, 2); [a, d]    = haart(xi, 3, 'integer'); xr_int = ihaart(a, d, 'integer'); xr_intp1 = ihaart(a, d, 1, 'integer'); xr_intp2 = ihaart(a, d, 2, 'integer'); [a, d]    = haart(M, 1);     xr_m  = ihaart(a, d); [a, d]    = haart(M);        xr_mp = ihaart(a, d, 1); [asgl, dsgl] = haart(x8, 1); xs_sgl = ihaart(single(asgl), single(dsgl)); [amix, dmix] = haart(x8, 1); xd_mix = ihaart(amix, single(dmix)); [acx, dcx] = haart(x8, 1); xc_a = ihaart(complex(acx,1), dcx); sgl_ok = double(abs(double(xs_sgl(1)) - xr_l1(1)) < 1e-5); mix_ok = double(abs(xd_mix(1) - 1) < 1e-5); mixcls = double(strcmp(class(xd_mix), 'double'));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "sgl_ok",
+    "mix_ok",
+    "mixcls",
+    "real(xc_a(1))",
+    "imag(xc_a(1))",
+    "real(xc_a(8))",
+    "imag(xc_a(8))"
+  ],
+  "comment": "Sig: xrec = ihaart(a, d[, level[, integerflag]]). Inverse Haar 1-D DWT. Default level=0 (lossless reconstruction). When level=K (in [0, Nlevels)) the K finest detail bands d{1..K} are zeroed BEFORE reconstruction (xrec stays full-length). Inverse formulas: noninteger uses (a±d)/sqrt(2); integer uses lifting x[2k]=a[k]-floor(d[k]/2), x[2k+1]=x[2k]+d[k]. d MUST be real even when a is complex (MATLAB validateattributes on D). d may be a plain matrix at level=1 or a length-Nlevels cell array. Vector-shaped a returns column; matrix returns matrix. Verified: level=1, full multi-level, partial reconstruction (zero-out 1 and 2 bands), integer mode + partial, matrix full + partial. Argcheck portion 2026-09-19: a/d in {double, single} (logical/integer/char reject, probed); complex a computes a complex result while complex d rejects; the RESULT CLASS FOLLOWS a ALONE (double a + single d = double - probed R2025b). The single-single path is compared through a 1e-5 predicate (the reference computes single arithmetic end-to-end; values agree to ~1e-7). The single and mixed paths are compared through 1e-5 predicates plus the result-class check: with double a + single d the reference reconstructs exactly in double (mechanism aside, probed twice) while nk's double kernel sees the float-rounded d (~1e-9 residue) - values agree far below any single-precision tolerance."
+}

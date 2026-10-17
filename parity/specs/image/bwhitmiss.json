@@ -1,0 +1,12 @@
+{
+  "name": "bwhitmiss",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW = bwhitmiss(eye(4), ones(2), zeros(2)); r1 = double(numel(BW));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = bwhitmiss(...). Spec-extension batch 2026-05-09 (image namespace)."
+}

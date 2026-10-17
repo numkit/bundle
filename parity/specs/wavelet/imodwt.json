@@ -1,0 +1,16 @@
+{
+  "name": "imodwt",
+  "namespace": "wavelet",
+  "setup": "x = sin(2*pi*0.1*(0:31)') + 0.3*cos(2*pi*0.05*(0:31)');",
+  "expr": "w = modwt(x, 'haar', 3); xrec = imodwt(w, 'haar'); err = max(abs(xrec(:) - x(:))); ycx = imodwt(complex(w, 0.5), 'haar'); ysgl = imodwt(single(w), 'haar');",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "numel(xrec)",
+    "err",
+    "imag(ycx(1))",
+    "imag(ycx(end))",
+    "double(ysgl(1))"
+  ],
+  "comment": "Sig: x = imodwt(w, wname). Inverse MODWT. Round-trip imodwt(modwt(x)) recovers x to machine precision — the structurally important invariant. The internal coefficient values diverge from MATLAB R2025b (kernel filter-convention gap, see modwt.json comment); both engines independently recover x correctly from THEIR OWN coefficients. Argcheck portion 2026-09-19: w in {double, single} + complex (the integer classes and logical reject - probed InvalidCFSSize); complex w reconstructs complex with the imaginary offset riding the kernel unchanged (imodwt(ones)=1, probed both engines); both H and N must be >= 2. Round-trip invariant from the original spec kept."
+}

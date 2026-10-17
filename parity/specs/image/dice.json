@@ -1,0 +1,12 @@
+{
+  "name": "dice",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = dice(eye(4) > 0, eye(4) > 0);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = dice(...). Spec-extension batch 2026-05-09."
+}

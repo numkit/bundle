@@ -1,0 +1,12 @@
+{
+  "name": "imadjustn",
+  "namespace": "image",
+  "setup": "",
+  "expr": "B = imadjustn(zeros(2,2,2)); r1 = double(numel(B));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imadjustn(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ellipke",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[K, E] = ellipke(0.5); r1 = K; r2 = E;",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = ellipke(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "bwareaopen",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW2 = bwareaopen(eye(4), 2); r1 = double(numel(BW2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = bwareaopen(...). Spec-extension batch 2026-05-09."
+}

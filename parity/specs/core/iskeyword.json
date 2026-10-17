@@ -1,0 +1,14 @@
+{
+  "name": "iskeyword",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(iskeyword('if')); r2 = double(iskeyword('for')); r3 = double(iskeyword('foo'));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = iskeyword(...). Spec-extension batch 2026-05-09."
+}

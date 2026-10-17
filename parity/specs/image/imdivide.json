@@ -1,0 +1,12 @@
+{
+  "name": "imdivide",
+  "namespace": "image",
+  "setup": "",
+  "expr": "C = imdivide([10 20; 30 40], [2 2; 2 2]); r1 = C(1,1);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imdivide(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "nakastat",
+  "namespace": "stats",
+  "setup": "",
+  "expr": "[m, v] = nakastat(1, 1); r1 = m;",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = nakastat(...). Spec-extension batch 2026-05-09. "
+}

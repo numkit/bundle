@@ -1,0 +1,12 @@
+{
+  "name": "csapi",
+  "namespace": "core",
+  "setup": "",
+  "expr": "c = csapi([1 2 3 4 5], [1 4 9 16 25]); r1 = double(c.coefs(end, end));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: pp = csapi(x, y). Cubic-spline pp-form interpolation. Bit-identical with MATLAB R2025b on probed knots and field access. Earlier defer was wrong -- function works."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "writelines",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = tempname; writelines(\"hello\", fname); s = fileread(fname); delete(fname); r1 = double(strlength(s) >= 5);",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip via tempname). writelines writes single string -- file has >= 5 chars."
+}

@@ -1,0 +1,14 @@
+{
+  "name": "convn",
+  "namespace": "core",
+  "setup": "",
+  "expr": "A = [1 2 3]; B = [1 1]; C = convn(A, B); r1 = C(1); r2 = C(2); r3 = C(4);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = convn(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

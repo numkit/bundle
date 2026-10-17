@@ -1,0 +1,14 @@
+{
+  "name": "isvector",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isvector([1 2 3])); r2 = double(isvector([1; 2])); r3 = double(isvector([1 2; 3 4]));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isvector(...). Predicate. Spec-extension batch 2026-05-09."
+}

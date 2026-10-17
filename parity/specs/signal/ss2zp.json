@@ -1,0 +1,16 @@
+{
+  "name": "ss2zp",
+  "namespace": "signal",
+  "setup": "[A, B, C, D] = sos2ss([1 0.5 0.25 1 -0.3 0.02]);",
+  "expr": "[z, p, k] = ss2zp(A, B, C, D, 1);",
+  "iters": 1,
+  "tol": 1e-09,
+  "fingerprint": [
+    "k",
+    "min(real(p))",
+    "max(real(p))",
+    "min(real(z))",
+    "max(real(z))"
+  ],
+  "comment": "Sig [z,p,k]=ss2zp(A,B,C,D,iu): state-space -> zero/pole/gain for input iu. Built from the biquad [1 0.5 0.25]/[1 -0.3 0.02]: poles = roots([1 -0.3 0.02]) = {0.1, 0.2}; zeros = roots([1 0.5 0.25])... numerically {-0.25, -0.25}; gain k = 1. Pinned order-invariant (min/max of real parts)."
+}

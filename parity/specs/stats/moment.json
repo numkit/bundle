@@ -1,0 +1,16 @@
+{
+  "name": "moment",
+  "namespace": "stats",
+  "setup": "M = magic(4);",
+  "expr": "mo3 = moment(M, 3); mo4 = moment(M, 4); mv2 = moment([1 5 3 8 2 7 4 6], 2); mv3 = moment([1 5 3 8 2 7 4 6], 3);",
+  "iters": 3,
+  "tol": 1e-10,
+  "fingerprint": [
+    "mo3(1)",
+    "mo3(2)",
+    "mo4(1)",
+    "mv2",
+    "mv3"
+  ],
+  "comment": "Sig m=moment(x,k[,dim]): central k-th moment = mean((x-mean(x)).^k) (population, /N). magic(4) per-column: 3rd moment col1=72, col2=-24; 4th moment col1=931.0625. Vector [1 5 3 8 2 7 4 6]: 2nd moment (population var)=5.25, 3rd moment=0 (symmetric about 4.5)."
+}

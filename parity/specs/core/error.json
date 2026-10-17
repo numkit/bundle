@@ -1,0 +1,12 @@
+{
+  "name": "error",
+  "namespace": "core",
+  "setup": "",
+  "expr": "caught = 0; try; error('MyErr:test', 'msg'); catch ME; caught = strcmp(ME.identifier, 'MyErr:test'); end; r1 = double(caught);",
+  "iters": 1,
+  "tol": 0,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (control-flow throw via try/catch). error() raises an MException with the given id -- caught and identifier verified."
+}

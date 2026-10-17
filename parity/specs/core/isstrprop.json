@@ -1,0 +1,14 @@
+{
+  "name": "isstrprop",
+  "namespace": "core",
+  "setup": "",
+  "expr": "v = isstrprop('a1b', 'alpha'); r1 = double(v(1)); r2 = double(v(2)); r3 = double(v(3));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isstrprop(...). Spec-extension batch 2026-05-09."
+}

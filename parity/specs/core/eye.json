@@ -1,0 +1,16 @@
+{
+  "name": "eye",
+  "namespace": "core",
+  "setup": "",
+  "expr": "I = eye(4); r1 = I(1,1); r2 = I(2,2); r3 = I(1,2); r4 = sum(I(:)); r5 = numel(I);",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5"
+  ],
+  "comment": "Sig: r = eye(...). Spec-extension batch 2026-05-09."
+}

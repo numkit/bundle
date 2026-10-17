@@ -1,0 +1,14 @@
+{
+  "name": "isinteger",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isinteger(int8(5))); r2 = double(isinteger(3.14)); r3 = double(isinteger(uint32(0)));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isinteger(...). Spec-extension batch 2026-05-09."
+}

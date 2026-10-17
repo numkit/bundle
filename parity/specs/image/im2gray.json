@@ -1,0 +1,12 @@
+{
+  "name": "im2gray",
+  "namespace": "image",
+  "setup": "",
+  "expr": "g = im2gray(zeros(2,2,3)); r1 = double(numel(g));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = im2gray(...). Spec-extension batch 2026-05-09."
+}

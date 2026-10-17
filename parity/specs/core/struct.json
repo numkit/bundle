@@ -1,0 +1,14 @@
+{
+  "name": "struct",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s = struct('a', 1, 'b', 2); r1 = s.a; r2 = s.b; r3 = double(isstruct(s));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = struct(...). Spec-extension batch 2026-05-09."
+}

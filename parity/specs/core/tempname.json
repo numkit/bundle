@@ -1,0 +1,12 @@
+{
+  "name": "tempname",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(strlength(tempname) > 0);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = tempname(...). Spec-extension batch 2026-05-09."
+}

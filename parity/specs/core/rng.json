@@ -1,0 +1,17 @@
+{
+  "name": "rng",
+  "namespace": "core",
+  "setup": "",
+  "expr": "rng(0); a0 = rand(); a1 = rand(); a2 = rand(); rng(42); b0 = rand(); b1 = rand(); rng(1); c0 = rand();",
+  "iters": 5,
+  "tol": 1e-15,
+  "comment": "Sig: rng(SEED) + rand(). MATLAB-canonical Mersenne Twister (init_genrand reference, with seed=0 -> 5489 quirk) + 53-bit res53 uniform. Bit-identical with MATLAB R2025b across rng(0)/rng(1)/rng(42) (see Phase-0a-1 commit).",
+  "fingerprint": [
+    "a0",
+    "a1",
+    "a2",
+    "b0",
+    "b1",
+    "c0"
+  ]
+}

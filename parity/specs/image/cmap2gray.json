@@ -1,0 +1,12 @@
+{
+  "name": "cmap2gray",
+  "namespace": "image",
+  "setup": "",
+  "expr": "g = cmap2gray([1 0 0; 0 1 0; 0 0 1]); r1 = double(numel(g));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = cmap2gray(...). Spec-extension batch 2026-05-09."
+}

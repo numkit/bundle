@@ -1,0 +1,12 @@
+{
+  "name": "splitlines",
+  "namespace": "core",
+  "setup": "",
+  "expr": "lines = splitlines(\"a\" + newline + \"b\" + newline + \"c\"); r1 = double(numel(lines));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = splitlines(...). Spec-extension batch 2026-05-09."
+}

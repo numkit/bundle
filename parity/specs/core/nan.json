@@ -1,0 +1,13 @@
+{
+  "name": "nan",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isnan(nan)); r2 = double(nan == nan);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: nan(...). Spec-extension batch 2026-05-09."
+}

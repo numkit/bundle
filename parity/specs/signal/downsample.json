@@ -1,0 +1,25 @@
+{
+  "name": "downsample",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "y0 = downsample(1:10, 3); y1 = downsample(1:10, 3, 1); y2 = downsample(1:10, 3, 2); ys = downsample(single(1:8), 2); ysc = double(ys(2)); yc = downsample((1:8)+1i, 2); yci = imag(yc(1)); yl = double(downsample(logical(1:8), 2)); yl2 = yl(2); ym = downsample(reshape(1:8, 4, 2), 2); ym12 = ym(1,2); ym22 = ym(2,2); u = upsample(logical([1 0 1]), 2); u5 = double(u(5));",
+  "iters": 3,
+  "tol": 1e-12,
+  "fingerprint": [
+    "double(numel(y0))",
+    "y0(1)",
+    "y0(4)",
+    "double(numel(y1))",
+    "y1(1)",
+    "y1(3)",
+    "y2(1)",
+    "y2(3)",
+    "ysc",
+    "yci",
+    "yl2",
+    "ym12",
+    "ym22",
+    "u5"
+  ],
+  "comment": "Sig y=downsample(x,n[,phase]). Keeps x[phase], x[phase+n], … (phase 0..n-1). downsample(1:10,3) -> [1 4 7 10]; phase 1 -> [2 5 8]; phase 2 -> [3 6 9]. nk previously IGNORED phase -- now honored. Structural portion 2026-09-18: class-preserving gathers added (single/logical/complex — probed: the reference preserves the class and complex values exactly) and matrix input handled column-wise (ym12=5: column 2 of reshape(1:8,4,2) starts at 5). Matches MATLAB R2025b."
+}

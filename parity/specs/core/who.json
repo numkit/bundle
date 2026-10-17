@@ -1,0 +1,12 @@
+{
+  "name": "who",
+  "namespace": "core",
+  "setup": "",
+  "expr": "a = 1; b = 2; who; r1 = 1;",
+  "iters": 1,
+  "tol": 0,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (no-throw command-form probe). who command prints variable names to stdout; success = no exception. NOTE: nk's `who` is command-form only; functional `names = who` returning cellstr is a known gap (). evalc not available in nk, so stdout content cannot be captured for content-level parity."
+}

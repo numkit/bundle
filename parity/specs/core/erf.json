@@ -1,0 +1,18 @@
+{
+  "name": "erf",
+  "namespace": "core",
+  "setup": "x = [-1, -0.5, 0, 0.5, 1];",
+  "expr": "r = erf(x);",
+  "iters": 15,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r(1)",
+    "r(2)",
+    "r(3)",
+    "r(4)",
+    "r(5)"
+  ],
+  "comment": "Sig: r = erf(...). Special function. Spec-extension batch 2026-05-09 verified MATLAB R2025b parity.",
+  "bench_setup": "xb = mod((1:N)*7919,600)*0.01 - 3;",
+  "bench_expr": "rb=erf(xb);"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "db2mag",
+  "namespace": "control",
+  "setup": "",
+  "expr": "r1 = db2mag(0); r2 = db2mag(20);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = db2mag(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "rgb2lab",
+  "namespace": "image",
+  "setup": "",
+  "expr": "lab = rgb2lab(zeros(2,2,3)); r1 = double(numel(lab));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = rgb2lab(...). Spec-extension batch 2026-05-09 (image namespace)."
+}

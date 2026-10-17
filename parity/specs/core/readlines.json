@@ -1,0 +1,12 @@
+{
+  "name": "readlines",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = tempname; fid = fopen(fname, 'w'); fprintf(fid, 'a\\nb\\nc'); fclose(fid); lines = readlines(fname); delete(fname); r1 = double(numel(lines) >= 3);",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip via tempname). readlines returns string array -- at least 3 lines (some engines append empty trailing string)."
+}

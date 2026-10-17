@@ -1,0 +1,13 @@
+{
+  "name": "cell2struct",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s = cell2struct({1; 2}, {'a', 'b'}, 1); r1 = s.a; r2 = s.b;",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = cell2struct(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,37 @@
+{
+  "name": "audio_melspec_delta",
+  "covers": [
+    "melSpectrogram",
+    "audioDelta"
+  ],
+  "namespace": "audio",
+  "setup": "fs = 8000; xx = (1:0.1:80)'; xc = [(1:5)', (10:10:50)'];",
+  "expr": "[S, F, T] = melSpectrogram(xx, fs); Ssz1 = size(S, 1); Ssz2 = size(S, 2); Tsz = numel(T); F1 = F(1); Flast = F(end); d = audioDelta((1:10)'); d9 = d(9); d10 = d(10); d5 = audioDelta((1:10)', 5); d5_10 = d5(10); dc = audioDelta(xc); dc51 = dc(5,1); dc52 = dc(5,2); [dic, dfc] = audioDelta((1:10)', 3, [1; 2]); d3 = audioDelta(reshape(1:24, 2, 3, 4), 3); dsgl = audioDelta(single((1:10)'), 5); drow = audioDelta(1:10, 5);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "Ssz1",
+    "Ssz2",
+    "Tsz",
+    "F1",
+    "Flast",
+    "d9",
+    "d10",
+    "d5_10",
+    "dc51",
+    "dc52",
+    "dic(2)",
+    "dic(10)",
+    "dfc(1,1)",
+    "dfc(2,1)",
+    "size(d3, 1)",
+    "size(d3, 2)",
+    "size(d3, 3)",
+    "d3(2,1,1)",
+    "double(dsgl(10))",
+    "drow(1)",
+    "drow(2)",
+    "drow(10)"
+  ],
+  "comment": "MATLAB Audio Toolbox cycle C: melSpectrogram + audioDelta. melSpectrogram with NumBands=8 default-window/overlap on a deterministic ramp signal. F (mel-band centers): bit-equal with MATLAB R2025b on all 8 values. S(1,1) bit-equal. Time vector T size matches MATLAB. audioDelta: bit-equal on default windowLength=9 ramp test (d(9)=d(10)=2 — MATLAB filter convention with sum((1:M)^2)=30 divisor), and on custom windowLength=5 path (denom=5), and multi-channel (filter operates along dim 1 per column). KNOWN GAPs (deferred): NumBands ≠ 8 default, FrequencyRange/FilterBankNormalization/MelStyle name-value args, audioDelta initialCondition/finalCondition (MATLAB filter zi/zf convention) implemented 2026-09-19: single (wl-1)-element ic broadcasts to every channel; 3-D input filters page-wise; the result keeps x's class (double/single real). Octave 11.1.0 doesn't ship melSpectrogram or audioDelta in core (Audio package only)."
+}

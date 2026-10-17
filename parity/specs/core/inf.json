@@ -1,0 +1,14 @@
+{
+  "name": "inf",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isinf(inf)); r2 = double(inf > 0); r3 = double(inf == inf);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: inf(...). Spec-extension batch 2026-05-09."
+}

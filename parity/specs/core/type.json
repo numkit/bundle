@@ -1,0 +1,12 @@
+{
+  "name": "type",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = tempname; fid = fopen(fname, 'w'); fprintf(fid, 'hello'); fclose(fid); type(fname); delete(fname); r1 = 1;",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip in single snippet via tempname). type displays file content -- side-effect only."
+}

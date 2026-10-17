@@ -1,0 +1,14 @@
+{
+  "name": "sprintf",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(strlength(sprintf('%d', 42))); r2 = double(strcmp(sprintf('%d', 42), '42')); r3 = double(strcmp(sprintf('%.2f', 3.14159), '3.14'));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = sprintf(fmt, ...). Spec-extension batch 2026-05-09. Note: nk sprintf(\"...\") with double-quoted format returns empty — only single-quoted char format works. Documented as separate gap (string vs char distinction in format arg)."
+}

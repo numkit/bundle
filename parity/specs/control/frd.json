@@ -1,0 +1,12 @@
+{
+  "name": "frd",
+  "namespace": "control",
+  "setup": "",
+  "expr": "sys = frd(1, 1); r1 = 1;",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = frd(...). Spec-extension batch 2026-05-09."
+}

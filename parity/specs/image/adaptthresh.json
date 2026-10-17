@@ -1,0 +1,13 @@
+{
+  "name": "adaptthresh",
+  "namespace": "image",
+  "setup": "",
+  "expr": "I = ones(8) * 0.5; T = adaptthresh(I); r1 = double(size(T,1)); r2 = double(size(T,2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = adaptthresh(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,13 @@
+{
+  "name": "alignsignals",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "[Xa, Ya] = alignsignals([1 2 3 4 5], [0 0 1 2 3]); r1 = double(numel(Xa)); r2 = double(numel(Ya));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = alignsignals(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

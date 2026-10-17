@@ -1,0 +1,10 @@
+{
+  "name": "regexptranslate",
+  "namespace": "core",
+  "setup": "s = '.*+?[]{}()|^$';",
+  "expr": "y = regexptranslate('escape', s);",
+  "iters": 1000,
+  "tol": 1e-09,
+  "comment": "Sig: T = regexptranslate('escape', S). 14-char metachars. 10000 iters.",
+  "out_var": "y"
+}

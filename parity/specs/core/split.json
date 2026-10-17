@@ -1,0 +1,12 @@
+{
+  "name": "split",
+  "namespace": "core",
+  "setup": "",
+  "expr": "parts = split(\"a,b,c\", \",\"); r1 = double(numel(parts));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = split(...). Spec-extension batch 2026-05-09."
+}

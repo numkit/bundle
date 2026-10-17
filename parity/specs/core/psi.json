@@ -1,0 +1,14 @@
+{
+  "name": "psi",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = psi(1); r2 = psi(2); r3 = psi(0.5);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = psi(...). Spec-extension batch 2026-05-09."
+}

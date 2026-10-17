@@ -1,0 +1,14 @@
+{
+  "name": "isrow",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isrow([1 2 3])); r2 = double(isrow([1; 2])); r3 = double(isrow([1]));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isrow(...). Predicate. Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,14 @@
+{
+  "name": "isfield",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s.x = 1; r1 = double(isfield(s, 'x')); r2 = double(isfield(s, 'y')); r3 = double(isfield(s, 'z'));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isfield(...). Spec-extension batch 2026-05-09."
+}

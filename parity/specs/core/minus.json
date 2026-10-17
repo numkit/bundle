@@ -1,0 +1,14 @@
+{
+  "name": "minus",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = minus(5, 2); v = minus([3 4], [1 2]); r2 = v(1); r3 = v(2);",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = minus(...). Arithmetic op. Spec-extension batch 2026-05-09. Fingerprints scalar-only."
+}

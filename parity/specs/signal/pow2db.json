@@ -1,0 +1,14 @@
+{
+  "name": "pow2db",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "r1 = pow2db(1); r2 = pow2db(10); r3 = pow2db(100);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = pow2db(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "gsvd",
+  "namespace": "core",
+  "setup": "A = [1 2; 3 4]; B = [1 0; 0 1];",
+  "expr": "S = sort(gsvd(A, B)); [U, V, X, C, S_mat] = gsvd(A, B); recA = max(max(abs(U*C*X' - A))); recB = max(max(abs(V*S_mat*X' - B)));",
+  "iters": 5,
+  "tol": 1e-10,
+  "fingerprint": [
+    "S(1)",
+    "S(2)",
+    "recA",
+    "recB"
+  ],
+  "comment": "Generalized SVD decomposition: [U, V, X, C, S] = gsvd(A, B) and gsvd_values(A, B). The reconstruction identities A = U*C*X' and B = V*S_mat*X' are the reference-exact contract (U'*A*X - C is NOT an identity in the reference either - it measures ~29 on these inputs, probed R2025b 2026-09-18). The 5-output form was unreachable before 2026-09-18 (the reg dropped V, 'Too many output arguments'), and its kernel used a second SVD that broke the A identity on repeated singular values - both fixed in the linalg remainder portion (shared-W CS construction)."
+}

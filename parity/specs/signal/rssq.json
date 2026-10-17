@@ -1,0 +1,13 @@
+{
+  "name": "rssq",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "r1 = rssq([3 4]); r2 = rssq([1 2 2]);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = rssq(...). Spec-extension batch 2026-05-09."
+}

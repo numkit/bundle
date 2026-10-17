@@ -1,0 +1,14 @@
+{
+  "name": "discretize",
+  "namespace": "core",
+  "setup": "",
+  "expr": "idx = discretize([0.5, 1.5, 2.5], [0 1 2 3]); r1 = idx(1); r2 = idx(2); r3 = idx(3);",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = discretize(...). Spec-extension batch 2026-05-09."
+}

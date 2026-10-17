@@ -1,0 +1,36 @@
+{
+  "name": "odeget",
+  "namespace": "core",
+  "setup": "o = odeset('RelTol', 1e-9, 'AbsTol', 1e-12, 'MaxStep', 0.05); o3 = struct('Foo', 1, 'RelTol', 2); or_ = struct('reltol', 3);",
+  "expr": "rt = odeget(o, 'RelTol'); at = odeget(o, 'abstol'); ms = odeget(o, 'MaxStep'); jp = odeget(o, 'Jacobian', 42); pfx = odeget(o, 'Rel'); pfx2 = odeget(o, 'MaxS'); low = odeget(o, 'rel'); foo = odeget(o3, 'Foo'); rt2 = odeget(o3, 'RelTol'); wrongcase = odeget(or_, 'reltol'); canonmiss = odeget(or_, 'RelTol', 42); emptyo = odeget([], 'RelTol', 7); valdef = odeget(o, 'RelTol', 42); strname = odeget(o, \"RelTol\");",
+  "iters": 3,
+  "tol": 1e-15,
+  "fingerprint": [
+    "rt",
+    "at",
+    "ms",
+    "jp",
+    "pfx",
+    "pfx2",
+    "low",
+    "foo",
+    "rt2",
+    "wrongcase",
+    "canonmiss",
+    "emptyo",
+    "valdef",
+    "strname"
+  ],
+  "covers": [
+    "odeget(opts, name)               get value (case-insensitive name)",
+    "odeget(opts, name, default)      fall back to default when field empty",
+    "all 21 option names recognised (canonical spelling)",
+    "odeget(opts, name)               get value (case-insensitive name)",
+    "odeget(opts, name, default)      fall back to default when field empty",
+    "all 21 option names recognised (canonical spelling)",
+    "odeget(opts, prefix)             unambiguous case-insensitive prefix",
+    "odeget(foreignStruct, 'Foo')     exact case-sensitive field wins",
+    "odeget([], name[, default])       empty options -> default/[]"
+  ],
+  "comment": "Sig 1+2: odeget(o, 'RelTol') and odeget(o, name, default). MATLAB normalises name to canonical capitalisation, returns the stored value if non-empty, else the default. Empty Jacobian field falls through to 42 here. Argcheck portion 2026-09-19 resolution model (probed R2025b): an EXACT case-sensitive field of opts wins outright (foreign fields included); otherwise the name case-insensitively prefix-matches the 21 canonical options (no match = invalid name even with a default; ambiguous = error; empty name = ambiguous); a canonical match whose exact-case field is absent falls to the default. String-scalar names accepted; struct arrays read element 1 (nk: struct arrays themselves unsupported - engine gap, documented in the portion memory)."
+}

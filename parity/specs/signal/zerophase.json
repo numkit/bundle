@@ -1,0 +1,12 @@
+{
+  "name": "zerophase",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "[Hr, w] = zerophase([1 0.5], 1, 8); r1 = double(numel(Hr));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = zerophase(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

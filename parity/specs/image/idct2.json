@@ -1,0 +1,13 @@
+{
+  "name": "idct2",
+  "namespace": "image",
+  "setup": "",
+  "expr": "B = dct2([1 2; 3 4]); A = idct2(B); r1 = A(1,1); r2 = A(2,2);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = idct2(...). Spec-extension batch 2026-05-09."
+}

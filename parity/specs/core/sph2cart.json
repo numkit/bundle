@@ -1,0 +1,14 @@
+{
+  "name": "sph2cart",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[x, y, z] = sph2cart(0, 0, 1); r1 = x; r2 = y; r3 = z;",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = sph2cart(...). Spec-extension batch 2026-05-09."
+}

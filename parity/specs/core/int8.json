@@ -1,0 +1,15 @@
+{
+  "name": "int8",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(int8(127)); r2 = double(int8(-128)); r3 = double(int8(0)); r4 = double(int8(50));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "comment": "Sig: r = int8(...). Type conversion. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

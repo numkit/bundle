@@ -1,0 +1,12 @@
+{
+  "name": "entropy",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = entropy(uint8([0 50 100 200 255]));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = entropy(...). Spec-extension batch 2026-05-09."
+}

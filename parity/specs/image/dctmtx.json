@@ -1,0 +1,13 @@
+{
+  "name": "dctmtx",
+  "namespace": "image",
+  "setup": "",
+  "expr": "D = dctmtx(4); r1 = double(size(D,1)); r2 = double(size(D,2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = dctmtx(...). Spec-extension batch 2026-05-09."
+}

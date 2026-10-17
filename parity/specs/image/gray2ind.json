@@ -1,0 +1,12 @@
+{
+  "name": "gray2ind",
+  "namespace": "image",
+  "setup": "",
+  "expr": "[X, map] = gray2ind([0.0 0.5 1.0], 8); r1 = double(numel(X));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = gray2ind(...). Spec-extension batch 2026-05-09."
+}

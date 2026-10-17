@@ -1,0 +1,14 @@
+{
+  "name": "cell",
+  "namespace": "core",
+  "setup": "",
+  "expr": "c = cell(2, 3); r1 = double(numel(c)); r2 = double(iscell(c)); r3 = double(isempty(c{1,1}));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = cell(...). Spec-extension batch 2026-05-09."
+}

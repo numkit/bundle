@@ -1,0 +1,15 @@
+{
+  "name": "betaln",
+  "namespace": "core",
+  "setup": "a = [1, 2, 3, 5]; b = [1, 3, 2, 4];",
+  "expr": "r = betaln(a, b);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r(1)",
+    "r(2)",
+    "r(3)",
+    "r(4)"
+  ],
+  "comment": "Sig: r = betaln(...). Special function. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "imhmin",
+  "namespace": "image",
+  "setup": "",
+  "expr": "B = imhmin([1 5 1; 1 1 1; 1 1 1], 3); r1 = double(numel(B));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imhmin(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "erfcx",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = erfcx(0); r2 = erfcx(1); r3 = erfcx(-1); r4 = erfcx(2);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "comment": "Sig: r = erfcx(...). Spec-extension batch 2026-05-09."
+}

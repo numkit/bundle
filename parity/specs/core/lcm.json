@@ -1,0 +1,15 @@
+{
+  "name": "lcm",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = lcm(4, 6); r2 = lcm(3, 5); r3 = lcm(8, 12); r4 = lcm(1, 7);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "comment": "Sig: r = lcm(...). Spec-extension batch 2026-05-09."
+}

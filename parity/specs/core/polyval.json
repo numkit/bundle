@@ -1,0 +1,14 @@
+{
+  "name": "polyval",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = polyval([1 0 0], 5); r2 = polyval([1 -2 1], 3); r3 = polyval([1 0], 7);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = polyval(...). Spec-extension batch 2026-05-09."
+}

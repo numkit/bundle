@@ -1,0 +1,12 @@
+{
+  "name": "imopen",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW = imopen(eye(5), ones(3)); r1 = double(numel(BW));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imopen(...). Spec-extension batch 2026-05-09 (image namespace)."
+}

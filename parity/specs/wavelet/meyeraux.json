@@ -1,0 +1,25 @@
+{
+  "name": "meyeraux",
+  "namespace": "wavelet",
+  "setup": "M = [0 0.5; 0.25 0.75];",
+  "expr": "v = meyeraux([0 0.25 0.5 0.75 1]); m_neg = meyeraux(-0.5); m_big = meyeraux(2); mM = meyeraux(M); m0 = meyeraux(0); m1 = meyeraux(1); ssum = sum(meyeraux(linspace(0, 1, 11))); msgl = meyeraux(single(0.5));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "v(1)",
+    "v(2)",
+    "v(3)",
+    "v(4)",
+    "v(5)",
+    "m_neg",
+    "m_big",
+    "mM(1,1)",
+    "mM(2,1)",
+    "mM(2,2)",
+    "m0",
+    "m1",
+    "ssum",
+    "double(msgl)"
+  ],
+  "comment": "Sig: y = meyeraux(x). Element-wise auxiliary polynomial 35x⁴ − 84x⁵ + 70x⁶ − 20x⁷. MATLAB clips outside [0, 1]: x<=0 -> 0, x>=1 -> 1. Bug fix 2026-05-08: nk was applying the raw polynomial outside [0, 1] (e.g. meyeraux(2) = -208 instead of MATLAB's 1). Argcheck portion 2026-09-19: input is double/single REAL nonempty (logical/int/char/complex/empty reject, probed R2025b); the result keeps the input's class."
+}

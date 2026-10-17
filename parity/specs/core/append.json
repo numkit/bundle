@@ -1,0 +1,13 @@
+{
+  "name": "append",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(strcmp(append(\"ab\", \"cd\"), \"abcd\")); r2 = double(strcmp(append(\"x\", \"y\", \"z\"), \"xyz\"));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = append(...). Spec-extension batch 2026-05-09."
+}

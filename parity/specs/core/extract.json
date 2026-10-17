@@ -1,0 +1,12 @@
+{
+  "name": "extract",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s = extract(\"hello world\", \" \"); r1 = double(numel(s));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = extract(...). Spec-extension batch 2026-05-09."
+}

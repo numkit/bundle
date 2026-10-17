@@ -1,0 +1,12 @@
+{
+  "name": "grayslice",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW = grayslice([0.1 0.5 0.9], 3); r1 = double(numel(BW));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = grayslice(...). Spec-extension batch 2026-05-09."
+}

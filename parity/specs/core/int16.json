@@ -1,0 +1,14 @@
+{
+  "name": "int16",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(int16(32767)); r2 = double(int16(-32768)); r3 = double(int16(0));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = int16(...). Type conversion. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

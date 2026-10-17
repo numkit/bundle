@@ -1,0 +1,12 @@
+{
+  "name": "replace",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(strcmp(replace(\"hello\", \"l\", \"X\"), \"heXXo\"));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = replace(...). Spec-extension batch 2026-05-09."
+}

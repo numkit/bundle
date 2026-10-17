@@ -1,0 +1,17 @@
+{
+  "name": "polyvalm",
+  "namespace": "core",
+  "setup": "p = [1 -3 2]; A = [1 2; 3 4];",
+  "expr": "y = polyvalm(p, A); ys = polyvalm(single(p), A); y0 = polyvalm([], A); ycx = polyvalm(complex([1 2],1), A); ysglok = double(abs(double(ys(1,1)) - y(1,1)) < 1e-5);",
+  "iters": 100,
+  "tol": 1e-09,
+  "comment": "Sig: Y = polyvalm(P, A). Matrix poly eval x^2-3x+2. 10000 iters. Argcheck-drain 2026-09-18: single contagion (predicate); complex p or A computes a complex result; the EMPTY polynomial is the ZERO matrix (was: identity); integer inputs reject (superiorfloat); logical/char coefficients widen to double.",
+  "out_var": "y",
+  "fingerprint": [
+    "ysglok",
+    "double(y0(1,1))",
+    "double(numel(y0))",
+    "real(ycx(1,1))",
+    "imag(ycx(1,1))"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ellipsoid",
+  "namespace": "core",
+  "setup": "",
+  "expr": "[X, Y, Z] = ellipsoid(0, 0, 0, 1, 1, 1, 5); r1 = double(numel(X));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = ellipsoid(...). Spec-extension batch 2026-05-09."
+}

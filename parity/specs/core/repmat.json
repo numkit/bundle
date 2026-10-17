@@ -1,0 +1,14 @@
+{
+  "name": "repmat",
+  "namespace": "core",
+  "setup": "",
+  "expr": "A = repmat([1 2], 2, 3); r1 = A(1,1); r2 = A(2,4); r3 = numel(A);",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = repmat(...). Spec-extension batch 2026-05-09."
+}

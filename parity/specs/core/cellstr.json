@@ -1,0 +1,13 @@
+{
+  "name": "cellstr",
+  "namespace": "core",
+  "setup": "",
+  "expr": "c = cellstr([\"hi\"; \"world\"]); r1 = double(iscell(c)); r2 = double(numel(c));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = cellstr(...). Spec-extension batch 2026-05-09."
+}

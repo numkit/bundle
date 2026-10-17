@@ -1,0 +1,14 @@
+{
+  "name": "struct2cell",
+  "namespace": "core",
+  "setup": "",
+  "expr": "s.x = 10; s.y = 20; c = struct2cell(s); r1 = c{1}; r2 = c{2}; r3 = double(numel(c));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = struct2cell(...). Spec-extension batch 2026-05-09."
+}

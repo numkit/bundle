@@ -1,0 +1,14 @@
+{
+  "name": "endsWith",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = endsWith(\"hello\", \"lo\"); r2 = endsWith(\"hello\", \"ell\"); r3 = endsWith(\"abc\", \"\");",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = endsWith(...). String op. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

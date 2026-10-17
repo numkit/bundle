@@ -1,0 +1,12 @@
+{
+  "name": "imflatfield",
+  "namespace": "image",
+  "setup": "",
+  "expr": "B = imflatfield([1 2; 3 4], 1); r1 = double(numel(B));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imflatfield(...). Spec-extension batch 2026-05-09."
+}

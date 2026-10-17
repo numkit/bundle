@@ -1,0 +1,12 @@
+{
+  "name": "tf2ss",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "[A, B, C, D] = tf2ss([1 0.5], [1 0.25]); r1 = double(size(A,1));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = tf2ss(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

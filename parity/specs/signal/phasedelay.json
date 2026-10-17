@@ -1,0 +1,12 @@
+{
+  "name": "phasedelay",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "[pd, w] = phasedelay([1 0.5 0.25], [1], 8); r1 = double(numel(pd));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: [pd,w] = phasedelay(b,a,n). Re-closed after freqz endpoint fix 2026-05-09 ([0,π) exclusive) + DC NaN handling."
+}

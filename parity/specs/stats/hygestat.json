@@ -1,0 +1,12 @@
+{
+  "name": "hygestat",
+  "namespace": "stats",
+  "setup": "",
+  "expr": "[m, v] = hygestat(50, 10, 8); r1 = m;",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = hygestat(...). Spec-extension batch 2026-05-09. "
+}

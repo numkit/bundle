@@ -1,0 +1,12 @@
+{
+  "name": "assert",
+  "namespace": "core",
+  "setup": "",
+  "expr": "assert(true); r1 = 1;",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = assert(...). Spec-extension batch 2026-05-09."
+}

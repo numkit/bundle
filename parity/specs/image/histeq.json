@@ -1,0 +1,12 @@
+{
+  "name": "histeq",
+  "namespace": "image",
+  "setup": "",
+  "expr": "J = histeq(uint8([0 50 100 150 255])); r1 = double(numel(J));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = histeq(...). Spec-extension batch 2026-05-09."
+}

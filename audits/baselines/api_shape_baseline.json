@@ -1,0 +1,131 @@
+{
+  "public_violations": {
+    "modules/numkit/include/numkit/graphics/graphics_handle.hpp::makeGraphicsHandleValue": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/builtin/strfun.hpp::strsplit": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/callback_eval.hpp::evalScalar": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/callback_eval.hpp::evalVecToScalar": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/conv.hpp::convDirect": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::absIntegerSaturate": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::copyIntegerSameClass": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::createMatrixND": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::dispatchIntegerBinaryOp": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::doubleToIntegerExact": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::elementwiseComplex": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::elementwiseComplexImpl": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::elementwiseDouble": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::elementwiseTyped": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::emptyArithResult": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::emptyResultForBinary": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::parseDimsArgsND": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::promoteToComplex": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::toDoubleValue": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::unaryComplex": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::unaryComplexImpl": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::unaryDouble": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::unaryTyped": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/iir_filter.hpp::applyFilterDf2t": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/iir_filter.hpp::applyFilterDf2tComplex": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/io_helpers.hpp::shapeFreadOutput": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/la_solve.hpp::la_solve": [
+      "mr-no-default",
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/poly_helpers.hpp::polyExpandFromRoots": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/poly_helpers.hpp::polyRootsDurandKerner": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/reductions.hpp::applyAlongDim": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/reductions.hpp::applyAlongDimWithIndex": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/reductions.hpp::forEachSlice": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/reductions.hpp::forEachSliceND": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/reductions.hpp::outShapeForDimND": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/root_solve.hpp::brent": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/root_solve.hpp::brentMin": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/root_solve.hpp::findBracket": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/root_solve.hpp::nelderMead": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/rows_helpers.hpp::collectRowsByIndex": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/value_factory.hpp::createForDims": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/value_factory.hpp::createLike": [
+      "mr-no-default"
+    ],
+    "modules/ops/include/numkit/ops/value_factory.hpp::createMatrix": [
+      "mr-no-default"
+    ]
+  }
+}

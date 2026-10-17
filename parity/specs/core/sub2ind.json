@@ -1,0 +1,14 @@
+{
+  "name": "sub2ind",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = sub2ind([3 4], 2, 2); r2 = sub2ind([3 4], 1, 1); r3 = sub2ind([3 4], 3, 4);",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = sub2ind(...). Spec-extension batch 2026-05-09."
+}

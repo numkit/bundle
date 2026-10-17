@@ -1,0 +1,33 @@
+[submodule "modules/value"]
+	path = modules/value
+	url = git@github.com:numkit/value.git
+[submodule "modules/sys"]
+	path = modules/sys
+	url = git@github.com:numkit/sys.git
+[submodule "modules/ops"]
+	path = modules/ops
+	url = git@github.com:numkit/ops.git
+[submodule "modules/numkit"]
+	path = modules/numkit
+	url = git@github.com:numkit/numkit.git
+[submodule "modules/signal"]
+	path = modules/signal
+	url = git@github.com:numkit/signal.git
+[submodule "modules/control"]
+	path = modules/control
+	url = git@github.com:numkit/control.git
+[submodule "modules/stats"]
+	path = modules/stats
+	url = git@github.com:numkit/stats.git
+[submodule "modules/wavelet"]
+	path = modules/wavelet
+	url = git@github.com:numkit/wavelet.git
+[submodule "modules/audio"]
+	path = modules/audio
+	url = git@github.com:numkit/audio.git
+[submodule "modules/comm"]
+	path = modules/comm
+	url = git@github.com:numkit/comm.git
+[submodule "modules/image"]
+	path = modules/image
+	url = git@github.com:numkit/image.git

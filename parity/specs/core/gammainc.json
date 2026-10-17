@@ -1,0 +1,15 @@
+{
+  "name": "gammainc",
+  "namespace": "core",
+  "setup": "x = [0.5, 1, 2, 5]; a = 2;",
+  "expr": "r = gammainc(x, a);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r(1)",
+    "r(2)",
+    "r(3)",
+    "r(4)"
+  ],
+  "comment": "Sig: r = gammainc(...). Special function. Spec-extension batch 2026-05-09 — verified MATLAB R2025b parity."
+}

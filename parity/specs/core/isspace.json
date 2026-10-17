@@ -1,0 +1,14 @@
+{
+  "name": "isspace",
+  "namespace": "core",
+  "setup": "",
+  "expr": "v = isspace('a b c'); r1 = double(v(1)); r2 = double(v(2)); r3 = double(v(3));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isspace(...). Spec-extension batch 2026-05-09."
+}

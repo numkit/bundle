@@ -1,0 +1,14 @@
+{
+  "name": "isreal",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isreal(3.14)); r2 = double(isreal(1+1i)); r3 = double(isreal([1 2 3]));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isreal(...). Predicate. Spec-extension batch 2026-05-09."
+}

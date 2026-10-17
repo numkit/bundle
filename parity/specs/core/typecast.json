@@ -1,0 +1,12 @@
+{
+  "name": "typecast",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(typecast(uint32(0x3F800000), \"single\"));",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = typecast(...). Spec-extension batch 2026-05-09."
+}

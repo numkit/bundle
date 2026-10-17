@@ -1,0 +1,18 @@
+{
+  "name": "erfcinv",
+  "namespace": "core",
+  "setup": "x = [0.1, 0.5, 1, 1.5, 1.9];",
+  "expr": "r = erfcinv(x);",
+  "iters": 15,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r(1)",
+    "r(2)",
+    "r(3)",
+    "r(4)",
+    "r(5)"
+  ],
+  "comment": "Sig: r = erfcinv(...). Special function. Spec-extension batch 2026-05-09 verified MATLAB R2025b parity.",
+  "bench_setup": "xb = mod((1:N)*7919,1998)*0.001 + 0.001;",
+  "bench_expr": "rb=erfcinv(xb);"
+}

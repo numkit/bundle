@@ -1,0 +1,14 @@
+{
+  "name": "intmax",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(intmax(\"int8\")); r2 = double(intmax(\"int16\")); r3 = double(intmax(\"int32\"));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = intmax(...). Spec-extension batch 2026-05-09."
+}

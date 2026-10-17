@@ -1,0 +1,12 @@
+{
+  "name": "fscanf",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = tempname; fid = fopen(fname, 'w'); fprintf(fid, '1 2 3 4 5'); fclose(fid); fid = fopen(fname, 'r'); v = fscanf(fid, '%d'); fclose(fid); delete(fname); r1 = double(sum(v));",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip in single snippet via tempname). fscanf reads formatted -- sum of [1..5] = 15."
+}

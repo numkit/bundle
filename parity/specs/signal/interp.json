@@ -1,0 +1,12 @@
+{
+  "name": "interp",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "y = interp([1 2 3 4], 2); r1 = double(numel(y));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = interp(...). Spec-extension batch 2026-05-09 (signal namespace)."
+}

@@ -1,0 +1,1312 @@
+{
+  "compute_adopted": 21,
+  "compute_total": 429,
+  "generated": "2026-10-17",
+  "reg_files": {
+    "modules/audio/src/register/features/pitch_harmonics_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/audio/src/register/io/audio_io_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/audio/src/register/scale/freq_scales_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/audio/src/register/spectral/cepstral_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/audio/src/register/spectral/melspec_delta_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/audio/src/register/spectral/shape_descriptors_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/channel/channel_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/channel/fading_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/coding/blockcoding_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/coding/convcoding_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/eq/compand_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/eq/errors_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/eq/pulse_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/eq/scrambler_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/modulation/analog_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/modulation/apsk_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/modulation/fsk_ofdm_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/modulation/generic_qam_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/modulation/mil188_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/modulation/psk_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/modulation/qam_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/arithcoding_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/base_conversions_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/dpcm_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/dpcmopt_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/huffman_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/lloyds_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/quantiz_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/comm/src/register/source/random_source_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/analyze/analyze_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/connect/connect_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/discretize/discretize_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/freq/freq_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/lti/lti_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 1
+    },
+    "modules/control/src/register/lyapunov/lyapunov_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/props/props_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/response/response_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/riccati/riccati_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/state/place_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/control/src/register/state/state_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/arithmetic/arithmetic_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/color/chromadapt_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/color/color_extras_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/color/color_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/color/demosaic_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/color/illum_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/color/raw_planar_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/contrast/contrast_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/filter/fibermetric_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/filter/filter_design_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/filter/filter_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/filter/fir2d_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/filter/imreducehaze_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/filter/locallapfilt_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/geom/geom_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/io/io_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/morph/morph_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/object/object_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/quality/quality_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/region/bwpropfilt_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/region/region_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/segment/segment_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/texture/texture_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/transform/transform_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/image/src/register/type_convert/type_convert_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/datafun_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/datatypes_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/elfun_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/elmat_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/general_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/graphics/export_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/group_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/io/csv_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/io/extras_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/io/fileio_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/io/paths_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/io/type_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/iofun_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_binary_ops_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_coder_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_format_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_int_math_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_manip_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_matrix_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_nd_manip_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_print_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_regex_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_scan_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_strings_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_types_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/lang_unary_ops_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/balance_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/decompositions_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/eig_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/ldl_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/matrix_functions_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/misc_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/norms_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/page_ops_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/predicates_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/properties_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/pseudo_subspace_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/schur_convert_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/solvers_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/linalg/vector_ops_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/matfun_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_complex_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_discrete_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_exponents_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_geom_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_integration_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_interp_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_misc_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_permutations_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_polynomials_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_reductions_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_rng_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_rounding_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_special_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/math_trigonometry_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/ode/ode23_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/ode/ode45_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/ode/options_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/ops_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/optim/fmincon_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/optim/fminunc_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/optim/fsolve_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/optim/fzero_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/optim/linprog_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/optim/lsqnonlin_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/optim/quadprog_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/polyfun_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/specfun_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/strfun_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/numkit/src/builtin/register/timefun_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/convolution/convolution_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/convolution/extras_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/digital_filtering/buffer_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/digital_filtering/filter_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/digital_filtering/poly_utils_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/digital_filtering/quantizers_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/digital_filtering/shiftdata_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/digital_filtering/sosfilt_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/digital_filtering/spec_driven_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_analysis/frequency_response_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_analysis/predicates_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_analysis/responses_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_analysis/unwrap_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_design/analog_filters_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_design/filter_design_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_design/iir_designs_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_implementation/conversions_extras_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/filter_implementation/conversions_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/measurements/dbconv_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/measurements/findpeaks_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/measurements/pulse_metrics_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/measurements/sig_utils_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/measurements/signal_stats_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/measurements/sigroi_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/measurements/vibration_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/multirate/extras_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/multirate/multirate_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/smoothing/medfilt_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/smoothing/sgolay_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/spectral_analysis/ar_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/spectral_analysis/periodogram_pwelch_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/spectral_analysis/pseudospectrum_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/spectral_analysis/signal_modeling_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/spectral_analysis/spectral_metrics_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/time_frequency/spectrogram_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/transforms/dct_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/transforms/extras_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/transforms/fft_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/transforms/fwht_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/transforms/goertzel_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/transforms/hilbert_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/transforms/transform_helpers_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/waveform_generation/waveform_generation_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/signal/src/register/windows/windows_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/anova/anova_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/anova/multcompare_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/cluster/distance_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/cluster/kmeans_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/cluster/kmedoids_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/cluster/knnsearch_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/cluster/linkage_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/cluster/silhouette_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/copulas/copulas_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/cholcov_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/corrcov_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/crosstab_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/descriptive_extras_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/descriptive_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/grp2idx_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/grpstats_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/nearcorr_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/normalize_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/partial_canon_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/sample_corr_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/tabulate_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/descriptive/tiedrank_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/dim/pca_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/beta_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/binomial_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/chi2_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/dist_dispatch_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/dist_fits_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/exponential_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/extreme_value_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/fisher_f_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/gamma_dist_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/geometric_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/gev_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/gp_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/hypergeom_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/lognormal_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/multivariate_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/nakagami_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/ncx2_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/negbin_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/normal_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/poisson_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/rayleigh_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/rician_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/students_t_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/unid_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/uniform_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/distributions/weibull_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/fit/fit_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/lda/lda_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/moments/moments_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/moving/moving_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/mvdist/mvdist_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/nan_aware/nan_aware_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/qmc/qmc_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/regress/glm_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/regress/lasso_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/regress/nlinfit_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/regress/regress_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/regress/robust_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/resample/resample_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/sampling/lhs_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/spline/spline_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/test/ad_dw_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/stats/src/register/test/hypothesis_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/denoise/denoise_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/dwt2_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/dwt_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/dyad_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/haar_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/multilevel2_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/multilevel_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/wkeep_wextend_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/dwt/wrcoef_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 1,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/filter/families_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/filter/qmf_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/filter/wfilters_reg.cpp": {
+      "adopted": 0,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/shape/gauss_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/shape/shape_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/wavelet/src/register/swt/swt_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    }
+  }
+}

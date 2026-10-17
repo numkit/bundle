@@ -1,0 +1,17 @@
+{
+  "name": "factorial",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = factorial(0); r2 = factorial(1); r3 = factorial(5); r4 = factorial(10);",
+  "iters": 15,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3",
+    "r4"
+  ],
+  "comment": "Sig: r = factorial(...). Spec-extension batch 2026-05-09.",
+  "bench_setup": "xb = mod((1:N), 150);",
+  "bench_expr": "rb=factorial(xb);"
+}

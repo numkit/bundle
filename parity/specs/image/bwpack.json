@@ -1,0 +1,12 @@
+{
+  "name": "bwpack",
+  "namespace": "image",
+  "setup": "",
+  "expr": "P = bwpack(eye(4)); r1 = double(size(P,2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = bwpack(...). Spec-extension batch 2026-05-09."
+}

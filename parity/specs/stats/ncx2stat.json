@@ -1,0 +1,12 @@
+{
+  "name": "ncx2stat",
+  "namespace": "stats",
+  "setup": "",
+  "expr": "[m, v] = ncx2stat(4, 2); r1 = m;",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = ncx2stat(...). Spec-extension batch 2026-05-09. "
+}

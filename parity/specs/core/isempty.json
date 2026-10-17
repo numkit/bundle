@@ -1,0 +1,14 @@
+{
+  "name": "isempty",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = double(isempty([])); r2 = double(isempty([1])); r3 = double(isempty(\"\"));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = isempty(...). Predicate. Spec-extension batch 2026-05-09."
+}

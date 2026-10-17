@@ -1,0 +1,12 @@
+{
+  "name": "bwselect",
+  "namespace": "image",
+  "setup": "",
+  "expr": "BW2 = bwselect(eye(4), 1, 1); r1 = double(numel(BW2));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = bwselect(...). Spec-extension batch 2026-05-09."
+}

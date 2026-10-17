@@ -1,0 +1,14 @@
+{
+  "name": "ismembertol",
+  "namespace": "core",
+  "setup": "",
+  "expr": "tf = ismembertol([1.0001, 2, 3], [1, 2, 4], 1e-3); r1 = double(tf(1)); r2 = double(tf(2)); r3 = double(tf(3));",
+  "iters": 5,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = ismembertol(...). Spec-extension batch 2026-05-09."
+}

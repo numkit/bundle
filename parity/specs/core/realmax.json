@@ -1,0 +1,12 @@
+{
+  "name": "realmax",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = realmax;",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = realmax(...). Spec-extension batch 2026-05-09."
+}

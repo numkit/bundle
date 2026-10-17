@@ -1,0 +1,12 @@
+{
+  "name": "fft2",
+  "namespace": "core",
+  "setup": "",
+  "expr": "F = fft2([1 2; 3 4]); r1 = real(F(1,1));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = fft2(...). Spec-extension batch 2026-05-09."
+}

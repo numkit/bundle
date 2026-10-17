@@ -1,0 +1,12 @@
+{
+  "name": "fgets",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = tempname; fid = fopen(fname, 'w'); fprintf(fid, 'hello\\n'); fclose(fid); fid = fopen(fname, 'r'); line = fgets(fid); fclose(fid); delete(fname); r1 = double(strlength(line) >= 5);",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip in single snippet via tempname). fgets reads one line WITH newline -- length >= 5 ('hello\\n')."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "imtophat",
+  "namespace": "image",
+  "setup": "",
+  "expr": "B = imtophat(eye(5), ones(3)); r1 = double(numel(B));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = imtophat(...). Spec-extension batch 2026-05-09."
+}

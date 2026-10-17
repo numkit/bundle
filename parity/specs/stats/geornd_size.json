@@ -1,0 +1,27 @@
+{
+  "name": "geornd_size",
+  "namespace": "stats",
+  "setup": "p = 0.5;",
+  "expr": "s1 = size(geornd(p, 3)); s2 = size(geornd(p, 2, 3)); s3 = size(geornd(p, [2 3])); s4 = size(geornd(p, -1)); s5 = size(geornd(p, [], 3)); s6 = size(geornd(p, 2, [])); n1 = size(normrnd(0, 1, [2 3])); n2 = size(poissrnd(2, 3));",
+  "iters": 3,
+  "tol": 1e-12,
+  "fingerprint": [
+    "s1(1)",
+    "s1(2)",
+    "s2(1)",
+    "s2(2)",
+    "s3(1)",
+    "s3(2)",
+    "s4(1)",
+    "s4(2)",
+    "s5(1)",
+    "s5(2)",
+    "s6(1)",
+    "s6(2)",
+    "n1(1)",
+    "n1(2)",
+    "n2(1)",
+    "n2(2)"
+  ],
+  "comment": "*rnd size-input contract (argcheck migration 2026-09-17): scalar n -> nxn; (m,n) -> mxn; [m n] vector -> mxn; NEGATIVE size and EMPTY size argument both mean a zero dimension (R2025b-probed: geornd(p,-1) -> 0x0, geornd(p,[],3) -> 0x3, geornd(p,2,[]) -> 2x0). Values are random - the fingerprint pins output SHAPES only, deterministic across engines. Fractional/NaN/complex size inputs error (covered by gtest). Deferred: [m n p ...] N-D vector form returns flattened 2-D (bugs/opened/stats/rnd-size-vector-nd.md); mvnrnd explicit zero n (bugs/opened/stats/mvnrnd-zero-n.md)."
+}

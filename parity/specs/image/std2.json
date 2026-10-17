@@ -1,0 +1,12 @@
+{
+  "name": "std2",
+  "namespace": "image",
+  "setup": "",
+  "expr": "r1 = std2([1 2; 3 4]);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = std2(...). Spec-extension batch 2026-05-09."
+}

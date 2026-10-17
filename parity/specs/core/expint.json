@@ -1,0 +1,14 @@
+{
+  "name": "expint",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = expint(1); r2 = expint(2); r3 = expint(0.5);",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "comment": "Sig: r = expint(...). Spec-extension batch 2026-05-09."
+}

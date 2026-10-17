@@ -1,0 +1,12 @@
+{
+  "name": "sawtooth",
+  "namespace": "signal",
+  "setup": "",
+  "expr": "y = sawtooth(2*pi*0.1*(0:9)); r1 = y(1);",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = sawtooth(...). Spec-extension batch 2026-05-09."
+}

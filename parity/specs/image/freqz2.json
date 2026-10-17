@@ -1,0 +1,12 @@
+{
+  "name": "freqz2",
+  "namespace": "image",
+  "setup": "",
+  "expr": "h = freqz2([1 0; 0 1], 16, 16); r1 = double(numel(h));",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = freqz2(...). Spec-extension batch 2026-05-09."
+}

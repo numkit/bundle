@@ -1,0 +1,13 @@
+{
+  "name": "perms",
+  "namespace": "core",
+  "setup": "",
+  "expr": "P = perms(1:3); r1 = double(size(P,1)); r2 = double(size(P,2));",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "r1",
+    "r2"
+  ],
+  "comment": "Sig: r = perms(...). Spec-extension batch 2026-05-09."
+}

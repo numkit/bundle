@@ -1,0 +1,12 @@
+{
+  "name": "writematrix",
+  "namespace": "core",
+  "setup": "",
+  "expr": "fname = [tempname '.csv']; writematrix([1 2; 3 4], fname); s = fileread(fname); delete(fname); r1 = double(strlength(s) >= 7);",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Side-effect smoke test (file I/O round-trip in single snippet via tempname). writematrix writes CSV -- file should have >= 7 chars (e.g. '1,2\\n3,4\\n')."
+}

@@ -1,0 +1,16 @@
+{
+  "name": "bitcmp",
+  "namespace": "core",
+  "setup": "a = uint8([0, 1, 0xF0, 0xFF, 0x55]);",
+  "expr": "r = bitcmp(a);",
+  "iters": 5,
+  "tol": 0,
+  "fingerprint": [
+    "double(r(1))",
+    "double(r(2))",
+    "double(r(3))",
+    "double(r(4))",
+    "double(r(5))"
+  ],
+  "comment": "Sig: r = bitcmp(...). Bitwise integer op. Spec-extension batch 2026-05-09 — verified bit-identical MATLAB R2025b."
+}

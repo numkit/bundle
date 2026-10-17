@@ -1,0 +1,12 @@
+{
+  "name": "realmin",
+  "namespace": "core",
+  "setup": "",
+  "expr": "r1 = realmin;",
+  "iters": 5,
+  "tol": 1e-09,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = realmin(...). Spec-extension batch 2026-05-09."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "nbinstat",
+  "namespace": "stats",
+  "setup": "",
+  "expr": "[m, v] = nbinstat(3, 0.4); r1 = m;",
+  "iters": 5,
+  "tol": 1e-06,
+  "fingerprint": [
+    "r1"
+  ],
+  "comment": "Sig: r = nbinstat(...). Spec-extension batch 2026-05-09. "
+}

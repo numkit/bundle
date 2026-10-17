@@ -1,6 +1,6 @@
 # ode.ode15s (+ stiff/multistep ODE family) — solvers missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P2 (missing functions)
 - **Kind:** missing-fn
 - **Found:** 2026-06-04 via missing-fn sweep

@@ -1,0 +1,86 @@
+# lang.command-syntax — command-call args mangle/parse-fail on `:` `/` (URLs), MATLAB takes them literally
+
+- **Status:** ✅ FIXED (2026-08-30)
+- **Severity:** P1 wrong result (silent arg truncation) + parse failure
+- **Kind:** bug
+- **Found:** 2026-08-30 via fieldtest (Chinese textbook corpus — `web -broswer http://…` is a common first-line idiom; batch 20260830-003212, `example02_05.m` / `example02_10.m`)
+
+## Symptom
+
+Two divergent shapes, both wrong vs MATLAB:
+
+1. **Parse failure** — `foo -bar http://x.y/z` → `Error: Unexpected token '/'
+   at line 1 col 15`. MATLAB parses the whole command form and then errors
+   (or runs) at the FUNCTION level, never at the token level.
+2. **Silent truncation** — `disp a//b:c` prints `a//b`, dropping `:c`.
+   MATLAB prints `a//b:c` — in command syntax every whitespace-delimited
+   run after the command name is ONE literal char argument.
+
+## Repro
+
+```matlab
+clear;
+disp a//b:c
+% nk: a//b
+% MATLAB: a//b:c
+
+web -broswer http://www.ilovematlab.cn/f
+% nk: Error: Unexpected token '/' at line 1 col 19
+% MATLAB: opens the URL (or errors about `web`, never about '/')
+```
+
+Real-world damage: 3 corpus scripts die at line 1 (the idiom
+`web -broswer http://…` header in textbook code).
+
+## Root cause
+
+The command-syntax argument lexer accepts identifier/number-ish tokens plus
+`/`, but `:` terminates a token (silent truncation in the `disp` form) and
+the two-token form (`web -broswer http://…`) never re-enters command parsing
+after `-broswer`, so `http://` is lexed as division.
+
+## Suggested fix
+
+MATLAB's rule: after a command-call head, the rest of the line up to a
+statement terminator is split on whitespace; each run is a char literal —
+no token-level lexing of `/ : . -`. Implement "command-arg run" as a lexer
+mode triggered by the parser's command-call detection. Guard: the `disp`
+truncation is the worse half (wrong result, no error).
+
+## References
+- **Guard:** `DISABLED_CommandSyntaxUrlArgs`
+
+fieldtest batches `reports/20260829-smoke1-15scripts.json`,
+`reports/20260830-003212.json`; regression test:
+`tests/gtest/integration/fieldtest_regressions_test.cpp`
+(`DISABLED_CommandSyntaxUrlArgs`).
+
+## Resolution (2026-08-30)
+
+Two changes in the parser, both following MATLAB's character-level rule
+(command args are the raw source text split on whitespace — never operator
+tokens):
+
+1. `parseCommandStyleCall` now reconstructs arguments from the SOURCE via
+   token column arithmetic (tokens carry line/col; a gap between the
+   previous token's end column and the next token's start column = the
+   space that splits arguments). `disp a//b:c` → ONE arg `a//b:c`;
+   `http://x.y/z` glues exactly as written.
+2. `isCommandStyleCall` accepts a glued leading `-`/`/` (`which -all sin`,
+   `cd /path`, `web -broswer http://…`): distinguished from the binary
+   expressions `x - 1` / `a / b` by the absence of a space after the
+   operator. `y = x - 1` verified unaffected (= 4).
+
+Verified: `disp a//b:c` prints `a//b:c`; `web -broswer http://…` now fails
+at the FUNCTION level (undefined 'web') exactly like MATLAB, never at the
+token level; all 46 existing CommandStyleTest tests green; guard
+CommandSyntaxUrlArgs enabled, green on both engines; full Release suite
+green.
+
+Known divergence, documented: `x -1` (glued minus, x a defined variable) —
+MATLAB resolves via name lookup (subtraction), the heuristic sees a
+command call. Rare style; accepted and noted here.
+
+Found during the fix and filed separately (pre-existing, other root):
+`bugs/opened/lang/command-syntax-quoted-arg.md` — quoted-string command
+args are silently dropped.

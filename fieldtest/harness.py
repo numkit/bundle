@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Dual-run harness: real scripts through MATLAB R2025b vs nk (WASM + native).
+"""Dual-run harness: real scripts through MATLAB R2025b vs NumKit (native + optional WASM).
 
-  python harness.py harvest [N] [flt]   static candidate selection -> candidates.json
-  python harness.py qualify [N] [flt]   MATLAB-verify candidates -> runnable.json
-                                        (the committed run corpus â€” R3)
+  python harness.py harvest [N] [flt]   static candidate selection -> data/candidates.json
+  python harness.py qualify [N] [flt]   MATLAB-verify candidates -> data/runnable.json
+                                        (the committed run corpus — R3)
   python harness.py run [N] [flt]       dual-run runnable.json scripts; compare
                                         workspaces via .mat files (R4) -> reports/
   python harness.py matdiff a.mat b.mat standalone workspace comparator
@@ -12,12 +12,13 @@
 Comparison semantics (README "Comparison semantics"): the harness appends
 save('<tmp>/out_<engine>.mat') to each run; both .mat files are read by
 scipy.io.loadmat (engine-neutral) and numeric variables of the intersection
-are compared â€” class and shape exactly, values at rel 1e-9, NaN==NaN,
-Â±Inf equal to themselves. stdout/exit still drive the parse-error /
+are compared — class and shape exactly, values at rel 1e-9, NaN==NaN,
+±Inf equal to themselves. stdout/exit still drive the parse-error /
 runtime-error classes and diagnostics, but the numeric verdict comes from
 the workspace; print-format divergences do not count.
 """
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -31,14 +32,17 @@ import numpy as np
 from scipy.io import loadmat
 
 HERE = Path(__file__).parent
-WORK = HERE / "corpus" / "work"
+CORPUS = Path(os.environ.get("NUMKIT_CORPUS_DIR", HERE / "corpus"))
+WORK = CORPUS / "work"
 REPORTS = HERE / "reports"
 RUNNABLE = HERE / "data" / "runnable.json"
 CANDIDATES = HERE / "data" / "candidates.json"
-TMP = HERE / "corpus" / "tmp"
-CATALOG_CACHE = HERE / "corpus" / "catalog.json"
+TMP = CORPUS / "tmp"
+CATALOG_CACHE = CORPUS / "catalog.json"
 NK = HERE.parent
 WASM_CLI = NK / "packages" / "nk" / "bin" / "cli.js"
+
+
 def _resolve_native_cli():
     for c in (NK / "build" / "bin" / "Release" / "numkit.exe",
               NK / "build" / "bin" / "numkit.exe",
@@ -47,6 +51,7 @@ def _resolve_native_cli():
         if c.exists():
             return c
     return NK / "build" / "bin" / "Release" / "numkit.exe"
+
 
 NATIVE_CLI = _resolve_native_cli()
 MATLAB = Path(r"C:\Program Files\MATLAB\R2025b\bin\matlab.exe")
@@ -58,37 +63,27 @@ BAD_TOKENS = ["input(", "urlread", "system(", "java.", "actxserver", "parfor",
               "clock", "now,", "datenum", "websave", "webread", "video",
               "aviread", "VideoReader"]
 # Graphics calls are NOT filtered: both engines execute them headless
-# (nk runs its graphics system and emits __FIGURE_DATA__ for the IDE;
+# (numkit runs its graphics system and emits __FIGURE_DATA__ for the IDE;
 # MATLAB -batch creates invisible figures) and the verdict comes from the
-# workspace .mat comparison (R4), to which plots are irrelevant. Excluding
-# plotting scripts was a stdout-comparison-era restriction.
-
-
-# â”€â”€ Static harvest â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-# Scripts do NOT need to print anything (R4: the workspace is the result) â€”
-# the empirical MATLAB gate in qualify() is what decides runnability.
+# workspace .mat comparison (R4), to which plots are irrelevant.
 
 ANSWERS_FILE = HERE / "data" / "answers.json"
 
-def answers_for(script):
-    """Canned input() answers for INTERACTIVE scripts (list[str] or None).
 
-    Scripts listed here qualify and compare through run_engine(answers=...):
-    nk reads the lines on piped stdin (the real input() builtin);
-    MATLAB runs with a harness-generated input() stub (Windows -batch
-    rejects the real one). Same answers on both sides â€” apples-to-apples.
-    """
+def answers_for(script):
+    """Canned input() answers for INTERACTIVE scripts (list[str] or None)."""
     if not ANSWERS_FILE.exists():
         return None
-    rel = str(Path(script).relative_to(HERE)).replace("\\", "/")
+    try:
+        rel = str(Path(script).relative_to(HERE)).replace("\\", "/")
+    except ValueError:
+        rel = str(script).replace("\\", "/")
     doc = json.loads(ANSWERS_FILE.read_text(encoding="utf-8"))
     return doc.get(rel)
 
 
 def harvest(limit=None, flt=None, answered=False):
     if answered:
-        # Answered-interactive mode: exactly the scripts in answers.json
-        # (they normally carry the `input(` BAD_TOKEN), optional flt.
         out = []
         doc = json.loads(ANSWERS_FILE.read_text(encoding="utf-8")) if ANSWERS_FILE.exists() else {}
         for rel in sorted(doc):
@@ -97,7 +92,7 @@ def harvest(limit=None, flt=None, answered=False):
                 continue
             if flt and flt.lower() not in str(s).lower():
                 continue
-            out.append(str(s))
+            out.append(str(s.relative_to(HERE)))
         return out[:limit] if limit is not None else out
     return _harvest_default(limit, flt)
 
@@ -112,8 +107,6 @@ def _harvest_default(limit=None, flt=None):
                 txt = m.read_text(encoding="utf-8", errors="ignore")
             except OSError:
                 continue
-            # function files may open with a comment block; MATLAB treats the
-            # file as a function iff the first non-comment code is `function`
             first_code = re.sub(r"%[^\n]*\n", "", txt.lstrip())
             if first_code.lstrip().startswith("function"):
                 continue
@@ -122,10 +115,6 @@ def _harvest_default(limit=None, flt=None):
             if m.stat().st_size > 40_000 or txt.count("\n") > 500:
                 continue
             low = txt.lower()
-            # Call-shaped tokens ("input(", "pause(") substring-match; bare
-            # words (tic, clock, mex, ...) match on word boundaries â€” a
-            # plain substring hit rejected pr5_5.m via 'elliptic' containing
-            # 'tic' (found 2026-09-06).
             if any(b in low if "(" in b else re.search(r"\b" + re.escape(b) + r"\b", low)
                    for b in BAD_TOKENS):
                 continue
@@ -134,7 +123,10 @@ def _harvest_default(limit=None, flt=None):
             if m.name in seen:
                 continue
             seen.add(m.name)
-            picked.append(str(m))
+            try:
+                picked.append(str(m.relative_to(HERE)))
+            except ValueError:
+                picked.append(str(m))
             if limit is not None and len(picked) >= limit:
                 break
         if limit is not None and len(picked) >= limit:
@@ -144,10 +136,12 @@ def _harvest_default(limit=None, flt=None):
     return picked
 
 
-# â”€â”€ Engine runs (each optionally saving its workspace to a .mat) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-
 def _tmpdir(script):
-    d = TMP / re.sub(r"[^A-Za-z0-9_.-]", "_", str(Path(script).relative_to(WORK)))[:180]
+    try:
+        rel_part = str(Path(script).relative_to(WORK))
+    except ValueError:
+        rel_part = Path(script).name
+    d = TMP / re.sub(r"[^A-Za-z0-9_.-]", "_", rel_part)[:180]
     if d.exists():
         shutil.rmtree(d)
     d.mkdir(parents=True)
@@ -155,24 +149,9 @@ def _tmpdir(script):
 
 
 def run_engine(kind, script, mat_out=None, answers=None):
-    """Run `script`; if mat_out is given, save the workspace there after it.
-
-    cwd stays the script's directory so sibling data files resolve (MATLAB
-    CLI semantics); the .mat target is absolute so nothing pollutes the
-    corpus. nk kinds run a generated wrapper (`run(...); save(...)`)
-    because the CLI executes exactly one file per invocation.
-
-    `answers` (list of strings, one per input() call) makes INTERACTIVE
-    scripts runnable: nk kinds receive the lines on piped stdin (the
-    real input() builtin reads them); MATLAB gets an input.m stub in the
-    script's dir for the duration of the run â€” Windows -batch rejects the
-    real input() outright ("Support for user input is required"), and the
-    stub mirrors its semantics (evaluate the line / 's' returns raw text,
-    exhausted queue == empty line).
-    """
-    s = Path(script)
+    """Run `script`; if mat_out is given, save the workspace there after it."""
+    s = (HERE / script) if not Path(script).is_absolute() else Path(script)
     cwd = str(s.parent)
-    t0 = time.perf_counter()
     stub = s.parent / "input.m"
     stdin_text = None
     if answers is not None:
@@ -181,7 +160,7 @@ def run_engine(kind, script, mat_out=None, answers=None):
             quoted = " ".join("'{}'".format(a.replace("'", "''")) for a in answers)
             stub.write_text(
                 "function varargout = input(prompt, fmt)\n"
-                "% nk fieldtest stub (harness-generated): answers injected\n"
+                "% numkit fieldtest stub (harness-generated): answers injected\n"
                 "% because Windows MATLAB -batch rejects the real input().\n"
                 "persistent QUEUE\n"
                 "if isempty(QUEUE)\n"
@@ -211,11 +190,6 @@ def run_engine(kind, script, mat_out=None, answers=None):
 def _run_engine_argv(kind, s, cwd, mat_out, stdin_text):
     t0 = time.perf_counter()
     if kind == "matlab":
-        # restoredefaultpath: hermetic session â€” a polluted saved path
-        # (stale addpath entries) prints warnings into stdout, corrupting
-        # the stdout_match diagnostic. Session-scoped; savepath untouched.
-        # (It also drops a RESTOREDEFAULTPATH_EXECUTED marker variable into
-        # the base workspace â€” cleared so it never reaches the saved .mat.)
         argv = [str(MATLAB), "-batch",
                 "restoredefaultpath; clear RESTOREDEFAULTPATH_EXECUTED; "
                 + f"run('{s.as_posix()}')" +
@@ -247,17 +221,7 @@ def _run_engine_argv(kind, s, cwd, mat_out, stdin_text):
             wrap.unlink(missing_ok=True)
 
 
-# â”€â”€ Workspace comparison (R4) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-
 def _numeric_kind(arr):
-    """Class bucket for comparison: r(eal numeric) / c(omplex) / b(ool).
-
-    Real floats and ints share one bucket: MATLAB R2025b packs integral-
-    valued doubles into the smallest integer type when SAVING (v6 and v7
-    alike) and promotes back on load â€” the stored class is unreliable, so
-    only shape + values are compared for reals (dtype-level class would
-    false-positive on every integral double).
-    """
     k = arr.dtype.kind
     if k == "b":
         return "b"
@@ -265,7 +229,7 @@ def _numeric_kind(arr):
         return "c"
     if k in "fiu":
         return "r"
-    return None  # char / object (cell) / struct: non-comparable
+    return None
 
 
 def _values_close(a, b):
@@ -274,22 +238,13 @@ def _values_close(a, b):
     a = np.asarray(a, dtype=np.complex128 if "c" in (a.dtype.kind, b.dtype.kind) else np.float64)
     b = np.asarray(b, dtype=a.dtype)
     both_nan = np.isnan(a) & np.isnan(b)
-    # Â±Inf compares equal to itself (README semantics) â€” Inf-Inf = NaN
-    # otherwise flags identical workspaces as divergent (caught by
-    # Hornersrule_bisection_classic: -log(0) = +Inf on both sides).
     same_inf = np.isinf(a) & (a == b)
     close = np.abs(a - b) <= 1e-9 + REL_TOL * np.maximum(np.abs(a), np.abs(b))
     return bool(np.all(close | both_nan | same_inf))
 
 
 def matdiff(path_a, path_b):
-    """Compare numeric variables of two .mat files.
-
-    Returns (ok, lines): ok=False iff a shared numeric variable diverges in
-    class bucket (real/complex/logical â€” see _numeric_kind), shape, or
-    values (rel 1e-9; NaN==NaN). Missing-on-one-side and non-numeric
-    variables are reported as info, not failures.
-    """
+    """Compare numeric variables of two .mat files."""
     a = {k: v for k, v in loadmat(str(path_a)).items() if not k.startswith("__")}
     b = {k: v for k, v in loadmat(str(path_b)).items() if not k.startswith("__")}
     lines, ok = [], True
@@ -318,13 +273,11 @@ def matdiff(path_a, path_b):
     only_a = sorted(set(a) - set(b))
     only_b = sorted(set(b) - set(a))
     if only_a:
-        lines.append(f"only-in-{'nk' if 'nk' in str(path_a) else 'A'}: {', '.join(only_a[:8])}")
+        lines.append(f"only-in-{'nk' if 'nk' in str(path_a) or 'native' in str(path_a) else 'A'}: {', '.join(only_a[:8])}")
     if only_b:
         lines.append(f"only-in-{'matlab' if 'matlab' in str(path_b) else 'B'}: {', '.join(only_b[:8])}")
     return ok, lines
 
-
-# â”€â”€ Verdicts â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 NUM = re.compile(r"-?\d+\.?\d*(?:[eE][+-]?\d+)?")
 
@@ -334,12 +287,7 @@ def normalise(text, script):
     t = t.replace(str(Path(script).parent), "<DIR>").replace(Path(script).parent.as_posix(), "<DIR>")
     t = re.sub(r"[ \t]+\n", "\n", t)
     t = re.sub(r"\n{2,}", "\n", t)
-    # Console codepages make CJK prose incomparable across engines (MATLAB on
-    # a non-matching locale garbles UTF-8 on OUTPUT); fold non-ASCII runs to a
-    # single marker so numbers and structure stay strictly compared.
     t = re.sub(r"[^\x20-\x7e]+", " # ", t)
-    # Consecutive markers (mojibake runs differ per engine) and column-padding
-    # spaces collapse to single tokens.
     t = re.sub(r"(#\s*)+", "# ", t)
     t = re.sub(r"[ \t]{2,}", " ", t)
     return t.strip()
@@ -382,20 +330,12 @@ def classify(nk, ml):
         if "not supported" in msg.lower():
             return "unsupported", msg[:160]
         return "runtime-error", msg[:160]
-    return None, ""  # both exited 0: verdict decided by the workspace diff
+    return None, ""
 
-
-# â”€â”€ Qualify (R3): MATLAB-verified run corpus â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 def qualify(limit=None, flt=None, answered=False):
-    """MATLAB-verify candidates in PORTIONS; results merge into runnable.json.
-
-    Each run qualifies only the selected slice (path filter = repo dir, e.g.
-    `qualify 50 mdadams--`); verified paths replace their old entries, other
-    entries persist â€” portions accumulate instead of restarting the catalog.
-    """
+    """MATLAB-verify candidates in PORTIONS; results merge into runnable.json."""
     cands = harvest(limit, flt, answered=answered)
-    # Merge base: previous portions survive; entries for vanished scripts drop.
     prev = {}
     if RUNNABLE.exists():
         for e in json.loads(RUNNABLE.read_text(encoding="utf-8"))["scripts"]:
@@ -403,13 +343,14 @@ def qualify(limit=None, flt=None, answered=False):
                 prev[e["path"]] = e
     qualified = []
     for i, s in enumerate(cands):
-        r = run_engine("matlab", s, answers=answers_for(s))  # no save
-        rel = str(Path(s).relative_to(HERE))
+        full_s = (HERE / s) if not Path(s).is_absolute() else Path(s)
+        r = run_engine("matlab", full_s, answers=answers_for(full_s))
+        rel = str(full_s.relative_to(HERE))
         if r["exit"] == 0:
             qualified.append({"path": rel, "matlab_ms": r["ms"]})
             prev.pop(rel, None)
         mark = "ok " if r["exit"] == 0 else f"exit={r['exit']}"
-        print(f"[{i+1}/{len(cands)}] {Path(s).name:<44} {mark} {r['ms']}ms")
+        print(f"[{i+1}/{len(cands)}] {full_s.name:<44} {mark} {r['ms']}ms")
     merged = sorted([{"path": p, **{"matlab_ms": e["matlab_ms"]}} for p, e in prev.items()] + qualified,
                     key=lambda e: e["path"])
     doc = {"qualified": f"{datetime.now():%Y-%m-%dT%H:%M:%S}",
@@ -422,44 +363,42 @@ def qualify(limit=None, flt=None, answered=False):
           f"{len(merged)} total (catalog {doc.get('catalog_compiled', '?')})")
 
 
-# â”€â”€ Dual run with .mat comparison (R4) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-
 def run(scripts):
     REPORTS.mkdir(exist_ok=True)
     results = []
     for i, s in enumerate(scripts):
-        s = str((HERE / s) if not Path(s).is_absolute() else Path(s))
-        rel = str(Path(s).relative_to(HERE))
-        d = _tmpdir(s)
-        wasm = run_engine("wasm", s, mat_out=d / "out_wasm.mat")
-        wasm2 = run_engine("wasm", s, mat_out=d / "out_wasm2.mat")
+        s_path = (HERE / s) if not Path(s).is_absolute() else Path(s)
+        rel = str(s_path.relative_to(HERE))
+        ans = answers_for(s_path)
+        d = _tmpdir(s_path)
+        native = run_engine("native", s_path, mat_out=d / "out_native.mat", answers=ans)
+        native2 = run_engine("native", s_path, mat_out=d / "out_native2.mat", answers=ans)
         det_ok, det_lines = True, ["(probe unavailable)"]
-        if (d / "out_wasm.mat").exists() and (d / "out_wasm2.mat").exists():
-            det_ok, det_lines = matdiff(d / "out_wasm.mat", d / "out_wasm2.mat")
-        native = run_engine("native", s, mat_out=d / "out_native.mat")
-        ml = run_engine("matlab", s, mat_out=d / "out_matlab.mat")
+        if (d / "out_native.mat").exists() and (d / "out_native2.mat").exists():
+            det_ok, det_lines = matdiff(d / "out_native.mat", d / "out_native2.mat")
+        ml = run_engine("matlab", s_path, mat_out=d / "out_matlab.mat", answers=ans)
 
-        v, detail = classify(wasm, ml)
+        v, detail = classify(native, ml)
         mat_ok, mat_lines, stdout_ok = None, [], None
         if v is None:
-            stdout_ok = stdout_equal(normalise(wasm["out"], s), normalise(ml["out"], s))
+            stdout_ok = stdout_equal(normalise(native["out"], s_path), normalise(ml["out"], s_path))
             if not det_ok:
                 v, detail = "nondeterministic", "; ".join(det_lines)[:160]
-            elif (d / "out_wasm.mat").exists() and (d / "out_matlab.mat").exists():
-                mat_ok, mat_lines = matdiff(d / "out_wasm.mat", d / "out_matlab.mat")
+            elif (d / "out_native.mat").exists() and (d / "out_matlab.mat").exists():
+                mat_ok, mat_lines = matdiff(d / "out_native.mat", d / "out_matlab.mat")
                 v = "pass" if mat_ok else "workspace-mismatch"
                 detail = "; ".join(mat_lines[:6])[:400]
             else:
                 v, detail = "runtime-error", "no workspace .mat produced"
         r = {"script": rel, "verdict": v, "detail": detail,
-             "wasm_ms": wasm["ms"], "matlab_ms": ml["ms"], "native_ms": native["ms"],
+             "native_ms": native["ms"], "matlab_ms": ml["ms"],
              "stdout_match": stdout_ok,
              "mat_diff": mat_lines[:20],
-             "nk_out": (wasm["out"] or wasm["err"])[:800],
+             "nk_out": (native["out"] or native["err"])[:800],
              "matlab_out": (ml["out"] or ml["err"])[:800]}
         results.append(r)
         print(f"[{i+1}/{len(scripts)}] {Path(rel).name:<40} {v:<20} "
-              f"wasm={r['wasm_ms']}ms matlab={r['matlab_ms']}ms native={r['native_ms']}ms")
+              f"native={r['native_ms']}ms matlab={r['matlab_ms']}ms")
         shutil.rmtree(d, ignore_errors=True)
     out = REPORTS / f"{datetime.now():%Y%m%d-%H%M%S}.json"
     out.write_text(json.dumps(results, indent=1, ensure_ascii=False), encoding="utf-8")
@@ -471,7 +410,7 @@ def run(scripts):
 
 def load_runnable(n, flt):
     if not RUNNABLE.exists():
-        sys.exit("no runnable.json â€” run `python harness.py qualify` first (R3)")
+        sys.exit("no runnable.json — run `python harness.py qualify` first (R3)")
     doc = json.loads(RUNNABLE.read_text(encoding="utf-8"))
     scripts = [s["path"] for s in doc["scripts"]]
     if flt:

@@ -22,6 +22,7 @@ through byte-identical; GBK/GB18030 sources are converted (many real-world
 repos — especially Chinese textbook code — are GBK, and BOTH engines garble
 GBK under a non-Chinese locale, so transcoding restores a fair comparison).
 """
+import os
 import shutil
 import subprocess
 import sys
@@ -29,11 +30,12 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).parent
-REPOS = HERE / "corpus" / "repos"
-WORK = HERE / "corpus" / "work"
+CORPUS = Path(os.environ.get("NUMKIT_CORPUS_DIR", HERE / "corpus"))
+REPOS = CORPUS / "repos"
+WORK = CORPUS / "work"
 CATALOG_URL = ("https://raw.githubusercontent.com/hotredman/"
                "awesome-matlab-books/main/catalog.json")
-CATALOG_CACHE = HERE / "corpus" / "catalog.json"
+CATALOG_CACHE = CORPUS / "catalog.json"
 
 
 def load_catalog(refresh=False):

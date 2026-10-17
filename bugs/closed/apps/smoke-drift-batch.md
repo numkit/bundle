@@ -1,0 +1,72 @@
+# apps.smokes — 11 smokes red on main (two residual classes after the complex-linalg split)
+
+- **Status:** ✅ FIXED (9df044f20, 2026-09-07)
+- **Severity:** P2 (test-suite drift + one fixture-path class)
+- **Kind:** bug
+- **Found:** 2026-08-30 via the full 710-smoke sweep (699 pass; the complex-linalg cluster is filed separately as `opened/linalg/complex-linalg-regression.md`)
+
+## Symptom
+
+11 of 710 smokes fail on main, identically with and without `--compat` —
+nothing to do with the import-compat cleanup; found by it.
+
+## Triage
+
+| class | smokes | evidence |
+|---|---|---|
+| complex linalg (filed separately) | chol_complex, schur_complex, funm_parlett, decomposition, matrix_functions_general | dtype-rejection on complex operands → `opened/linalg/complex-linalg-regression.md` |
+| fixture path missing `src/` prefix | imread_tiff, region | `imread('toolboxes/image/tests/fixtures\gray8.tif')` — the fixture EXISTS at `src/toolboxes/image/tests/fixtures/`; the smoke's relative path only resolves with CWD=`src/`, but the documented run command executes from the repo root |
+| API-shape drift (ttest family) | hypotest, ttest_extras, vartest_extras, cummax_cummin | `Cannot convert struct to scalar (in call to 'fprintf')` — the smoke prints a component of what is now a struct return; either the return shape changed (engine) or the smokes predate it (test drift) |
+
+## Repro
+
+```matlab
+clear;
+% (representative, ttest class — engine level)
+h = ttest([5 6 7 8]);
+fprintf('%g\n', h.pval)
+% nk (current): depends on the ttest return shape — the smokes assume scalar components
+% MATLAB: prints the p-value
+```
+
+Fixture class repro: run
+`nk_repl.exe src/toolboxes/image/tests/smoke/imread_tiff_smoke.m` from
+the repo root (documented convention) → file-not-found on a fixture that
+exists under `src/`.
+
+## Suggested fix
+
+Decide per class: fixture smokes either get repo-root-relative paths or the
+documented run command gains a CWD note; the ttest-family smokes need the
+actual current return shape checked against MATLAB (if nk's shape
+diverges from MATLAB, that is an engine bug, not smoke drift — split it out
+then). Add the smoke corpus to a CI/scheduled sweep so drift is caught same-day.
+
+## References
+- **Guard:** deferred — umbrella triage; guards land per diagnosed class.
+
+Sweep logs: this session (710 files, with/without `--compat`); related
+consolidation commits `41c0f328`, `e95e6054`.
+
+
+## Fix (portion 26, 2026-09-07) — all three drift classes resolved; all 6 smokes exit 0
+
+- fixture path: the smokes' relative data paths resolve against the
+  SCRIPT's directory (sibling-origin resolution), not the process CWD —
+  `imread_tiff_smoke.m` now uses `fullfile('..', 'fixtures', …)`
+  (robust from ANY invocation cwd). imregionalmax had no fixture issue.
+- ttest-family API shape: the 4th outputs of ttest/ttest2 (stats
+  struct: tstat/df/sd) and vartest/vartest2 (chisqstat/df;
+  fstat/df1/df2) are MATLAB-CORRECT struct returns — the SMOKES
+  predated them and printed the struct as a scalar. Updated to
+  `t.tstat` / `T6.chisqstat` / `F.fstat`. Engine unchanged.
+- cummax_cummin: the smoke used doubled quotes (`''reverse''` — an
+  eval-string escape) in a plain .m context → parse error; fixed to
+  single quotes (direction flags now also exercise the fixed parser).
+- The complex-linalg class remains separately filed
+  (opened/linalg/complex-linalg-regression.md — actually already
+  closed; this file's reference is historical).
+
+Verification: all six smokes exit 0 from the repo root via the
+documented command. No engine change → no new guards needed (the
+underlying struct returns have their own gtests).

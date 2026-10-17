@@ -33,11 +33,14 @@ numkit/bundle/
 │   ├── groups/             # Curated script groups
 │   ├── data/               # runnable.json, candidates.json, answers.json
 │   └── reports/            # Batch execution reports
+├── bugs/                   # Structured one-file-per-bug catalog (opened/, closed/, pvs/, missing.md)
 └── audits/                 # Cross-submodule static architecture & API quality gates
     ├── check_layering.py   # Enforces acyclic dependency DAG across modules/*
     ├── check_api.py        # Verifies public C++ headers & manifest.json export completeness
     ├── argcheck_audit.py   # Verifies argcheck separation & diagnostic conventions (--gate)
     ├── api_shape_audit.py  # Verifies memory_resource parameter placement (--gate)
+    ├── bugs_audit.py       # Enforces bug-catalog <-> DISABLED_ guard-test invariants (--guards)
+    ├── bugs_tally.py       # Summarizes open/closed bugs by kind, severity, and domain
     └── baselines/          # Committed audit baselines
 ```
 
@@ -73,10 +76,13 @@ python parity/run_parity.py --module signal --isolated
 python parity/run_parity.py --all
 ```
 
-### 5. Run Architectural & API Audits
+### 5. Run Architectural, API & Bug-Guard Audits
 ```bash
 python audits/check_layering.py
 python audits/check_api.py
 python audits/argcheck_audit.py --gate
 python audits/api_shape_audit.py --gate
+python audits/bugs_audit.py --guards
+python audits/bugs_tally.py
 ```
+

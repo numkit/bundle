@@ -1,6 +1,6 @@
 # lang.maxmin — 'linear' index option not supported (incl. vecdim form)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (secondary-output option)
 - **Kind:** stub
 - **Found:** 2026-09-17 while implementing the vecdim reduction form
@@ -40,7 +40,5 @@ last-dim stride — verify against probed reference values).
 
 ## References
 
-- **Guard:** deferred (today's no-flag rejection parity is covered
-  live by `MaxVecdimTwoOutputsRejected` in
-  src/builtin/tests/vecdim_reduction_test.cpp; add the 'linear' value
-  guards when implemented).
+- **Guard:** `MaxMinLinearOption`
+  (src/bundle/tests/known_bugs_test.cpp)

@@ -1,5 +1,6 @@
 # var / std second output (the weight vector) is not emitted
 
+- **Status:** ✅ FIXED (2026-10-17)
 - **Kind:** missing-output
 - **Component:** stats (var, std)
 - **Found:** 2026-09-18, stats descriptive argcheck portion (probe68 V21).
@@ -20,4 +21,4 @@ clear;
 varStdDispatch computes the effective weights already (normFlag /
 wVec); emit them as outs[1] under nargout ≥ 2.
 
-**Guard:** deferred (missing output; flips live when implemented).
+**Guard:** `VarSecondOutput` (src/toolboxes/stats/tests/known_bugs_test.cpp)

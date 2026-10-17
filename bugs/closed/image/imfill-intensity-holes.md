@@ -1,5 +1,6 @@
 # imfill intensity hole-fill semantics approximate
 
+- **Status:** ✅ FIXED (2026-10-17)
 - **Kind:** stub
 - **Found:** 2026-09-19, image argcheck portion.
 
@@ -24,7 +25,7 @@ J = imfill(I, 'holes');          % class double in both (nk: matches)
 
 ## Guard
 
-`DISABLED_ImfillIntensityHoleValues` in
+`ImfillIntensityHoleValues` in
 `src/toolboxes/image/tests/known_bugs_test.cpp` (asserts the probed
 0/1-image contract live; the intensity-hole-value assertion is the
 future fix target).

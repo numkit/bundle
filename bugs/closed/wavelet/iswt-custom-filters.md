@@ -1,5 +1,6 @@
 # iswt / swt custom-filter forms (Lo_R/Hi_R and Lo_D/Hi_D) are documented but refused
 
+- **Status:** ✅ FIXED (2026-10-17)
 - **Kind:** stub
 - **Component:** wavelet (iswt, swt)
 - **Found:** 2026-09-18, bug-quartet portion (iswt.m/swt.m source read
@@ -23,4 +24,4 @@ The compute kernels take `std::vector<double>` filters internally
 already (iswtPhase / the swt conv port), so wiring is a reg+overload
 exercise; deferred until a cycle touches these functions.
 
-**Guard:** deferred (stub, not a wrong-value defect).
+**Guard:** `IswtCustomFilters` (src/toolboxes/wavelet/tests/known_bugs_test.cpp)

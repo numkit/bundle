@@ -1,8 +1,8 @@
 # signal: bandpower one-sided-PSD forms not implemented
 
 **Kind:** stub
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_BandpowerPsdForm (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (2026-10-17)
+**Guard:** BandpowerPsdForm (src/toolboxes/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

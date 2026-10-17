@@ -1,6 +1,6 @@
 # signal.findpeaks — MinPeakWidth / MaxPeakWidth / Annotate / DoubleSided options unsupported
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (missing options)
 - **Kind:** stub
 - **Found:** 2026-06 via signal.* DEEP-PROBE sweep; re-confirmed 2026-09-17
@@ -37,7 +37,7 @@ sign handling — file separately if picked up.
 
 ## References
 
-- **Guard:** `DISABLED_FindpeaksWidthOptions`
+- **Guard:** `FindpeaksWidthOptions`
   (src/toolboxes/signal/tests/known_bugs_test.cpp)
 - bugs/closed/signal/findpeaks-widthreference.md (the width machinery +
   reference-probe tables)

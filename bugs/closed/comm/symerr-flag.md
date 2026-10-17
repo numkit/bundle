@@ -1,6 +1,6 @@
 # comm — symerr: 'row-wise'/'column-wise'/'overall' flag deferred
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (documented 3rd argument of a common metric)
 - **Kind:** stub
 - **Found:** 2026-09-17 during the comm arity migration — R2025b probe
@@ -38,5 +38,5 @@ parse the flag in `symerr_reg` and drop the deferral throw.
 
 ## References
 
-- **Guard:** `DISABLED_SymerrOverallFlag`
+- **Guard:** `SymerrOverallFlag`
   (src/toolboxes/comm/tests/known_bugs_test.cpp)

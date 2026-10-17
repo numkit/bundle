@@ -1,6 +1,6 @@
 # control — hinfnorm: discrete-time models unsupported
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (feature gap; honest stub with its own identifier)
 - **Kind:** stub
 - **Found:** 2026-09-18 during the control argcheck portion (probe9) —
@@ -46,7 +46,7 @@ Doyle, or map poles via z→ln(z)/Ts and reuse the continuous kernel).
 
 ## References
 
-- **Guard:** `DISABLED_HinfnormDiscrete`
+- **Guard:** `HinfnormDiscrete`
   (src/toolboxes/control/tests/known_bugs_test.cpp)
 - Live guards for the scalar + garbage forms: `HinfnormContracts`
   (src/toolboxes/control/tests/type_contract_test.cpp)

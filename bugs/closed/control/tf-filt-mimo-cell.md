@@ -1,6 +1,6 @@
 # control — tf/filt MIMO (cell) coefficient form unsupported
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P4 (SISO covered; MIMO is a model-representation feature)
 - **Kind:** stub
 - **Found:** 2026-09-18 during the control argcheck portion — cell
@@ -49,7 +49,7 @@ consumers' MIMO paths (a model-layer feature, not an argcheck fix).
 
 ## References
 
-- **Guard:** `DISABLED_TfMimoCellForm`
+- **Guard:** `TfMimoCellForm`
   (src/toolboxes/control/tests/known_bugs_test.cpp)
 - Live guards for the 1x1 unwrap + MIMO stub: `TfCoefficientContract` /
   `FiltBroadNumeratorContract`

@@ -1,5 +1,6 @@
 # spectral* family (non-flux) regs do not expose the shared Window/OverlapLength/FFTLength/Range options
 
+- **Status:** ✅ FIXED (2026-10-17)
 - **Kind:** stub
 - **Component:** audio (spectralCentroid / Spread / RolloffPoint /
   Decrease / Slope / Crest / Entropy / Flatness / Kurtosis / Skewness)
@@ -30,5 +31,4 @@ Mechanical: extend each descriptor's compute signature with
 `const StftOptions &opts = {}`, add the shared NV parse helper to each
 reg, one parity spec per descriptor exercising Window/FFTLength/Range.
 
-**Guard:** deferred (stub — options are ignored, not mis-computed;
-flips live when the family wiring lands).
+**Guard:** `SpectralFamilyStftOptions` (src/toolboxes/audio/tests/known_bugs_test.cpp)

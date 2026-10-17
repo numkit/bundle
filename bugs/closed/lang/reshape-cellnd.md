@@ -1,6 +1,6 @@
 # lang — reshape: CELL/STRING arrays reject >3 dimensions (ND constructors missing)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-17)
 - **Severity:** P3 (documented N-D reshape form)
 - **Kind:** stub
 - **Found:** 2026-09-18 during the reshape_argcheck boundary redesign —
@@ -44,5 +44,5 @@ Dims); drop the deferral and copy element-wise like the 2-D/3-D branch.
 
 ## References
 
-- **Guard:** `DISABLED_ReshapeCellND`
+- **Guard:** `ReshapeCellND`
   (src/bundle/tests/known_bugs_test.cpp)

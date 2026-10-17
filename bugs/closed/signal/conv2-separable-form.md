@@ -1,8 +1,8 @@
 # signal: conv2 separable form conv2(u, v, A) not implemented
 
 **Kind:** stub
-**Status:** ⬜ OPEN (2026-09-18)
-**Guard:** DISABLED_Conv2SeparableForm (src/toolboxes/signal/tests/known_bugs_test.cpp)
+**Status:** ✅ FIXED (2026-10-17)
+**Guard:** Conv2SeparableForm (src/toolboxes/signal/tests/known_bugs_test.cpp)
 
 ## Problem
 

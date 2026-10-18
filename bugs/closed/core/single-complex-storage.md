@@ -1,5 +1,6 @@
 # single-precision complex arrays collapse to double-complex storage
 
+- **Status:** ✅ FIXED (2026-10-18) — `HeapObject::isSingleComplex` tracks single-precision complex class across `single(z)`, `complex(single(a), single(b))`, `class(z)`, `issingle(z)`, `isa(z, 'single')`, `whos`, indexing, concatenation, transpose/ctranspose, unary/binary arithmetic, `real`/`imag`/`abs`/`angle`/`conj`, and wavelet `wthresh`/`wkeep`/`wextend`.
 - **Kind:** bug (engine data-model gap)
 - **Component:** core Value model (`ValueType`)
 - **Found:** 2026-09-19, wavelet argcheck portion (wthresh/wextend

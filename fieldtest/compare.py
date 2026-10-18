@@ -57,15 +57,16 @@ def verdict_of(script):
         v, detail = H.classify(wasm, ml)
         lines = []
         if v is None:
-            wasm2 = H.run_engine("native", s, mat_out=d / "out_native2.mat", answers=ans)
-            if (d / "out_native.mat").exists() and (d / "out_native2.mat").exists():
-                ok, det = H.matdiff(d / "out_native.mat", d / "out_native2.mat")
-                if not ok:
-                    return "nondeterministic", "; ".join(det)[:120], det
             if (d / "out_native.mat").exists() and (d / "out_matlab.mat").exists():
                 ok, lines = H.matdiff(d / "out_native.mat", d / "out_matlab.mat")
-                verdict = "pass" if ok else "workspace-mismatch"
-                return verdict, "; ".join(lines[:4])[:160], lines
+                if ok:
+                    return "pass", "", []
+                wasm2 = H.run_engine("native", s, mat_out=d / "out_native2.mat", answers=ans)
+                if (d / "out_native2.mat").exists():
+                    ok2, det = H.matdiff(d / "out_native.mat", d / "out_native2.mat")
+                    if not ok2:
+                        return "nondeterministic", "; ".join(det)[:120], det
+                return "workspace-mismatch", "; ".join(lines[:4])[:160], lines
             return "runtime-error", "no workspace .mat produced", lines
         return v, detail, lines
     finally:
@@ -73,6 +74,7 @@ def verdict_of(script):
 
 
 def main():
+    from concurrent.futures import ThreadPoolExecutor
     argv = [a for a in sys.argv[1:]]
     verbose = "-v" in argv
     argv = [a for a in argv if a != "-v"]
@@ -89,29 +91,37 @@ def main():
         sys.exit(f"no such group: {name} (see --list)")
     entries = parse_group(gfile)
     counts = {"pass": 0, "known": 0, "new": 0}
-    print(f"=== group {name}: {len(entries)} scripts ===")
-    for i, (rel, known) in enumerate(entries):
+    print(f"=== group {name}: {len(entries)} scripts ===", flush=True)
+
+    def _run_entry(item):
+        i, (rel, known) = item
         s = HERE / rel
         if not s.exists():
-            print(f"[{i+1}] {Path(rel).name:<38} MISSING FILE ({rel})")
-            counts["new"] += 1
-            continue
+            return i, rel, known, None, None, None
         v, detail, lines = verdict_of(s)
-        if v == "pass":
-            counts["pass"] += 1
-            mark = "PASS"
-        elif known:
-            counts["known"] += 1
-            mark = f"KNOWN ({known})"
-        else:
-            counts["new"] += 1
-            mark = "NEW"
-        print(f"[{i+1}/{len(entries)}] {Path(rel).name:<38} {mark:<44} "
-              f"{v}: {detail.splitlines()[0][:80] if detail else ''}")
-        if verbose and lines:
-            for l in lines[:10]:
-                print(f"      {l}")
-    print(f"\n{counts['pass']} pass, {counts['known']} known (filed), {counts['new']} NEW")
+        return i, rel, known, v, detail, lines
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for i, rel, known, v, detail, lines in pool.map(_run_entry, enumerate(entries)):
+            if v is None:
+                print(f"[{i+1}] {Path(rel).name:<38} MISSING FILE ({rel})", flush=True)
+                counts["new"] += 1
+                continue
+            if v == "pass":
+                counts["pass"] += 1
+                mark = "PASS"
+            elif known:
+                counts["known"] += 1
+                mark = f"KNOWN ({known})"
+            else:
+                counts["new"] += 1
+                mark = "NEW"
+            print(f"[{i+1}/{len(entries)}] {Path(rel).name:<38} {mark:<44} "
+                  f"{v}: {detail.splitlines()[0][:80] if detail else ''}", flush=True)
+            if verbose and lines:
+                for l in lines[:10]:
+                    print(f"      {l}", flush=True)
+    print(f"\n{counts['pass']} pass, {counts['known']} known (filed), {counts['new']} NEW", flush=True)
     sys.exit(1 if counts["new"] else 0)
 
 

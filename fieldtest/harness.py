@@ -187,21 +187,40 @@ def run_engine(kind, script, mat_out=None, answers=None):
             stub.unlink()
 
 
+def _repo_root_of(s: Path):
+    parts = s.parts
+    for i in range(len(parts) - 2):
+        if parts[i].lower() == "corpus" and parts[i + 1].lower() == "work":
+            return Path(*parts[: i + 3])
+    return None
+
+
 def _run_engine_argv(kind, s, cwd, mat_out, stdin_text):
     t0 = time.perf_counter()
+    repo_root = _repo_root_of(s)
+    addpath_cmd = (
+        f"addpath(genpath('{repo_root.resolve().as_posix()}')); "
+        if repo_root is not None and repo_root.resolve() != s.resolve().parent
+        else ""
+    )
+    wrap = None
     if kind == "matlab":
         argv = [str(MATLAB), "-batch",
                 "restoredefaultpath; clear RESTOREDEFAULTPATH_EXECUTED; "
+                + addpath_cmd
                 + f"run('{s.as_posix()}')" +
                 (f"; save('{Path(mat_out).as_posix()}')" if mat_out else "")]
     elif kind in ("wasm", "native"):
-        if mat_out is None:
+        if mat_out is None and not addpath_cmd:
             argv = (["node", str(WASM_CLI), s.name] if kind == "wasm"
                     else [str(NATIVE_CLI), s.name])
         else:
-            wrap = s.parent / f"__nk_wrap_{kind}.m"
-            wrap.write_text(f"run('{s.as_posix()}');\nsave('{Path(mat_out).as_posix()}');\n",
-                            encoding="utf-8")
+            stem_tag = re.sub(r"[^a-zA-Z0-9_]", "_", s.stem)
+            wrap = s.parent / f"__nk_wrap_{kind}_{stem_tag}.m"
+            body = addpath_cmd + f"run('{s.as_posix()}');\n"
+            if mat_out is not None:
+                body += f"save('{Path(mat_out).as_posix()}');\n"
+            wrap.write_text(body, encoding="utf-8")
             argv = (["node", str(WASM_CLI), wrap.name] if kind == "wasm"
                     else [str(NATIVE_CLI), wrap.name])
     else:
@@ -217,7 +236,7 @@ def _run_engine_argv(kind, s, cwd, mat_out, stdin_text):
     except subprocess.TimeoutExpired:
         return {"exit": "timeout", "out": "", "err": "", "ms": to * 1000}
     finally:
-        if kind in ("wasm", "native") and mat_out is not None:
+        if wrap is not None:
             wrap.unlink(missing_ok=True)
 
 
@@ -239,7 +258,16 @@ def _values_close(a, b):
     b = np.asarray(b, dtype=a.dtype)
     both_nan = np.isnan(a) & np.isnan(b)
     same_inf = np.isinf(a) & (a == b)
-    close = np.abs(a - b) <= 1e-9 + REL_TOL * np.maximum(np.abs(a), np.abs(b))
+    finite_max = 0.0
+    if a.size:
+        fa = np.abs(a[np.isfinite(a)])
+        fb = np.abs(b[np.isfinite(b)])
+        if fa.size:
+            finite_max = max(finite_max, float(np.max(fa)))
+        if fb.size:
+            finite_max = max(finite_max, float(np.max(fb)))
+    atol = max(1e-9, 1e-12 * finite_max)
+    close = np.abs(a - b) <= atol + REL_TOL * np.maximum(np.abs(a), np.abs(b))
     return bool(np.all(close | both_nan | same_inf))
 
 

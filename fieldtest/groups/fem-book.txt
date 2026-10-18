@@ -1,0 +1,71 @@
+# group: fem-book — MATLAB Codes for Finite Element Analysis (A. J. M. Ferreira, Springer)
+# source: qualify 2026-10-19, 64/67 standalone scripts (3 symbolic)
+# run: python fieldtest/compare.py fem-book
+
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem1.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem10.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem11.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem11b.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem11bvib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem12.m  # known: ill-conditioned (singular 3D truss stiffness matrix, RCOND ~ 1e-18)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem13.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem13vib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem14.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem15.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16Buckling.m  # known: eig-sign (buckling load lambda matches; mode shape sign/scale ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16fgm.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16fgmVib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16timeReddy.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16vibrations.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16vibrationsSchultz.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem17.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem17a.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem17b.m  # known: ill-conditioned (Q9 with 2x2 quadrature has hourglass modes, cond(K) = 3.7e17)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem18.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem18a.m  # known: fp-cancellation (displacements/stress match; near-zero corner shear stress ~2e-8 rel)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem18avib.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem18b.m  # known: fp-cancellation (displacements/stress match; near-zero corner shear stress ~2e-8 rel)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem18bvib.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem18vib.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19a.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19aBuckling.m  # known: legacy-colordef (MATLAB R2025b removed colordef; NumKit supports it)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19aVibrations.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19b.m  # known: ill-conditioned (Q9 Mindlin plate with reduced quadrature has hourglass modes, cond(K) > 1e17)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19bBuckling.m  # known: legacy-colordef (MATLAB R2025b removed colordef; NumKit supports it)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19Buckling.m  # known: eig-sign (buckling load lambda matches; mode shape sign/scale ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19bVibrations.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19Vibrations.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem2.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20a.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20aBuckling.m  # known: eig-sign (generalized eig(K, Kg) with singular Kg nullspace modes)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20aFgm.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20b.m  # known: ill-conditioned (Q9 Reddy plate with reduced quadrature has hourglass modes, cond(K) > 1e17)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20bBuckling.m  # known: eig-sign (generalized eig(K, Kg) with singular Kg nullspace modes)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20bFgm.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20Buckling.m  # known: eig-sign (generalized eig(K, Kg) with singular Kg nullspace modes)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20Fgm.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem20timeReddy.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem21.m  # known: missing:symbolic (Symbolic Math Toolbox syms)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem21a.m  # known: missing:symbolic (Symbolic Math Toolbox syms)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem21aFgm.m  # known: fp-cancellation (displacements match; cancelled coupling stiffness entry ~3.6e-6 rel)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem21b.m  # known: missing:symbolic (Symbolic Math Toolbox syms)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem21bFgm.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem21Fgm.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem3.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem3a.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem3vib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem4.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem5.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem5vib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem6.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem7.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem7vib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem8.m  # known: ill-conditioned (singular 2D frame stiffness matrix, RCOND ~ 1e-18)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9a.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9buk.m  # known: eig-sign (critical buckling load lambda matches; eig(K, Kg) singular Kg modes)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9vib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problemK.m

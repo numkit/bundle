@@ -1,0 +1,15 @@
+# group: cell-free-book — Foundations of User-Centric Cell-Free Massive MIMO (Demir, Bjornson, Sanguinetti)
+# source: qualify 2026-10-19, 11 standalone scripts completing under 15s
+# run: python fieldtest/compare.py cell-free-book
+
+corpus/work/emilbjornson--cell-free-book/code/section1_figure12.m
+corpus/work/emilbjornson--cell-free-book/code/section1_figure2.m
+corpus/work/emilbjornson--cell-free-book/code/section1_figure5.m
+corpus/work/emilbjornson--cell-free-book/code/section2_figure6.m  # known: quadrature-tol (integral2 AbsTol=1e-10 perturbs 1e-9 tail eigenvalue of R_ULA_5)
+corpus/work/emilbjornson--cell-free-book/code/section2_figure7.m  # known: rng-stream (Monte-Carlo UE locations via rand)
+corpus/work/emilbjornson--cell-free-book/code/section2_figure8.m  # known: rng-stream (Monte-Carlo UE locations via rand)
+corpus/work/emilbjornson--cell-free-book/code/section4_figure1.m
+corpus/work/emilbjornson--cell-free-book/code/section4_figure4.m
+corpus/work/emilbjornson--cell-free-book/code/section4_figure5.m
+corpus/work/emilbjornson--cell-free-book/code/section4_figure7.m  # known: quadrature-tol (integral2 AbsTol=1e-10 over 101 angles yields 2.78e-7 max rel in NMSE)
+corpus/work/emilbjornson--cell-free-book/code/section4_figure8.m

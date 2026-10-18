@@ -1,6 +1,6 @@
 # graphics.handles — deferred property/return surface of the handle layer
 
-- **Status:** 🔴 OPEN (tracking stub — portion 29 shipped the core layer)
+- **Status:** ✅ FIXED (`022b40b` in `modules/numkit` — direct chart class constructors, `ZData` 2-D matrix round-trip on surface/contour records, and `set(h)` property catalog listing & struct/cell return)
 - **Severity:** P3 (each item is a documented MATLAB behaviour nk
   accepts-but-ignores or approximates; none breaks the common path)
 - **Kind:** stub

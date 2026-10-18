@@ -171,7 +171,7 @@
     "modules/control/src/register/lti/lti_reg.cpp": {
       "adopted": 1,
       "raw_arity": 0,
-      "raw_cast": 1
+      "raw_cast": 0
     },
     "modules/control/src/register/lyapunov/lyapunov_reg.cpp": {
       "adopted": 1,

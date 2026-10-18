@@ -1,7 +1,3 @@
 {
-  "public_violations": {
-    "modules/ops/include/numkit/builtin/strfun.hpp::strsplit": [
-      "mr-no-default"
-    ]
-  }
+  "public_violations": {}
 }

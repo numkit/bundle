@@ -1,20 +1,20 @@
 {
-  "compute_adopted": 21,
+  "compute_adopted": 26,
   "compute_total": 429,
-  "generated": "2026-10-17",
+  "generated": "2026-10-18",
   "reg_files": {
     "modules/audio/src/register/features/pitch_harmonics_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/audio/src/register/io/audio_io_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/audio/src/register/scale/freq_scales_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -29,8 +29,8 @@
       "raw_cast": 0
     },
     "modules/audio/src/register/spectral/shape_descriptors_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/comm/src/register/channel/channel_reg.cpp": {
@@ -354,8 +354,8 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/graphics/export_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/group_reg.cpp": {
@@ -364,27 +364,27 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/io/csv_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/io/extras_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/io/fileio_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/io/paths_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/io/type_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -434,8 +434,8 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/lang_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/lang_regex_reg.cpp": {
@@ -464,7 +464,7 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/balance_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -474,22 +474,22 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/eig_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/ldl_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/matrix_functions_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/misc_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -499,8 +499,8 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/page_ops_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/predicates_reg.cpp": {
@@ -509,23 +509,23 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/properties_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/pseudo_subspace_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/schur_convert_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/solvers_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/linalg/vector_ops_reg.cpp": {
@@ -534,8 +534,8 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/matfun_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/math_complex_reg.cpp": {
@@ -609,13 +609,13 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/ode/ode23_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/ode/ode45_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/ode/options_reg.cpp": {
@@ -644,8 +644,8 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/fzero_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/linprog_reg.cpp": {
@@ -679,8 +679,8 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/timefun_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/signal/src/register/convolution/convolution_reg.cpp": {
@@ -1244,8 +1244,8 @@
       "raw_cast": 0
     },
     "modules/wavelet/src/register/dwt/dwt_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/wavelet/src/register/dwt/dyad_reg.cpp": {
@@ -1254,8 +1254,8 @@
       "raw_cast": 0
     },
     "modules/wavelet/src/register/dwt/haar_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/wavelet/src/register/dwt/multilevel2_reg.cpp": {
@@ -1274,12 +1274,12 @@
       "raw_cast": 0
     },
     "modules/wavelet/src/register/dwt/wrcoef_reg.cpp": {
-      "adopted": 0,
-      "raw_arity": 1,
+      "adopted": 1,
+      "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/wavelet/src/register/filter/families_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -1289,7 +1289,7 @@
       "raw_cast": 0
     },
     "modules/wavelet/src/register/filter/wfilters_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },

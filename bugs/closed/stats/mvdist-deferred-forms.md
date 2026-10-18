@@ -1,6 +1,7 @@
 # mvdist deferred forms: sampler value parity (randn/gamrnd cascades), mvncdf d>=3 accuracy, mvnrnd semidef T shape
 
 - **Kind:** stub
+- **Status:** ✅ FIXED (`6525be9`)
 - **Component:** stats (mvnrnd / mvncdf / mvtrnd / mvnpdf)
 - **Found:** 2026-09-19, stats argcheck campaign distributions portion
   (probe73/probe74; contracts landed with the mvnpdf/mvtpdf/mnpdf

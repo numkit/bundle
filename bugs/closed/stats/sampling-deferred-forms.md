@@ -1,6 +1,7 @@
 # sampling deferred forms: draw-value parity (randi/randperm cascades), wswor algorithm, lhsnorm construction
 
 - **Kind:** stub
+- **Status:** ✅ FIXED (`6525be9`)
 - **Component:** stats (randsample / datasample / lhsnorm)
 - **Found:** 2026-09-19, stats argcheck campaign sampling portion
   (probe75; contracts landed as randsample_full / datasample_full in

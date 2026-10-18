@@ -334,12 +334,12 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/datatypes_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/elfun_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -389,7 +389,7 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/iofun_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -399,12 +399,12 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/lang_coder_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/lang_format_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -624,22 +624,22 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/ops_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/fmincon_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/fminunc_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/fsolve_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
@@ -649,32 +649,32 @@
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/linprog_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/lsqnonlin_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/optim/quadprog_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/polyfun_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/specfun_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },
     "modules/numkit/src/builtin/register/strfun_reg.cpp": {
-      "adopted": 0,
+      "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0
     },

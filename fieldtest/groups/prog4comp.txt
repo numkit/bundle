@@ -1,5 +1,5 @@
 # hplgit--prog4comp — Programming for Computations (Linge & Langtangen, Springer)
-# 17 MATLAB-qualified scripts from src/m/
+# 20 MATLAB-qualified scripts from src/m/ (including 3 interactive scripts via answers.json)
 
 corpus/work/hplgit--prog4comp/src/m/SIR1.m
 corpus/work/hplgit--prog4comp/src/m/SIRV1.m
@@ -13,8 +13,12 @@ corpus/work/hplgit--prog4comp/src/m/brute_force_root_finder_flat.m
 corpus/work/hplgit--prog4comp/src/m/example_symbolic.m  # known: missing:symbolic (Symbolic Math Toolbox syms)
 corpus/work/hplgit--prog4comp/src/m/formatted_columns.m
 corpus/work/hplgit--prog4comp/src/m/formatted_print.m
+corpus/work/hplgit--prog4comp/src/m/growth1.m
 corpus/work/hplgit--prog4comp/src/m/logistic.m
 corpus/work/hplgit--prog4comp/src/m/matrix_vector_product.m
 corpus/work/hplgit--prog4comp/src/m/osc_EC.m
 corpus/work/hplgit--prog4comp/src/m/osc_FE_special_case.m
 corpus/work/hplgit--prog4comp/src/m/plot_heights.m
+corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat.m
+corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat1.m
+

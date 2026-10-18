@@ -3,5 +3,9 @@
   "corpus/work/springer-math--signals-and-systems/Source code/Chapter-5/pr5_2.m": ["4", "1"],
   "corpus/work/springer-math--signals-and-systems/Source code/Chapter-5/pr5_3.m": ["4", "40"],
   "corpus/work/springer-math--signals-and-systems/Source code/Chapter-5/pr5_4.m": ["4", "1", "40"],
-  "corpus/work/springer-math--signals-and-systems/Source code/Chapter-6/pr6_2.m": ["1", "50"]
+  "corpus/work/springer-math--signals-and-systems/Source code/Chapter-6/pr6_2.m": ["1", "50"],
+  "corpus/work/hplgit--prog4comp/src/m/growth1.m": ["100", "0.1", "0.5", "20"],
+  "corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat.m": ["4"],
+  "corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat1.m": ["4"]
 }
+

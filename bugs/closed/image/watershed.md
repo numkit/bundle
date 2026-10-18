@@ -1,7 +1,6 @@
 # image.watershed — function missing
 
-- **Status:** 🔴 OPEN (DEFERRED 2026-06-19 — exact MATLAB labels/ridges not
-  reconstructible from black-box; see attempt note below)
+- **Status:** ✅ FIXED (92ad32a)
 - **Severity:** P2 (missing function)
 - **Kind:** missing-fn
 - **Found:** 2026-06 via DEEP-PROBE

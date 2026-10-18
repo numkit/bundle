@@ -1,6 +1,6 @@
 # image.imfindcircles — function missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (92ad32a)
 - **Severity:** P2 (missing function)
 - **Kind:** missing-fn
 - **Found:** 2026-06 via DEEP-PROBE

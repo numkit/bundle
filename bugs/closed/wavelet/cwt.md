@@ -1,6 +1,6 @@
 # wavelet.cwt — continuous wavelet transform missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2545eed)
 - **Severity:** P2 (missing function)
 - **Kind:** missing-fn
 - **Found:** 2026-06-04 via missing-fn sweep

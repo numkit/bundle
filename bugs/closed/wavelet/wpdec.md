@@ -1,6 +1,6 @@
 # wavelet.wpdec / wprec / wpcoef — wavelet packet decomposition missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2545eed)
 - **Severity:** P2 (missing function)
 - **Kind:** missing-fn
 - **Found:** 2026-06 via DEEP-PROBE

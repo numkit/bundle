@@ -1,6 +1,6 @@
 # lang.reg — extra positional arguments are silently ignored (no max-arity bound)
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (2026-10-18, all 261 reg files across all 8 modules migrated to `argcheck::checkNargin`, `raw-arity = 0`)
 - **Severity:** P2 (systemic: silently wrong acceptance instead of the
   reference's "Too many input arguments" — typos like a duplicated
   argument compute a plausible-but-wrong result instead of erroring)
@@ -278,15 +278,19 @@ parsers) document why they are unbounded.
     ctrb(ss(...))=OK) — nk's sys-form paths already matched.
   - **feedback argcheck mislabel fixed**: expectedReal(a[2], 4, ...)
     reported position 4 for the 3rd argument.
-- Remaining domains: wavelet, linalg, audio, io, ode, optim,
-  graphics (registered via the `reg()` helper — extract
-  names from the `*_library.cpp` files the same way; mind ALL-negative
-  nargin results, not just -1).
+- **audio, wavelet, linalg, io, ode, optim, graphics, timefun, matfun,
+  lang domains — ✅ DONE (2026-10-18):** all remaining 47 reg files
+  migrated to `argcheck::checkNargin` (`raw-arity = 0` across all 261
+  reg files in all 8 modules). Guards:
+  `modules/audio/tests/arity_bounds_test.cpp` (`AudioArityBoundsTest`),
+  `modules/wavelet/tests/arity_bounds_test.cpp` (`WaveletArityBoundsTest`),
+  and `BuiltinKnownBug.RegMaxArityBounds` in
+  `modules/numkit/tests/gtest/known_bugs_test.cpp`.
 
 ## References
 
-- **Guard:** deferred for the remaining domains (the landed builtin
-  bounds are guarded live by `ArityBoundsTest` in
-  src/builtin/tests/arity_bounds_test.cpp and `TriuMaxArity` /
-  `StrncmpMaxArity` in src/bundle/tests/known_bugs_test.cpp).
-- dev-docs/todo/argcheck_separation.md (raw-arity backlog note).
+- **Guard:** `BuiltinKnownBug.TriuMaxArity`, `BuiltinKnownBug.StrncmpMaxArity`,
+  `BuiltinKnownBug.RegMaxArityBounds` (`modules/numkit/tests/gtest/known_bugs_test.cpp`);
+  per-module table guards in `modules/{numkit,signal,image,stats,comm,control,audio,wavelet}/tests/arity_bounds_test.cpp`.
+- dev-docs/todo/argcheck_separation.md (raw-arity backlog closed).
+

@@ -4,8 +4,9 @@
 - **Namespace:** core (cross-toolbox public API shape)
 - **Functions:** strsplit(s, mr) overload (deliberate — see below);
   private-header backlog (report-only list in the audit)
-- **Status:** 🟡 OPEN (stats/builtin/control/io portion FIXED 2026-09-18;
-  signal 7 FIXED 2026-09-18 in the signal structural portion)
+- **Status:** ✅ FIXED (stats/builtin/control/io/signal FIXED 2026-09-18;
+  remaining 43 ops/graphics public declarations FIXED 2026-10-18 — baseline
+  reduced from 44 to 1, only the deliberate `strsplit(s, mr)` overload)
 - **Reference:** internal convention — [library_api.md §7](../../dev-docs/handbook/library_api.md)
 - **Found:** 2026-09-18, user design review of `rescale`/`zscoreCore`
 

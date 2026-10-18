@@ -1,6 +1,134 @@
 {
- "qualified": "2026-09-06T17:37:49",
+ "qualified": "2026-10-18T20:36:07",
  "scripts": [
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\car_track.m",
+   "matlab_ms": 23212
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\drift_linreg.m",
+   "matlab_ms": 21790
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ckf.m",
+   "matlab_ms": 21669
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ekf.m",
+   "matlab_ms": 21634
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ghkf.m",
+   "matlab_ms": 21273
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_iekf.m",
+   "matlab_ms": 21382
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_iplf.m",
+   "matlab_ms": 21229
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_pf.m",
+   "matlab_ms": 21714
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_pf2.m",
+   "matlab_ms": 26742
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_sim.m",
+   "matlab_ms": 21136
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_sim2.m",
+   "matlab_ms": 27078
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ukf.m",
+   "matlab_ms": 27541
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ukf5.m",
+   "matlab_ms": 27521
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\recursive_linreg.m",
+   "matlab_ms": 27804
+  },
+  {
+   "path": "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\exercises\\exercise6_4.m",
+   "matlab_ms": 27946
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\SIR1.m",
+   "matlab_ms": 22936
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\SIRV1.m",
+   "matlab_ms": 27527
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\SIRV2.m",
+   "matlab_ms": 27405
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\ball.m",
+   "matlab_ms": 6306
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\ball_angle.m",
+   "matlab_ms": 6105
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\ball_max_height.m",
+   "matlab_ms": 28808
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\ball_plot.m",
+   "matlab_ms": 27644
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\ball_time.m",
+   "matlab_ms": 28156
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\brute_force_root_finder_flat.m",
+   "matlab_ms": 6161
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\example_symbolic.m",
+   "matlab_ms": 6365
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\formatted_columns.m",
+   "matlab_ms": 5836
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\formatted_print.m",
+   "matlab_ms": 5330
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\logistic.m",
+   "matlab_ms": 24085
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\matrix_vector_product.m",
+   "matlab_ms": 6002
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\osc_EC.m",
+   "matlab_ms": 29479
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\osc_FE_special_case.m",
+   "matlab_ms": 30566
+  },
+  {
+   "path": "corpus\\work\\hplgit--prog4comp\\src\\m\\plot_heights.m",
+   "matlab_ms": 21078
+  },
   {
    "path": "corpus\\work\\mdadams--sigsysbook_companion\\slides\\matlab\\basics\\anonymous_function_mysinc.m",
    "matlab_ms": 31534
@@ -176,6 +304,70 @@
   {
    "path": "corpus\\work\\mdadams--sigsysbook_companion\\slides\\matlab\\symbolic_computation\\ult_1.m",
    "matlab_ms": 9531
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter02.m",
+   "matlab_ms": 28704
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter03.m",
+   "matlab_ms": 5020
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter05.m",
+   "matlab_ms": 5662
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter06.m",
+   "matlab_ms": 5542
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter07.m",
+   "matlab_ms": 29930
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter08.m",
+   "matlab_ms": 5278
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter09.m",
+   "matlab_ms": 5000
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter10.m",
+   "matlab_ms": 5493
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter11.m",
+   "matlab_ms": 22767
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter12.m",
+   "matlab_ms": 5480
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter13.m",
+   "matlab_ms": 5296
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter14.m",
+   "matlab_ms": 23006
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter15.m",
+   "matlab_ms": 27949
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter17.m",
+   "matlab_ms": 29816
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter18.m",
+   "matlab_ms": 4772
+  },
+  {
+   "path": "corpus\\work\\mikexcohen--LinAlgBook\\matlab\\LAbookX_chapter19.m",
+   "matlab_ms": 28144
   },
   {
    "path": "corpus\\work\\springer-math--Dynamical-Systems-with-Applications-using-MATLAB\\Lynch R2016a\\Program_1b.m",

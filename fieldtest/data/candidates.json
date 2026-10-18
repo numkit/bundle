@@ -1,3 +1,18 @@
 [
- "corpus\\work\\springer-math--signals-and-systems\\Source code\\Chapter-5\\pr5_5.m"
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\car_track.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\drift_linreg.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ckf.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ekf.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ghkf.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_iekf.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_iplf.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_par.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_pf.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_pf2.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_sim.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_sim2.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ukf.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\pendulum_ukf5.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\examples\\recursive_linreg.m",
+ "corpus\\work\\EEA-sensors--Bayesian-Filtering-and-Smoothing\\matlab\\exercises\\exercise6_4.m"
 ]

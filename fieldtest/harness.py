@@ -260,7 +260,8 @@ def matdiff(path_a, path_b):
             ok = False
             lines.append(f"DIFF {name}: class {ka} vs {kb}")
             continue
-        va, vb = np.asarray(a[name]), np.asarray(b[name])
+        va = a[name].toarray() if hasattr(a[name], "toarray") else np.asarray(a[name])
+        vb = b[name].toarray() if hasattr(b[name], "toarray") else np.asarray(b[name])
         if va.shape != vb.shape:
             ok = False
             lines.append(f"DIFF {name}: shape {va.shape} vs {vb.shape}")

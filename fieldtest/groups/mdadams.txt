@@ -22,28 +22,28 @@ corpus/work/mdadams--sigsysbook_companion/slides/matlab/basics/mysum_main.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/basics/usinc_anon.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/basics/usinc_anon_2.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/basics/while_statement_1.m
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/annotated_plot.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/fplot_example.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/multiple_lines_plot.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/multiple_plots.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/multiple_plots_2.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/points_and_path_in_plane.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/stem_plot.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/trivial_plot.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_1.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_10.m    # known: graphics/plot-family-no-return-value
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_11.m    # known: missing: histogram (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_2.m    # known: missing: shading (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_3.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_4.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_5.m    # known: missing: print (bugs/missing.md)
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/annotated_plot.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/fplot_example.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/multiple_lines_plot.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/multiple_plots.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/multiple_plots_2.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/points_and_path_in_plane.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/stem_plot.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/data_visualization/trivial_plot.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_1.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_10.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_11.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_2.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_3.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_4.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_5.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_6.m    # known: missing: syms (bugs/missing.md)
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_7.m    # known: missing: syms (bugs/missing.md)
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_8.m    # known: missing: demo-datasets (peppers.png)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_9.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqs_example_1.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqz_example_1.m    # known: missing: print (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/my_freqs_example_1.m    # known: missing: print (bugs/missing.md)
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_9.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqs_example_1.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqz_example_1.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/my_freqs_example_1.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/differentiation_1.m    # known: missing: syms (bugs/missing.md)
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/ezplot_example_1.m    # known: missing: syms (bugs/missing.md)
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/integration_1.m    # known: missing: syms (bugs/missing.md)

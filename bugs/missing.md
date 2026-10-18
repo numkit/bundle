@@ -16,7 +16,7 @@
 > (wavelet); lqr/hinfnorm, care/dare, minreal, initial, allmargin, covar
 > (control); analog-demodulators, syndtable (comm); numerical-integration-nd,
 > ode-stiff (ode); funm, qz/gsvd (linalg); fsolve, nonlinear-lsq,
-> constrained-solvers (optim); table, datetime (lang). The rest are catalogued here.
+> constrained-solvers (optim). The rest are catalogued here.
 
 ## ⚠️ Partial — implemented with a deferred branch (25)
 
@@ -44,7 +44,7 @@
 | `anova2` | Statistics / ANOVA / MANOVA / Correlation | Sig: p = anova2(Y[, reps]). Two-way ANOVA without replication (reps=1 only in this revision; reps>1 with interaction deferred). p = [p_cols, p_rows, p_interaction]. Bit-identical with MATLAB R2025b on probed cases. |
 | `cond_pnorm` | Misc / not in TODO / Decomposition Trees and Misc | Sig: c = cond(A, p) for p ∈ {1, 2, Inf, 'fro'}. Closes the ⚠️ gap in PROGRESS where cond was 2-norm only. p=2 routes through cond_2norm (sigma_max/sigma_min); other p via norm(A,p)·norm(inv(A),p). Diagonal A = diag(1, 1e-3) gives exactly 1e3 for p=1,2,Inf and slightly above for 'fro' (sqrt(1+1e-6) · sqrt(1+1e6) ≈ 1e3 + 0.5e-3). |
 
-## ❌ Missing — not implemented (839)
+## ❌ Missing — not implemented (818)
 
 ### Builtin
 
@@ -72,15 +72,13 @@ symbolic stack is out of scope — tracked here as a gap, not planned)
 
 **Control Flow:** `parfor`
 
-**Structures:** `struct2table`, `table2struct`
-
-**Cell Arrays:** `cell2table`, `cellplot`, `table`, `table2cell`, `timetable`
+**Cell Arrays:** `cellplot`, `timetable`
 
 **Function Handles:** `function_handle`
 
-**Categorical Arrays:** `addcats`, `categorical`, `categories`, `combinations`, `countcats`, `iscategory`, `isordinal`, `isprotected`, `isundefined`, `mergecats`, `removecats`, `renamecats`, `reordercats`, `setcats`, `summary`
+**Categorical Arrays:** `addcats`, `categorical`, `categories`, `combinations`, `countcats`, `iscategory`, `isordinal`, `isprotected`, `isundefined`, `mergecats`, `removecats`, `renamecats`, `reordercats`, `setcats`
 
-**Tables / Timetables:** `addprop`, `addvars`, `array2table`, `cell2table`, `computebygroup`, `convertvars`, `height`, `inner2outer`, `innerjoin`, `jointables`, `mergevars`, `movevars`, `outerjoin`, `parquetread`, `parquetwrite`, `pivot`, `pivottable`, `readtable`, `removevars`, `renamevars`, `rmprop`, `rowfun`, `rows2vars`, `splitvars`, `stack`, `stackedplot`, `stacktablevariables`, `standardizemissing`, `struct2table`, `summary`, `table`, `table2array`, `table2cell`, `table2struct`, `table2timetable`, `timetable2table`, `unstack`, `unstacktablevariables`, `varfun`, `vartype`, `width`, `writetable`
+**Tables / Timetables:** `addprop`, `computebygroup`, `convertvars`, `inner2outer`, `innerjoin`, `jointables`, `mergevars`, `outerjoin`, `parquetread`, `parquetwrite`, `pivot`, `pivottable`, `readtable`, `rmprop`, `rowfun`, `rows2vars`, `splitvars`, `stack`, `stackedplot`, `stacktablevariables`, `standardizemissing`, `table2timetable`, `timetable2table`, `unstack`, `unstacktablevariables`, `varfun`, `vartype`, `writetable`
 
 **Set Operations:** `innerjoin`, `outerjoin`
 
@@ -90,7 +88,7 @@ symbolic stack is out of scope — tracked here as a gap, not planned)
 
 **Interpolation:** `griddedinterpolant`, `scatteredinterpolant`
 
-**Dates and Time:** `caldays`, `calmonths`, `datetime`, `dateshift`, `hours`
+**Dates and Time:** `dateshift`
 
 **Sparse Matrices:** `amd`, `bicg`, `bicgstab`, `bicgstabl`, `cgs`, `colamd`, `dissect`, `dmperm`, `eigs`, `equilibrate`, `etree`, `etreeplot`, `full`, `gmres`, `gplot`, `ichol`, `ilu`, `lsqr`, `minres`, `nzmax`, `pcg`, `qmr`, `spalloc`, `sparse`, `spaugment`, `spconvert`, `spdiags`, `speye`, `spfun`, `spones`, `spparms`, `sprand`, `sprandn`, `sprandsym`, `sprank`, `spy`, `svds`, `symamd`, `symbfact`, `symmlq`, `tfqmr`, `treelayout`, `treeplot`, `unmesh`
 

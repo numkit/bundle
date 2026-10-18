@@ -1,6 +1,6 @@
 # lang.datetime — function missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (810f52d)
 - **Severity:** P2 (missing function — a fundamental MATLAB datatype)
 - **Kind:** missing-fn
 - **Found:** 2026-09-12 via the Play capability sweep; NOT yet listed
@@ -39,6 +39,6 @@ Display format default `dd-MMM-uuuu` per MATLAB.
 
 ## References
 
-- **Guard:** deferred — missing-fn entry (feature gap, not a defect)
-- `src/builtin/src/timefun/dates.cpp` (datenum/datevec machinery)
+- **Guard:** `TW_VM/DisplayTest.DatetimeAndDuration/*` in `modules/numkit/tests/gtest/builtins_test.cpp`
+- `src/builtin/register/timefun_reg.cpp` (`datetime`, `duration`, `calendarDuration`)
 - MATLAB `doc datetime`

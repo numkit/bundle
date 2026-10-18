@@ -1,6 +1,6 @@
 # lang.table — function missing
 
-- **Status:** 🔴 OPEN
+- **Status:** ✅ FIXED (810f52d)
 - **Severity:** P2 (missing function — a fundamental MATLAB datatype)
 - **Kind:** missing-fn
 - **Found:** 2026-09-12 via the Play capability sweep; also blocks the
@@ -40,7 +40,6 @@ with element-level access facts in mind (the ReactiveSession
 
 ## References
 
-- **Guard:** deferred — missing-fn entry (feature gap, not a defect)
-- the whole family is inventoried in `bugs/missing.md` (Cell Arrays /
-  Tables / Timetables sections)
+- **Guard:** `TW_VM/DisplayTest.TableContainer/*` in `modules/numkit/tests/gtest/builtins_test.cpp`
+- `src/runtime/containers.cpp` (`table`, `istable`, `istabular`, `height`, `width`, `table2array`, `array2table`, `cell2table`, `table2cell`, `struct2table`, `table2struct`, `addvars`, `removevars`, `renamevars`, `movevars`, `sortrows`)
 - MATLAB `doc table`

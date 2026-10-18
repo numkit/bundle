@@ -1,6 +1,6 @@
 # cleaning family: deferred reference forms (stub)
 
-**Kind:** stub · **Status:** opened 2026-09-19 · **Found:** stats argcheck drain
+**Kind:** stub · **Status:** ✅ FIXED (2026-10-18, `aaedc18`; table/string forms tracked under `lang/table.md`) · **Found:** stats argcheck drain
 (cleaning family portion)
 
 ## What

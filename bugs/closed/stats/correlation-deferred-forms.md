@@ -1,6 +1,7 @@
 # correlation deferred forms: nearcorr weights/newton, corr rank+weights & pairwise, partialcorr pval & pairwise
 
 - **Kind:** stub
+- **Status:** ✅ FIXED (2026-10-18, `aaedc18`)
 - **Component:** stats (nearcorr / corr / partialcorr)
 - **Found:** 2026-09-19, stats argcheck campaign correlation portion
   (probe71{,b} + probe72; contracts landed with corr_full /

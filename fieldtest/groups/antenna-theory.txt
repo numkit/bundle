@@ -1,0 +1,15 @@
+# group: antenna-theory — Antenna Theory: Analysis and Design (C. A. Balanis)
+# run: python fieldtest/compare.py antenna-theory
+
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 02/Directivity/DIRECTIVITY.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 05/LOOP.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 07/sfinput.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 08/Method of Moments/MOM.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 08/Self and Mutual Impedances/Impedance.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/Folded Dipole/Folded.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/Gamma Match/Gamma.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/quarter-wavelength/Quarterwave.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/Tee-Match/Tee.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 10/Beverage/BEVERAGE.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 10/Helix/HELIX.m
+corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 13/Horn Design/DESIGN.m

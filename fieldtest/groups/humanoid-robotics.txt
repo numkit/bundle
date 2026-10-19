@@ -1,0 +1,19 @@
+# group: humanoid-robotics — Introduction to Humanoid Robotics (S. Kajita, H. Hirukawa, K. Harada, K. Yokoi)
+# run: python fieldtest/compare.py humanoid-robotics
+
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/calculate_zmp.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/fk_random.m  # known: matlab-timeout
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/forward_velocity_ck.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/ik_random.m  # known: matlab-timeout
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/ik_random2.m  # known: matlab-timeout
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/ik_stretch_LM.m  # known: rng-stream
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/ik_stretch_LM_review.m  # known: rng-stream
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/ik_stretch_NR.m  # known: rng-stream
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/rigidbody_fly.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/rigidbody_rotate.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/robot_simulation.m  # known: rng-stream
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/screw_motion.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/SetupBipedRobot.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/SetupBipedRobot_mother.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/top_simulation.m
+corpus/work/s-kajita--IntroductionToHumanoidRobotics/ulink_example.m

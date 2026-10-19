@@ -67,7 +67,7 @@ corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chap
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example754.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example755.m  # known: rng-stream
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example756.m  # known: rng-stream
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example757.m  # known: missing:fuzzy (fcm)
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example757.m  # known: rng-stream
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example761.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example762.m  # known: rng-stream
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example772.m  # known: missing:dendrogram
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example772.m  # known: rng-stream

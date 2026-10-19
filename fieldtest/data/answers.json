@@ -9,5 +9,20 @@
   "corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat1.m": ["4"],
   "corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02e.m": ["10"],
   "corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02f.m": ["5"],
-  "corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_09a.m": ["NUMKIT"]
+  "corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_09a.m": ["NUMKIT"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 01/TE_HORN.m": ["1", "10"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 01/TM_BOX.m": ["1", "10"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 01/TM_OPEN.m": ["1", "10"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 02/Directivity/DIRECTIVITY.m": ["1", "0", "90", "0", "360"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 05/LOOP.m": ["1", "0.5"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 08/Method of Moments/MOM.m": ["1", "1", "21", "0.47", "0.005", "1"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 08/Self and Mutual Impedances/Impedance.m": ["1", "1", "0.5", "0.005"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/Folded Dipole/Folded.m": ["1", "3", "5", "0.001", "0.001", "0.005", "0.5", "300", "300"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/Gamma Match/Gamma.m": ["1", "3", "0.001", "0.0005", "0.005", "0.5", "50", "300"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/quarter-wavelength/Quarterwave.m": ["1", "1", "50", "1", "100", "3", "1", "0.5"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 09/Tee-Match/Tee.m": ["1", "3", "0.001", "0.0005", "0.005", "0.5", "300", "300"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 10/Beverage/BEVERAGE.m": ["1", "1", "1", "1", "2"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 10/Helix/HELIX.m": ["1", "1", "5", "0.1", "0.05"],
+  "corpus/work/Subhankar2000--Antenna_Theory_Analysis_and_Design_C.A.Balanis---MATLAB/Chapter 13/Horn Design/DESIGN.m": ["1", "20", "10", "2.286", "1.016"]
 }
+

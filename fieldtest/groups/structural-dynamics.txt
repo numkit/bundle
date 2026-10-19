@@ -7,7 +7,7 @@ corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB 
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_08/EX_2_8.m # known: ode45-adaptive-steps
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_09/EX_2_9.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_10/EX_2_10.m # known: ode45-adaptive-steps
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_11/EX_2_11.m # known: graphics-autolim (ylim)
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_11/EX_2_11.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_16/EX_2_16.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_17/EX_2_17.m # known: ode45-adaptive-steps
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_18/EX_2_18.m
@@ -34,8 +34,8 @@ corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB 
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 4/EX_4_08/EX_4_8.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 4/FIGURES/FIG_4_2.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 4/FIGURES/FIG_4_5.m
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_01/EX_5_1.m # known: graphics-subplot-position
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_02/EX_5_2.m # known: graphics-subplot-position
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_01/EX_5_1.m
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_02/EX_5_2.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_03/EX_5_3.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_04/EX_5_4.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_05/EX_5_5.m
@@ -43,20 +43,20 @@ corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB 
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_07/EX_5_7.m # known: graphics-subplot-position
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_08/EX_5_8.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_09/EX_5_9.m
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_10/EX_5_10.m # known: missing:xlsread
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 5/EX_5_10/EX_5_10.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_04/EX_6_4.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_07/EX_6_7.m # known: eig-sign
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_08/EX_6_8.m # known: graphics-subplot-position
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_08/EX_6_8.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_09/EX_6_9.m # known: eig-sign
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_10/EX_6_10.m # known: graphics-subplot-position
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_11/EX_6_11.m # known: graphics-subplot-position
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_10/EX_6_10.m # known: eig-sign
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_11/EX_6_11.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_12/EX_6_12.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_13/EX_6_13.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_14/EX_6_14.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_15/EX_6_15.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_16/EX_6_16.m # known: missing:symbolic (syms)
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_17/EX_6_17.m # known: graphics-subplot-position
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_18/EX_6_18.m # known: graphics-subplot-position
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_17/EX_6_17.m # known: eig-sign
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_18/EX_6_18.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_19/EX_6_19.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_20/EX_6_20.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_21/EX_6_21.m
@@ -64,9 +64,9 @@ corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB 
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_23/EX_6_23.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_24/EX_6_24.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 7/EX_7_14/EX_7_14.m # known: missing:symbolic (vpa)
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 7/EX_7_15/EX_7_15.m # known: graphics-subplot-position
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 7/EX_7_15/EX_7_15.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 7/EX_7_8/EX_7_8.m # known: eig-sign
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/EX_8_02/EX_8_2.m # known: control-mimo-lsim
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/EX_8_02/EX_8_2.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/MR_Damper/MRdamperArchive/Test_MRdamper_Plot.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/MR_Damper/MRdamperArchive/Test_MRdamperForce_Run.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/Simple PSO/Simple_PSO.m # known: rng-stream

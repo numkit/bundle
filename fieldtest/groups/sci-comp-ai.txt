@@ -1,0 +1,101 @@
+# group: sci-comp-ai — MATLAB for Scientific Computing and AI (S. Lynch)
+# run: python fieldtest/compare.py sci-comp-ai
+
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_01a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_01b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_01c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_01d.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02a.m  # known: missing:symbolic (sym)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02d.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02e.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02f.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02g.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02h.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_03a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_03b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_03c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_04a.m  # known: rng-stream (randn)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_04b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_04c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_04d.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_05a.m  # known: missing:symbolic (syms)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_05b.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_05c.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_05d.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_05e.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_05g.m  # known: missing:dde23
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_06a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_06b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_06c.m  # known: chaotic-trajectory
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_06d.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_06e.m  # known: rng-stream
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_07a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_07b.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_07c.m  # known: chaotic-trajectory
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_07d.m  # known: missing:symbolic (syms)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08b.m  # known: wall-clock-timing (tic/toc)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08d.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08e.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_09a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_09b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_09c.m  # known: missing:java (java.security.MessageDigest)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_09d.m  # known: rng-stream (randn)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_10a.m  # known: missing:table (readtable)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_10c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_10d.m  # known: missing:optimoptions
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_10e.m  # known: rng-stream (kmeans)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_10f.m  # known: missing:fisheriris-dataset
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_11a.m  # known: missing:table (readtable)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_11b.m  # known: missing:table (readtable)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_11c.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_11d.m  # known: missing:table (readtable)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_12a.m  # known: missing:symbolic (syms)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_12c.m  # known: missing:table (readtable)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_13a.m  # known: missing:symbolic (syms)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_13b.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_13c.m  # known: matlab-timeout (heavy-ode-sweep)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_13d.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_13e.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_14a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_14b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_14d.m  # known: imresize-kernel
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_14e.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_14f.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_14g.m  # known: complex-grid-rounding
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_15a.m  # known: missing:imtool
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_15c.m  # known: edge-canny-threshold
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_15d.m  # known: edge-canny-threshold
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_16a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_16c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_16d.m  # known: missing:frame2im
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_17a.m  # known: rng-stream
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_17b.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_17c.m  # known: missing:implay
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_17d.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18a.m  # known: missing:table (writetable)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18b.m  # known: missing:fitlm
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18c.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18d.m  # known: rng-stream
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19a.m  # known: rng-stream (kmeans)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19c.m  # known: missing:dde23
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19d.m  # known: pca-sign
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20a.m  # known: missing:table (readtable)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20d.m  # known: missing:probplot
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20e.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_22a.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_22b.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_22c.m  # known: ode45-adaptive-steps
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_23a.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_23b.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_23c.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_23d.m  # known: rng-stream
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_23e.m
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_24a.m  # known: missing:deeplearning (featureInputLayer)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_24b.m  # known: missing:deeplearning (sequenceInputLayer)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section III/Prog_25a.m  # known: missing:deeplearning (imageDatastore)

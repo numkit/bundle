@@ -6,6 +6,8 @@
   "corpus/work/springer-math--signals-and-systems/Source code/Chapter-6/pr6_2.m": ["1", "50"],
   "corpus/work/hplgit--prog4comp/src/m/growth1.m": ["100", "0.1", "0.5", "20"],
   "corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat.m": ["4"],
-  "corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat1.m": ["4"]
+  "corpus/work/hplgit--prog4comp/src/m/trapezoidal_flat1.m": ["4"],
+  "corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02e.m": ["10"],
+  "corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section I/Prog_02f.m": ["5"],
+  "corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_09a.m": ["NUMKIT"]
 }
-

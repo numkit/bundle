@@ -23,6 +23,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from collections import Counter
 from datetime import datetime
@@ -58,7 +59,8 @@ MATLAB = Path(r"C:\Program Files\MATLAB\R2025b\bin\matlab.exe")
 
 REL_TOL = 1e-9
 
-BAD_TOKENS = ["input(", "urlread", "system(", "java.", "actxserver", "parfor",
+BAD_TOKENS = ["input(", "menu(", "inputdlg(", "questdlg(", "uigetfile(",
+              "urlread", "system(", "java.", "actxserver", "parfor",
               "gpuArray", "sym(", "sim(", "mex", "waitfor", "pause(", "tic",
               "clock", "now,", "datenum", "websave", "webread", "video",
               "aviread", "VideoReader"]
@@ -141,22 +143,23 @@ def _tmpdir(script):
         rel_part = str(Path(script).relative_to(WORK))
     except ValueError:
         rel_part = Path(script).name
-    d = TMP / re.sub(r"[^A-Za-z0-9_.-]", "_", rel_part)[:180]
-    if d.exists():
-        shutil.rmtree(d)
-    d.mkdir(parents=True)
-    return d
+    TMP.mkdir(parents=True, exist_ok=True)
+    prefix = re.sub(r"[^A-Za-z0-9_.-]", "_", rel_part)[:100] + "_"
+    return Path(tempfile.mkdtemp(prefix=prefix, dir=TMP))
 
 
 def run_engine(kind, script, mat_out=None, answers=None):
     """Run `script`; if mat_out is given, save the workspace there after it."""
     s = (HERE / script) if not Path(script).is_absolute() else Path(script)
     cwd = str(s.parent)
-    stub = s.parent / "input.m"
+    stub_dir = None
     stdin_text = None
     if answers is not None:
         stdin_text = "\n".join(answers) + "\n"
         if kind == "matlab":
+            TMP.mkdir(parents=True, exist_ok=True)
+            stub_dir = Path(tempfile.mkdtemp(prefix="nk_in_", dir=TMP))
+            stub = stub_dir / "input.m"
             quoted = " ".join("'{}'".format(a.replace("'", "''")) for a in answers)
             stub.write_text(
                 "function varargout = input(prompt, fmt)\n"
@@ -181,10 +184,10 @@ def run_engine(kind, script, mat_out=None, answers=None):
                 "end\n",
                 encoding="utf-8")
     try:
-        return _run_engine_argv(kind, s, cwd, mat_out, stdin_text)
+        return _run_engine_argv(kind, s, cwd, mat_out, stdin_text, stub_dir)
     finally:
-        if stub.exists():
-            stub.unlink()
+        if stub_dir is not None and stub_dir.exists():
+            shutil.rmtree(stub_dir, ignore_errors=True)
 
 
 def _repo_root_of(s: Path):
@@ -195,7 +198,7 @@ def _repo_root_of(s: Path):
     return None
 
 
-def _run_engine_argv(kind, s, cwd, mat_out, stdin_text):
+def _run_engine_argv(kind, s, cwd, mat_out, stdin_text, stub_dir=None):
     t0 = time.perf_counter()
     repo_root = _repo_root_of(s)
     addpath_cmd = (
@@ -203,10 +206,12 @@ def _run_engine_argv(kind, s, cwd, mat_out, stdin_text):
         if repo_root is not None and repo_root.resolve() != s.resolve().parent
         else ""
     )
+    if stub_dir is not None:
+        addpath_cmd += f"addpath('{stub_dir.resolve().as_posix()}'); "
     wrap = None
     if kind == "matlab":
         argv = [str(MATLAB), "-batch",
-                "restoredefaultpath; clear RESTOREDEFAULTPATH_EXECUTED; "
+                "restoredefaultpath; clear RESTOREDEFAULTPATH_EXECUTED; pause('off'); "
                 + addpath_cmd
                 + f"run('{s.as_posix()}')" +
                 (f"; save('{Path(mat_out).as_posix()}')" if mat_out else "")]
@@ -226,14 +231,26 @@ def _run_engine_argv(kind, s, cwd, mat_out, stdin_text):
     else:
         raise ValueError(kind)
     to = 180 if kind == "matlab" else 90
+    proc = subprocess.Popen(argv, cwd=cwd,
+                            stdin=subprocess.PIPE if stdin_text is not None else subprocess.DEVNULL,
+                            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     try:
-        p = subprocess.run(argv, cwd=cwd, capture_output=True, timeout=to,
-                           input=(stdin_text.encode("utf-8") if stdin_text is not None
-                                  else None))
+        out_b, err_b = proc.communicate(
+            input=(stdin_text.encode("utf-8") if stdin_text is not None else None),
+            timeout=to)
         ms = int((time.perf_counter() - t0) * 1000)
         dec = lambda b: (b or b"").decode("utf-8", "replace")
-        return {"exit": p.returncode, "out": dec(p.stdout), "err": dec(p.stderr), "ms": ms}
+        return {"exit": proc.returncode, "out": dec(out_b), "err": dec(err_b), "ms": ms}
     except subprocess.TimeoutExpired:
+        if os.name == "nt":
+            subprocess.run(["taskkill", "/F", "/T", "/PID", str(proc.pid)],
+                           capture_output=True)
+        else:
+            proc.kill()
+        try:
+            proc.communicate(timeout=5)
+        except Exception:
+            pass
         return {"exit": "timeout", "out": "", "err": "", "ms": to * 1000}
     finally:
         if wrap is not None:

@@ -5,7 +5,7 @@
 # Press). 17 of 18 scripts qualified in MATLAB R2025b (pendulum_par.m fails
 # in MATLAB R2025b due to calling an undefined resampstr helper).
 
-corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\car_track.m           # known: rng:randn
+corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\car_track.m
 corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\drift_linreg.m
 corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\pendulum_ckf.m
 corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\pendulum_ekf.m
@@ -19,8 +19,8 @@ corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\pendul
 corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\pendulum_sim2.m
 corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\pendulum_ukf.m
 corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\pendulum_ukf5.m
-corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\recursive_linreg.m    # known: rng:randn
-corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\exercises\exercise6_4.m        # known: rng:randn
-corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\exercises\exercise7_2.m        # known: rng:randn
+corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\examples\recursive_linreg.m
+corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\exercises\exercise6_4.m
+corpus\work\EEA-sensors--Bayesian-Filtering-and-Smoothing\matlab\exercises\exercise7_2.m
 
 

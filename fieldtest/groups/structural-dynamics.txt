@@ -69,4 +69,4 @@ corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB 
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/EX_8_02/EX_8_2.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/MR_Damper/MRdamperArchive/Test_MRdamper_Plot.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/MR_Damper/MRdamperArchive/Test_MRdamperForce_Run.m
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/Simple PSO/Simple_PSO.m # known: rng-stream
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 8/Simple PSO/Simple_PSO.m

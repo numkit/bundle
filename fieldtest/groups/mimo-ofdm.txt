@@ -17,5 +17,5 @@ corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_modified_
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_ray_fading.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Ray_Ric_channel.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_SUI_channel.m  # known: runtime-error (spectrum.welch)
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_SV_model_ct.m  # known: rng-stream
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_SV_model_ct.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/test_orthogonality.m

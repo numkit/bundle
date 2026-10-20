@@ -8,12 +8,12 @@ corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chap
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example141.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example142.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example143.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example151.m  # known: rng-stream
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example161.m  # known: rng-stream
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example162.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example151.m
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example161.m
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example162.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example171.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example181.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example191.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter1/examples/example191.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example221.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example222.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example231.m
@@ -60,14 +60,14 @@ corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chap
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter6/examples/example635.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter6/examples/example636.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example741.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example742.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example742.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example751.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example752.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example752.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example753.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example754.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example755.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example755.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example756.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example757.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example761.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example762.m  # known: rng-stream
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example772.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example772.m

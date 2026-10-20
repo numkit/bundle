@@ -1,39 +1,39 @@
 # group: sdr-engineers — Software-Defined Radio for Engineers (Artech House)
 # run: python fieldtest/compare.py sdr-engineers
 
-corpus/work/sdrforengineers--code/matlab/badlock.m  # known: missing:dsp.IIRFilter
-corpus/work/sdrforengineers--code/matlab/bandLimiting.m  # known: missing:comm.DBPSKModulator
-corpus/work/sdrforengineers--code/matlab/barkerBits.m  # known: missing:comm.BarkerCode
-corpus/work/sdrforengineers--code/matlab/barkerBits13.m  # known: missing:comm.BarkerCode
+corpus/work/sdrforengineers--code/matlab/badlock.m
+corpus/work/sdrforengineers--code/matlab/bandLimiting.m
+corpus/work/sdrforengineers--code/matlab/barkerBits.m
+corpus/work/sdrforengineers--code/matlab/barkerBits13.m
 corpus/work/sdrforengineers--code/matlab/chanEQ.m
 corpus/work/sdrforengineers--code/matlab/chanEQ_save_errors.m
 corpus/work/sdrforengineers--code/matlab/chanEQDFE.m
 corpus/work/sdrforengineers--code/matlab/chanEst.m
 corpus/work/sdrforengineers--code/matlab/chapter3.m
 corpus/work/sdrforengineers--code/matlab/chapter4.m
-corpus/work/sdrforengineers--code/matlab/compareBarkers.m  # known: missing:comm.BarkerCode
+corpus/work/sdrforengineers--code/matlab/compareBarkers.m
 corpus/work/sdrforengineers--code/matlab/compareDD_LMS.m  # known: missing:comm.BarkerCode
 corpus/work/sdrforengineers--code/matlab/comSystem.m  # known: missing:comm.BarkerCode
-corpus/work/sdrforengineers--code/matlab/convergence.m  # known: missing:dsp.IIRFilter
-corpus/work/sdrforengineers--code/matlab/crcExample.m  # known: missing:comm.CRCGenerator
-corpus/work/sdrforengineers--code/matlab/estError.m  # known: missing:comm.DBPSKModulator
-corpus/work/sdrforengineers--code/matlab/exampleMod.m  # known: missing:comm.OFDMModulator
-corpus/work/sdrforengineers--code/matlab/eye_example.m  # known: missing:eyediagram
-corpus/work/sdrforengineers--code/matlab/filteredEffectsBest.m  # known: missing:RandStream
-corpus/work/sdrforengineers--code/matlab/freqCoarseEst.m  # known: missing:comm.DBPSKModulator
+corpus/work/sdrforengineers--code/matlab/convergence.m
+corpus/work/sdrforengineers--code/matlab/crcExample.m
+corpus/work/sdrforengineers--code/matlab/estError.m
+corpus/work/sdrforengineers--code/matlab/exampleMod.m
+corpus/work/sdrforengineers--code/matlab/eye_example.m
+corpus/work/sdrforengineers--code/matlab/filteredEffectsBest.m
+corpus/work/sdrforengineers--code/matlab/freqCoarseEst.m
 corpus/work/sdrforengineers--code/matlab/freqEstimate.m
-corpus/work/sdrforengineers--code/matlab/freqShiftFFT.m  # known: missing:comm.DBPSKModulator
-corpus/work/sdrforengineers--code/matlab/iq_imbalance.m  # known: missing:comm.QPSKModulator
+corpus/work/sdrforengineers--code/matlab/freqShiftFFT.m
+corpus/work/sdrforengineers--code/matlab/iq_imbalance.m
 corpus/work/sdrforengineers--code/matlab/nyquist.m
 corpus/work/sdrforengineers--code/matlab/ofdm_sym.m
 corpus/work/sdrforengineers--code/matlab/psk.m
 corpus/work/sdrforengineers--code/matlab/robin.m
 corpus/work/sdrforengineers--code/matlab/sfdr_example.m  # known: workspace-mismatch
-corpus/work/sdrforengineers--code/matlab/sfdr_test.m  # known: workspace-mismatch
+corpus/work/sdrforengineers--code/matlab/sfdr_test.m
 corpus/work/sdrforengineers--code/matlab/simulated_DAC.m
 corpus/work/sdrforengineers--code/matlab/srrc_impulse_response.m
-corpus/work/sdrforengineers--code/matlab/srrcFilterData.m  # known: missing:comm.QPSKModulator
+corpus/work/sdrforengineers--code/matlab/srrcFilterData.m
 corpus/work/sdrforengineers--code/matlab/systemExample.m  # known: missing:comm.QPSKModulator
 corpus/work/sdrforengineers--code/matlab/time_alias.m
 corpus/work/sdrforengineers--code/matlab/updownsample.m
-corpus/work/sdrforengineers--code/matlab/viewRotation.m  # known: missing:comm.DBPSKModulator
+corpus/work/sdrforengineers--code/matlab/viewRotation.m

@@ -1,0 +1,7 @@
+# group: space-nav-track — Sanat K. Biswas — Space Navigation and Tracking
+# run: python fieldtest/compare.py space-nav-track
+
+corpus/work/sbiswas8--space-nav-track/chapter_5/orbit_param.m
+corpus/work/sbiswas8--space-nav-track/chapter_6/launch/LV_data_prcs.m
+corpus/work/sbiswas8--space-nav-track/chapter_6/launch/LV_EKF.m  # known: missing:Pitch_ctl_alt
+corpus/work/sbiswas8--space-nav-track/chapter_6/launch/LV_ESPUKF.m  # known: missing:Pitch_ctl_alt

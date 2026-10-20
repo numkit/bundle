@@ -1,0 +1,57 @@
+# group: marine-systems — Thor I. Fossen — Handbook of Marine Craft Hydrodynamics and Motion Control (MSS)
+# run: python fieldtest/compare.py marine-systems
+
+corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/navalVesselRAOs/forceRAO_navalvessel.m
+corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/semisubModels/data_rig.m
+corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/shipModels/dataCaptPlaush.m
+corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/shipModels/dataContainer.m
+corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/shipModels/dataPretoria.m
+corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/shipModels/dataSpirit.m
+corpus/work/cybergalactic--MSS/GNC/utils/conversion.m
+corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/fpso/config_parameters.m
+corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/semisub/config_parameters.m
+corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/tanker/config_parameters.m
+corpus/work/cybergalactic--MSS/INS/SIMquatMEKF.m
+corpus/work/cybergalactic--MSS/INS/SIMquatObserver.m
+corpus/work/cybergalactic--MSS/mssDemos/WaveDemo.m
+corpus/work/cybergalactic--MSS/mssExamples/exBoxShapedShip.m
+corpus/work/cybergalactic--MSS/mssExamples/exEKF.m
+corpus/work/cybergalactic--MSS/mssExamples/exEKFparamterEstimation.m
+corpus/work/cybergalactic--MSS/mssExamples/exFeedback.m
+corpus/work/cybergalactic--MSS/mssExamples/exFFT.m
+corpus/work/cybergalactic--MSS/mssExamples/exHermiteWaypoints.m
+corpus/work/cybergalactic--MSS/mssExamples/exHybridPath.m
+corpus/work/cybergalactic--MSS/mssExamples/exINS_AHRS.m
+corpus/work/cybergalactic--MSS/mssExamples/exINS_Euler.m
+corpus/work/cybergalactic--MSS/mssExamples/exINS_MEKF.m
+corpus/work/cybergalactic--MSS/mssExamples/exINSwaveFilter.m
+corpus/work/cybergalactic--MSS/mssExamples/exIntWindup.m
+corpus/work/cybergalactic--MSS/mssExamples/exKF.m
+corpus/work/cybergalactic--MSS/mssExamples/exKT.m  # known: workspace-mismatch
+corpus/work/cybergalactic--MSS/mssExamples/exLinspec.m  # known: workspace-mismatch
+corpus/work/cybergalactic--MSS/mssExamples/exLQFinHor.m
+corpus/work/cybergalactic--MSS/mssExamples/exLQR.m
+corpus/work/cybergalactic--MSS/mssExamples/exLQtrack.m
+corpus/work/cybergalactic--MSS/mssExamples/exManeuveringModel.m
+corpus/work/cybergalactic--MSS/mssExamples/exMDS.m
+corpus/work/cybergalactic--MSS/mssExamples/exMSI.m
+corpus/work/cybergalactic--MSS/mssExamples/exNomoto.m
+corpus/work/cybergalactic--MSS/mssExamples/exObsCtr.m
+corpus/work/cybergalactic--MSS/mssExamples/exOtter.m  # known: missing:x_prd
+corpus/work/cybergalactic--MSS/mssExamples/exPlotGM.m
+corpus/work/cybergalactic--MSS/mssExamples/exQuadProg.m
+corpus/work/cybergalactic--MSS/mssExamples/exQuest.m
+corpus/work/cybergalactic--MSS/mssExamples/exRefMod.m
+corpus/work/cybergalactic--MSS/mssExamples/exResonance.m
+corpus/work/cybergalactic--MSS/mssExamples/exRRD1.m
+corpus/work/cybergalactic--MSS/mssExamples/exRRD2.m
+corpus/work/cybergalactic--MSS/mssExamples/exRRD3.m
+corpus/work/cybergalactic--MSS/mssExamples/exShipHydrostatics.m
+corpus/work/cybergalactic--MSS/mssExamples/exSMC.m
+corpus/work/cybergalactic--MSS/mssExamples/exSTA.m
+corpus/work/cybergalactic--MSS/mssExamples/exWageningen.m
+corpus/work/cybergalactic--MSS/mssExamples/exWaveFreqObserver.m
+corpus/work/cybergalactic--MSS/mssExamples/exWindForce.m
+corpus/work/cybergalactic--MSS/mssHelp.m
+corpus/work/cybergalactic--MSS/SIMULINK/init/initCS2.m
+corpus/work/cybergalactic--MSS/SIMULINK/init/initIsherwood72.m

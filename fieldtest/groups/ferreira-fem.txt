@@ -1,0 +1,15 @@
+# group: ferreira-fem — A. J. M. Ferreira — MATLAB Codes for Finite Element Analysis (Springer)
+# run: python fieldtest/compare.py ferreira-fem
+
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem10.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem11.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem12.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem13.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem16.m  # known: workspace-mismatch
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem16vibrations.m  # known: workspace-mismatch
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem4.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem5.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem7.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem8.m
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/Problems/problem9.m  # known: workspace-mismatch
+corpus/work/ahmed-rashed--FerreiraCodes_Improved/vigaTimoshenkoBuckling.m  # known: workspace-mismatch

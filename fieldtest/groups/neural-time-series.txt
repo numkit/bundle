@@ -1,0 +1,21 @@
+# group: neural-time-series — Mike X Cohen — Analyzing Neural Time Series Data (MIT Press)
+# run: python fieldtest/compare.py neural-time-series
+
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter02.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter04a.m  # known: rng-stream
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter05.m
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter06.m
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter10.m
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter11.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter13.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter14.m  # known: rng-stream
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter15.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter16.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter17.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter18.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter20.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter25.m
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter28.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter30.m  # known: workspace-mismatch
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter33.m
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/cover_art.m  # known: workspace-mismatch

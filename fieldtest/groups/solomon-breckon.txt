@@ -1,0 +1,5 @@
+# group: solomon-breckon — Chris Solomon & Toby Breckon — Fundamentals of Digital Image Processing (Wiley)
+# run: python fieldtest/compare.py solomon-breckon
+
+corpus/work/tobybreckon--solomon-breckon-book/ch05_matlab_ex/extra_1.m
+corpus/work/tobybreckon--solomon-breckon-book/ch07_matlab_ex/lin_transforms.m

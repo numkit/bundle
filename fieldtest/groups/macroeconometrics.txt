@@ -1,0 +1,21 @@
+# group: macroeconometrics — Alessia Paccagnini — Macroeconometrics (De Gruyter)
+# run: python fieldtest/compare.py macroeconometrics
+
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter1/Codes_Emprical_Examples/example1_arima2.m  # known: missing:adftest
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter1/Codes_Emprical_Examples/example2_cointegration.m  # known: missing:adftest
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter1/Codes_Emprical_Examples/example3_garch.m  # known: missing:archtest
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter1/Codes_Figures/arma_simulation.m
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter1/Codes_Figures/nonstationary_simulation.m
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter1/Codes_Figures/spurious_regression.m
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter2/Codes_Empirical_Examples/all_examples_VAR.m
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter3/Codes_Figures/jorda_lp_figure.m  # known: datetime:format
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter4/Codes_Empirical_Examples/example1_cholesky_VAR.m  # known: missing:detectImportOptions
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter4/Codes_Empirical_Examples/example2_proxy_svar.m  # known: datetime:format
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter5/Codes_Empirical_Examples/example_bvar_minnesota.m  # known: datetime:format
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter5/Codes_Figures/mcmc_convergence_figure_52.m
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter5/Codes_Figures/plot_priors_figure_51.m
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter6/Codes_Figures/chapter6_dsge_companion.m  # known: workspace-mismatch
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter7/Codes_Empirical_Examples/empirical_example_forecasting_comparison.m  # known: datetime:format
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter7/Codes_Figures/chapter7_forecasting_companion.m
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter8/Codes_Empirical_Examples/empirical_example_high_dimensionality.m  # known: missing:detectImportOptions
+corpus/work/AlessiaPaccagnini--Macroeconometrics_book/Chapter9/Codes_Empirical_Examples/empirical_example_ML_forecasting.m  # known: datetime:format

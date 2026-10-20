@@ -25,7 +25,7 @@ corpus/work/PRML--PRMLT/demo/ch08/mrf_demo.m
 corpus/work/PRML--PRMLT/demo/ch08/nbBern_demo.m
 corpus/work/PRML--PRMLT/demo/ch08/nbGauss_demo.m
 corpus/work/PRML--PRMLT/demo/ch09/kmeans_demo.m  # known: rng-stream (synthetic data via randn)
-corpus/work/PRML--PRMLT/demo/ch09/kmeans_mixGaussEm_demo.m  # known: rng-stream (synthetic data via randn)
+corpus/work/PRML--PRMLT/demo/ch09/kmeans_mixGaussEm_demo.m
 corpus/work/PRML--PRMLT/demo/ch09/kmedoids_demo.m
 corpus/work/PRML--PRMLT/demo/ch09/linRegEm_demo.m
 corpus/work/PRML--PRMLT/demo/ch09/mixBernEm_demo.m

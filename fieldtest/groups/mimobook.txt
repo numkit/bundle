@@ -17,7 +17,7 @@ corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure11.m
 corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure12.m
 corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure19.m
 corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure20.m
-corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure21.m  # known: workspace-mismatch
+corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure21.m
 corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure22.m
 corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure23.m
 corpus/work/emilbjornson--mimobook/code/chapter2/chapter2_figure24.m

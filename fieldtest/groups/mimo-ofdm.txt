@@ -10,10 +10,10 @@ corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/OL_CL_Comparis
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_Chu.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_preamble.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PARR_of_preamble.m
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_FWGN.m  # known: rng-stream
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_FWGN.m  # known: workspace-mismatch (ill-conditioned polyfit RCOND=1.2e-18)
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_IEEE80211_model.m
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Jakes_model.m  # known: nk-hang
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_modified_FWGN.m  # known: rng-stream
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Jakes_model.m
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_modified_FWGN.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_ray_fading.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Ray_Ric_channel.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_SUI_channel.m  # known: runtime-error (spectrum.welch)

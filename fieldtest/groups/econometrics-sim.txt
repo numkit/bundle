@@ -1,19 +1,19 @@
 # group: econometrics-sim — Simulation Methods in Econometrics: Theory and Applications in MATLAB
 # run: python fieldtest/compare.py econometrics-sim
 
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise asymptotics CLT/exercise.m  # known: workspace-mismatch
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise asymptotics CLT/exercise.m
 corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise asymptotics convergence speed/exercise.m
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise asymptotics LLN/exercise.m  # known: workspace-mismatch
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap basic/exercise.m  # known: workspace-mismatch
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap block/exercise.m  # known: workspace-mismatch
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap cluster/exercise.m  # known: runtime-error
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap paired/exercise.m  # known: runtime-error
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap wild/exercise.m  # known: runtime-error
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise asymptotics LLN/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap basic/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap block/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap cluster/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap paired/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise bootstrap wild/exercise.m
 corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise data feature high multicollinearity/exercise.m
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise estimator sampling distribution/exercise.m  # known: workspace-mismatch
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise estimator sampling distribution/exercise.m
 corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise estimator statistical property asymptotic normality/exercise.m  # known: missing:exercisefunctionlss
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise estimator statistical property consistency/exercise.m  # known: workspace-mismatch
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise estimator statistical property unbiasedness/exercise.m  # known: workspace-mismatch
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise importance sampling security pricing/exercise.m  # known: workspace-mismatch
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise importance sampling tail probability/exercise.m  # known: missing:makedist
-corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise importance sampling theory/exercise.m  # known: missing:makedist
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise estimator statistical property consistency/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise estimator statistical property unbiasedness/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise importance sampling security pricing/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise importance sampling tail probability/exercise.m
+corpus/work/smietaaim--Simulation-Methods-in-Econometrics-Theory-and-Applications-in-MATLAB/exercise importance sampling theory/exercise.m

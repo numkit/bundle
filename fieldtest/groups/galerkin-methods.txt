@@ -8,8 +8,8 @@ corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_10/A_Main
 corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_12/A_Main_Driver_CG_DG_Unified_Elliptic.m  # known: workspace-mismatch
 corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_12/NEW_CG_DG_Test_Derivatives_2D.m  # known: workspace-mismatch
 corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_13/2D_data_structures/matlab/A_Main_Driver_Data_Structures.m
-corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_17/A_Main_Driver_CG_DG_inexact_TensorProduct.m  # known: runtime-error
+corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_17/A_Main_Driver_CG_DG_inexact_TensorProduct.m  # known: workspace-mismatch
 corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_17/A_Main_Driver_CG_DG_inexact_TensorProduct_Convergence_Rates_Ch_17.m  # known: runtime-error
 corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_17/CG_DG_inexact_TensorProduct_All.m  # known: runtime-error
 corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_18/Filters/A_Main_Driver_Analysis_of_Filters.m
-corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_18/Filters/Taylor_Polynomials.m  # known: workspace-mismatch
+corpus/work/fxgiraldo--Element-based-Galerkin-Methods/Chapters/Chapter_18/Filters/Taylor_Polynomials.m

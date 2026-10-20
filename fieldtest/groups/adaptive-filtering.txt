@@ -2,47 +2,47 @@
 # source: qualify 2026-10-19, 44/46 MATLAB-qualified scripts
 # run: python fieldtest/compare.py adaptive-filtering
 
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Affine_projectionCM.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_CMA.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Godard.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Sato.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/example_systemID_Fast_RLS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/example_systemID_Stab_Fast_RLS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_ErrorEquation.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_ErrorEquation2.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_GaussNewton.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_GaussNewton_GradientBased.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_RLS_IIR.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_Steiglitz_McBride.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_Steiglitz_McBride2.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_LRLS_pos.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_LRLS_pos_ErrorFeedback.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_LRLS_priori.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_NLRLS_pos.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Affine_projection.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Dual_sign.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_LMS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_LMS_Newton.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_NLMS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Power2_error.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Sign_data.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Sign_error.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Tdomain.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Tdomain_DCT.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Tdomain_DFT.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Bilinear_RLS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Complex_Radial_Basis_Function.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Multilayer_Perceptron.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Radial_Basis_Function.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Volterra_LMS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Volterra_RLS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/QR-decomposition-based_RLS_Algorithms/example_systemID_QR_RLS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/RLS_Algorithms/example_systemID_RLS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/RLS_Algorithms/example_systemID_RLS_Alt.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_Simp_SM_AP.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_AP.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_BNLMS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_NLMS.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/cfdlms.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/dlcllms.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/olsblms.m  # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Affine_projectionCM.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_CMA.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Godard.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Sato.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/example_systemID_Fast_RLS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/example_systemID_Stab_Fast_RLS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_ErrorEquation.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_ErrorEquation2.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_GaussNewton.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_GaussNewton_GradientBased.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_RLS_IIR.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_Steiglitz_McBride.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_Steiglitz_McBride2.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_LRLS_pos.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_LRLS_pos_ErrorFeedback.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_LRLS_priori.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Lattice-based_RLS_Algorithms/example_systemID_NLRLS_pos.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Affine_projection.m  # known: Ill-conditioned matrix inversion sensitivity in affine projection over 1000 runs
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Dual_sign.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_LMS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_LMS_Newton.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_NLMS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Power2_error.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Sign_data.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Sign_error.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Tdomain.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Tdomain_DCT.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/LMS-based_Algorithms/example_systemID_Tdomain_DFT.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Bilinear_RLS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Complex_Radial_Basis_Function.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Multilayer_Perceptron.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Radial_Basis_Function.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Volterra_LMS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Nonlinear_Adaptive_Filters/Volterra_RLS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/QR-decomposition-based_RLS_Algorithms/example_systemID_QR_RLS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/RLS_Algorithms/example_systemID_RLS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/RLS_Algorithms/example_systemID_RLS_Alt.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_Simp_SM_AP.m  # known: Set-membership threshold boundary sensitivity to floating-point rounding
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_AP.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_BNLMS.m  # known: Set-membership threshold boundary sensitivity to floating-point rounding
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_NLMS.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/cfdlms.m  # known: fir1/qmf filter design minor difference
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/dlcllms.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/olsblms.m

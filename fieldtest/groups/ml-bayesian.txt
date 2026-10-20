@@ -3,24 +3,24 @@
 # run: python fieldtest/compare.py ml-bayesian
 
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-11/Exercise 11_21 (Support Vector Machines)/supportvectormachine_11_21.m  # known: rng-stream (synthetic data via rand/randn + SMO random pair selection)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/EMregression_12_16.m  # known: rng-stream (synthetic data via rand/randn)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/Gaussmix_12_17.m  # known: rng-stream (synthetic data via rand/randn)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/kmean_EM_12_18.m  # known: rng-stream (synthetic data via mvnrnd/rand/randn)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/MoE_12_19.m  # known: rng-stream (synthetic data via rand/randn)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/prediction_12_15.m  # known: rng-stream (synthetic data via rand/randn)
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/EMregression_12_16.m
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/Gaussmix_12_17.m
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/kmean_EM_12_18.m
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/MoE_12_19.m
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-12/prediction_12_15.m
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-14/casestudy_14_11.m  # known: rng-stream (MCMC sampling via gamrnd/rand/randn)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-14/Gibbssample_14_16.m  # known: rng-stream (Gibbs sampling via normrnd/rand)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-17/APF_17_10.m  # known: rng-stream (auxiliary particle filter via randn)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-17/GPF_17_7.m  # known: rng-stream (Gaussian particle filter via randn)
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-17/GPF_17_7.m
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-17/SIR_17_9.m  # known: rng-stream (SIR particle filter via normrnd/randn)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-17/SIS_17_8.m  # known: rng-stream (SIS particle filter via randn)
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-17/SIS_17_8.m
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-17/stochvolatility_17_11.m  # known: rng-stream (stochastic volatility particle filter via randn)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-4/channel_equalization_4_27.m  # known: rng-stream (synthetic channel noise via rand/randn)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-4/debluring_4_25.m  # known: rng-stream (Gaussian image noise via imnoise)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-4/kalman_4_28.m  # known: rng-stream (synthetic state/measurement noise via rand/randn)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-4/noise_cancelation_4_26.m  # known: rng-stream (synthetic noise via rand/randn)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-5/decision_feedback_equalizer_5_23.m  # known: rng-stream (synthetic symbol stream via rand)
-corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-5/RobbinMonro_5_19.m  # known: rng-stream (stochastic approximation noise via randn)
+corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-5/RobbinMonro_5_19.m
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-6/totalLS_6_22.m  # known: rng-stream (synthetic perturbation via randn)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-7/boosting_7_23.m  # known: missing:stats-ensemble (ordinal / fitensemble)
 corpus/work/LuoJiaji--Machine-Learning-A-Bayesian-And-Optimization/MATLAB-7/boostingexamplebook_7_5.m  # known: missing:stats-ensemble (ordinal / fitensemble)

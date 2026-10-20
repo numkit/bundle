@@ -23,10 +23,10 @@ corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lync
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_16a.m    # known: missing: syms (bugs/missing.md)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_20d.m    # known: ode45-adaptive-step-grid (adaptive RK45 step count differs on Hodgkin-Huxley ODE)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_20h.m    # known: ode45-adaptive-step-grid (adaptive RK45 step count differs on FitzHugh-Nagumo ODE)
-corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter1/main.m    # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform after rng(100,'twister'))
-corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/bm_demo.m    # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/mc_euler_demo.m    # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
-corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/mc_wz_euler_demo.m    # known: randn-normal-transform (std::normal_distribution vs Ziggurat normal transform)
+corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter1/main.m
+corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/bm_demo.m
+corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/mc_euler_demo.m
+corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/mc_wz_euler_demo.m
 corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/qmc_euler_demo.m
 corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/sgc_euler_demo.m
 corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter2/sgc_wz_euler_demo.m

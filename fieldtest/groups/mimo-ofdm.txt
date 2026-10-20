@@ -1,21 +1,21 @@
 # group: mimo-ofdm — MIMO-OFDM Wireless Communications with MATLAB (Y. S. Cho, J. Kim, W. Y. Yang, C. G. Kang)
 # run: python fieldtest/compare.py mimo-ofdm
 
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/Ergodic_Capacity_CDF.m  # known: rng-stream
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/Ergodic_Capacity_Correlation.m  # known: rng-stream
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/Ergodic_Capacity_vs_SNR.m  # known: rng-stream
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/Ergodic_Capacity_CDF.m
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/Ergodic_Capacity_Correlation.m
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/Ergodic_Capacity_vs_SNR.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/MIMO_channel_cap_ant_sel_optimal.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/MIMO_channel_cap_ant_sel_subopt.m
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/OL_CL_Comparison.m  # known: rng-stream
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/OL_CL_Comparison.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_Chu.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_preamble.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PARR_of_preamble.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_FWGN.m  # known: rng-stream
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_IEEE80211_model.m  # known: rng-stream
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_IEEE80211_model.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Jakes_model.m  # known: nk-hang
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_modified_FWGN.m  # known: rng-stream
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_ray_fading.m  # known: rng-stream
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Ray_Ric_channel.m  # known: rng-stream
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_ray_fading.m
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Ray_Ric_channel.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_SUI_channel.m  # known: runtime-error (spectrum.welch)
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_SV_model_ct.m  # known: rng-stream
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/test_orthogonality.m

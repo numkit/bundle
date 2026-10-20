@@ -3,12 +3,12 @@
 
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch02/chapter02.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch11/chapter11.m  # known: rng-stream
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch12/chapter12.m  # known: rng-stream
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch13/chapter13.m  # known: rng-stream
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch14/chapter14.m  # known: rng-stream
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch12/chapter12.m
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch13/chapter13.m
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch14/chapter14.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch16/chapter16.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch18/ch21.m
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch20/chapter20.m  # known: rng-stream
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch20/chapter20.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch21/chapter21.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch22/chapter22.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch24/chapter24.m  # known: rng-stream

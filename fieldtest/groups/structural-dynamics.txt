@@ -7,7 +7,7 @@ corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB 
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_08/EX_2_8.m # known: ode45-adaptive-steps
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_09/EX_2_9.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_10/EX_2_10.m # known: ode45-adaptive-steps
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_11/EX_2_11.m
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_11/EX_2_11.m # known: graphics-autolim (ylim)
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_16/EX_2_16.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_17/EX_2_17.m # known: ode45-adaptive-steps
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 2/EX_2_18/EX_2_18.m

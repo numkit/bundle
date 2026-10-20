@@ -1,9 +1,9 @@
 # group: software-receiver — Software Receiver Design (C. R. Johnson Jr., W. A. Sethares, A. G. Klein)
 # run: python fieldtest/compare.py software-receiver
 
-corpus/work/gopmc--SRD/BookFiles/agcerrorsurf.m  # known: rng-stream
-corpus/work/gopmc--SRD/BookFiles/agcgrad.m  # known: rng-stream
-corpus/work/gopmc--SRD/BookFiles/agcvsfading.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/agcerrorsurf.m
+corpus/work/gopmc--SRD/BookFiles/agcgrad.m
+corpus/work/gopmc--SRD/BookFiles/agcvsfading.m
 corpus/work/gopmc--SRD/BookFiles/AM.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/AMlarge.m
 corpus/work/gopmc--SRD/BookFiles/bandex.m
@@ -17,30 +17,30 @@ corpus/work/gopmc--SRD/BookFiles/clockrecOP.m
 corpus/work/gopmc--SRD/BookFiles/clockrecperiod.m
 corpus/work/gopmc--SRD/BookFiles/codex.m
 corpus/work/gopmc--SRD/BookFiles/convolex.m
-corpus/work/gopmc--SRD/BookFiles/correx.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/correx.m
 corpus/work/gopmc--SRD/BookFiles/corrvsconv.m
 corpus/work/gopmc--SRD/BookFiles/DDequalizer.m
-corpus/work/gopmc--SRD/BookFiles/dlpf.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/dlpf.m
 corpus/work/gopmc--SRD/BookFiles/DMAequalizer.m
 corpus/work/gopmc--SRD/BookFiles/dualplls.m
 corpus/work/gopmc--SRD/BookFiles/envsig.m
 corpus/work/gopmc--SRD/BookFiles/eyediag.m
-corpus/work/gopmc--SRD/BookFiles/filternoise.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/filternoise.m
 corpus/work/gopmc--SRD/BookFiles/freqresp.m
 corpus/work/gopmc--SRD/BookFiles/idsys.m
 corpus/work/gopmc--SRD/BookFiles/idsysmod1.m
 corpus/work/gopmc--SRD/BookFiles/idsysmod2.m
-corpus/work/gopmc--SRD/BookFiles/improvesnr.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/improvesnr.m
 corpus/work/gopmc--SRD/BookFiles/LMSequalizer.m
 corpus/work/gopmc--SRD/BookFiles/LMSequalizerQAM.m
-corpus/work/gopmc--SRD/BookFiles/LSequalizer.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/LSequalizer.m
 corpus/work/gopmc--SRD/BookFiles/m6params.m
-corpus/work/gopmc--SRD/BookFiles/matchfilt.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/matchfilt.m
 corpus/work/gopmc--SRD/BookFiles/modulate.m
-corpus/work/gopmc--SRD/BookFiles/naivecode.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/naivecode.m
 corpus/work/gopmc--SRD/BookFiles/nocode52.m
-corpus/work/gopmc--SRD/BookFiles/noisychan.m  # known: rng-stream
-corpus/work/gopmc--SRD/BookFiles/openclosed.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/noisychan.m
+corpus/work/gopmc--SRD/BookFiles/openclosed.m
 corpus/work/gopmc--SRD/BookFiles/pllconverge.m
 corpus/work/gopmc--SRD/BookFiles/plldderrsys.m
 corpus/work/gopmc--SRD/BookFiles/pllfreqest.m  # known: rng-stream
@@ -51,15 +51,15 @@ corpus/work/gopmc--SRD/BookFiles/pulrecsig.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/pulseshape.m
 corpus/work/gopmc--SRD/BookFiles/pulseshape2.m
 corpus/work/gopmc--SRD/BookFiles/pulsespec.m
-corpus/work/gopmc--SRD/BookFiles/Q3AM/snrTest.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/Q3AM/snrTest.m
 corpus/work/gopmc--SRD/BookFiles/qamcompare.m
 corpus/work/gopmc--SRD/BookFiles/qamconstants.m
 corpus/work/gopmc--SRD/BookFiles/qamdemod.m
 corpus/work/gopmc--SRD/BookFiles/qamderotate.m
-corpus/work/gopmc--SRD/BookFiles/qamser.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/qamser.m
 corpus/work/gopmc--SRD/BookFiles/qamtimobj.m
-corpus/work/gopmc--SRD/BookFiles/randcolor.m  # known: rng-stream
-corpus/work/gopmc--SRD/BookFiles/randspec.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/randcolor.m
+corpus/work/gopmc--SRD/BookFiles/randspec.m
 corpus/work/gopmc--SRD/BookFiles/readtext.m
 corpus/work/gopmc--SRD/BookFiles/recfilt.m
 corpus/work/gopmc--SRD/BookFiles/redundant.m
@@ -69,7 +69,7 @@ corpus/work/gopmc--SRD/BookFiles/sine100hzsamp.m
 corpus/work/gopmc--SRD/BookFiles/sininterp.m
 corpus/work/gopmc--SRD/BookFiles/speccos.m
 corpus/work/gopmc--SRD/BookFiles/specdelta.m
-corpus/work/gopmc--SRD/BookFiles/specnoise.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/specnoise.m
 corpus/work/gopmc--SRD/BookFiles/specsin0.m
 corpus/work/gopmc--SRD/BookFiles/specsin1.m
 corpus/work/gopmc--SRD/BookFiles/specsin2.m
@@ -77,4 +77,4 @@ corpus/work/gopmc--SRD/BookFiles/specsquare.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/switchsin.m
 corpus/work/gopmc--SRD/BookFiles/textsim.m
 corpus/work/gopmc--SRD/BookFiles/waystofilt.m
-corpus/work/gopmc--SRD/BookFiles/waystofiltIIR.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/waystofiltIIR.m

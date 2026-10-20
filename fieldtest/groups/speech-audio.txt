@@ -1,0 +1,29 @@
+# group: speech-audio — Applied Speech, Audio Content Analysis, and Sound Field Synthesis (McLoughlin / Lerch / Ahrens)
+# source: qualify 2026-10-20, 22 standalone scripts completing under 30s
+# run: python fieldtest/compare.py speech-audio
+
+corpus/work/alexanderlerch--ACA-Code/TestGammaToneFb.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_1/Fig_1_2.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_1.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_10.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_11.m  # known: workspace-mismatch (ifft 3D spherical harmonics 2.2e-8 ULP)
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_12ac.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_12bd.m  # known: workspace-mismatch (spherical harmonics 1.1e-7 ULP)
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_13.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_2.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_3a.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_3b.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_4.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_6.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_7.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_8a.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_8b.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_3/Fig_3_18b.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_3/Fig_3_22.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_3/Fig_3_23.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_3/Fig_3_30a_Fig_3_32a.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_3/Fig_3_30b.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_3/Fig_3_32b.m
+corpus/work/leiyu943--Applied-Speech-and-Audio-Processing-With-Matlab-Examples/Applied Speech and Audio Processing/5 Speech Communication/a.m  # known: matlab-only-error
+corpus/work/leiyu943--Applied-Speech-and-Audio-Processing-With-Matlab-Examples/Applied Speech and Audio Processing/5 Speech Communication/lsp.m  # known: matlab-only-error
+corpus/work/leiyu943--Applied-Speech-and-Audio-Processing-With-Matlab-Examples/第五章/return the formant.m  # known: matlab-only-error

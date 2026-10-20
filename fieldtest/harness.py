@@ -201,9 +201,14 @@ def _repo_root_of(s: Path):
 def _run_engine_argv(kind, s, cwd, mat_out, stdin_text, stub_dir=None):
     t0 = time.perf_counter()
     repo_root = _repo_root_of(s)
+    rel_repo = (
+        Path(os.path.relpath(repo_root.resolve(), s.resolve().parent)).as_posix()
+        if repo_root is not None
+        else None
+    )
     addpath_cmd = (
-        f"addpath(genpath('{repo_root.resolve().as_posix()}')); "
-        if repo_root is not None and repo_root.resolve() != s.resolve().parent
+        f"addpath(genpath('{rel_repo}')); "
+        if rel_repo is not None
         else ""
     )
     if stub_dir is not None:
@@ -213,21 +218,25 @@ def _run_engine_argv(kind, s, cwd, mat_out, stdin_text, stub_dir=None):
         argv = [str(MATLAB), "-batch",
                 "restoredefaultpath; clear RESTOREDEFAULTPATH_EXECUTED; pause('off'); "
                 + addpath_cmd
-                + f"run('{s.as_posix()}')" +
+                + f"run('{s.name}')" +
                 (f"; save('{Path(mat_out).as_posix()}')" if mat_out else "")]
     elif kind in ("wasm", "native"):
         if mat_out is None and not addpath_cmd:
             argv = (["node", str(WASM_CLI), s.name] if kind == "wasm"
                     else [str(NATIVE_CLI), s.name])
+        elif kind == "native":
+            body = addpath_cmd + f"run('{s.name}');"
+            if mat_out is not None:
+                body += f" save('{Path(mat_out).as_posix()}');"
+            argv = [str(NATIVE_CLI), "-e", body]
         else:
             stem_tag = re.sub(r"[^a-zA-Z0-9_]", "_", s.stem)
             wrap = s.parent / f"__nk_wrap_{kind}_{stem_tag}.m"
-            body = addpath_cmd + f"run('{s.as_posix()}');\n"
+            body = addpath_cmd + f"run('{s.name}');\n"
             if mat_out is not None:
                 body += f"save('{Path(mat_out).as_posix()}');\n"
             wrap.write_text(body, encoding="utf-8")
-            argv = (["node", str(WASM_CLI), wrap.name] if kind == "wasm"
-                    else [str(NATIVE_CLI), wrap.name])
+            argv = ["node", str(WASM_CLI), wrap.name]
     else:
         raise ValueError(kind)
     to = 180 if kind == "matlab" else 90

@@ -13,8 +13,8 @@ corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lync
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Program_6a.m
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Program_7c.m    # known: jpeg-idct-1lsb-rounding (imread('lena.jpg') 1-LSB IDCT rounding vs libjpeg)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_14a.m    # known: ode45-adaptive-step-grid (adaptive RK45 step count differs on predator-prey ODE)
-corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_14c.m    # known: missing: ode23s (bugs/missing.md)
-corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_14e.m    # known: missing: ode23s (bugs/missing.md)
+corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_14c.m    # known: ode23s-adaptive-step-grid (Robertson stiff ODE; O, O2, O3 match to 4.4e-6)
+corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_14e.m    # known: ode23s-adaptive-step-grid (Belousov-Zhabotinsky stiff ODE; adaptive step count differs)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_15a.m    # known: missing: dsolve (bugs/missing.md)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_15c.m    # known: ode45-adaptive-step-grid (adaptive RK45 step count differs on Chua circuit ODE)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_15d.m    # known: ode45-chaotic-trajectory (Chua circuit chaotic attractor trajectory over t=[0,100])

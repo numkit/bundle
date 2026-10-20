@@ -4,19 +4,19 @@
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch02/chapter02.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch11/chapter11.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch12/chapter12.m  # known: rng-stream
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch13/chapter13.m  # known: missing:stats (iqr)
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch13/chapter13.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch14/chapter14.m  # known: rng-stream
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch16/chapter16.m  # known: runtime-error (fft2)
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch16/chapter16.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch18/ch21.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch20/chapter20.m  # known: rng-stream
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch21/chapter21.m  # known: runtime-error
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch22/chapter22.m  # known: runtime-error
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch24/chapter24.m  # known: runtime-error
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch25/chapter25.m  # known: runtime-error
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch29/chapter29.m  # known: runtime-error
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch21/chapter21.m  # known: rng-stream
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch22/chapter22.m
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch24/chapter24.m  # known: rng-stream
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch25/chapter25.m  # known: rng-stream
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch29/chapter29.m  # known: fminsearch-simplex
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch30/chapter30.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch31/chapter31.m  # known: matlab-timeout
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch33/chapter33.m  # known: runtime-error
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch33/chapter33.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch33/LangtonsAnt.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/coverart.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/img_sierpinksi.m  # known: rng-stream

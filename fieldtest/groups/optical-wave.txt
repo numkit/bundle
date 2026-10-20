@@ -1,0 +1,13 @@
+# group: optical-wave — Numerical Simulation of Optical Wave Propagation with Examples in MATLAB (J. D. Schmidt)
+# source: qualify 2026-10-20, 9/9 standalone scripts completing under 15s
+# run: python fieldtest/compare.py optical-wave
+
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter3/basicCorrelation/checkStrFcn2.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter3/basicCorrelation/checkXcorr.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter3/basicCorrelation/checkXcorr2.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter3/basicCorrelation/corrRectWindow1D.m
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter3/basicCorrelation/corrWindow2D.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter9/checkFTSHEvolvingScreens.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter9/checkFTSHScreens.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter9/temporalPhaseScreenMovie.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)
+corpus/work/jdschmidt-opticalscientist--bookWebsiteMatlabCode/examples/Chapter9/verifyScintillationPDF.m  # known: both-error (missing repo helper/dataset in MATLAB and NumKit)

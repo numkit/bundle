@@ -1,0 +1,58 @@
+# group: orbital-mechanics — Orbital Mechanics for Engineering Students & Fundamentals of Astrodynamics (Curtis / Vallado)
+# source: qualify 2026-10-20, 54/90 standalone scripts completing under 15s
+# run: python fieldtest/compare.py orbital-mechanics
+
+corpus/work/jorgepiloto--astrodynamics/Example_12_10.m
+corpus/work/jorgepiloto--astrodynamics/Example_2_13.m
+corpus/work/jorgepiloto--astrodynamics/Example_3_02.m
+corpus/work/jorgepiloto--astrodynamics/Example_3_05.m
+corpus/work/jorgepiloto--astrodynamics/Example_4_01.m
+corpus/work/jorgepiloto--astrodynamics/Example_4_03.m
+corpus/work/jorgepiloto--astrodynamics/Example_4_07.m
+corpus/work/jorgepiloto--astrodynamics/Example_5_01.m
+corpus/work/jorgepiloto--astrodynamics/Example_5_04.m
+corpus/work/jorgepiloto--astrodynamics/Example_5_06.m
+corpus/work/jorgepiloto--astrodynamics/Example_5_10.m
+corpus/work/jorgepiloto--astrodynamics/Example_7_01.m
+corpus/work/jorgepiloto--astrodynamics/matlab/constastro.m
+corpus/work/jorgepiloto--astrodynamics/matlab/constmath.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex10_1.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex10_2.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex10_3.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex11_1.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex11_2.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex11_3.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex11_5.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex1_1.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex2_2.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex2_4.m  # known: matlab-only-error
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_1.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_13.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_2.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_3.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_4.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_5.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_6.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_7.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_8.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex3_9.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex4_1.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex5_1.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex5_2.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex5_3.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex5_5.m
+corpus/work/jorgepiloto--astrodynamics/matlab/Ex5_5neweclipse.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex5_6.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_1.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_10.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_14.m  # known: matlab-only-error
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_15.m  # known: matlab-only-error
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_2.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_4.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_5.m  # known: matlab-only-error
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_6.m  # known: matlab-only-error
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_7.m  # known: matlab-only-error
+corpus/work/jorgepiloto--astrodynamics/matlab/ex6_8.m
+corpus/work/jorgepiloto--astrodynamics/matlab/ex7_1.m  # known: matlab-only-error
+corpus/work/jorgepiloto--astrodynamics/matlab/sethelp.m
+corpus/work/jorgepiloto--astrodynamics/matlab/testhillInitial.m  # known: matlab-only-error

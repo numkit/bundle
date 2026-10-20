@@ -38,7 +38,7 @@ corpus/work/gopmc--SRD/BookFiles/m6params.m
 corpus/work/gopmc--SRD/BookFiles/matchfilt.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/modulate.m
 corpus/work/gopmc--SRD/BookFiles/naivecode.m  # known: rng-stream
-corpus/work/gopmc--SRD/BookFiles/nocode52.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/nocode52.m
 corpus/work/gopmc--SRD/BookFiles/noisychan.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/openclosed.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/pllconverge.m
@@ -51,7 +51,7 @@ corpus/work/gopmc--SRD/BookFiles/pulrecsig.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/pulseshape.m
 corpus/work/gopmc--SRD/BookFiles/pulseshape2.m
 corpus/work/gopmc--SRD/BookFiles/pulsespec.m
-corpus/work/gopmc--SRD/BookFiles/Q3AM/snrTest.m  # known: runtime-error
+corpus/work/gopmc--SRD/BookFiles/Q3AM/snrTest.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/qamcompare.m
 corpus/work/gopmc--SRD/BookFiles/qamconstants.m
 corpus/work/gopmc--SRD/BookFiles/qamdemod.m
@@ -62,7 +62,7 @@ corpus/work/gopmc--SRD/BookFiles/randcolor.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/randspec.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/readtext.m
 corpus/work/gopmc--SRD/BookFiles/recfilt.m
-corpus/work/gopmc--SRD/BookFiles/redundant.m  # known: rng-stream
+corpus/work/gopmc--SRD/BookFiles/redundant.m
 corpus/work/gopmc--SRD/BookFiles/sersnr.m
 corpus/work/gopmc--SRD/BookFiles/sine100hz.m
 corpus/work/gopmc--SRD/BookFiles/sine100hzsamp.m
@@ -75,6 +75,6 @@ corpus/work/gopmc--SRD/BookFiles/specsin1.m
 corpus/work/gopmc--SRD/BookFiles/specsin2.m
 corpus/work/gopmc--SRD/BookFiles/specsquare.m  # known: rng-stream
 corpus/work/gopmc--SRD/BookFiles/switchsin.m
-corpus/work/gopmc--SRD/BookFiles/textsim.m  # known: runtime-error
+corpus/work/gopmc--SRD/BookFiles/textsim.m
 corpus/work/gopmc--SRD/BookFiles/waystofilt.m
 corpus/work/gopmc--SRD/BookFiles/waystofiltIIR.m  # known: rng-stream

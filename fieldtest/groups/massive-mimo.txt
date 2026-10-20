@@ -1,0 +1,36 @@
+# group: massive-mimo — Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency (Bjornson, Hoydis, Sanguinetti)
+# source: qualify 2026-10-20, 32/75 standalone scripts completing under 15s
+# run: python fieldtest/compare.py massive-mimo
+
+corpus/work/emilbjornson--massivemimobook/Code/section1_figure12.m
+corpus/work/emilbjornson--massivemimobook/Code/section1_figure13.m  # known: rng-stream
+corpus/work/emilbjornson--massivemimobook/Code/section1_figure14.m  # known: rng-stream
+corpus/work/emilbjornson--massivemimobook/Code/section1_figure15.m  # known: rng-stream
+corpus/work/emilbjornson--massivemimobook/Code/section1_figure9.m  # known: rng-stream
+corpus/work/emilbjornson--massivemimobook/Code/section2_figure6.m  # known: eig-sign
+corpus/work/emilbjornson--massivemimobook/Code/section3_figure8.m
+corpus/work/emilbjornson--massivemimobook/Code/section4_figure3.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure10.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure11.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure12.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure13.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure14.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure15.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure3.m  # known: fp-conditioning (DIFF SE_MR: values diverge (max rel 1.000e+00); DIFF SE_MR_a)
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure4.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure5.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure6.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure7.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure8.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure9a.m
+corpus/work/emilbjornson--massivemimobook/Code/section5_figure9b.m
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure13.m  # known: fp-conditioning (DIFF P: values diverge (max rel 7.227e-02); only-in-nk: ans,)
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure15.m  # known: eig-sign
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure16.m  # known: eig-sign
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure20.m  # known: rng-stream
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure22.m
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure23.m
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure24.m
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure27.m  # known: rng-stream
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure33.m
+corpus/work/emilbjornson--massivemimobook/Code/section7_figure8.m

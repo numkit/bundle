@@ -1,0 +1,23 @@
+# group: lbm-fluid — Lattice Boltzmann Method Fluid Simulations in MATLAB (R. Lee)
+# source: qualify 2026-10-20, 19/25 standalone scripts completing under 15s
+# run: python fieldtest/compare.py lbm-fluid
+
+corpus/work/rlee32--lbm_matlab/advection_diffusion/d1q2.m
+corpus/work/rlee32--lbm_matlab/advection_diffusion/d2q4.m
+corpus/work/rlee32--lbm_matlab/advection_diffusion/d2q9.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/diffusion/d1q2.m
+corpus/work/rlee32--lbm_matlab/diffusion/d2q4.m
+corpus/work/rlee32--lbm_matlab/diffusion/d2q9.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/cavity_dim.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/cavity_mohamad.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_ext0.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_ext2.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_fixedp.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_fixedv.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_interface.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel4_incomplete.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel_refine1.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel_refine2.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/inlet_outlet.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/overlap/test.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/surfels/test_oop.m

@@ -1,0 +1,10 @@
+# group: gnss-inertial-groves ? Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems, 2nd Ed. (Paul D. Groves)
+# source: Wave-4 qualification 2026-10-20, 3 MATLAB-qualified standalone scripts (0/3 pass)
+# run: python fieldtest/compare.py gnss-inertial-groves
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/ymjdz--MATLAB-Codes/GNSS_Demo_1.m  # known: workspace-mismatch: skip GNSS_config: non-numeric both sides; skip input_profile_name: non-numeric both sides;
+corpus/work/ymjdz--MATLAB-Codes/Inertial_Demo_1ECEF.m  # known: workspace-mismatch: skip IMU_errors: non-numeric both sides; skip initialization_errors: non-numeric both side
+corpus/work/ymjdz--MATLAB-Codes/Inertial_Demo_1ECI.m  # known: workspace-mismatch: skip IMU_errors: non-numeric both sides; skip initialization_errors: non-numeric both side

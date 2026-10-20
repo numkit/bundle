@@ -1,0 +1,20 @@
+# group: cryptography-book ? Pro Cryptography and Cryptanalysis with MATLAB (Mihailescu & Nita, Apress)
+# source: Wave-4 qualification 2026-10-20, 13 MATLAB-qualified standalone scripts (5/13 pass)
+# run: python fieldtest/compare.py cryptography-book
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch11 - Formal Techniques/GenerateNumbers.m
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch11 - Formal Techniques/GenerateNumbersInterval.m
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_2.m  # known: workspace-mismatch: DIFF encrypted_image1: values diverge (max rel 2.550e+02); DIFF encrypted_image2: values d
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_3.m  # known: workspace-mismatch: DIFF encrypted_image_1: values diverge (max rel 2.550e+02); DIFF encrypted_image_2: values
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_4.m  # known: workspace-mismatch: DIFF encrypted_image_1: values diverge (max rel 2.550e+02); DIFF encrypted_image_2: values
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_5.m  # known: workspace-mismatch: DIFF ENC_IMG1: values diverge (max rel 9.374e-05); DIFF encrypted_image: values diverge (m
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_6.m  # known: workspace-mismatch: DIFF NPCR: values diverge (max rel 3.070e-05); DIFF enc_image1: values diverge (max rel 2.
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch14 - Steganography/Listing14_2.m  # known: workspace-mismatch: skip modified_image: non-numeric both sides; DIFF o_i: values diverge (max rel 2.550e+02);
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_2.m
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_3.m
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_4.m  # known: workspace-mismatch: DIFF a: values diverge (max rel 1.000e+00); DIFF b: values diverge (max rel 9.267e-03); on
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch8 - Hash Functions/Listing82.m
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch8 - Hash Functions/Listing84.m  # known: missing: java.security.MessageDigest.getInstance (bugs/missing.md)

@@ -1,0 +1,37 @@
+# group: matlab-recipes ? MATLAB Recipes: A Problem-Solution Approach, 2nd Ed. (Paluszek & Thomas, Apress)
+# source: Wave-4 qualification 2026-10-20, 30 MATLAB-qualified standalone scripts (20/30 pass)
+# run: python fieldtest/compare.py matlab-recipes
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/Apress--matlab-recipes-2e/Chapter_01/ImplicitExpansion.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_01/JSONTest.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_01/UseMemoize.m  # known: workspace-mismatch: DIFF y: values diverge (max rel 2.000e+00); DIFF y2: values diverge (max rel 2.000e+00); o
+corpus/work/Apress--matlab-recipes-2e/Chapter_02/MemoExample.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_02/ScriptDemo.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/AnnotatePlot.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/BoxPatch.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/ColorDistribution.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/GridVisualization.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/HeatMapDemo.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/PatchWithCamera.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/PatchWithLighting.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/PlottingWithDates.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/RandomWalk.m  # known: missing: digraph (bugs/missing.md)
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/ReadImage.m  # known: workspace-mismatch: DIFF i: values diverge (max rel 6.071e+00); only-in-nk: a, ans, f, h; only-in-matlab: None
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/SphereLighting.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimation.m  # known: nk-hang: exceeds 15s per-script timeout
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimationStorage.m  # known: missing: VideoWriter (bugs/missing.md)
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/TimeDisplayDemo.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/UIControlDemo.m  # known: workspace-mismatch: DIFF bottom: values diverge (max rel 1.216e+00); DIFF p: values diverge (max rel 9.995e-01
+corpus/work/Apress--matlab-recipes-2e/Chapter_06/DoubleIntegratorSim.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_07/SCARARobotSim.m  # known: runtime-error: Error: line 196, column 26: Invalid or deleted object. (in call to 'set')
+corpus/work/Apress--matlab-recipes-2e/Chapter_08/PMMachineDemo.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_09/DetectionFilterSim.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_10/PHProcessSim.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_10/SensorTest.m  # known: workspace-mismatch: skip d: non-numeric both sides; DIFF fEvals: values diverge (max rel 9.706e-01); skip opti
+corpus/work/Apress--matlab-recipes-2e/Chapter_11/AircraftSim.m  # known: workspace-mismatch: skip d: non-numeric both sides; skip s: non-numeric both sides; skip tL: non-numeric both 
+corpus/work/Apress--matlab-recipes-2e/Chapter_12/SpacecraftSim.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_13/AutomobileDemo.m  # known: runtime-error: Error: line 36, column 16: Dot indexing requires a struct (in field access '.component')
+corpus/work/Apress--matlab-recipes-2e/Chapter_14/DiscreteStep.m

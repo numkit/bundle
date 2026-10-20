@@ -1,0 +1,18 @@
+# group: matlab-ml ? MATLAB Machine Learning (Michael Paluszek & Stephanie Thomas, Apress)
+# source: Wave-4 qualification 2026-10-20, 11 MATLAB-qualified standalone scripts (7/11 pass)
+# run: python fieldtest/compare.py matlab-ml
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/Apress--matlab-machine-learning/Chapter_01/LinearRegression.m
+corpus/work/Apress--matlab-machine-learning/Chapter_05/MATLABPlotTypes.m
+corpus/work/Apress--matlab-machine-learning/Chapter_05/TwoDDataDisplay.m  # known: missing: unknown (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning/Chapter_07/TestNN.m  # known: missing: image (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning/Chapter_08/SimpleClassifierDemo.m  # known: runtime-error: Error: line 1, column 29: VM: unimplemented opcode 224 (in call to 'run')
+corpus/work/Apress--matlab-machine-learning/Chapter_08/SimpleClassifierExample.m
+corpus/work/Apress--matlab-machine-learning/Chapter_08/TestDecisionTree.m  # known: runtime-error: Error: line 1, column 29: VM: unimplemented opcode 101 (in call to 'run')
+corpus/work/Apress--matlab-machine-learning/Chapter_10/Gaussian.m
+corpus/work/Apress--matlab-machine-learning/Chapter_11/PitchNeuralNetTraining.m
+corpus/work/Apress--matlab-machine-learning/Chapter_11/RecursiveLearning.m
+corpus/work/Apress--matlab-machine-learning/Chapter_11/Sigmoid.m

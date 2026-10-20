@@ -1,0 +1,27 @@
+# group: dsp-telecom-book ? Signal Processing for Communications and Telecommunications (Aldebaro Klautau)
+# source: Wave-4 qualification 2026-10-20, 20 MATLAB-qualified standalone scripts (12/20 pass)
+# run: python fieldtest/compare.py dsp-telecom-book
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/AMDemodulation/ak_amDemodulateDigitizedAMSignal.m  # known: runtime-error: Error: line 85, column 58: Can't open am_real.wav for input (in call to 'error')
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/AMDemodulation/teste_figs_amDemodulationApplication.m  # known: runtime-error: Error: line 85, column 58: Can't open am_real.wav for input (in call to 'error')
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/AMonUSRP/ak_convertAMComplexEnvelopeIntoRealValued.m  # known: runtime-error: Error: line 103, column 59: Can't open am_real.wav for output (in call to 'error')
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/AMonUSRP/ak_showRadioTuner.m  # known: workspace-mismatch: DIFF spectrum: values diverge (max rel 2.000e+00); only-in-nk: ans, h, h2; only-in-matlab:
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/ECGTransformCoding/ak_testBlockEncodingDecoding.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/ECGTransformCoding/ak_test_rddata.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/FFTLeakagePicketFenceEffects/ak_window4_noGUI.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/FSKSynchronous/fsk_data/imageConversion.m  # known: workspace-mismatch: skip ans: numeric on one side only (None vs r); DIFF bwimage: shape (60, 60, 3) vs (60, 60
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/FSKSynchronous/fsk_synchronous.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSM_PHY_Analysis/ak_CreateC0T0BeaconSignal.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSM_PHY_Analysis/ex_gsm_cross_correlation_for_sync.m  # known: workspace-mismatch: DIFF r: read_complex_binary float32 fread column-reshape
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSM_PHY_Analysis/ex_gsm_freq_correction.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/config/GSMsim_config.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/config/gsm_set.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/examples/ak_GSMsim_demo.m  # known: workspace-mismatch: DIFF BER: values diverge (max rel 9.410e-04); DIFF B_ERRS: values diverge (max rel 9.410e-
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/utils/inter_pos.m  # known: nondeterministic: DIFF tTotal: values diverge (max rel 2.570e-01)
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/utils/make_deinterleave_m.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/utils/make_interleave_m.m
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/PAMSimple/ak_pamSimple.m
+corpus/work/aldebaro--dsp-telecom-book-code/ak_setPath.m

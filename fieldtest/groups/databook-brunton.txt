@@ -1,0 +1,26 @@
+# group: databook-brunton ? Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control (Brunton & Kutz, Cambridge)
+# source: Wave-4 qualification 2026-10-20, 19 MATLAB-qualified standalone scripts (10/19 pass)
+# run: python fieldtest/compare.py databook-brunton
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC03_Rotation.m
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC03_Rotation_production.m
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC04_2_Cement.m  # known: runtime-error: Error: line 3, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC05_1_PCAGaussian.m  # known: workspace-mismatch: DIFF U: values diverge (max rel 2.000e+00); DIFF V: values diverge (max rel 2.000e+00); DI
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_Truncation.m  # known: workspace-mismatch: DIFF U: values diverge (max rel 2.000e+00); DIFF V: values diverge (max rel 2.000e+00); on
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_production.m  # known: workspace-mismatch: DIFF U: values diverge (max rel 2.000e+00); DIFF V: values diverge (max rel 2.000e+00); on
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_Truncation.m  # known: workspace-mismatch: DIFF S: values diverge (max rel 1.000e+00); DIFF U: values diverge (max rel 2.000e+00); DI
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_production.m  # known: workspace-mismatch: DIFF S: values diverge (max rel 1.000e+00); DIFF U: values diverge (max rel 2.000e+00); DI
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_3_production.m  # known: nk-hang: exceeds 15s per-script timeout
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC01_1_FourierSines.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC01_2_Gibbs.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC01_2_Gibbs_Movie.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC01_2_Gibbs_production.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_1_DFT.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_1_DFT_production.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_2_Denoise.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_3_SpectralDerivative.m
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC03_1_FFTHeat.m  # known: runtime-error: Error: line 140, column 65: ode45: step size underflow (in call to 'error') [numkit:ode45:
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC03_1_FFTHeat_production.m  # known: runtime-error: Error: line 140, column 65: ode45: step size underflow (in call to 'error') [numkit:ode45:

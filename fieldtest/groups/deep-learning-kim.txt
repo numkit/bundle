@@ -1,0 +1,21 @@
+# group: deep-learning-kim ? MATLAB Deep Learning: With Machine Learning, Neural Networks and Artificial Intelligence (Phil Kim, Apress)
+# source: Wave-4 qualification 2026-10-20, 14 MATLAB-qualified standalone scripts (14/14 pass)
+# run: python fieldtest/compare.py deep-learning-kim
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.2/SGDvsBatch.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.2/TestDeltaBatch.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.2/TestDeltaSGD.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.2/TestDeltaXOR.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.3/CEvsSSE.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.3/TestBackpropCE.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.3/TestBackpropMmt.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.3/TestBackpropXOR.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.4/RealMultiClass.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.4/TestMultiClass.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.5/TestDeepDropout.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.5/TestDeepReLU.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.6/PlotFeatures.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.6/TestMnistConv.m

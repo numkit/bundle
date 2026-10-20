@@ -1,0 +1,44 @@
+# group: ml-recipes ? MATLAB Machine Learning Recipes: A Problem-Solution Approach (Paluszek & Thomas, Apress)
+# source: Wave-4 qualification 2026-10-20, 37 MATLAB-qualified standalone scripts (27/37 pass)
+# run: python fieldtest/compare.py ml-recipes
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_01/LinearRegression.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_02/WeatherFFT.m  # known: missing: tabularTextDatastore (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_03/MATLABPlotTypes.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_03/TwoDDataDisplay.m  # known: missing: unknown (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_04/EKFSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_04/Gaussian.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_04/KFSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_04/OscillatorDampingRatioSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_04/OscillatorSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_04/UKFPSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_04/UKFSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/AircraftSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/AircraftSimOpenLoop.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/FFTSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/PitchNeuralNetTraining.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/RecursiveLearning.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/RotorSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/Sigmoid.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/SpacecraftSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/TuningSim.m  # known: workspace-mismatch: skip dRHS: non-numeric both sides; skip tL: non-numeric both sides; DIFF x: values diverge
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_06/MFDemo.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/SimpleClassifierDemo.m  # known: runtime-error: 
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/SimpleClassifierExample.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/TestDecisionTree.m  # known: runtime-error: Error: line 1, column 29: Unsupported unary - (in call to 'run') [numkit:uminus:unsupporte
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemo.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemoLinear.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/OneNeuron.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/PendulumSim.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/SunnyDay.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/Digit3TrainingData.m  # known: runtime-error: Error: line 30, column 48: Sorry, the font 'courier' is not available. (in call to 'error'
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/TestNN.m  # known: missing: image (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/TrainNN.m  # known: missing: image (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_12/KF1DDemo.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_12/KFBilliardsDemo.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_13/AutomobileDemo.m  # known: runtime-error: Error: line 36, column 16: Dot indexing requires a struct (in field access '.component')
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_13/UKFAutomobileDemo.m  # known: workspace-mismatch: skip d: non-numeric both sides; DIFF dMHTU: values diverge (max rel 1.470e-02); skip dRada
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_14/ExpertSystemDemo.m

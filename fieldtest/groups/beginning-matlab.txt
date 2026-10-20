@@ -1,0 +1,41 @@
+# group: beginning-matlab ? Beginning MATLAB and Simulink, 2nd Ed. (Sulaymon Eshkabilov, Apress)
+# source: Wave-4 qualification 2026-10-20, 34 MATLAB-qualified standalone scripts (25/34 pass)
+# run: python fieldtest/compare.py beginning-matlab
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_1/P1.m  # known: workspace-mismatch: DIFF F0: shape (1, 60) vs (1, 81); DIFF Findex: shape (1, 60) vs (1, 81); only-in-nk: ans
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/ChessInventorReward.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/ET3.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Errors_Warnings.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex12_FS.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex13_CF.m  # known: nondeterministic: DIFF Tvec: values diverge (max rel 2.714e-02)
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex13_CT.m  # known: nondeterministic: DIFF TT: values diverge (max rel 2.717e-01); DIFF Tfor3: values diverge (max rel 2.000e-01
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex14_FN.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex15_SINE.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex16_FNs.m  # known: nondeterministic: DIFF Tma: values diverge (max rel 1.404e-02)
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex6_FOR_WHILE.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex6_FOR_WHILE_alt.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex9_wFUN.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/PseuodRandi.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/SqCube10.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Sum100.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Sum20odd.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Sum20odd_alt.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/TimeDisp.m  # known: nondeterministic: DIFF NOW: values diverge (max rel 2.195e-01)
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_3/SOUND_hear.m  # known: missing: sound (bugs/missing.md)
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Bar_Plot_E13.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX10.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX11.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX12.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX13.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX14.m  # known: workspace-mismatch: DIFF xtips1: values diverge (max rel 1.270e-01); only-in-nk: b, labels1; only-in-matlab: N
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX15.m  # known: workspace-mismatch: skip str: non-numeric both sides; DIFF yl: values diverge (max rel 1.000e+00); only-in-nk:
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX16.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX18.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX19.m  # known: runtime-error: Error: line 17, column 22: Reference to non-existent field 'LineWidth' (in field access '.
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX23.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX24.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX25.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX26.m

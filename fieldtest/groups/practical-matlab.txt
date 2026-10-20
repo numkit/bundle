@@ -1,0 +1,46 @@
+# group: practical-matlab ? Practical MATLAB Modeling with Simulink (Sulaymon Eshkabilov, Apress)
+# source: Wave-4 qualification 2026-10-20, 39 MATLAB-qualified standalone scripts (38/39 pass)
+# run: python fieldtest/compare.py practical-matlab
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/Apress--practical-matlab/Chapter_01/CharEx.m
+corpus/work/Apress--practical-matlab/Chapter_01/CreateTables.m
+corpus/work/Apress--practical-matlab/Chapter_01/HidingMessage.m
+corpus/work/Apress--practical-matlab/Chapter_01/Letters.m
+corpus/work/Apress--practical-matlab/Chapter_01/LogicalEx.m
+corpus/work/Apress--practical-matlab/Chapter_01/StructArrayEx.m
+corpus/work/Apress--practical-matlab/Chapter_02/Example2p11.m
+corpus/work/Apress--practical-matlab/Chapter_02/Example2p14.m
+corpus/work/Apress--practical-matlab/Chapter_02/Example2p17.m
+corpus/work/Apress--practical-matlab/Chapter_02/Example2p3.m
+corpus/work/Apress--practical-matlab/Chapter_02/Example2p4.m
+corpus/work/Apress--practical-matlab/Chapter_02/Example2p9.m
+corpus/work/Apress--practical-matlab/Chapter_03/Example3p2.m
+corpus/work/Apress--practical-matlab/Chapter_03/Example3p3.m
+corpus/work/Apress--practical-matlab/Chapter_03/Example3p4.m
+corpus/work/Apress--practical-matlab/Chapter_03/Example3p5.m
+corpus/work/Apress--practical-matlab/Chapter_03/Example3p6.m
+corpus/work/Apress--practical-matlab/Chapter_03/Example3p7.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p1.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p10.m  # known: workspace-mismatch: DIFF Lengt: values diverge (max rel 4.444e-01); DIFF Result: shape (25, 1) vs (45, 1); ski
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p11.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p12.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p2.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p3.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p4.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p5.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p6.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p8.m
+corpus/work/Apress--practical-matlab/Chapter_04/Example4p9.m
+corpus/work/Apress--practical-matlab/Chapter_05/Example5p1.m
+corpus/work/Apress--practical-matlab/Chapter_05/Example5p2.m
+corpus/work/Apress--practical-matlab/Chapter_05/Example5p6.m
+corpus/work/Apress--practical-matlab/Chapter_05/Example5p7.m
+corpus/work/Apress--practical-matlab/Chapter_05/Example5p8.m
+corpus/work/Apress--practical-matlab/Chapter_05/Example5p9.m
+corpus/work/Apress--practical-matlab/Chapter_06/Example6p1.m
+corpus/work/Apress--practical-matlab/Chapter_06/Example6p2.m
+corpus/work/Apress--practical-matlab/Chapter_06/Example6p3.m
+corpus/work/Apress--practical-matlab/Chapter_06/Example6p4.m

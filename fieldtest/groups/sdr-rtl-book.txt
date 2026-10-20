@@ -1,0 +1,15 @@
+# group: sdr-rtl-book ? Software Defined Radio using MATLAB & Simulink and the RTL-SDR (Stewart, Barlee, Atkinson, Crockett)
+# source: Wave-4 qualification 2026-10-20, 8 MATLAB-qualified standalone scripts (8/8 pass)
+# run: python fieldtest/compare.py sdr-rtl-book
+#
+# trailing '# known: <bug>' marks a divergence already filed ? the runner
+# prints those as KNOWN; anything else diverging is NEW (exit code 1).
+
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/complex/three_cosines_complex_spectra_plot.m
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/complex/time_to_complex_frequency_domain.m
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/complex/time_to_frequency_domain_cosines1.m
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/digital/simulation/ASCII_coding/ASCII_character_encoder.m
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/digital/simulation/symbol_timing/ELTED_s_curve.m
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/matlab_simulink/structures.m
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/synch/PLL/configure_PLL_linear_model.m
+corpus/work/tapyu--stewart-rtl-sdr-using-matlab/synch/PLL/configure_noise_model.m

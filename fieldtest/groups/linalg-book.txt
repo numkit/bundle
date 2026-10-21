@@ -5,7 +5,7 @@
 # trailing '# known: <bug>' marks a divergence already filed — the runner
 # prints those as KNOWN; anything else diverging is NEW (exit code 1).
 
-corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter02.m    # known: eig/svd sign ambiguity
+corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter02.m
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter03.m
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter05.m
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter06.m
@@ -15,7 +15,7 @@ corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter09.m
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter10.m
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter11.m    # known: eig/svd sign ambiguity
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter12.m
-corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter13.m    # known: eig/svd sign ambiguity
+corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter13.m
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter14.m
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter15.m    # known: eig/svd sign ambiguity
 corpus/work/mikexcohen--LinAlgBook/matlab/LAbookX_chapter17.m    # known: eig/svd sign ambiguity

@@ -1,0 +1,20 @@
+# group: packt-ml-matlab — MATLAB for Machine Learning & Mastering ML (Packt)
+# source: wave-5 textbook onboarding (1 pass / 16 total)
+# run: python fieldtest/compare.py packt-ml-matlab
+
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter02/DataOrganization.m    # known: runtime-error: Error: line 31, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest\corpus\w
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter03/ExploratoryStatistics.m
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter05/DiscriminantAnalysis.m    # known: runtime-error: Error: line 1, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest\corpus\wo
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter05/NearestNeighborCassifiers.m    # known: runtime-error: Error: line 1, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest\corpus\wo
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter06/GaussianMixtureModels.m    # known: runtime-error: Error: line 2, column 17: Index exceeds array dimensions (in function call)
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter06/HierarchicalClustering.m    # known: workspace-mismatch: DIFF NewGroupsMatrix: values diverge (max rel 1.000e+00)
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter06/KMeansExample.m    # known: runtime-error: Error: line 2, column 26: Index exceeds array dimensions (in function call)
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter07/EngineFitting.m    # known: runtime-error: Error: line 1, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest\corpus\wo
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter08/StepwiseRegression.m    # known: absent-fn: Error: line 2, column 35: VM: undefined function 'websave' (in call to 'websave')
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter09/ConcreteQualityFitting.m    # known: absent-fn: Error: line 10, column 30: VM: undefined function 'fitnet' (in call to 'fitnet')
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter09/StudentClustering.m    # known: absent-fn: Error: line 3, column 26: VM: undefined function 'subclust' (in call to 'subclust')
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter09/ThyroidDisease.m    # known: runtime-error: Error: line 1, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest\corpus\wo
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning-second-edition/CH10/CreditCardFraudDet.m    # known: absent-fn: Error: line 12, column 37: VM: undefined function 'cvpartition' (in call to 'cvpartition')
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning-second-edition/CH10/NDISEnsemble.m    # known: absent-fn: Error: line 4, column 37: VM: undefined function 'cvpartition' (in call to 'cvpartition')
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning-second-edition/CH11/AnomalyDetectGearBox.m    # known: absent-fn: Error: line 11, column 37: VM: undefined function 'cvpartition' (in call to 'cvpartition')
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning-second-edition/CH11/UAVFaultDiagnosis.m    # known: absent-fn: Error: line 10, column 101: VM: undefined function 'fitcsvm' (in call to 'run')

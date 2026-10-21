@@ -35,7 +35,7 @@ corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Secti
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_07c.m  # known: chaotic-trajectory
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_07d.m  # known: missing:symbolic (syms)
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08a.m
-corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08b.m  # known: wall-clock-timing (tic/toc)
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08b.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08c.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08d.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_08e.m
@@ -75,14 +75,14 @@ corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Secti
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_17b.m  # known: ode45-adaptive-steps
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_17c.m  # known: ode45-adaptive-steps
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_17d.m  # known: ode45-adaptive-steps
-corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18a.m  # known: rng-stream
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18a.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18b.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18c.m  # known: ode45-adaptive-steps
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_18d.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19a.m  # known: rng-stream (kmeans)
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19b.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19c.m  # known: ode45-adaptive-steps
-corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19d.m  # known: pca-sign
+corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_19d.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20a.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20b.m
 corpus/work/proflynch--MATLAB-for-Scientific-Computing-and-AI/MATLAB Files Section II/Prog_20c.m

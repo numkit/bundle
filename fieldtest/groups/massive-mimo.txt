@@ -6,7 +6,7 @@ corpus/work/emilbjornson--massivemimobook/Code/section1_figure12.m
 corpus/work/emilbjornson--massivemimobook/Code/section1_figure13.m  # known: rng-stream
 corpus/work/emilbjornson--massivemimobook/Code/section1_figure14.m  # known: rng-stream
 corpus/work/emilbjornson--massivemimobook/Code/section1_figure15.m
-corpus/work/emilbjornson--massivemimobook/Code/section1_figure9.m  # known: rng-stream
+corpus/work/emilbjornson--massivemimobook/Code/section1_figure9.m
 corpus/work/emilbjornson--massivemimobook/Code/section2_figure6.m  # known: eig-sign
 corpus/work/emilbjornson--massivemimobook/Code/section3_figure8.m
 corpus/work/emilbjornson--massivemimobook/Code/section4_figure3.m

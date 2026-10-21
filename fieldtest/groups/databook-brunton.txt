@@ -9,8 +9,8 @@ corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC03_Rotation.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC03_Rotation_production.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC04_2_Cement.m  # known: runtime-error: Error: line 3, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC05_1_PCAGaussian.m  # known: workspace-mismatch: DIFF U: values diverge (max rel 2.000e+00); DIFF V: values diverge (max rel 2.000e+00); DI
-corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_Truncation.m  # known: workspace-mismatch: DIFF U: values diverge (max rel 2.000e+00); DIFF V: values diverge (max rel 2.000e+00); on
-corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_production.m  # known: workspace-mismatch: DIFF U: values diverge (max rel 2.000e+00); DIFF V: values diverge (max rel 2.000e+00); on
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_Truncation.m
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_production.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_Truncation.m  # known: workspace-mismatch: DIFF S: values diverge (max rel 1.000e+00); DIFF U: values diverge (max rel 2.000e+00); DI
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_production.m  # known: workspace-mismatch: DIFF S: values diverge (max rel 1.000e+00); DIFF U: values diverge (max rel 2.000e+00); DI
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_3_production.m  # known: nk-hang: exceeds 15s per-script timeout

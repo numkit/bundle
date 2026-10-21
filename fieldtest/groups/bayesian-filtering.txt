@@ -9,7 +9,7 @@ corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/car_tr
 corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/drift_linreg.m
 corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/pendulum_ckf.m
 corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/pendulum_ekf.m
-corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/pendulum_ffbs.m       # known: rng:randn
+corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/pendulum_ffbs.m
 corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/pendulum_ghkf.m       # known: rng:randn
 corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/pendulum_iekf.m
 corpus/work/EEA-sensors--Bayesian-Filtering-and-Smoothing/matlab/examples/pendulum_iplf.m

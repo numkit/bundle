@@ -20,7 +20,7 @@ corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSM_PHY_Analysis/ex_gsm
 corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/config/GSMsim_config.m
 corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/config/gsm_set.m
 corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/examples/ak_GSMsim_demo.m  # known: workspace-mismatch: DIFF BER: values diverge (max rel 9.410e-04); DIFF B_ERRS: values diverge (max rel 9.410e-
-corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/utils/inter_pos.m  # known: nondeterministic: DIFF tTotal: values diverge (max rel 2.570e-01)
+corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/utils/inter_pos.m
 corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/utils/make_deinterleave_m.m
 corpus/work/aldebaro--dsp-telecom-book-code/Applications/GSMsim/ak_GSMsim/utils/make_interleave_m.m
 corpus/work/aldebaro--dsp-telecom-book-code/Applications/PAMSimple/ak_pamSimple.m

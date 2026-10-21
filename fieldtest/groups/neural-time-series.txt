@@ -2,7 +2,7 @@
 # run: python fieldtest/compare.py neural-time-series
 
 corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter02.m  # known: workspace-mismatch
-corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter04a.m  # known: rng-stream
+corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter04a.m
 corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter05.m
 corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter06.m
 corpus/work/mikexcohen--AnalyzingNeuralTimeSeries/chapter10.m

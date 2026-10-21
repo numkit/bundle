@@ -1,0 +1,23 @@
+# group: beginning-matlab-ch6 — Beginning MATLAB and Simulink — Chapters 6-9 Examples (Apress)
+# source: wave-5 textbook onboarding (16 pass / 19 total)
+# run: python fieldtest/compare.py beginning-matlab-ch6
+
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/SqCube10.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Sum100.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Sum20odd.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Sum20odd_alt.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/TimeDisp.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_3/SOUND_hear.m    # known: absent-fn: Error: line 7, column 23: VM: undefined function 'sound' (in call to 'sound')
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex10.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex11.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex13.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex14.m    # known: runtime-error: Error: line 17, column 22: Reference to non-existent field 'LineWidth' (in field access '.LineWidth'
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex16.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex17.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex18.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex19.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex21.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex22.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex23.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex24.m    # known: absent-fn: Error: line 9, column 19: VM: undefined function 'refreshdata' (in call to 'refreshdata')
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_6/plot_ex25.m

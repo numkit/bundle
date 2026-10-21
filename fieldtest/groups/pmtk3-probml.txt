@@ -1,0 +1,15 @@
+# group: pmtk3-probml — Probabilistic Machine Learning Toolkit PMTK3 (Murphy)
+# source: wave-5 textbook onboarding (8 pass / 11 total)
+# run: python fieldtest/compare.py pmtk3-probml
+
+corpus/work/probml--pmtk3/data/autompg/autompgMakeData.m
+corpus/work/probml--pmtk3/data/bayesFactorGeneData/bayesFactorMakeGeneData.m
+corpus/work/probml--pmtk3/data/facesCBCL/facesCBCLshow.m    # known: absent-fn: Error: line 3, column 44: VM: undefined function 'montage' (in call to 'montage')
+corpus/work/probml--pmtk3/data/houseVotesParse.m
+corpus/work/probml--pmtk3/data/housing/housingDataMake.m
+corpus/work/probml--pmtk3/data/moteData/moteDataMake.m    # known: absent-fn: Error: line 3, column 13: VM: undefined function 'dlmread' (in call to 'dlmread')
+corpus/work/probml--pmtk3/data/mpg/mpgDataMake.m
+corpus/work/probml--pmtk3/data/ngramData/ngramMake.m
+corpus/work/probml--pmtk3/data/tinyImages/tinyImages.m    # known: workspace-mismatch: DIFF brazilFlag: values diverge (max rel 2.550e+02); DIFF brazilFlagGray: values diverge (max rel 6.
+corpus/work/probml--pmtk3/data/XimgRgb/XimgRgbMake.m
+corpus/work/probml--pmtk3/demos/additiveNoiseModel.m

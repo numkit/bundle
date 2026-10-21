@@ -1,0 +1,20 @@
+# group: practical-modeling-ode — Practical MATLAB Modeling — ODE & Numerical Chapters (Apress)
+# source: wave-5 textbook onboarding (1 pass / 16 total)
+# run: python fieldtest/compare.py practical-modeling-ode
+
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/RK_2ndODE_ex1.m    # known: absent-fn: Error: line 40, column 2: VM: undefined function 'syms' (in call to 'syms')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/RK_2ndODE_ex2.m    # known: absent-fn: Error: line 12, column 1: VM: undefined function 'syms' (in call to 'syms')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/RK_2ndODE_ex3.m    # known: absent-fn: Error: line 26, column 43: VM: undefined function 'dsolve' (in call to 'dsolve')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/RK_2ndODE_ex4.m    # known: absent-fn: Error: line 26, column 46: VM: undefined function 'dsolve' (in call to 'dsolve')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/RK_2ndODE_ex5.m
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_4/STIFF_1ODE_a.m    # known: absent-fn: Error: line 30, column 33: VM: undefined function 'dsolve' (in call to 'dsolve')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_4/STIFF_1ODE_EX1.m    # known: absent-fn: Error: line 24, column 53: VM: undefined function 'dsolve' (in call to 'dsolve')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_4/STIFF_1ODE_EX2.m    # known: nondeterministic: DIFF Time_ODE15s: values diverge (max rel 3.151e-02); skip opts: non-numeric both sides
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_4/STIFF_1ODE_EX3.m    # known: absent-fn: Error: line 29, column 1: VM: undefined function 'syms' (in call to 'syms')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_4/STIFF_2ODE_EX4.m    # known: nondeterministic: skip OPTs: non-numeric both sides; DIFF t_ODE15s: values diverge (max rel 7.789e-02)
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_5/AN_ode15s.m    # known: workspace-mismatch: skip F_NAN: non-numeric both sides; DIFF Yout: values diverge (max rel 1.387e-02)
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_6/IMPLICIT_2ODE_EX3.m    # known: absent-fn: Error: line 28, column 62: VM: undefined function 'decic' (in call to 'decic')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_2__Chapter_8/BVP_EX1.m    # known: absent-fn: Error: line 19, column 23: VM: undefined function 'bvpinit' (in call to 'bvpinit')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_3__Chapter_9_10_11_12/DOUBLE_Pedulum_Linear_2.m    # known: absent-fn: Error: line 17, column 48: VM: undefined function 'decic' (in call to 'decic')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_3__Chapter_9_10_11_12/DOUBLE_Pedulum_Model_2.m    # known: absent-fn: Error: line 23, column 49: VM: undefined function 'decic' (in call to 'decic')
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_3__Chapter_9_10_11_12/Lotka_Voltera.m    # known: workspace-mismatch: skip dxy: non-numeric both sides; skip opts: non-numeric both sides; DIFF t: shape (117, 1) vs (133,

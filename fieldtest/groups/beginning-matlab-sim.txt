@@ -1,0 +1,18 @@
+# group: beginning-matlab-sim — Beginning MATLAB and Simulink (Apress)
+# source: wave-5 textbook onboarding (13 pass / 14 total)
+# run: python fieldtest/compare.py beginning-matlab-sim
+
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_1/P1.m    # known: workspace-mismatch: DIFF F0: shape (1, 60) vs (1, 81); DIFF Findex: shape (1, 60) vs (1, 81); only-in-nk: ans
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/ChessInventorReward.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Errors_Warnings.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/ET3.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex12_FS.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex13_CF.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex13_CT.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex14_FN.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex15_SINE.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex16_FNs.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex6_FOR_WHILE.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex6_FOR_WHILE_alt.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/Ex9_wFUN.m
+corpus/work/Apress--beginning-matlab-and-simulink/Chapter_2/PseuodRandi.m

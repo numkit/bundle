@@ -4,20 +4,20 @@
 
 corpus/work/rlee32--lbm_matlab/advection_diffusion/d1q2.m
 corpus/work/rlee32--lbm_matlab/advection_diffusion/d2q4.m
-corpus/work/rlee32--lbm_matlab/advection_diffusion/d2q9.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/advection_diffusion/d2q9.m
 corpus/work/rlee32--lbm_matlab/diffusion/d1q2.m
 corpus/work/rlee32--lbm_matlab/diffusion/d2q4.m
-corpus/work/rlee32--lbm_matlab/diffusion/d2q9.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/cavity_dim.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/cavity_mohamad.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/channel_ext0.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/channel_ext2.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/channel_fixedp.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/channel_fixedv.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/diffusion/d2q9.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/cavity_dim.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/cavity_mohamad.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_ext0.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_ext2.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_fixedp.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/channel_fixedv.m
 corpus/work/rlee32--lbm_matlab/navier_stokes/channel_interface.m
-corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel4_incomplete.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel_refine1.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel_refine2.m  # known: rng-stream
-corpus/work/rlee32--lbm_matlab/navier_stokes/inlet_outlet.m  # known: rng-stream
+corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel4_incomplete.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel_refine1.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/defunct/channel_refine2.m
+corpus/work/rlee32--lbm_matlab/navier_stokes/inlet_outlet.m
 corpus/work/rlee32--lbm_matlab/navier_stokes/overlap/test.m
 corpus/work/rlee32--lbm_matlab/navier_stokes/surfels/test_oop.m

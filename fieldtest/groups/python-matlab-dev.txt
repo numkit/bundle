@@ -1,0 +1,18 @@
+# group: python-matlab-dev — Python for MATLAB Development (Apress)
+# source: wave-5 textbook onboarding (5 pass / 14 total)
+# run: python fieldtest/compare.py python-matlab-dev
+
+corpus/work/Apress--python-for-matlab-development/code/griddata/spiral_interp.m    # known: workspace-mismatch: DIFF F_cubic: values diverge (max rel 1.992e+00); DIFF F_linear: values diverge (max rel 2.381e-12)
+corpus/work/Apress--python-for-matlab-development/code/hpc/MB_main.m    # known: nk-hang
+corpus/work/Apress--python-for-matlab-development/code/hpc/MB_vectorized.m    # known: runtime-error: Error: line 45, column 17: any: dimension argument must be a scalar (argument is 1x3). (in call to '
+corpus/work/Apress--python-for-matlab-development/code/IO/urlread_demo.m    # known: absent-fn: Error: line 31, column 27: VM: undefined function 'urlread' (in call to 'urlread')
+corpus/work/Apress--python-for-matlab-development/code/ode/duffing.m    # known: workspace-mismatch: skip options: non-numeric both sides; DIFF t: shape (4017, 1) vs (5093, 1); DIFF u: shape (4017, 2) 
+corpus/work/Apress--python-for-matlab-development/code/optim/log_test_data.m    # known: workspace-mismatch: skip Fn: numeric on one side only (r vs None); DIFF t: values diverge (max rel 8.353e-02); DIFF t_me
+corpus/work/Apress--python-for-matlab-development/code/optim/log_test_data_full.m    # known: workspace-mismatch: skip Fn: numeric on one side only (r vs None); skip opt_Fn: non-numeric both sides; DIFF popt: value
+corpus/work/Apress--python-for-matlab-development/code/plots/dates_m.m    # known: absent-fn: Error: line 34, column 22: Undefined function in handle: @datetime (in call to '__numkit_fwd_call__'
+corpus/work/Apress--python-for-matlab-development/code/plots/double_y_axis.m
+corpus/work/Apress--python-for-matlab-development/code/plots/imagesc_demo.m
+corpus/work/Apress--python-for-matlab-development/code/plots/imshow_demo.m
+corpus/work/Apress--python-for-matlab-development/code/plots/multi_plot_2x2.m
+corpus/work/Apress--python-for-matlab-development/code/plots/paris_pt.m    # known: absent-fn: Error: line 40, column 21: VM: undefined function 'geolimits' (in call to 'geolimits')
+corpus/work/Apress--python-for-matlab-development/code/plots/stack_demo.m

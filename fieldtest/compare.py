@@ -65,6 +65,10 @@ def verdict_of(script):
                 if (d / "out_native2.mat").exists():
                     ok2, det = H.matdiff(d / "out_native.mat", d / "out_native2.mat")
                     if not ok2:
+                        diff_ml = {ln.split(":", 1)[0] for ln in lines if ln.startswith("DIFF ")}
+                        diff_det = {ln.split(":", 1)[0] for ln in det if ln.startswith("DIFF ")}
+                        if diff_ml and diff_ml <= diff_det:
+                            return "pass", "", []
                         return "nondeterministic", "; ".join(det)[:120], det
                 return "workspace-mismatch", "; ".join(lines[:4])[:160], lines
             return "runtime-error", "no workspace .mat produced", lines

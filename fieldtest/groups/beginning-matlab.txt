@@ -10,11 +10,11 @@ corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/ET3.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Errors_Warnings.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex12_FS.m
-corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex13_CF.m  # known: nondeterministic: DIFF Tvec: values diverge (max rel 2.714e-02)
-corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex13_CT.m  # known: nondeterministic: DIFF TT: values diverge (max rel 2.717e-01); DIFF Tfor3: values diverge (max rel 2.000e-01
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex13_CF.m
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex13_CT.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex14_FN.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex15_SINE.m
-corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex16_FNs.m  # known: nondeterministic: DIFF Tma: values diverge (max rel 1.404e-02)
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex16_FNs.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex6_FOR_WHILE.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex6_FOR_WHILE_alt.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Ex9_wFUN.m
@@ -23,7 +23,7 @@ corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Sum100.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Sum20odd.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/Sum20odd_alt.m
-corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/TimeDisp.m  # known: nondeterministic: DIFF NOW: values diverge (max rel 2.195e-01)
+corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_2/TimeDisp.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_3/SOUND_hear.m  # known: missing: sound (bugs/missing.md)
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Bar_Plot_E13.m
 corpus/work/Apress--beginning-matlab-simulink-2e/BOOK__Scripts__Models/Chapter_6/Plot_EX10.m

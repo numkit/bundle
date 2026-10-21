@@ -19,4 +19,4 @@ corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch31/chapter31.m  # k
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch33/chapter33.m  # known: rng-stream
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/ch33/LangtonsAnt.m
 corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/coverart.m
-corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/img_sierpinksi.m  # known: rng-stream
+corpus/work/mikexcohen--MATLAB_BrainAndCognitiveScientists/img_sierpinksi.m

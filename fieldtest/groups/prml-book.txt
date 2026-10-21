@@ -11,7 +11,7 @@ corpus/work/PRML--PRMLT/demo/ch04/logitMn_demo.m
 corpus/work/PRML--PRMLT/demo/ch05/mlp_demo.m
 corpus/work/PRML--PRMLT/demo/ch06/knCenter_demo.m
 corpus/work/PRML--PRMLT/demo/ch06/knKmeans_demo.m
-corpus/work/PRML--PRMLT/demo/ch06/knLin_demo.m  # known: rng-stream (synthetic data via randn)
+corpus/work/PRML--PRMLT/demo/ch06/knLin_demo.m
 corpus/work/PRML--PRMLT/demo/ch06/knReg_demo.m
 corpus/work/PRML--PRMLT/demo/ch07/rvmBinEm_demo.m
 corpus/work/PRML--PRMLT/demo/ch07/rvmBinFp_demo.m
@@ -24,7 +24,7 @@ corpus/work/PRML--PRMLT/demo/ch07/rvmRegSeq_spSignal_demo.m
 corpus/work/PRML--PRMLT/demo/ch08/mrf_demo.m
 corpus/work/PRML--PRMLT/demo/ch08/nbBern_demo.m
 corpus/work/PRML--PRMLT/demo/ch08/nbGauss_demo.m
-corpus/work/PRML--PRMLT/demo/ch09/kmeans_demo.m  # known: rng-stream (synthetic data via randn)
+corpus/work/PRML--PRMLT/demo/ch09/kmeans_demo.m
 corpus/work/PRML--PRMLT/demo/ch09/kmeans_mixGaussEm_demo.m
 corpus/work/PRML--PRMLT/demo/ch09/kmedoids_demo.m
 corpus/work/PRML--PRMLT/demo/ch09/linRegEm_demo.m
@@ -36,7 +36,7 @@ corpus/work/PRML--PRMLT/demo/ch10/rvmRegVb_spSignal_demo.m
 corpus/work/PRML--PRMLT/demo/ch11/gauss_demo.m
 corpus/work/PRML--PRMLT/demo/ch11/mixGaussGb_demo.m  # known: rng-stream (synthetic data via randn/gamrnd)
 corpus/work/PRML--PRMLT/demo/ch12/fa_demo.m
-corpus/work/PRML--PRMLT/demo/ch12/pca_demo.m  # known: rng-stream (synthetic data via randn)
+corpus/work/PRML--PRMLT/demo/ch12/pca_demo.m
 corpus/work/PRML--PRMLT/demo/ch12/ppcaEm_demo.m
 corpus/work/PRML--PRMLT/demo/ch12/ppcaVb_demo.m
 corpus/work/PRML--PRMLT/demo/ch13/hmm_demo.m

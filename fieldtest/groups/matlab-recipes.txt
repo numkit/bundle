@@ -18,13 +18,13 @@ corpus/work/Apress--matlab-recipes-2e/Chapter_03/HeatMapDemo.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_03/PatchWithCamera.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_03/PatchWithLighting.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_03/PlottingWithDates.m
-corpus/work/Apress--matlab-recipes-2e/Chapter_03/RandomWalk.m  # known: missing: digraph (bugs/missing.md)
-corpus/work/Apress--matlab-recipes-2e/Chapter_03/ReadImage.m  # known: workspace-mismatch: DIFF i: values diverge (max rel 6.071e+00); only-in-nk: a, ans, f, h; only-in-matlab: None
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/RandomWalk.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_03/ReadImage.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_03/SphereLighting.m
-corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimation.m  # known: nk-hang: exceeds 15s per-script timeout
-corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimationStorage.m  # known: missing: VideoWriter (bugs/missing.md)
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimation.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimationStorage.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_04/TimeDisplayDemo.m
-corpus/work/Apress--matlab-recipes-2e/Chapter_04/UIControlDemo.m  # known: workspace-mismatch: DIFF bottom: values diverge (max rel 1.216e+00); DIFF p: values diverge (max rel 9.995e-01
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/UIControlDemo.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_06/DoubleIntegratorSim.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_07/SCARARobotSim.m  # known: runtime-error: Error: line 196, column 26: Invalid or deleted object. (in call to 'set')
 corpus/work/Apress--matlab-recipes-2e/Chapter_08/PMMachineDemo.m
@@ -33,5 +33,5 @@ corpus/work/Apress--matlab-recipes-2e/Chapter_10/PHProcessSim.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_10/SensorTest.m  # known: workspace-mismatch: skip d: non-numeric both sides; DIFF fEvals: values diverge (max rel 9.706e-01); skip opti
 corpus/work/Apress--matlab-recipes-2e/Chapter_11/AircraftSim.m  # known: workspace-mismatch: skip d: non-numeric both sides; skip s: non-numeric both sides; skip tL: non-numeric both 
 corpus/work/Apress--matlab-recipes-2e/Chapter_12/SpacecraftSim.m
-corpus/work/Apress--matlab-recipes-2e/Chapter_13/AutomobileDemo.m  # known: runtime-error: Error: line 36, column 16: Dot indexing requires a struct (in field access '.component')
+corpus/work/Apress--matlab-recipes-2e/Chapter_13/AutomobileDemo.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_14/DiscreteStep.m

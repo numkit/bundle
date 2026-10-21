@@ -1,0 +1,13 @@
+# group: pmtk3-demos — Probabilistic Machine Learning Demos (Murphy PMTK3)
+# source: wave-5 textbook onboarding (7 pass / 9 total)
+# run: python fieldtest/compare.py pmtk3-demos
+
+corpus/work/probml--pmtk3/demos/additiveNoiseModel.m
+corpus/work/probml--pmtk3/demos/coinBayesFactorDemo.m
+corpus/work/probml--pmtk3/demos/cubicPlot.m
+corpus/work/probml--pmtk3/demos/gibbsGaussDemo.m
+corpus/work/probml--pmtk3/demos/kalman_test.m
+corpus/work/probml--pmtk3/demos/laplacianEigenmapsSwissRoll.m
+corpus/work/probml--pmtk3/demos/lsiCode.m    # known: absent-fn: Error: line 10, column 34: VM: undefined function 'textread' (in call to 'textread')
+corpus/work/probml--pmtk3/demos/robustPriorDemo.m    # known: absent-fn: Error: line 22, column 46: Undefined function in handle: @quad (in call to '__numkit_fwd_call__')
+corpus/work/probml--pmtk3/demos/tabularFactorTest.m

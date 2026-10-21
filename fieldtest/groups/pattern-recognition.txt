@@ -17,7 +17,7 @@ corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chap
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example221.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example222.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example231.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example232.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example232.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example233.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example241.m  # known: matlab-timeout (svc)
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example242.m  # known: rng-stream
@@ -28,13 +28,13 @@ corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chap
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example281.m  # known: missing:nnet (newff)
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example282a.m  # known: missing:nnet (newff)
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter2/examples/example282b.m  # known: missing:nnet (newff)
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example321.m  # known: rng-stream
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example322.m  # known: rng-stream
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example331.m  # known: timing (tic/toc)
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example321.m
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example322.m
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example331.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example341.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example342.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example352.m  # known: eig-sign
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example353.m  # known: eig-sign
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example352.m
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example353.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter3/examples/example361.m  # known: rng-stream
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter4/examples/example421.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter4/examples/example431.m
@@ -69,5 +69,5 @@ corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chap
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example756.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example757.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example761.m
-corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example762.m  # known: rng-stream
+corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example762.m
 corpus/work/pikrakis--Introduction-to-Pattern-Recognition-a-Matlab-Approach/Chapter7/examples/example772.m

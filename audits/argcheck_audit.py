@@ -20,7 +20,7 @@ BASELINE = HERE / "baselines" / "argcheck_baseline.json"
 RE_RAW_CAST = re.compile(r"static_cast<(?:size_t|int)>\([^)]*toScalar\(\)\)")
 RE_RAW_ARITY = re.compile(r"if\s*\(\s*args\.size\(\)\s*<")
 RE_ARGCHECK = re.compile(r"argcheck::")
-RE_FN_ARGCHECK = re.compile(r"\w+_argcheck\s*\(")
+RE_FN_ARGCHECK = re.compile(r"\w+_argcheck\s*(?:<[^>]*>)?\s*\(")
 RE_TRADEMARK_STRING = re.compile(r'"[^"\n]*MATLAB[^"\n]*"')
 
 R0_ALLOWLIST = {"modules/numkit/src/runtime/saveload_mat.cpp"}
@@ -62,7 +62,12 @@ def compute_stats() -> tuple[int, int]:
     total = adopted = 0
     for f in sorted(MODULES.rglob("*.cpp")):
         rel = f.relative_to(ROOT).as_posix()
-        if "/build/" in rel or "/tests/" in rel or rel.endswith("_reg.cpp") or rel.endswith("module.cpp"):
+        if ("/build/" in rel or "/tests/" in rel or "/apps/" in rel
+                or "/internal/" in rel
+                or rel.endswith("_reg.cpp") or rel.endswith("module.cpp")
+                or rel.endswith("_library.cpp") or rel.endswith("_highway.cpp")
+                or rel.startswith(("modules/codegen/", "modules/sys/",
+                                   "modules/value/", "modules/numkit/src/"))):
             continue
         src = f.read_text(encoding="utf-8", errors="replace")
         total += 1

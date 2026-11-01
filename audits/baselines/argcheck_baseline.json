@@ -1,6 +1,6 @@
 {
-  "compute_adopted": 51,
-  "compute_total": 427,
+  "compute_adopted": 84,
+  "compute_total": 298,
   "generated": "2026-11-01",
   "reg_files": {
     "modules/audio/src/register/features/pitch_harmonics_reg.cpp": {

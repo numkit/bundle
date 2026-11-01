@@ -73,14 +73,15 @@ def main() -> int:
             if m and m.group(1) not in OPS_OWN_PREFIXES:
                 violations.append(f"{rel}:{lineno}: [ops] forbidden include <numkit/{m.group(1)}/...>")
 
-    # 4. numkit (L2)
-    for f in iter_source_files(MODULES / "numkit"):
-        scanned += 1
-        rel = f.relative_to(ROOT).as_posix()
-        for lineno, line in enumerate(f.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
-            m = INCLUDE_RE.search(line)
-            if m and m.group(1) not in CORE_ALLOWED_PREFIXES:
-                violations.append(f"{rel}:{lineno}: [numkit] forbidden plugin include <numkit/{m.group(1)}/...>")
+    # 4. numkit & codegen (L2)
+    for mod_name in ("numkit", "codegen"):
+        for f in iter_source_files(MODULES / mod_name):
+            scanned += 1
+            rel = f.relative_to(ROOT).as_posix()
+            for lineno, line in enumerate(f.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
+                m = INCLUDE_RE.search(line)
+                if m and m.group(1) not in CORE_ALLOWED_PREFIXES:
+                    violations.append(f"{rel}:{lineno}: [{mod_name}] forbidden plugin include <numkit/{m.group(1)}/...>")
 
     # 5. Plugin toolboxes (L3): compute TUs must not include <numkit/core/...>
     for tb in PLUGIN_TOOLBOXES:
@@ -108,7 +109,7 @@ def main() -> int:
         print(f"  VIOLATION: {v}")
 
     status = "FAIL" if violations else "OK"
-    print(f"check_layering: {status} — {scanned} source/header files scanned across 11 submodules, "
+    print(f"check_layering: {status} — {scanned} source/header files scanned across 12 submodules, "
           f"{len(violations)} violation(s).")
     return 1 if violations else 0
 

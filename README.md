@@ -7,11 +7,12 @@ Umbrella superbuild, MATLAB R2025b parity suite, real-world corpus differential 
 ```text
 numkit/bundle/
 ├── CMakeLists.txt          # Unified CMake superbuild (compiles foundation once, stages all plugins)
-├── modules/                # Git submodules for all 11 NumKit repositories
+├── modules/                # Git submodules for all 12 NumKit repositories
 │   ├── value/              # L0: Value, ValueType, Dims, Span, ScratchArena, argcheck
 │   ├── sys/                # L0: OS/FS abstractions and C ABI plugin interface (PluginContext)
 │   ├── ops/                # L1: Highway SIMD kernels, BLAS, FFT/conv/filter, linalg, ode, fzero, builtin math
-│   ├── numkit/             # L2: Core runtime (Lexer, Parser, AST, TreeWalker, Bytecode VM, Codegen, CLI)
+│   ├── numkit/             # L2: Core runtime (Lexer, Parser, AST, TreeWalker, Bytecode VM, CLI)
+│   ├── codegen/            # L2: MATLAB-to-C++20 AOT transpiler and Zig C++ bundler (`numkit-codegen`)
 │   ├── signal/             # L3 plugin: Signal Processing Toolbox
 │   ├── control/            # L3 plugin: Control System Toolbox
 │   ├── stats/              # L3 plugin: Statistics and Machine Learning Toolbox
@@ -56,7 +57,7 @@ git clone --recurse-submodules git@github.com:numkit/bundle.git
 cmake -S . -B build -DNUMKIT_BUILD_TESTS=ON
 cmake --build build --config Release -- /m
 ```
-All executables and staged plugins are placed automatically into `build/bin/Release/` (`numkit.exe` + `modules/<pkg>/numkit_<pkg>.dll` + `manifest.json`).
+All executables and staged plugins are placed automatically into `build/bin/Release/` (`numkit.exe`, `numkit-codegen.exe`, and `modules/<pkg>/numkit_<pkg>.dll` + `manifest.json`).
 
 ### 3. Run All Unit Tests (Core + Toolboxes)
 ```bash

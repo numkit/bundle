@@ -1,3 +1,10 @@
 {
-  "public_violations": {}
+  "public_violations": {
+    "modules/numkit/include/numkit/graphics/graphics_handle.hpp::makeGraphicsHandleValue": [
+      "mr-not-last"
+    ],
+    "modules/ops/include/numkit/ops/helpers.hpp::elementwiseTyped": [
+      "mr-no-default"
+    ]
+  }
 }

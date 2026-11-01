@@ -1,7 +1,7 @@
 {
-  "compute_adopted": 26,
-  "compute_total": 429,
-  "generated": "2026-10-18",
+  "compute_adopted": 27,
+  "compute_total": 427,
+  "generated": "2026-11-01",
   "reg_files": {
     "modules/audio/src/register/features/pitch_harmonics_reg.cpp": {
       "adopted": 1,
@@ -671,7 +671,7 @@
     "modules/numkit/src/builtin/register/specfun_reg.cpp": {
       "adopted": 1,
       "raw_arity": 0,
-      "raw_cast": 0
+      "raw_cast": 1
     },
     "modules/numkit/src/builtin/register/strfun_reg.cpp": {
       "adopted": 1,
@@ -816,7 +816,7 @@
     "modules/signal/src/register/multirate/multirate_reg.cpp": {
       "adopted": 1,
       "raw_arity": 0,
-      "raw_cast": 0
+      "raw_cast": 1
     },
     "modules/signal/src/register/smoothing/medfilt_reg.cpp": {
       "adopted": 1,

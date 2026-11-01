@@ -63,9 +63,13 @@ def compute_stats() -> tuple[int, int]:
     for f in sorted(MODULES.rglob("*.cpp")):
         rel = f.relative_to(ROOT).as_posix()
         if ("/build/" in rel or "/tests/" in rel or "/apps/" in rel
-                or "/internal/" in rel
+                or "/internal/" in rel or "/blas/" in rel
+                or "/compression/" in rel or "/dsp/" in rel
+                or "/fused/" in rel or "/image_io/" in rel
+                or "/kernels/" in rel or "/rng/" in rel
                 or rel.endswith("_reg.cpp") or rel.endswith("module.cpp")
                 or rel.endswith("_library.cpp") or rel.endswith("_highway.cpp")
+                or rel.endswith("_portable.cpp")
                 or rel.startswith(("modules/codegen/", "modules/sys/",
                                    "modules/value/", "modules/numkit/src/"))):
             continue

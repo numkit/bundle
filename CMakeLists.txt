@@ -34,9 +34,16 @@ add_subdirectory(modules/sys)
 add_subdirectory(modules/ops)
 
 # ---------------------------------------------------------------------------
-# 2. Core runtime & CLI (numkit, numkit_cli, numkit_codegen, numkit_gtest)
+# 2. Core runtime & CLI (numkit, numkit_cli, numkit_gtest)
 # ---------------------------------------------------------------------------
 add_subdirectory(modules/numkit)
+
+# ---------------------------------------------------------------------------
+# 2b. AOT C++ Transpiler & Static Type Inference (numkit/codegen)
+# ---------------------------------------------------------------------------
+if(NUMKIT_BUILD_CODEGEN AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/modules/codegen/CMakeLists.txt")
+    add_subdirectory(modules/codegen)
+endif()
 
 # ---------------------------------------------------------------------------
 # 3. Domain plugin toolboxes

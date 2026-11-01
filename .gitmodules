@@ -31,3 +31,6 @@
 [submodule "modules/image"]
 	path = modules/image
 	url = git@github.com:numkit/image.git
+[submodule "modules/codegen"]
+	path = modules/codegen
+	url = git@github.com:numkit/codegen.git

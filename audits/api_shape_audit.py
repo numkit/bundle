@@ -38,6 +38,7 @@ def scan_header(path: Path):
     rel = path.relative_to(ROOT).as_posix()
     if "/detail/" in rel or "/core/" in rel or "/value/" in rel or "/sys/" in rel:
         return
+    declared_with_default = set()
     for m in DECL_RE.finditer(src):
         line_start = src.rfind("\n", 0, m.start()) + 1
         line_prefix = src[line_start:m.start()]
@@ -72,7 +73,10 @@ def scan_header(path: Path):
                                     .startswith(",")):
             yield rel, name, line, "mr-not-last"
         elif not rest.startswith("= nullptr"):
-            yield rel, name, line, "mr-no-default"
+            if name not in declared_with_default:
+                yield rel, name, line, "mr-no-default"
+        else:
+            declared_with_default.add(name)
 
 
 def collect(globs):

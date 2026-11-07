@@ -34,3 +34,6 @@
 [submodule "modules/codegen"]
 	path = modules/codegen
 	url = git@github.com:numkit/codegen.git
+[submodule "modules/cas"]
+	path = modules/cas
+	url = git@github.com:numkit/cas.git

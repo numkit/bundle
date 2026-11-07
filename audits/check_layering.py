@@ -29,7 +29,7 @@ OPS_OWN_PREFIXES = {"value", "ops", "builtin", "linalg", "ode", "optim", "signal
 CORE_ALLOWED_PREFIXES = OPS_OWN_PREFIXES | {
     "sys", "core", "runtime", "pkg", "graphics", "io", "codegen", "scriptgraph"
 }
-PLUGIN_TOOLBOXES = ("signal", "control", "stats", "wavelet", "audio", "comm", "image")
+PLUGIN_TOOLBOXES = ("signal", "control", "stats", "wavelet", "audio", "comm", "image", "cas")
 
 
 def iter_source_files(root: Path):
@@ -109,7 +109,7 @@ def main() -> int:
         print(f"  VIOLATION: {v}")
 
     status = "FAIL" if violations else "OK"
-    print(f"check_layering: {status} — {scanned} source/header files scanned across 12 submodules, "
+    print(f"check_layering: {status} — {scanned} source/header files scanned across 13 submodules, "
           f"{len(violations)} violation(s).")
     return 1 if violations else 0
 

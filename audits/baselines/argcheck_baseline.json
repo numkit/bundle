@@ -1,7 +1,7 @@
 {
-  "compute_adopted": 203,
-  "compute_total": 259,
-  "generated": "2026-11-02",
+  "compute_adopted": 204,
+  "compute_total": 260,
+  "generated": "2026-11-07",
   "reg_files": {
     "modules/audio/src/register/features/pitch_harmonics_reg.cpp": {
       "adopted": 1,
@@ -29,6 +29,11 @@
       "raw_cast": 0
     },
     "modules/audio/src/register/spectral/shape_descriptors_reg.cpp": {
+      "adopted": 1,
+      "raw_arity": 0,
+      "raw_cast": 0
+    },
+    "modules/cas/src/register/cas_reg.cpp": {
       "adopted": 1,
       "raw_arity": 0,
       "raw_cast": 0

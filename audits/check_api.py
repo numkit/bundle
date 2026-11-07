@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MODULES = ROOT / "modules"
-PLUGIN_TOOLBOXES = ("signal", "control", "stats", "wavelet", "audio", "comm", "image")
+PLUGIN_TOOLBOXES = ("signal", "control", "stats", "wavelet", "audio", "comm", "image", "cas")
 
 ENGINE_IO_MARKER = "lint: engine-io"
 RX_ENGINE = re.compile(r"\b(?:Engine|CallContext)\s*[&*]")

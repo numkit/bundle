@@ -71,7 +71,12 @@ def compute_stats() -> tuple[int, int]:
                 or rel.endswith("_library.cpp") or rel.endswith("_highway.cpp")
                 or rel.endswith("_portable.cpp")
                 or rel.startswith(("modules/codegen/", "modules/sys/",
-                                   "modules/value/", "modules/numkit/src/"))):
+                                   "modules/value/", "modules/numkit/src/",
+                                   "modules/cas/src/num/", "modules/cas/src/core/",
+                                   "modules/cas/src/poly/", "modules/cas/src/integrate/",
+                                   "modules/cas/src/linalg/", "modules/cas/src/ode/",
+                                   "modules/cas/src/rubi/", "modules/cas/src/transform/",
+                                   "modules/cas/examples/"))):
             continue
         src = f.read_text(encoding="utf-8", errors="replace")
         total += 1

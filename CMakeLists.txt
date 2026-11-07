@@ -56,6 +56,7 @@ set(NUMKIT_TOOLBOXES
     audio
     comm
     image
+    cas
 )
 
 set(STAGE_COMMANDS "")
@@ -121,6 +122,8 @@ if(NUMKIT_BUILD_TESTS)
                 endif()
                 add_test(NAME numkit_${tb}_test COMMAND numkit_${tb}_test)
             endif()
+        elseif(TARGET numkit_stage_plugins)
+            add_dependencies(numkit_${tb}_test numkit_stage_plugins)
         endif()
     endforeach()
 endif()

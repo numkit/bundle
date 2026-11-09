@@ -30,8 +30,8 @@ min 0.5 dᵀB d + gᵀd   s.t.  A·d ≤ b−Ax,  Aeq·d = beq−Aeq x,  lb−x 
 followed by a backtracking line search on `f`. The QP keeps the linear/bound
 constraints feasible and the feasible region is convex, so every `x + α·d`
 (α∈[0,1]) stays feasible — no merit function needed. BFGS update; iterate to
-a vanishing step. Split into `fmincon` + `nk_fc_obj` + `nk_fc_grad` +
-`nk_fc_sqp`.
+a vanishing step. Split into `fmincon` + `numkit_fc_obj` + `numkit_fc_grad` +
+`numkit_fc_sqp`.
 
 Parity with MATLAB R2025b is on the **solution**: bounds-only
 `min x1²+x2² in [0,2]² → [0 0]`; linear inequality `x1+x2≤2` with a far

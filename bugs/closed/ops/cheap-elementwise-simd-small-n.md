@@ -45,7 +45,7 @@ Rdivide         1.19x        1.00x
 
 ## Root cause
 
-With `NK_WITH_THREADS` off (both bench presets), `parallel_for` is a direct
+With `NUMKIT_WITH_THREADS` off (both bench presets), `parallel_for` is a direct
 call, so the only delta from the scalar build is that the Highway path goes
 through `HWY_DYNAMIC_DISPATCH` — a runtime-ISA **indirect call into a
 separately-compiled, non-inlinable** SIMD function — whereas the portable build
@@ -133,7 +133,7 @@ and the Highway small-N gate now forward to these. Two wins at once:
    definition, so they can't drift (previously 3 hand-copies that had to stay
    bit-identical: gate, Highway tail, portable).
 
-`NK_NOINLINE` (`nk/ops/compiler.hpp`) keeps the body from being merged
+`NUMKIT_NOINLINE` (`nk/ops/compiler.hpp`) keeps the body from being merged
 back into an escaping-lambda context under IPO/LTCG (off today → the separate TU
 already suffices). A/B re-verified after the move — all gated families ≥0.96× at
 every N (no crater), big-N SIMD wins intact (Plus/16384 2.26×, Times/16384
@@ -143,7 +143,7 @@ delegates to the shared scalar kernel — it never inlines its own loop.**
 ## References
 
 - Shared scalar kernels: `src/ops/src/fused/fused_scalar.cpp`,
-  `src/ops/src/binary_scalar.cpp`; `NK_NOINLINE` in
+  `src/ops/src/binary_scalar.cpp`; `NUMKIT_NOINLINE` in
   `src/ops/include/nk/ops/compiler.hpp`.
 - Gate + dispatch: `src/ops/src/fused/fused_{affine,abs,sq}_highway.cpp`,
   `src/ops/src/binary_ops_highway.cpp`;

@@ -23,7 +23,7 @@ Implemented as an **embedded `.m`** (`fminunc_reg.cpp`), mirroring the fzero /
 fminsearch / fsolve / lsqnonlin pattern — the objective `f(x)` is always user
 code, so writing the solver in `.m` makes every `f(x)` evaluation run as
 bytecode (pausable under the debugger). Split into `fminunc` +
-`nk_fminunc_eval` + `nk_fminunc_grad` + `nk_fminunc_bfgs`.
+`numkit_fminunc_eval` + `numkit_fminunc_grad` + `numkit_fminunc_bfgs`.
 
 Algorithm: **BFGS quasi-Newton** with a central-difference gradient and an
 Armijo backtracking line search; maintains an inverse-Hessian estimate `H`

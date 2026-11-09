@@ -18,7 +18,7 @@ one stay **blank = not yet benched**.
 - a few transforms pick a clean size (e.g. `fft` rounds N to a power of two).
 
 **Columns:** `nk small/large (ms)` = nk mean per-call time; `ML× s/l`
-and `OC× s/l` = MATLAB_ms / nk_ms and Octave_ms / nk_ms
+and `OC× s/l` = MATLAB_ms / numkit_ms and Octave_ms / numkit_ms
 (**>1× = nk faster**). Blank ratio = that reference engine not measured.
 
 > **Reading the two sizes.** At the small size, per-call interpreter

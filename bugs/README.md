@@ -159,7 +159,7 @@ regression guard with zero extra work.
 
 Run all known-bug tests (to watch them fail until fixed):
 ```
-nk_gtest.exe --gtest_also_run_disabled_tests --gtest_filter='*KnownBug*'
+numkit_gtest.exe --gtest_also_run_disabled_tests --gtest_filter='*KnownBug*'
 ```
 
 ## Lifecycle
@@ -223,5 +223,5 @@ FAIL (it reproduces its open bug); a passing guard means a silently-fixed
 bug or a stale guard:
 
 ```bash
-python tools/bugs_audit.py --guards build/<preset>/tests/gtest/Release/nk_gtest.exe
+python tools/bugs_audit.py --guards build/<preset>/tests/gtest/Release/numkit_gtest.exe
 ```

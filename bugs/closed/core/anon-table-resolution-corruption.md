@@ -56,7 +56,7 @@ m-source builtin `lsqcurvefit`, whose body references `xdata`;
   (an inline loop with try/catch reproduces).
 - Failure is deterministic and hits the FIRST closure call, i.e. the script's
   handle table is already wrong by the time it is consumed.
-- nk_repl (VM backend) reproduces; the dual-backend guard confirms the bug
+- numkit_repl (VM backend) reproduces; the dual-backend guard confirms the bug
   is **VM/compiler-only** — TreeWalker computes sin(2) correctly on the same
   script.
 

@@ -28,7 +28,7 @@ Jacobian, `(JᵀJ + λ·diag)·dx = −JᵀF`, adaptive λ) — but it terminate
 least-squares **minimiser** (step shrinking) rather than requiring `F=0`, so
 it handles over-determined residuals (`m > n`). Pausable residual (the
 objective runs as bytecode). Split into `lsqnonlin` + `lsqcurvefit` +
-`nk_lsq_lm` + `nk_lsq_eval`.
+`numkit_lsq_lm` + `numkit_lsq_eval`.
 
 - `lsqnonlin(fun,p0)` → `[p, resnorm, residual, exitflag]`. `p` mirrors p0's
   orientation; `residual = F(p)` (column); `resnorm = FᵀF`.

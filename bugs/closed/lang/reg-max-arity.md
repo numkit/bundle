@@ -92,7 +92,7 @@ parsers) document why they are unbounded.
     single-function hang, not the method.
 - **image domain — ✅ DONE (2026-09-17):** all 256 registrations migrated
   (221 direct defs incl. hsv_cmap_reg + 32 macro instantiations via 4
-  parameterized macros NK_BIN/COLOR/IM_UNARY/MORPH(_NV)). Guards:
+  parameterized macros NUMKIT_BIN/COLOR/IM_UNARY/MORPH(_NV)). Guards:
   `src/toolboxes/image/tests/arity_bounds_test.cpp` (170 max+1 cases,
   `ImageArityBoundsTest`). Applied bounds: `tools/arity_reference.json`
   ("image", 174 bounded / 80 min-only / 13 absent-from-reference).

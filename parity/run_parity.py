@@ -56,17 +56,17 @@ def _find_numkit_exe() -> Path:
     return candidates[0] if sys.platform == "win32" else candidates[2]
 
 
-NK_EXE = _find_numkit_exe()
+NUMKIT_EXE = _find_numkit_exe()
 MATLAB_EXE = "matlab"
 OCTAVE_EXE = r"C:\Program Files\GNU Octave\Octave-11.1.0\mingw64\bin\octave-cli.exe"
 
 
-def _nk_stale() -> tuple[float, float, str] | None:
+def _numkit_stale() -> tuple[float, float, str] | None:
     """Detect whether numkit.exe / staged plugins are older than any submodule source file."""
-    if not NK_EXE.exists():
+    if not NUMKIT_EXE.exists():
         return None
-    exe_mtime = NK_EXE.stat().st_mtime
-    plugins_dir = NK_EXE.parent / "modules"
+    exe_mtime = NUMKIT_EXE.stat().st_mtime
+    plugins_dir = NUMKIT_EXE.parent / "modules"
     if plugins_dir.exists():
         for p in plugins_dir.rglob("*"):
             if p.suffix in (".dll", ".so", ".dylib"):
@@ -96,17 +96,17 @@ def _nk_stale() -> tuple[float, float, str] | None:
     return None
 
 
-def _warn_if_nk_stale() -> None:
-    st = _nk_stale()
+def _warn_if_numkit_stale() -> None:
+    st = _numkit_stale()
     if st is None:
         return
     exe_m, src_m, src_rel = st
     fmt = lambda t: time.strftime("%Y-%m-%d %H:%M", time.localtime(t))
     bar = "!" * 74
     try:
-        exe_rel = str(NK_EXE.relative_to(ROOT)).replace("\\", "/")
+        exe_rel = str(NUMKIT_EXE.relative_to(ROOT)).replace("\\", "/")
     except ValueError:
-        exe_rel = str(NK_EXE)
+        exe_rel = str(NUMKIT_EXE)
     print(
         f"\n{bar}\n"
         f"  WARNING: numkit.exe is STALE — parity may under-report.\n"
@@ -420,14 +420,14 @@ def _run_engine_raw(specs: list[Spec],
                     engine: str,
                     *,
                     isolated: bool = False) -> tuple[dict[str, Result], str]:
-    if engine == "nk" and not NK_EXE.exists():
-        return {}, f"numkit binary missing: {NK_EXE}"
+    if engine == "nk" and not NUMKIT_EXE.exists():
+        return {}, f"numkit binary missing: {NUMKIT_EXE}"
     script = build_batch_script(specs, engine=engine, isolated=isolated)
     path = _write_script(script)
     timeout = max(300, 8 * len(specs))
     try:
         if engine == "nk":
-            cmd = [str(NK_EXE)]
+            cmd = [str(NUMKIT_EXE)]
             if isolated:
                 cmd.append("--isolated")
             cmd.append(str(path))
@@ -541,8 +541,8 @@ def compose_status(cur_status: str, correctness: str,
     return " ".join(parts)
 
 
-BENCH_ROW_FMT = ("| `{name}` | {nk_s} | {ml_s} | {oc_s} "
-                 "| {nk_l} | {ml_l} | {oc_l} | {notes} |")
+BENCH_ROW_FMT = ("| `{name}` | {numkit_s} | {ml_s} | {oc_s} "
+                 "| {numkit_l} | {ml_l} | {oc_l} | {notes} |")
 
 
 def fmt_ms(x: float | None) -> str:
@@ -607,15 +607,15 @@ def update_benchmark_row(*, name: str, nk: Result | None,
         return 0
     if not (nk and nk.ok and nk.ms_small is not None and nk.ms_large is not None):
         return 0
-    nk_s, nk_l = nk.ms_small, nk.ms_large
+    numkit_s, numkit_l = nk.ms_small, nk.ms_large
     ml_s = ml.ms_small if (ml and ml.ok) else None
     ml_l = ml.ms_large if (ml and ml.ok) else None
     oc_s = oc.ms_small if (oc and oc.ok) else None
     oc_l = oc.ms_large if (oc and oc.ok) else None
     row = BENCH_ROW_FMT.format(
         name=name,
-        nk_s=fmt_ms(nk_s), ml_s=fmt_ratio(ml_s, nk_s), oc_s=fmt_ratio(oc_s, nk_s),
-        nk_l=fmt_ms(nk_l), ml_l=fmt_ratio(ml_l, nk_l), oc_l=fmt_ratio(oc_l, nk_l),
+        numkit_s=fmt_ms(numkit_s), ml_s=fmt_ratio(ml_s, numkit_s), oc_s=fmt_ratio(oc_s, numkit_s),
+        numkit_l=fmt_ms(numkit_l), ml_l=fmt_ratio(ml_l, numkit_l), oc_l=fmt_ratio(oc_l, numkit_l),
         notes=note,
     )
     text = BENCHMARK_MD.read_text(encoding="utf-8")
@@ -661,19 +661,19 @@ def evaluate(spec: Spec, nk: Result | None, ml: Result | None,
 
 def run_chunk(specs: list[Spec], *, no_matlab: bool, no_octave: bool,
               isolated: bool, verbose: bool) -> tuple[int, dict[str, int]]:
-    nk_res, nk_err = run_engine_batch(specs, "nk", isolated=isolated)
+    numkit_res, numkit_err = run_engine_batch(specs, "nk", isolated=isolated)
     ml_res, ml_err = (({}, "") if no_matlab
                       else run_engine_batch(specs, "matlab"))
     oc_res, oc_err = (({}, "") if no_octave
                       else run_engine_batch(specs, "octave"))
-    for err in (nk_err, ml_err, oc_err):
+    for err in (numkit_err, ml_err, oc_err):
         if err:
             print(f"  ! {err}", flush=True)
 
     rc = 0
     tally = {"OK": 0, "MISMATCH": 0, "FAIL": 0, "N/A": 0}
     for spec in specs:
-        nk = nk_res.get(spec.name)
+        nk = numkit_res.get(spec.name)
         ml = ml_res.get(spec.name)
         oc = oc_res.get(spec.name)
         status, correctness = evaluate(spec, nk, ml, oc)
@@ -764,7 +764,7 @@ def main():
     print(f"{len(specs)} spec(s) · mode={mode_tag} · chunk={chunk} · "
           f"{nchunks} launch(es) per engine", flush=True)
 
-    _warn_if_nk_stale()
+    _warn_if_numkit_stale()
 
     rc = 0
     total = {"OK": 0, "MISMATCH": 0, "FAIL": 0, "N/A": 0}

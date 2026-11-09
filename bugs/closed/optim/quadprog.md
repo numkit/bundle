@@ -34,7 +34,7 @@ most-negative**-multiplier active one until the KKT conditions hold. Bounds
 `lb ≤ x ≤ ub` are folded into the inequality set (`x ≤ ub`, `−x ≤ −lb`). The
 QP optimum is **unique** for PD `H`, so the active-set path is irrelevant to
 the result — it matches MATLAB quadprog's solution exactly. Returns a column
-`x`; split into `quadprog` + `nk_qp_activeset` + `nk_qp_kkt`.
+`x`; split into `quadprog` + `numkit_qp_activeset` + `numkit_qp_kkt`.
 
 Verified vs MATLAB R2025b across every constraint type: unconstrained
 `→ [1 1]`; inequality `x1+x2≤1 → [0.5 0.5]` (fval −0.75); equality

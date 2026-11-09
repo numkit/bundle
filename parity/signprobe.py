@@ -9,7 +9,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from run_parity import NK_EXE, MATLAB_EXE
+from run_parity import NUMKIT_EXE, MATLAB_EXE
 
 
 def matlab_help(fns):
@@ -26,10 +26,10 @@ def matlab_help(fns):
     return blocks
 
 
-def nk_help(fns):
+def numkit_help(fns):
     blocks = {}
     for f in fns:
-        p = subprocess.run([str(NK_EXE), "-e", f"help {f}"],
+        p = subprocess.run([str(NUMKIT_EXE), "-e", f"help {f}"],
                            capture_output=True, timeout=60)
         blocks[f] = p.stdout.decode("utf-8", "replace")
     return blocks
@@ -53,7 +53,7 @@ def signature_lines(help_text, fn):
 
 def audit(fns):
     ml = matlab_help(fns)
-    nk = nk_help(fns)
+    nk = numkit_help(fns)
     n_match = 0
     for f in fns:
         a = signature_lines(ml.get(f, ""), f)

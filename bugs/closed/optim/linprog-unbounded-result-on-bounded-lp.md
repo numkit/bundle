@@ -36,10 +36,10 @@ intermediate x already at 1e9).
 
 ## Fix
 
-nk_qp_activeset is REPLACED by nk_qp_admm: an OSQP-style ADMM (no
+numkit_qp_activeset is REPLACED by numkit_qp_admm: an OSQP-style ADMM (no
 feasible start, rank-deficiency tolerant) plus an exact POLISH that
 solves the equality-KKT on the final active set through the existing
-nk_qp_kkt saddle and keeps the vertex when feasible and at least as
+numkit_qp_kkt saddle and keeps the vertex when feasible and at least as
 good. Live guard: `OptimKnownBug.LinprogBoundedLpOptimum` (this
 repro, exact values). All 161 optim-suite tests green, including the
 portion-11 rank-deficient repro and fmincon's SQP (a quadprog

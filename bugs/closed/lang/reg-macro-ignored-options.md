@@ -28,9 +28,9 @@ p = paddata(1:4, 6, 'FillValue', -9);
 ```
 
 Affected families (src/bundle/src/register/builtin/):
-- `NK_STR_TRI_REG` (lang_strings_reg.cpp) — eraseBetween 4th+ args
+- `NUMKIT_STR_TRI_REG` (lang_strings_reg.cpp) — eraseBetween 4th+ args
   ('Boundaries'); insertAfter/insertBefore take none, bounded 2..2/3..3.
-- `NK_RESIZE_REG` (lang_manip_reg.cpp) — paddata/trimdata/resize
+- `NUMKIT_RESIZE_REG` (lang_manip_reg.cpp) — paddata/trimdata/resize
   Name-Value tails.
 
 ## Root cause
@@ -79,10 +79,10 @@ within those bounds the macros still marshal a fixed prefix and DROP the
 rest (pre-existing: the old hand-throws only enforced minimums, so extra
 args were silently dropped before too):
 
-- `NK_BIN_REG` (arithmetic_reg.cpp): `imadd(I, J, scale)` — 3rd positional
+- `NUMKIT_BIN_REG` (arithmetic_reg.cpp): `imadd(I, J, scale)` — 3rd positional
   (scale / output-class string) accepted (bound 2..3) and dropped; the
   2-arg result is returned silently.
-- `NK_COLOR_REG` (color_reg.cpp): channel/space-parameter forms accepted
+- `NUMKIT_COLOR_REG` (color_reg.cpp): channel/space-parameter forms accepted
   per the probed bounds and dropped — worst cases compute WRONG results,
   not just defaults: `hsv2rgb(H, S, V)` computes `hsv2rgb(H)` (bound
   1..3); `rgb2xyz/rgb2lab` whitepoint args (bound 1..5);
@@ -90,11 +90,11 @@ args were silently dropped before too):
   channel args (min-only, custom-parser reference). Converter pairs
   bounded 1..1 (`rgb2ycbcr`, `ycbcr2rgb`, `rgb2ntsc`, `ntsc2rgb`,
   `lab2double`, `lab2uint8`, `lab2uint16`) are exact.
-- `NK_IM_UNARY_REG` (type_convert_reg.cpp): `im2double/im2single/
+- `NUMKIT_IM_UNARY_REG` (type_convert_reg.cpp): `im2double/im2single/
   im2uint8/im2uint16(X, 'indexed')` — the `'indexed'` flag (bound 1..2)
   is dropped: indexed images convert with the same code path as
   intensity images (wrong scaling for indexed inputs).
-- `NK_MORPH_REG` (morph_reg.cpp): `imerode/imdilate(I, SE, n, packopt,
+- `NUMKIT_MORPH_REG` (morph_reg.cpp): `imerode/imdilate(I, SE, n, packopt,
   shape)` — args 3..5 (bound 2..5) are dropped; the single-iteration
   result is returned.
 - Direct regs, same class: `imlincomb` trailing output-class string is

@@ -24,7 +24,7 @@ Generate a script with 33000 distinct string literals (one chunk, pool >
 
 ```
 python -c "print('\n'.join(['clear;'] + [f\"s = 'u{i}';\" for i in range(33000)]))" > temp/pool_overflow.m
-build/windows/release/apps/nk/Release/nk_repl.exe temp/pool_overflow.m
+build/windows/release/apps/nk/Release/numkit_repl.exe temp/pool_overflow.m
 # MATLAB: s == 'u32999' (no limit at this scale)
 # nk:     s is a wrong pool entry (silent index wrap), possibly a crash
 ```

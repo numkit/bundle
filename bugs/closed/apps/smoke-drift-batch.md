@@ -30,7 +30,7 @@ fprintf('%g\n', h.pval)
 ```
 
 Fixture class repro: run
-`nk_repl.exe src/toolboxes/image/tests/smoke/imread_tiff_smoke.m` from
+`numkit_repl.exe src/toolboxes/image/tests/smoke/imread_tiff_smoke.m` from
 the repo root (documented convention) → file-not-found on a fixture that
 exists under `src/`.
 

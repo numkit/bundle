@@ -1,17 +1,17 @@
-# apps.nk_repl — script error still exits with code 0
+# apps.numkit_repl — script error still exits with code 0
 
 - **Status:** ✅ FIXED (verified 2026-08-30)
 - **Severity:** P3 minor/style (P1 for scripting/CI consumers — see below)
 - **Found:** 2026-08-29 via npm CLI corpus run (comparing native vs WASM CLI behaviour)
 
 ## Symptom
-`nk_repl script.m` reports a script error on stderr but the process exit
+`numkit_repl script.m` reports a script error on stderr but the process exit
 code is 0, so shells / CI / AI agents cannot detect failure without parsing
 output.
 
 ## Repro
 ```bash
-./nk_repl.exe examples/Frame_Introspection/assignin_setter.m
+./numkit_repl.exe examples/Frame_Introspection/assignin_setter.m
 # nk:  …line 39…: Undefined function or variable 'cfg_one'
 # $LASTEXITCODE / $?: 0        ← should be 1
 ```

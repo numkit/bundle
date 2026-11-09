@@ -158,7 +158,7 @@ def run_engine(kind, script, mat_out=None, answers=None):
         stdin_text = "\n".join(answers) + "\n"
         if kind == "matlab":
             TMP.mkdir(parents=True, exist_ok=True)
-            stub_dir = Path(tempfile.mkdtemp(prefix="nk_in_", dir=TMP))
+            stub_dir = Path(tempfile.mkdtemp(prefix="numkit_in_", dir=TMP))
             stub = stub_dir / "input.m"
             quoted = " ".join("'{}'".format(a.replace("'", "''")) for a in answers)
             stub.write_text(
@@ -231,7 +231,7 @@ def _run_engine_argv(kind, s, cwd, mat_out, stdin_text, stub_dir=None):
             argv = [str(NATIVE_CLI), "-e", body]
         else:
             stem_tag = re.sub(r"[^a-zA-Z0-9_]", "_", s.stem)
-            wrap = s.parent / f"__nk_wrap_{kind}_{stem_tag}.m"
+            wrap = s.parent / f"__numkit_wrap_{kind}_{stem_tag}.m"
             body = "pause('off');\n" + addpath_cmd + f"run('{s.name}');\n"
             if mat_out is not None:
                 body += f"save('{Path(mat_out).as_posix()}');\n"
@@ -422,13 +422,13 @@ def classify(nk, ml):
         return "matlab-timeout", ""
     if nk["exit"] == "timeout":
         return "nk-hang", ""
-    nk_err, ml_err = nk["exit"] != 0, ml["exit"] != 0
+    numkit_err, ml_err = nk["exit"] != 0, ml["exit"] != 0
     if ml_err:
         detail = (ml["err"] or ml["out"]).strip()[:120]
-        if nk_err:
+        if numkit_err:
             return "both-error", detail
         return "matlab-only-error", detail
-    if nk_err:
+    if numkit_err:
         msg = (nk["err"] or nk["out"]).strip()
         if "undefined function" in msg.lower():
             return "absent-fn", msg[:160]
@@ -501,7 +501,7 @@ def run(scripts):
              "native_ms": native["ms"], "matlab_ms": ml["ms"],
              "stdout_match": stdout_ok,
              "mat_diff": mat_lines[:20],
-             "nk_out": (native["out"] or native["err"])[:800],
+             "numkit_out": (native["out"] or native["err"])[:800],
              "matlab_out": (ml["out"] or ml["err"])[:800]}
         results.append(r)
         print(f"[{i+1}/{len(scripts)}] {Path(rel).name:<40} {v:<20} "

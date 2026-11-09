@@ -105,7 +105,7 @@ def in_scope(fn) -> bool:
     return True
 
 
-def load_nk_names() -> set[str]:
+def load_numkit_names() -> set[str]:
     text = PROGRESS.read_text(encoding="utf-8")
     names = set()
     for m in re.finditer(r"^\| `([^`]+)`", text, re.MULTILINE):
@@ -113,7 +113,7 @@ def load_nk_names() -> set[str]:
     return names
 
 
-def load_nk_status() -> dict[str, str]:
+def load_numkit_status() -> dict[str, str]:
     """Return {name_lower: status} where status is "OK" (✅), "STUB" (❌)
     or "PARTIAL" (⚠️). If a name appears in multiple sections, prefer
     the strongest status."""
@@ -161,13 +161,13 @@ def main():
         for fn in matlab_fns[before:]:
             fn["path"].insert(0, prefix_label)
 
-    nk_status = load_nk_status()
+    numkit_status = load_numkit_status()
     classified = []
     for fn in matlab_fns:
         if not in_scope(fn):
             cat = "SKIP"
         else:
-            st = nk_status.get(fn["name"].lower())
+            st = numkit_status.get(fn["name"].lower())
             if st == "OK":          cat = "IMPL"
             elif st == "PARTIAL":   cat = "PARTIAL"
             elif st == "STUB":      cat = "STUB"

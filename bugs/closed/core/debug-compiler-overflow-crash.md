@@ -7,7 +7,7 @@
 
 ## Symptom
 
-`nk_gtest.exe` (Debug) aborts during
+`numkit_gtest.exe` (Debug) aborts during
 `TW_VM/CompilerRegisterOverflowTest.OverflowInSingleExpression/TW` — the
 test deliberately compiles a huge single expression to trigger
 RegisterExhaustionError; in Debug the deeper per-frame stack footprint
@@ -17,8 +17,8 @@ assert) before the graceful throw. Release runs green.
 ## Repro
 
 ```
-cmake --build build/windows/release --target nk_gtest   # Debug
-build/windows/release/tests/gtest/Debug/nk_gtest.exe --gtest_filter='*OverflowInSingleExpression*'
+cmake --build build/windows/release --target numkit_gtest   # Debug
+build/windows/release/tests/gtest/Debug/numkit_gtest.exe --gtest_filter='*OverflowInSingleExpression*'
 # → process aborts (no test verdict)
 ```
 
@@ -39,7 +39,7 @@ Two independent pieces:
 1. `StackGuard::check` at the top of the tryEvalFast BINARY_OP case
    (the only recursive case; leaves don't need it) — over-limit depth
    now throws a clean "Stack exhaustion" error instead of aborting.
-2. `/STACK:8388608` for the nk_gtest target in the MSVC Debug config
+2. `/STACK:8388608` for the numkit_gtest target in the MSVC Debug config
    (tests/gtest/CMakeLists.txt) — realistic stress depths (~1000 AST
    levels) fit; the guard covers anything beyond.
 

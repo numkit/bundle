@@ -30,7 +30,7 @@ Implemented as an **embedded `.m`** (`fsolve_reg.cpp`, `kFsolveMSource` +
 `registerFsolveM`), mirroring the fzero / fminsearch pattern — the objective
 `F(x)` is always user code, so writing the solver in `.m` makes every `F(x)`
 evaluation run as bytecode (pausable under the debugger, no C++ state
-machine). Split into `fsolve` + `nk_fsolve_eval` + `nk_fsolve_lm` (per the
+machine). Split into `fsolve` + `numkit_fsolve_eval` + `numkit_fsolve_lm` (per the
 255-register VM gotcha).
 
 Algorithm: **Levenberg-Marquardt** with a forward-difference Jacobian —

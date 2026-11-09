@@ -2,7 +2,7 @@
   "name": "system",
   "namespace": "core",
   "setup": "",
-  "expr": "[s, o] = system('echo nk_parity');",
+  "expr": "[s, o] = system('echo numkit_parity');",
   "iters": 1,
   "tol": 0,
   "fingerprint": [

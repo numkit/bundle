@@ -72,8 +72,8 @@ Two parts:
    (numFixed + numel(cell)) driven by the caller's nargout.
 2. **anonymous nargout forwarding** — `compileAnonFunc` lowers
    `@(params) g(...)` (body a **global** function call) to
-   `function varargout = __anon_N(params)  varargout = __nk_fwd_call__(nargout,
-   'g', args...);  end`. The `__nk_fwd_call__(n, fname, args...)` builtin
+   `function varargout = __anon_N(params)  varargout = __numkit_fwd_call__(nargout,
+   'g', args...);  end`. The `__numkit_fwd_call__(n, fname, args...)` builtin
    resolves `fname` the SAME way a direct call does (`findExternal`, so
    import/namespace-aware — toolbox functions like `median` resolve), calls it
    with `nargout = n`, and returns the `n` results in a `1×n` cell that

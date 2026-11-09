@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numkit"
+version = "0.1.0"
+description = "Python bindings for the NumKit scientific computing ecosystem and toolboxes (Lite & Full C-ABI)"
+readme = "README.md"
+license = {text = "0BSD"}
+requires-python = ">=3.9"
+optional-dependencies = {numpy = ["numpy>=1.22"]}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["numkit*"]
+
+[tool.setuptools.package-data]
+numkit = ["py.typed", "*.pyi"]

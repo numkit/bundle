@@ -50,7 +50,7 @@ Root cause: linprog's proximal form (H = 1e-9*I) drives quadprog's
 active-set onto linearly dependent active rows; the saddle KKT matrix
 [H A'; A 0] becomes singular and the strict mldivide threw.
 
-Fix: primal-dual KKT regularisation in nk_qp_kkt (the OSQP trick) —
+Fix: primal-dual KKT regularisation in numkit_qp_kkt (the OSQP trick) —
 the multiplier block gets -1e-12*I, making the system quasi-definite
 and solvable without perturbing the solution beyond 1e-12. A pinv
 min-norm alternative was tried first and REJECTED: it returned

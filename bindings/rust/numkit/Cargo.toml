@@ -1,9 +1,0 @@
-[package]
-name = "numkit"
-version.workspace = true
-edition.workspace = true
-license.workspace = true
-description = "Safe Rust SDK for the NumKit scientific computing ecosystem and toolboxes (Lite & Full C-ABI)"
-
-[dependencies]
-numkit-sys = { path = "../numkit-sys" }

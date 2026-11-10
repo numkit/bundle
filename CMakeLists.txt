@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(NUMKIT_WITH_SIMD "Enable Highway SIMD acceleration" ON)
 option(NUMKIT_BUILD_CLI "Build numkit CLI executable" ON)
 option(NUMKIT_BUILD_CODEGEN "Build numkit_codegen AOT transpiler CLI" ON)
-option(NUMKIT_BUILD_BINDINGS "Build multi-language C-ABI bindings (Lite & Full)" ON)
 option(NUMKIT_BUILD_TESTS "Build GoogleTest suites for core and all toolboxes" ON)
 
 # Unified output directory for executables and shared libraries
@@ -127,11 +126,4 @@ if(NUMKIT_BUILD_TESTS)
             add_dependencies(numkit_${tb}_test numkit_stage_plugins)
         endif()
     endforeach()
-endif()
-
-# ---------------------------------------------------------------------------
-# 5. Multi-language C-ABI & FFI bindings (Lite & Full)
-# ---------------------------------------------------------------------------
-if(NUMKIT_BUILD_BINDINGS AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/bindings/CMakeLists.txt")
-    add_subdirectory(bindings)
 endif()

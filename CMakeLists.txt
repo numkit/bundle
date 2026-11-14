@@ -30,8 +30,8 @@ endif()
 foreach(_keel_pair
     "KEEL:keel"
     "KEEL_COMPRESS:compress"
-    "KEEL_IMAGE_FORMATS:image-formats"
-    "KEEL_AUDIO_FORMATS:audio-formats"
+    "KEEL_IMAGE:image"
+    "KEEL_AUDIO:audio"
     "KEEL_FFT:fft"
 )
     string(REPLACE ":" ";" _keel_parts "${_keel_pair}")

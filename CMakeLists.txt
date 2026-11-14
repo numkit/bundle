@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(numkit_bundle CXX)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(NUMKIT_WITH_SIMD "Enable Highway SIMD acceleration" ON)
@@ -25,6 +25,25 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../numkit/build/_deps/googletest-src/CMak
         "${CMAKE_CURRENT_SOURCE_DIR}/../numkit/build/_deps/googletest-src"
         CACHE PATH "" FORCE)
 endif()
+
+# Local sibling keelcpp checkouts (offline / developer fast-path)
+foreach(_keel_pair
+    "KEEL:keel"
+    "KEEL_COMPRESS:compress"
+    "KEEL_IMAGE_FORMATS:image-formats"
+    "KEEL_AUDIO_FORMATS:audio-formats"
+    "KEEL_FFT:fft"
+)
+    string(REPLACE ":" ";" _keel_parts "${_keel_pair}")
+    list(GET _keel_parts 0 _keel_var)
+    list(GET _keel_parts 1 _keel_dir)
+    if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../../keelcpp/${_keel_dir}/CMakeLists.txt"
+       AND NOT DEFINED FETCHCONTENT_SOURCE_DIR_${_keel_var})
+        set(FETCHCONTENT_SOURCE_DIR_${_keel_var}
+            "${CMAKE_CURRENT_SOURCE_DIR}/../../keelcpp/${_keel_dir}"
+            CACHE PATH "" FORCE)
+    endif()
+endforeach()
 
 # ---------------------------------------------------------------------------
 # 1. Foundation layers (compiled once for the entire ecosystem)

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Synchronized release tagger for the 12-module NumKit ecosystem.
+"""Synchronized release tagger for the 13-module NumKit ecosystem.
 
 Usage:
     python scripts/tag_release.py v1.0.0 [--push] [--dry-run]
 
-Verifies that `numkit/bundle` and all 12 submodules under `modules/*` have
+Verifies that `numkit/bundle` and all 13 submodules under `modules/*` have
 clean working trees, creates annotated tag `vX.Y.Z` across every submodule
 and the bundle repository, and optionally pushes the tag to `origin`.
 """
@@ -26,6 +26,7 @@ SUBMODULES = (
     "ops",
     "numkit",
     "codegen",
+    "cas",
     "signal",
     "wavelet",
     "stats",

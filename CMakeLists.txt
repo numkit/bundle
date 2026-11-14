@@ -106,10 +106,22 @@ if(STAGE_COMMANDS)
 endif()
 
 # ---------------------------------------------------------------------------
-# 4. Unified GoogleTest suite (core + all toolboxes)
+# 4. Unified GoogleTest suite & architectural checks (core + all toolboxes)
 # ---------------------------------------------------------------------------
 if(NUMKIT_BUILD_TESTS)
     enable_testing()
+
+    find_package(Python3 COMPONENTS Interpreter QUIET)
+    if(Python3_Interpreter_FOUND)
+        add_test(
+            NAME numkit_check_layering
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/scripts/check_layering.py"
+        )
+        add_test(
+            NAME numkit_check_api
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/scripts/check_api.py"
+        )
+    endif()
 
     # Per-toolbox GoogleTest executables
     foreach(tb IN LISTS NUMKIT_TOOLBOXES)

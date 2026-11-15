@@ -3,6 +3,7 @@ project(numkit_bundle CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 option(NUMKIT_WITH_SIMD "Enable Highway SIMD acceleration" ON)
 option(NUMKIT_BUILD_CLI "Build numkit CLI executable" ON)

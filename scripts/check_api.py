@@ -4,8 +4,8 @@
 Checks:
   1. Over every modules/<tb>/include/numkit/**/*.hpp header:
      - No `Engine &` / `Engine *` / `CallContext &` in public compute signatures (except library.hpp)
-     - `std::pmr::memory_resource` is passed by pointer, never by reference
-     - No `const Value *` in public signatures (use `const Value &` or `Span<const Value>`)
+     - `keel::Allocator` is passed by pointer, never by reference
+     - No `const Value *` in public signatures (use `const Value &` or `keel::ArrayRef<Value>`)
   2. Over every modules/<tb>/manifest.json:
      - Every function listed in `exports` is actually registered in `modules/<tb>/src/register/**`
 """
@@ -24,7 +24,7 @@ PLUGIN_TOOLBOXES = ("signal", "control", "stats", "wavelet", "audio", "comm", "i
 
 ENGINE_IO_MARKER = "lint: engine-io"
 RX_ENGINE = re.compile(r"\b(?:Engine|CallContext)\s*[&*]")
-RX_MR_REF = re.compile(r"memory_resource\s*&")
+RX_MR_REF = re.compile(r"\bAllocator\s*&")
 RX_VALUE_PTR = re.compile(r"const\s+Value\s*\*")
 RX_REG_CALL = re.compile(r'registerFunction\s*\(\s*"[^"]*"\s*,\s*"([^"]+)"')
 
@@ -87,7 +87,7 @@ def main() -> int:
                             "Engine/CallContext in a public toolbox signature"))
                 if RX_MR_REF.search(code):
                     violations.append((rel, lineno, "§7",
-                        "memory_resource must be a pointer, not a reference"))
+                        "keel::Allocator must be a pointer, not a reference"))
                 if RX_VALUE_PTR.search(code) and "initialCondition" not in code and "finalCondition" not in code:
                     violations.append((rel, lineno, "§10",
                         "const Value* in a public signature — use const Value&"))

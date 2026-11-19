@@ -38,6 +38,7 @@ FORBIDDEN_STL_HEADERS = frozenset({
     "vector", "string", "string_view", "map", "unordered_map",
     "set", "unordered_set", "memory", "functional", "optional",
     "filesystem", "sstream", "iostream", "fstream",
+    "chrono", "ctime", "cctype",
 })
 RX_STL_INCLUDE = re.compile(r"^\s*#\s*include\s*<([^>]+)>", re.M)
 RX_FORBIDDEN_STD = re.compile(
@@ -45,7 +46,8 @@ RX_FORBIDDEN_STD = re.compile(
     r"set|unordered_set|unique_ptr|shared_ptr|weak_ptr|make_unique|make_shared|"
     r"function|optional|nullopt|ostringstream|istringstream|stringstream|"
     r"cout|cerr|cin|endl|ofstream|ifstream|fstream|filesystem|to_string|"
-    r"stoi|stol|stoll|stoul|stoull|stod|stof|getline)\b"
+    r"stoi|stol|stoll|stoul|stoull|stod|stof|getline|"
+    r"chrono|tolower|toupper|isspace|isdigit|isalpha|isalnum|isxdigit|isupper|islower)\b"
 )
 RX_NON_CODE = re.compile(
     r"//[^\n]*"

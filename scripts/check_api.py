@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""check_api.py — lint public toolbox C++ headers and plugin manifest.json consistency.
+"""check_api.py — lint public toolbox C++ headers, plugin manifest.json consistency,
+and workspace-wide Anti-STL purity (Wave 2 full keelcpp integration).
 
 Checks:
   1. Over every modules/<tb>/include/numkit/**/*.hpp header:
@@ -8,6 +9,11 @@ Checks:
      - No `const Value *` in public signatures (use `const Value &` or `keel::ArrayRef<Value>`)
   2. Over every modules/<tb>/manifest.json:
      - Every function listed in `exports` is actually registered in `modules/<tb>/src/register/**`
+  3. Anti-STL purity across all 13 modules/*/{include,src,bridge,apps}/**/*.{h,hpp,cpp}:
+     - Zero forbidden STL headers (<vector>, <string>, <string_view>, <map>,
+       <unordered_map>, <set>, <unordered_set>, <memory>, <functional>,
+       <optional>, <filesystem>, <sstream>, <iostream>, <fstream>)
+     - Zero forbidden owning STL container/string/stream/smart-pointer/fs tokens
 """
 
 from __future__ import annotations
@@ -27,6 +33,31 @@ RX_ENGINE = re.compile(r"\b(?:Engine|CallContext)\s*[&*]")
 RX_MR_REF = re.compile(r"\bAllocator\s*&")
 RX_VALUE_PTR = re.compile(r"const\s+Value\s*\*")
 RX_REG_CALL = re.compile(r'registerFunction\s*\(\s*"[^"]*"\s*,\s*"([^"]+)"')
+
+FORBIDDEN_STL_HEADERS = frozenset({
+    "vector", "string", "string_view", "map", "unordered_map",
+    "set", "unordered_set", "memory", "functional", "optional",
+    "filesystem", "sstream", "iostream", "fstream",
+})
+RX_STL_INCLUDE = re.compile(r"^\s*#\s*include\s*<([^>]+)>", re.M)
+RX_FORBIDDEN_STD = re.compile(
+    r"\bstd::(vector|string|string_view|map|unordered_map|multimap|unordered_multimap|"
+    r"set|unordered_set|unique_ptr|shared_ptr|weak_ptr|make_unique|make_shared|"
+    r"function|optional|nullopt|ostringstream|istringstream|stringstream|"
+    r"cout|cerr|cin|endl|ofstream|ifstream|fstream|filesystem|to_string|"
+    r"stoi|stol|stoll|stoul|stoull|stod|stof|getline)\b"
+)
+RX_NON_CODE = re.compile(
+    r"//[^\n]*"
+    r"|/\*[\s\S]*?\*/"
+    r'|R"([^()\\\s]{0,16})\([\s\S]*?\)\1"'
+    r'|"(?:\\.|[^"\\])*"'
+    r"|'(?:\\.|[^'\\])*'"
+)
+
+
+def strip_non_code(text: str) -> str:
+    return RX_NON_CODE.sub(lambda m: "\n" * m.group(0).count("\n") + " ", text)
 
 
 def strip_comments_and_strings(text: str) -> str:
@@ -109,12 +140,37 @@ def main() -> int:
                     f"registered functions missing from manifest.json exports: {', '.join(missing_in_manifest[:10])}"
                 ))
 
+    # Check 3: Workspace-wide Anti-STL purity across all modules/*/{include,src,bridge,apps}
+    stl_files_scanned = 0
+    for mod_dir in sorted(p for p in MODULES.iterdir() if p.is_dir()):
+        for sub in ("include", "src", "bridge", "apps"):
+            sub_dir = mod_dir / sub
+            if not sub_dir.is_dir():
+                continue
+            for path in sorted(sub_dir.rglob("*")):
+                if path.suffix not in (".h", ".hpp", ".cpp") or not path.is_file():
+                    continue
+                stl_files_scanned += 1
+                rel = path.relative_to(ROOT).as_posix()
+                src = path.read_text(encoding="utf-8", errors="replace")
+                clean = strip_non_code(src)
+                for m in RX_STL_INCLUDE.finditer(clean):
+                    hdr = m.group(1).strip()
+                    if hdr in FORBIDDEN_STL_HEADERS:
+                        lineno = clean[: m.start()].count("\n") + 1
+                        violations.append((rel, lineno, "keel-purity",
+                            f"forbidden STL header <{hdr}> — use keel equivalents"))
+                for lineno, line in enumerate(clean.splitlines(), 1):
+                    for m in RX_FORBIDDEN_STD.finditer(line):
+                        violations.append((rel, lineno, "keel-purity",
+                            f"forbidden {m.group(0)} — use keel equivalents"))
+
     for rel, lineno, sec, msg in sorted(violations):
         print(f"{rel}:{lineno}: [{sec}] {msg}")
 
     status = "FAIL" if violations else "OK"
-    print(f"check_api: {status} — {headers_scanned} public toolbox headers + {len(PLUGIN_TOOLBOXES)} manifests scanned, "
-          f"{len(violations)} violation(s).")
+    print(f"check_api: {status} — {headers_scanned} public toolbox headers + {len(PLUGIN_TOOLBOXES)} manifests "
+          f"+ {stl_files_scanned} files (Anti-STL purity) scanned, {len(violations)} violation(s).")
     return 1 if violations else 0
 
 

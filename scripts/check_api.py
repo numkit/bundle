@@ -47,7 +47,8 @@ RX_FORBIDDEN_STD = re.compile(
     r"function|optional|nullopt|ostringstream|istringstream|stringstream|"
     r"cout|cerr|cin|endl|ofstream|ifstream|fstream|filesystem|to_string|"
     r"stoi|stol|stoll|stoul|stoull|stod|stof|getline|"
-    r"chrono|tolower|toupper|isspace|isdigit|isalpha|isalnum|isxdigit|isupper|islower)\b"
+    r"chrono|tolower|toupper|isspace|isdigit|isalpha|isalnum|isxdigit|isupper|islower|"
+    r"ispunct|isprint|isgraph|iscntrl|isblank)\b"
 )
 RX_NON_CODE = re.compile(
     r"//[^\n]*"

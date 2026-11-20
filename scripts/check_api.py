@@ -38,7 +38,7 @@ FORBIDDEN_STL_HEADERS = frozenset({
     "vector", "string", "string_view", "map", "unordered_map",
     "set", "unordered_set", "memory", "functional", "optional",
     "filesystem", "sstream", "iostream", "fstream",
-    "chrono", "ctime", "cctype",
+    "chrono", "ctime", "cctype", "random",
 })
 RX_STL_INCLUDE = re.compile(r"^\s*#\s*include\s*<([^>]+)>", re.M)
 RX_FORBIDDEN_STD = re.compile(
@@ -48,7 +48,16 @@ RX_FORBIDDEN_STD = re.compile(
     r"cout|cerr|cin|endl|ofstream|ifstream|fstream|filesystem|to_string|"
     r"stoi|stol|stoll|stoul|stoull|stod|stof|getline|"
     r"chrono|tolower|toupper|isspace|isdigit|isalpha|isalnum|isxdigit|isupper|islower|"
-    r"ispunct|isprint|isgraph|iscntrl|isblank)\b"
+    r"ispunct|isprint|isgraph|iscntrl|isblank|"
+    r"mt19937|mt19937_64|minstd_rand|minstd_rand0|ranlux24|ranlux48|knuth_b|"
+    r"default_random_engine|random_device|seed_seq|shuffle|"
+    r"uniform_int_distribution|uniform_real_distribution|bernoulli_distribution|"
+    r"binomial_distribution|geometric_distribution|negative_binomial_distribution|"
+    r"poisson_distribution|exponential_distribution|gamma_distribution|"
+    r"weibull_distribution|extreme_value_distribution|normal_distribution|"
+    r"lognormal_distribution|chi_squared_distribution|cauchy_distribution|"
+    r"fisher_f_distribution|student_t_distribution|discrete_distribution|"
+    r"piecewise_constant_distribution|piecewise_linear_distribution)\b"
 )
 RX_NON_CODE = re.compile(
     r"//[^\n]*"

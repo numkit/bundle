@@ -45,6 +45,7 @@ foreach(_keel_pair
     "KEEL_QUAD:quad"
     "KEEL_OPTIM:optim"
     "KEEL_POLY:poly"
+    "KEEL_WAVELET:wavelet"
 )
     string(REPLACE ":" ";" _keel_parts "${_keel_pair}")
     list(GET _keel_parts 0 _keel_var)

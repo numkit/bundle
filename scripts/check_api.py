@@ -35,14 +35,14 @@ RX_VALUE_PTR = re.compile(r"const\s+Value\s*\*")
 RX_REG_CALL = re.compile(r'registerFunction\s*\(\s*"[^"]*"\s*,\s*"([^"]+)"')
 
 FORBIDDEN_STL_HEADERS = frozenset({
-    "vector", "string", "string_view", "map", "unordered_map",
+    "array", "vector", "string", "string_view", "map", "unordered_map",
     "set", "unordered_set", "memory", "functional", "optional",
     "filesystem", "sstream", "iostream", "fstream",
     "chrono", "ctime", "cctype", "random",
 })
 RX_STL_INCLUDE = re.compile(r"^\s*#\s*include\s*<([^>]+)>", re.M)
 RX_FORBIDDEN_STD = re.compile(
-    r"\bstd::(vector|string|string_view|map|unordered_map|multimap|unordered_multimap|"
+    r"\bstd::(array|vector|string|string_view|map|unordered_map|multimap|unordered_multimap|"
     r"set|unordered_set|unique_ptr|shared_ptr|weak_ptr|make_unique|make_shared|"
     r"function|optional|nullopt|ostringstream|istringstream|stringstream|"
     r"cout|cerr|cin|endl|ofstream|ifstream|fstream|filesystem|to_string|"
@@ -58,6 +58,9 @@ RX_FORBIDDEN_STD = re.compile(
     r"lognormal_distribution|chi_squared_distribution|cauchy_distribution|"
     r"fisher_f_distribution|student_t_distribution|discrete_distribution|"
     r"piecewise_constant_distribution|piecewise_linear_distribution)\b"
+)
+RX_FORBIDDEN_C_TYPES = re.compile(
+    r"\b(?:std::)?(?:s?size_t|ptrdiff_t|u?int(?:8|16|32|64)_t)\b"
 )
 RX_NON_CODE = re.compile(
     r"//[^\n]*"
@@ -172,10 +175,15 @@ def main() -> int:
                         lineno = clean[: m.start()].count("\n") + 1
                         violations.append((rel, lineno, "keel-purity",
                             f"forbidden STL header <{hdr}> — use keel equivalents"))
+                is_c_abi = (path.suffix == ".h" or sub == "bridge" or "c_api" in path.name)
                 for lineno, line in enumerate(clean.splitlines(), 1):
                     for m in RX_FORBIDDEN_STD.finditer(line):
                         violations.append((rel, lineno, "keel-purity",
                             f"forbidden {m.group(0)} — use keel equivalents"))
+                    if not is_c_abi:
+                        for m in RX_FORBIDDEN_C_TYPES.finditer(line):
+                            violations.append((rel, lineno, "keel-types",
+                                f"forbidden {m.group(0)} — use keel::usize/isize/i8..i64/u8..u64"))
 
     for rel, lineno, sec, msg in sorted(violations):
         print(f"{rel}:{lineno}: [{sec}] {msg}")

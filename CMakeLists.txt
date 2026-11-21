@@ -108,6 +108,45 @@ if(STAGE_COMMANDS)
 endif()
 
 # ---------------------------------------------------------------------------
+# 3b. Build-time Keel Guidelines enforcement across non-foundation modules
+#     (numkit_value and numkit_sys enforce strict BAN_RAW_INTS ALL directly)
+# ---------------------------------------------------------------------------
+if(COMMAND keel_enforce_guidelines)
+    set(_NUMKIT_ALLOW_TRANSITIONAL_HEADERS
+        algorithm atomic cerrno charconv climits cstddef cstdint
+        cstdio cstdlib deque iterator limits mutex numeric regex tuple
+        type_traits utility
+    )
+    set(_NUMKIT_GUIDELINE_TARGETS
+        "numkit_ops:modules/ops/include"
+        "numkit:modules/numkit/include"
+        "numkit_codegen_lib:modules/codegen/include"
+    )
+    foreach(tb IN LISTS NUMKIT_TOOLBOXES)
+        list(APPEND _NUMKIT_GUIDELINE_TARGETS "numkit_${tb}_core:modules/${tb}/include")
+    endforeach()
+    foreach(_gt_pair IN LISTS _NUMKIT_GUIDELINE_TARGETS)
+        string(REPLACE ":" ";" _gt_parts "${_gt_pair}")
+        list(GET _gt_parts 0 _gt_target)
+        list(GET _gt_parts 1 _gt_inc)
+        if(TARGET "${_gt_target}")
+            keel_enforce_guidelines("${_gt_target}"
+                SCOPE ALL
+                BAN_STL ON
+                BAN_RAW_INTS OFF
+                ALLOW_STDEXCEPT ON
+                ALLOW_STDEXCEPT_IN_HEADERS ON
+                HEADERS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/${_gt_inc}"
+                ALLOWED_ANGLE_PREFIXES "numkit/" "hwy/"
+                ALLOW_HEADERS ${_NUMKIT_ALLOW_TRANSITIONAL_HEADERS}
+                EXCLUDE_FILES "c_api\\.h$" "c_api\\.cpp$"
+                WARNINGS OFF
+            )
+        endif()
+    endforeach()
+endif()
+
+# ---------------------------------------------------------------------------
 # 4. Unified GoogleTest suite & architectural checks (core + all toolboxes)
 # ---------------------------------------------------------------------------
 if(NUMKIT_BUILD_TESTS)

@@ -36,6 +36,7 @@ foreach(_keel_pair
     "KEEL_FFT:fft"
     "KEEL_RANDOM:random"
     "KEEL_LINALG:linalg"
+    "KEEL_MAT:mat"
 )
     string(REPLACE ":" ";" _keel_parts "${_keel_pair}")
     list(GET _keel_parts 0 _keel_var)

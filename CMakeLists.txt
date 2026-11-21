@@ -150,7 +150,8 @@ if(COMMAND keel_enforce_guidelines)
             keel_enforce_guidelines("${_gt_target}"
                 SCOPE ALL
                 BAN_STL ON
-                BAN_RAW_INTS OFF
+                BAN_RAW_INTS ALL
+                BAN_RAW_FLOATS ALL
                 ALLOW_STDEXCEPT ON
                 ALLOW_STDEXCEPT_IN_HEADERS ON
                 HEADERS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/${_gt_inc}"

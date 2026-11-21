@@ -50,6 +50,7 @@ foreach(_keel_pair
     "KEEL_WAVELET:wavelet"
     "KEEL_STATS:stats"
     "KEEL_SIGNAL:signal"
+    "KEEL_CONTROL:control"
 )
     string(REPLACE ":" ";" _keel_parts "${_keel_pair}")
     list(GET _keel_parts 0 _keel_var)

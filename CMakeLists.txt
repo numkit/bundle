@@ -153,8 +153,8 @@ if(COMMAND keel_enforce_guidelines)
                 BAN_STL ON
                 BAN_RAW_INTS ALL
                 BAN_RAW_FLOATS ALL
-                ALLOW_STDEXCEPT ON
-                ALLOW_STDEXCEPT_IN_HEADERS ON
+                ALLOW_STDEXCEPT OFF
+                ALLOW_STDEXCEPT_IN_HEADERS OFF
                 HEADERS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/${_gt_inc}"
                 ALLOWED_ANGLE_PREFIXES "numkit/" "hwy/"
                 ALLOW_HEADERS ${_NUMKIT_ALLOW_TRANSITIONAL_HEADERS}

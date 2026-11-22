@@ -131,7 +131,7 @@ endif()
 if(COMMAND keel_enforce_guidelines)
     set(_NUMKIT_ALLOW_TRANSITIONAL_HEADERS
         algorithm atomic cerrno charconv climits cstddef cstdint
-        cstdio cstdlib deque iterator limits mutex numeric regex tuple
+        cstdio cstdlib deque iterator mutex numeric regex tuple
         type_traits utility
     )
     set(_NUMKIT_GUIDELINE_TARGETS
@@ -141,6 +141,7 @@ if(COMMAND keel_enforce_guidelines)
     )
     foreach(tb IN LISTS NUMKIT_TOOLBOXES)
         list(APPEND _NUMKIT_GUIDELINE_TARGETS "numkit_${tb}_core:modules/${tb}/include")
+        list(APPEND _NUMKIT_GUIDELINE_TARGETS "numkit_${tb}:modules/${tb}/include")
     endforeach()
     foreach(_gt_pair IN LISTS _NUMKIT_GUIDELINE_TARGETS)
         string(REPLACE ":" ";" _gt_parts "${_gt_pair}")

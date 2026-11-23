@@ -130,9 +130,7 @@ endif()
 # ---------------------------------------------------------------------------
 if(COMMAND keel_enforce_guidelines)
     set(_NUMKIT_ALLOW_TRANSITIONAL_HEADERS
-        algorithm atomic cerrno charconv climits cstddef cstdint
-        cstdio cstdlib deque iterator mutex numeric regex tuple
-        type_traits utility
+        algorithm cerrno cstdio cstdlib numeric regex tuple utility
     )
     set(_NUMKIT_GUIDELINE_TARGETS
         "numkit_ops:modules/ops/include"

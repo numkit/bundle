@@ -130,7 +130,7 @@ endif()
 # ---------------------------------------------------------------------------
 if(COMMAND keel_enforce_guidelines)
     set(_NUMKIT_ALLOW_TRANSITIONAL_HEADERS
-        algorithm cerrno cstdio cstdlib numeric regex
+        cerrno cstdio cstdlib regex
     )
     set(_NUMKIT_GUIDELINE_TARGETS
         "numkit_ops:modules/ops/include"

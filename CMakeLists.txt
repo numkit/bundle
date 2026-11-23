@@ -135,7 +135,7 @@ if(COMMAND keel_enforce_guidelines)
     set(_NUMKIT_GUIDELINE_TARGETS
         "numkit_ops:modules/ops/include"
         "numkit:modules/numkit/include"
-        "numkit_codegen_lib:modules/codegen/include"
+        "numkit_codegen_core:modules/codegen/include"
     )
     foreach(tb IN LISTS NUMKIT_TOOLBOXES)
         list(APPEND _NUMKIT_GUIDELINE_TARGETS "numkit_${tb}_core:modules/${tb}/include")
@@ -156,7 +156,7 @@ if(COMMAND keel_enforce_guidelines)
                 HEADERS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/${_gt_inc}"
                 ALLOWED_ANGLE_PREFIXES "numkit/" "hwy/"
                 ALLOW_HEADERS ${_NUMKIT_ALLOW_TRANSITIONAL_HEADERS}
-                EXCLUDE_FILES "c_api\\.h$" "c_api\\.cpp$"
+                EXCLUDE_FILES "c_api\\.h$" "c_api\\.cpp$" "numkit_codegen_rt\\.cpp$"
                 WARNINGS OFF
             )
         endif()

@@ -130,7 +130,7 @@ endif()
 # ---------------------------------------------------------------------------
 if(COMMAND keel_enforce_guidelines)
     set(_NUMKIT_ALLOW_TRANSITIONAL_HEADERS
-        cerrno cstdio cstdlib regex
+        cstdio cstdlib
     )
     set(_NUMKIT_GUIDELINE_TARGETS
         "numkit_ops:modules/ops/include"
@@ -146,6 +146,10 @@ if(COMMAND keel_enforce_guidelines)
         list(GET _gt_parts 0 _gt_target)
         list(GET _gt_parts 1 _gt_inc)
         if(TARGET "${_gt_target}")
+            set(_gt_allow_headers ${_NUMKIT_ALLOW_TRANSITIONAL_HEADERS})
+            if(_gt_target STREQUAL "numkit_ops")
+                list(APPEND _gt_allow_headers regex)
+            endif()
             keel_enforce_guidelines("${_gt_target}"
                 SCOPE ALL
                 BAN_STL ON
@@ -155,7 +159,7 @@ if(COMMAND keel_enforce_guidelines)
                 ALLOW_STDEXCEPT_IN_HEADERS OFF
                 HEADERS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/${_gt_inc}"
                 ALLOWED_ANGLE_PREFIXES "numkit/" "hwy/"
-                ALLOW_HEADERS ${_NUMKIT_ALLOW_TRANSITIONAL_HEADERS}
+                ALLOW_HEADERS ${_gt_allow_headers}
                 EXCLUDE_FILES "c_api\\.h$" "c_api\\.cpp$" "numkit_codegen_rt\\.cpp$"
                 WARNINGS OFF
             )

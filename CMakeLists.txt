@@ -150,6 +150,13 @@ if(COMMAND keel_enforce_guidelines)
             if(_gt_target STREQUAL "numkit_ops")
                 list(APPEND _gt_allow_headers regex)
             endif()
+            set(_gt_extra_args "")
+            if(_gt_target STREQUAL "numkit")
+                list(APPEND _gt_extra_args STANDALONE_HEADERS ${NUMKIT_BUILD_TESTS})
+                if(MSVC)
+                    list(APPEND _gt_extra_args COMPILE_DEFINITIONS "__EXCEPTIONS=1")
+                endif()
+            endif()
             keel_enforce_guidelines("${_gt_target}"
                 SCOPE ALL
                 BAN_STL ON
@@ -161,6 +168,7 @@ if(COMMAND keel_enforce_guidelines)
                 ALLOWED_ANGLE_PREFIXES "numkit/" "hwy/"
                 ALLOW_HEADERS ${_gt_allow_headers}
                 EXCLUDE_FILES "c_api\\.h$" "c_api\\.cpp$" "numkit_codegen_rt\\.cpp$"
+                ${_gt_extra_args}
                 WARNINGS OFF
             )
         endif()

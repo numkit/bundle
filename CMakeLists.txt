@@ -54,6 +54,7 @@ foreach(_keel_pair
     "KEEL_COMM:comm"
     "KEEL_CAS:cas"
     "KEEL_CRYPTO:crypto"
+    "KEEL_HTTP:http"
 )
     string(REPLACE ":" ";" _keel_parts "${_keel_pair}")
     list(GET _keel_parts 0 _keel_var)
